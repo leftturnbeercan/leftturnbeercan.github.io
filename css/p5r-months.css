@@ -1,0 +1,144 @@
+main {
+    border: 5px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+
+body {
+    background-color: #d62e2e;
+  }
+
+.main_menu_style {
+    list-style: none;
+}
+
+#main_menu_setup {
+    position: fixed;
+	width: 180px;
+	float: left;
+	padding: 10px;
+	border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+#main_menu_setup li {
+	width:120px;
+	float:left;
+	margin-left:2px;
+    border: 5px solid black;
+
+}
+
+#main_menu_setup a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color: #d62e2e;
+}
+
+#content-days{
+    margin-left: 400px;
+	border-left: 2px solid black;
+	padding: 10px;
+	line-height: 2em;
+}
+
+section {
+    align-items: center;
+    background-color: black;
+    border: 5px solid  #d62e2e;
+    border-style: outset;
+   
+}
+
+h3 {
+    font-family: 'Bubblegum Superstar';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+h3.date-font {
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: whitesmoke;
+
+}
+
+h4 {
+    font-family: 'Arsenal';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+p{
+    font-family: 'Arsenal';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+ol {
+    list-style-position: inside;
+    font-family: 'Arsenal';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style-position: inside;
+    font-family: 'Arsenal';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+table, th, td{
+    border: 5px solid #d62e2e;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-family: 'Arsenal';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+td {
+    font-family: 'Arsenal';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+/*------------------------------------------------*/
+/*all action based css commands below this comment*/
+/*------------------------------------------------*/
+#main_menu_setup a:hover {
+	background-color:black;
+	color:#fff;
+}
+	
+
+

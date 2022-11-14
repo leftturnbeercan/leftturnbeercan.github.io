@@ -26,12 +26,14 @@ h3.date-font {
     font-family: 'Franklin Gothic Medium';
     font-weight: bolder;
     font-size: medium;
+    font-style: italic;
     color: whitesmoke;
 
 }
 
 h4 {
     font-family: 'Arsenal';
+    color:white;
     font-weight: bold;
 }
 p, li {

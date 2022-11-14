@@ -1,3 +1,4 @@
+/*creates a border around main page*/
 main {
     border: 5px solid black;
 }
@@ -14,10 +15,12 @@ body {
     background-color: #d62e2e;
   }
 
+/*basically removes dots from list*/
 .main_menu_style {
     list-style: none;
 }
 
+/*sets the placement of the nav menu and adds a border around it*/
 #main_menu_setup {
     position: fixed;
 	width: 180px;
@@ -28,7 +31,7 @@ body {
     border-bottom: 5px solid black;
 }
 
-
+/*adds border around the list items*/
 #main_menu_setup li {
 	width:120px;
 	float:left;
@@ -37,6 +40,7 @@ body {
 
 }
 
+/*helps mimick the list items as buttons*/
 #main_menu_setup a {
 	display:block;
 	padding:3px;
@@ -45,11 +49,25 @@ body {
 	color: #d62e2e;
 }
 
-#content-days{
-    margin-left: 400px;
-	border-left: 2px solid black;
+
+/*sets position of nav calendar*/
+#cal_nav {
+    position: fixed;
+    top: 310px;
+	width: 180px;
+	float: left;
 	padding: 10px;
-	line-height: 2em;
+	border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.cal_nav_font a {
+    text-decoration:none;
+    color: white;
+}
+.cal_nav_border, .cal_nav_th_font, .cal_nav_font {
+    border: 5px solid black;
 }
 
 section {
@@ -58,6 +76,13 @@ section {
     border: 5px solid  #d62e2e;
     border-style: outset;
    
+}
+
+#content-days{
+    margin-left: 400px;
+	border-left: 2px solid black;
+	padding: 10px;
+	line-height: 2em;
 }
 
 h3 {
@@ -135,9 +160,16 @@ td {
 /*------------------------------------------------*/
 /*all action based css commands below this comment*/
 /*------------------------------------------------*/
+
+/*changes the color of the list items when hovered over*/
 #main_menu_setup a:hover {
 	background-color:black;
 	color:#fff;
+}
+
+.cal_nav_font a:hover {
+    background-color: black;
+    color:#d62e2e;
 }
 	
 

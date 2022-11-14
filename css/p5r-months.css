@@ -99,6 +99,10 @@ ul {
     color: white;
 }
 
+.connected {
+    clear: both;
+}
+
 /*------------------------------------------------*/
 /*all action based css commands below this comment*/
 /*------------------------------------------------*/

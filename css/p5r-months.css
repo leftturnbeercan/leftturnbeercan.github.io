@@ -107,6 +107,19 @@ ul {
     clear: both;
 }
 
+th {
+    font-family: 'Arsenal';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+td {
+    font-family: 'Arsenal';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
 /*------------------------------------------------*/
 /*all action based css commands below this comment*/
 /*------------------------------------------------*/

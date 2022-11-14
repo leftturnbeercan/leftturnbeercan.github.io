@@ -2,12 +2,17 @@ body {
     background-color: #d62e2e;
   }
 
+.main_menu_style {
+    list-style: none;
+}
+
 #main_menu_setup {
 	width: 180px;
 	float: left;
 	padding: 10px;
 	border-right: 1px solid #d62e2e;
 }
+
 
 #main_menu_setup li {
 	width:120px;

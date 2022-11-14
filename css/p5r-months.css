@@ -21,7 +21,7 @@ body {
 }
 
 /*sets the placement of the nav menu and adds a border around it*/
-#main_menu_setup {
+#main_menu_setup, #cal_nav {
     position: fixed;
 	width: 180px;
 	float: left;
@@ -47,16 +47,6 @@ body {
 	text-decoration:none;
 	background-color:#fff;
 	color: #d62e2e;
-}
-
-#cal_nav {
-    position: fixed;
-	width: 180px;
-	float: left;
-	padding: 10px;
-	border-right: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
 }
 
 section {

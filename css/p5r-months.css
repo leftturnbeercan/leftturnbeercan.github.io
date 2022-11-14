@@ -105,11 +105,11 @@ ul {
 
 table, th, td{
     border: 5px solid #d62e2e;
-    text-align: center;
 }
 
 table {
     border-collapse: collapse;
+    align-items: center;
 }
 
 th {

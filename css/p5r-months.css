@@ -54,7 +54,7 @@ body {
 section {
     align-items: center;
     background-color: black;
-    border: 5px solid  #d62e2e;
+    border: 1px solid  #d62e2e;
     border-style: outset;
    
 }

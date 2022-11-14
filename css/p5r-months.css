@@ -38,11 +38,28 @@ h4 {
     text-align: center;
     color:white;
 }
-p, ol, ul{
+p{
+    font-family: 'Arsenal';
+    text-align: center;
+    color: white;
+}
+
+ol {
+    list-style-position: inside;
+    font-family: 'Arsenal';
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style-position: inside;
     font-family: 'Arsenal';
     text-align: center;
     color: white;
 }
 
 
+li {
+    display: inline-block;
+}
 

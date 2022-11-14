@@ -49,6 +49,7 @@ body {
 	color: #d62e2e;
 }
 
+/*sets position of nav calendar*/
 #cal_nav {
     position: fixed;
     top: 310px;

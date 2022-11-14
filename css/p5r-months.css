@@ -51,8 +51,9 @@ body {
 
 #cal_nav {
     position: fixed;
+    top: auto;
 	width: 180px;
-	float: inline-end;
+	float: left;
 	padding: 10px;
 	border-right: 5px solid black;
     border-top: 5px solid black;

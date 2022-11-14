@@ -11,7 +11,16 @@ h1 {
 }
 
 h3 {
-    font-family: 'Bubblegum Superstar', arial;
+    font-family: 'Bubblegum Superstar';
     font-weight: bold;
+}
+
+h3.date-font {
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+    font-size: medium;
+}
+p, li {
+    font-family: 'Arsenal';
 }
 

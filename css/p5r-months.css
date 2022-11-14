@@ -94,6 +94,13 @@ ul {
     color: white;
 }
 
-
+/*------------------------------------------------*/
+/*all action based css commands below this comment*/
+/*------------------------------------------------*/
+#main_menu_setup a:hover {
+	background-color:black;
+	color:#fff;
+}
+	
 
 

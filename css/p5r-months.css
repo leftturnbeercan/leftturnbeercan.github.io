@@ -52,7 +52,7 @@ body {
 #cal_nav {
     position: fixed;
 	width: 180px;
-	float: none;
+	float: inline-end;
 	padding: 10px;
 	border-right: 5px solid black;
     border-top: 5px solid black;

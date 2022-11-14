@@ -55,6 +55,17 @@ section {
 	line-height: 2em;
 }
 
+#table-data {
+    align-items: center;
+    background-color: black;
+    border: 5px solid  black;
+    border-style: outset;
+    margin-left: 400px;
+	border-left: 5px solid black;
+	padding: 10px;
+	line-height: 2em;
+}
+
 h3 {
     font-family: 'Bubblegum Superstar';
     font-size: 25px;

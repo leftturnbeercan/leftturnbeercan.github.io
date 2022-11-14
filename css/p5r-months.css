@@ -6,21 +6,35 @@ body {
     background-color: #d62e2e;
   }
 
+section {
+    background-color: black;
+}
+
 h1 {
     text-align: center;
+    color: whitesmoke;
 }
 
 h3 {
     font-family: 'Bubblegum Superstar';
     font-weight: bold;
+    color: white;
 }
 
 h3.date-font {
     font-family: 'Franklin Gothic Medium';
     font-weight: bolder;
     font-size: medium;
+    color: whitesmoke;
+
+}
+
+h4 {
+    font-family: 'Arsenal';
+    font-weight: bold;
 }
 p, li {
     font-family: 'Arsenal';
+    color: white;
 }
 

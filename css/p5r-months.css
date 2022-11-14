@@ -3,18 +3,20 @@ body {
   }
 
 section {
+    align-items: center;
     background-color: black;
     border: 1px solid  #d62e2e;
-    align-items: center;
 }
 
 h1 {
+    font-size: x-large;
     text-align: center;
     color: whitesmoke;
 }
 
 h3 {
     font-family: 'Bubblegum Superstar';
+    font-size: medium;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -24,7 +26,7 @@ h3.date-font {
     font-family: 'Franklin Gothic Medium';
     font-weight: bolder;
     text-align: center;
-    font-size: medium;
+    font-size: large;
     font-style: italic;
     color: whitesmoke;
 
@@ -36,7 +38,7 @@ h4 {
     text-align: center;
     color:white;
 }
-p, li {
+p, ol, ul, li{
     font-family: 'Arsenal';
     text-align: center;
     color: white;

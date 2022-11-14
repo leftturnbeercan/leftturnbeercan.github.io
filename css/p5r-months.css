@@ -60,7 +60,7 @@ body {
     border-bottom: 5px solid black;
 }
 
-#cal_nav tr {
+#cal_nav tr, td {
 	width:120px;
 	float:left;
 	margin-left:2px;

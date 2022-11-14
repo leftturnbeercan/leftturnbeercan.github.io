@@ -107,6 +107,10 @@ table, th, td{
     border: 5px solid #d62e2e;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 th {
     font-family: 'Arsenal';
     font-size: 16px;

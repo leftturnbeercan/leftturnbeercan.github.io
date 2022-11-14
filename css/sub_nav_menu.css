@@ -2,12 +2,12 @@
 	list-style: none;
 }
 
-#mainMenu {
+#main_menu_setup {
 	margin:10px;
 	width:900px;
 	font-family: sans-serif;
 }
-#mainMenu li {
+#main_menu_setup li {
 	display:block;
 	width:120px;
 	float:left;
@@ -15,7 +15,7 @@
 	border:1px solid #000;
 }
 
-#mainMenu a {
+#main_menu_setup a {
 	display:block;
 	padding:3px;
 	text-decoration:none;
@@ -23,7 +23,7 @@
 	color:#009;
 }
 
-#mainMenu a:hover {
+#main_menu_setup a:hover {
 	background-color:#009;
 	color:#fff;
 }

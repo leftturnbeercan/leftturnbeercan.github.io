@@ -1,7 +1,3 @@
-* {
-    border: 1px solid black;
-  }
-
 body {
     background-color: #d62e2e;
   }
@@ -9,6 +5,7 @@ body {
 section {
     background-color: black;
     border: 1px solid  #d62e2e;
+    align-items: center;
 }
 
 h1 {
@@ -19,12 +16,14 @@ h1 {
 h3 {
     font-family: 'Bubblegum Superstar';
     font-weight: bold;
+    text-align: center;
     color: white;
 }
 
 h3.date-font {
     font-family: 'Franklin Gothic Medium';
     font-weight: bolder;
+    text-align: center;
     font-size: medium;
     font-style: italic;
     color: whitesmoke;
@@ -33,11 +32,13 @@ h3.date-font {
 
 h4 {
     font-family: 'Arsenal';
-    color:white;
     font-weight: bold;
+    text-align: center;
+    color:white;
 }
 p, li {
     font-family: 'Arsenal';
+    text-align: center;
     color: white;
 }
 

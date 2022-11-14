@@ -166,6 +166,11 @@ td {
 	background-color:black;
 	color:#fff;
 }
+
+.cal_nav_font a:hover {
+    background-color: black;
+    color:#d62e2e;
+}
 	
 
 

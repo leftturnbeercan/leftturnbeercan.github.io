@@ -20,11 +20,11 @@
 	padding:3px;
 	text-decoration:none;
 	background-color:#fff;
-	color:#009;
+	color: #d62e2e;
 }
 
 #main_menu_setup a:hover {
-	background-color:#009;
+	background-color:black;
 	color:#fff;
 }
 	

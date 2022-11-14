@@ -2,6 +2,13 @@ body {
     background-color: #d62e2e;
   }
 
+#main_menu_setup {
+	width: 180px;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid #d62e2e;
+}
+
 section {
     align-items: center;
     background-color: black;

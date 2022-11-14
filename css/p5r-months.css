@@ -16,6 +16,13 @@ body {
 	border:1px solid #000;
 }
 
+#main_menu_setup a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color: #d62e2e;
+}
 
 section {
     align-items: center;

@@ -103,7 +103,7 @@ ul {
     color: white;
 }
 
-table {
+table, td{
     border: 5px solid #d62e2e;
 }
 

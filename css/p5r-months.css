@@ -49,6 +49,16 @@ body {
 	color: #d62e2e;
 }
 
+#cal_nav {
+    position: fixed;
+	width: 180px;
+	float: left;
+	padding: 10px;
+	border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
 section {
     align-items: center;
     background-color: black;

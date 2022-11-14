@@ -109,7 +109,8 @@ table, th, td{
 
 table {
     border-collapse: collapse;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th {

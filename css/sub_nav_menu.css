@@ -16,7 +16,7 @@
 }
 
 #main_menu_setup a {
-	display:block;
+	display:inline-block;
 	padding:3px;
 	text-decoration:none;
 	background-color:#fff;

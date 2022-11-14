@@ -23,7 +23,7 @@ body {
 /*sets the placement of the nav menu and adds a border around it*/
 #main_menu_setup, #cal_nav {
     position: fixed;
-	width: 180px;
+	width: 200px;
 	float: left;
 	padding: 10px;
 	border-right: 5px solid black;

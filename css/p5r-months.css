@@ -19,6 +19,7 @@ body {
 }
 
 #main_menu_setup {
+    position: fixed;
 	width: 180px;
 	float: left;
 	padding: 10px;

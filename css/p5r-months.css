@@ -9,6 +9,14 @@ body {
 	border-right: 1px solid #d62e2e;
 }
 
+#main_menu_setup li {
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+
+
 section {
     align-items: center;
     background-color: black;

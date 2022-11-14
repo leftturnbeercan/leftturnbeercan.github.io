@@ -49,6 +49,7 @@ body {
 	color: #d62e2e;
 }
 
+
 /*sets position of nav calendar*/
 #cal_nav {
     position: fixed;
@@ -61,6 +62,10 @@ body {
     border-bottom: 5px solid black;
 }
 
+.cal_nav_font a {
+    text-decoration:none;
+    color: white;
+}
 .cal_nav_border, .cal_nav_th_font, .cal_nav_font {
     border: 5px solid black;
 }

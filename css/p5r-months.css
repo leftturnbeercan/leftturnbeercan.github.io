@@ -44,15 +44,19 @@ body {
 	color: #d62e2e;
 }
 
+#content-days{
+    margin-left: 400px;
+	border-left: 5px solid black;
+	padding: 10px;
+	line-height: 2em;
+}
+
 section {
     align-items: center;
     background-color: black;
     border: 5px solid  #d62e2e;
     border-style: outset;
-    margin-left: 400px;
-	border-left: 5px solid black;
-	padding: 10px;
-	line-height: 2em;
+   
 }
 
 h3 {

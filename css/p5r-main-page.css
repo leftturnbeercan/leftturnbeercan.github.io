@@ -15,11 +15,11 @@ body {
   }
 
   section {
+    position: relative;
     align-items: center;
     background-color: black;
     border: 5px solid  #d62e2e;
     border-style: outset;
-   
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
 }
 
 nav a {
-	display:inline-block;
+	display: block;
 	padding:3px;
 	text-decoration:none;
 	background-color:#fff;

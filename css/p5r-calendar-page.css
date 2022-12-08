@@ -14,10 +14,6 @@ body {
     background-color: #d62e2e;
   }
 
-.menu_style {
-    list-style: none;
-}
-
 nav {
     position: fixed;
 	width: 180px;
@@ -42,4 +38,14 @@ nav a {
 	text-decoration:none;
 	background-color:#fff;
 	color: #d62e2e;
+}
+
+/*------------------------------------------------*/
+/*all action based css commands below this comment*/
+/*------------------------------------------------*/
+
+/*changes the color of the list items when hovered over*/
+nav a:hover {
+	background-color:black;
+	color:#fff;
 }

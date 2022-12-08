@@ -33,15 +33,6 @@ nav {
     border-bottom: 5px solid black;*/
 }
 
-
-#main_menu_setup li {
-	width:120px;
-	float:left;
-	margin-left:2px;
-    border: 5px solid black;
-
-}
-
 nav a {
 	display: block;
 	padding:3px;

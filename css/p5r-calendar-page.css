@@ -14,12 +14,8 @@ body {
     background-color: #d62e2e;
   }
 
-  section {
-    position:inherit;
-    align-items: center;
-    background-color: black;
-    border: 5px solid  #d62e2e;
-    border-style: outset;
+nav {
+    list-style: none;
 }
 
 nav {
@@ -33,8 +29,7 @@ nav {
     border-bottom: 5px solid black;*/
 }
 
-
-#main_menu_setup li {
+nav li {
 	width:120px;
 	float:left;
 	margin-left:2px;
@@ -48,28 +43,4 @@ nav a {
 	text-decoration:none;
 	background-color:#fff;
 	color: #d62e2e;
-}
-
-h3 {
-    color: White;
-    text-align: center;
-}
-
-h4 {
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-
-h5  {
-    font-family: 'Bubblegum Superstar';
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-}
-
-p {
-    color: white;
-    text-align: center;
 }

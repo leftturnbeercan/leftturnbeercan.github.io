@@ -26,7 +26,7 @@ nav {
 
 nav h3 {
 	width:120px;
-	float:left;
+	/*float:left;*/
 	margin-left:2px;
     border: 5px solid black;
 

@@ -22,7 +22,7 @@ body {
    
 }
 
-#nav {
+nav {
     position: fixed;
 	width: 180px;
 	float: left;
@@ -30,6 +30,14 @@ body {
 	border-right: 5px solid black;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+}
+
+nav a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color: #d62e2e;
 }
 
 h3 {

@@ -17,7 +17,7 @@ body {
 nav {
     position:relative;
 	width: 180px;
-	float: left;
+	float:inline-start;
 	padding: 10px;
 	/*border-right: 5px solid black;
     border-top: 5px solid black;

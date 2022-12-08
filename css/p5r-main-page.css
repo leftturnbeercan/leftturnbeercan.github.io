@@ -15,7 +15,7 @@ body {
   }
 
   section {
-    position: relative;
+    position:inherit;
     align-items: center;
     background-color: black;
     border: 5px solid  #d62e2e;

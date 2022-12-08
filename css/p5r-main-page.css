@@ -32,10 +32,25 @@ body {
     border-bottom: 5px solid black;
 }
 
+h3 {
+    color: White;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
 h5  {
     font-family: 'Bubblegum Superstar';
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    color: white;
+}
+
+p {
     color: white;
 }

@@ -1,6 +1,6 @@
-/*main {
-    border: 5px solid red;
-}*/
+main {
+    border: 5px solid black;
+}
 
 h1 {
     font-size: 60px;
@@ -20,7 +20,6 @@ body {
 
 nav {
     position: fixed;
-    margin-top: -60px;
 	width: 180px;
 	float: left;
 	padding: 10px;

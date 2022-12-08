@@ -117,6 +117,9 @@ p{
     text-align: center;
     color: white;
 }
+p.p5r-romance {
+    color: #d62e2e;
+}
 
 ol {
     list-style-position: inside;

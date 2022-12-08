@@ -1,6 +1,6 @@
-main {
+/*main {
     border: 5px solid red;
-}
+}*/
 
 h1 {
     font-size: 60px;
@@ -24,9 +24,9 @@ nav {
 	width: 180px;
 	float: left;
 	padding: 10px;
-	/*border-right: 5px solid black;
+	border-right: 5px solid black;
     border-top: 5px solid black;
-    border-bottom: 5px solid black;*/
+    border-bottom: 5px solid black;
 }
 
 nav li {

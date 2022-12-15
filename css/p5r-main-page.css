@@ -1,0 +1,66 @@
+main {
+    border: 5px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+
+body {
+    background-color: #d62e2e;
+  }
+
+  section {
+    position:inherit;
+    align-items: center;
+    background-color: black;
+    border: 5px solid  #d62e2e;
+    border-style: outset;
+}
+
+nav {
+    position: fixed;
+    margin-top: -60px;
+	width: 180px;
+	float: left;
+	padding: 10px;
+	/*border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;*/
+}
+
+nav a {
+	display: block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color: #d62e2e;
+}
+
+h3 {
+    color: White;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+h5  {
+    font-family: 'Bubblegum Superstar';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+}

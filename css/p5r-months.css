@@ -1,9 +1,20 @@
+@font-face {
+  font-family: Persona5MenuFontPrototype;
+  src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+}
+
+@font-face {
+  font-family: p5hatty;
+  src: url(/css/fonts/p5hatty.ttf)
+}
+
 /*creates a border around main page*/
 main {
   border: 5px solid black;
 }
 
 h1 {
+  font-family: "Persona5MenuFontPrototype";
   font-size: 60px;
   text-align: center;
   color: black;
@@ -93,7 +104,7 @@ h3 {
 }
 
 h3.date-font {
-  font-family: "Franklin Gothic Medium";
+  font-family: "Persona5MenuFontPrototype";
   font-weight: bolder;
   text-align: center;
   font-size: 30px;
@@ -103,7 +114,7 @@ h3.date-font {
 }
 
 h4 {
-  font-family: "Arsenal";
+  font-family: "p5hatty";
   font-size: 20px;
   font-weight: bold;
   text-align: center;

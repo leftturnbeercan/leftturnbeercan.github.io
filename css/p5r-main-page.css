@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Persona5MenuFontPrototype;
+  src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+}
+
+@font-face {
+  font-family: p5hatty;
+  src: url(/css/fonts/p5hatty.ttf)
+}
+
 main {
   border: 5px solid black;
 }

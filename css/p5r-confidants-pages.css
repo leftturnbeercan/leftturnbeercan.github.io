@@ -1,9 +1,20 @@
+@font-face {
+  font-family: Persona5MenuFontPrototype;
+  src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+}
+
+@font-face {
+  font-family: p5hatty;
+  src: url(/css/fonts/p5hatty.ttf)
+}
+
 /*creates a border around main page*/
 main {
   border: 5px solid black;
 }
 
 h1 {
+  font-family: "Persona5MenuFontPrototype";
   font-size: 60px;
   text-align: center;
   color: black;
@@ -78,4 +89,19 @@ h3.arcana-font {
   font-style: italic;
   color: whitesmoke;
   text-decoration: underline;
+}
+
+p {
+  font-family: "p5hatty";
+  font-size: 16px;
+  text-align: left;
+  color: white;
+}
+
+p.subject {
+  font-family: "Arsenal";
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+  color: white;
 }

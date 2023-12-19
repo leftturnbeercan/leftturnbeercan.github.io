@@ -8,6 +8,11 @@
   src: url(/css/fonts/p5hatty.ttf)
 }
 
+@font-face {
+  font-family: HEAVYHEA;
+  src: url(/css/fonts/HEAVYHEA.TTF)
+}
+
 /*creates a border around main page*/
 main {
   border: 5px solid black;
@@ -82,7 +87,7 @@ h3 {
 }
 
 h3.arcana-font {
-  font-family: "Franklin Gothic Medium";
+  font-family: "HEAVYHEA";
   font-weight: bolder;
   text-align: left;
   font-size: 30px;

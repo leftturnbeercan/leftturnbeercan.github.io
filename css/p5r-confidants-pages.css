@@ -8,6 +8,11 @@
   src: url(/css/fonts/p5hatty.ttf)
 }
 
+@font-face {
+  font-family: HEAVYHEA;
+  src: url(/css/fonts/HEAVYHEA.TTF)
+}
+
 /*creates a border around main page*/
 main {
   border: 5px solid black;
@@ -59,28 +64,6 @@ body {
   color: #d62e2e;
 }
 
-/*sets position of nav calendar*/
-#cal_nav {
-  position: fixed;
-  top: 310px;
-  width: 180px;
-  float: left;
-  padding: 10px;
-  border-right: 5px solid black;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-.cal_nav_font a {
-  text-decoration: none;
-  color: white;
-}
-.cal_nav_border,
-.cal_nav_th_font,
-.cal_nav_font {
-  border: 5px solid black;
-}
-
 section {
   align-items: center;
   background-color: black;
@@ -103,86 +86,27 @@ h3 {
   color: white;
 }
 
-h3.date-font {
-  font-family: "Persona5MenuFontPrototype";
+h3.arcana-font {
+  font-family: "HEAVYHEA";
   font-weight: bolder;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   font-style: italic;
   color: whitesmoke;
   text-decoration: underline;
 }
 
-h4 {
-  font-family: "p5hatty";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
 p {
-  font-family: "Arsenal";
+  font-family: "p5hatty";
   font-size: 16px;
-  text-align: center;
-  color: white;
-}
-.p5r-romance {
-  color: #d62e2e;
-}
-
-ol {
-  list-style-position: inside;
-  font-family: "Arsenal";
-  font-size: 16px;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
-ul {
-  list-style-position: inside;
+p.subject {
   font-family: "Arsenal";
   font-size: 16px;
-  text-align: center;
-  color: white;
-}
-
-table,
-th,
-td {
-  border: 5px solid #d62e2e;
-}
-
-table {
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-th {
-  font-family: "Arsenal";
-  font-size: 16px;
+  text-align: left;
   font-weight: bold;
-  text-align: center;
   color: white;
-}
-
-td {
-  font-family: "Arsenal";
-  font-size: 16px;
-  text-align: center;
-  color: white;
-}
-/*------------------------------------------------*/
-/*all action based css commands below this comment*/
-/*------------------------------------------------*/
-
-/*changes the color of the list items when hovered over*/
-#main_menu_setup a:hover {
-  background-color: black;
-  color: #fff;
-}
-
-.cal_nav_font a:hover {
-  background-color: black;
-  color: #d62e2e;
 }

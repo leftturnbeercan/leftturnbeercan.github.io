@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: p5hatty;
-  src: url(/css/fonts/p5hatty.ttf)
+  src: url(/css/fonts/p5hatty.ttf);
 }
 
 @font-face {
   font-family: HEAVYHEA;
-  src: url(/css/fonts/HEAVYHEA.TTF)
+  src: url(/css/fonts/HEAVYHEA.TTF);
 }
 
 /*creates a border around main page*/

@@ -1,0 +1,189 @@
+/*@font-face {
+    font-family: Persona5MenuFontPrototype;
+    src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: p5hatty;
+    src: url(/css/fonts/p5hatty.ttf);
+  }*/
+  
+  /*creates a border around main page*/
+  main {
+    border: 5px solid black;
+  }
+  
+  h1 {
+    font-family: "Persona5MenuFontPrototype";
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    border-bottom: 5px solid black;
+    padding: 10px;
+  }
+  
+  body {
+    background-color: #4682B4;
+  }
+  
+  /*basically removes dots from list*/
+  .main_menu_style {
+    list-style: none;
+  }
+  
+  /*sets the placement of the nav menu and adds a border around it*/
+  #main_menu_setup {
+    position: fixed;
+    width: 180px;
+    float: left;
+    padding: 10px;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+  
+  /*adds border around the list items*/
+  #main_menu_setup li {
+    width: 120px;
+    float: left;
+    margin-left: 2px;
+    border: 5px solid black;
+  }
+  
+  /*helps mimick the list items as buttons*/
+  #main_menu_setup a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+  }
+  
+  /*sets position of nav calendar*/
+  #cal_nav {
+    position: fixed;
+    top: 310px;
+    width: 180px;
+    float: left;
+    padding: 10px;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+  
+  .cal_nav_font a {
+    text-decoration: none;
+    color: black;
+  }
+  .cal_nav_border,
+  .cal_nav_th_font,
+  .cal_nav_font {
+    border: 5px solid black;
+  }
+  
+  section {
+    align-items: center;
+    background-color: #4682B4;
+    border: 5px solid #FFFFFF;
+    border-style: outset;
+  }
+  
+  #content-days {
+    margin-left: 400px;
+    border-left: 2px solid black;
+    padding: 10px;
+    line-height: 2em;
+  }
+  
+  h3 {
+    font-family: "Bubblegum Superstar";
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  
+  h3.date-font {
+    font-family: "Persona5MenuFontPrototype";
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  h4 {
+    font-family: "p5hatty";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  p {
+    font-family: "Arsenal";
+    font-size: 16px;
+    text-align: center;
+    color: black;
+  }
+  .p5r-romance {
+    color: #d62e2e;
+  }
+  
+  ol {
+    list-style-position: inside;
+    font-family: "Arsenal";
+    font-size: 16px;
+    text-align: center;
+    color: black;
+  }
+  
+  ul {
+    list-style-position: inside;
+    font-family: "Arsenal";
+    font-size: 16px;
+    text-align: center;
+    color: black;
+  }
+  
+  table,
+  th,
+  td {
+    border: 5px solid #FFFFFF;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th {
+    font-family: "Arsenal";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  td {
+    font-family: "Arsenal";
+    font-size: 16px;
+    text-align: center;
+    color: black;
+  }
+  /*------------------------------------------------*/
+  /*all action based css commands below this comment*/
+  /*------------------------------------------------*/
+  
+  /*changes the color of the list items when hovered over*/
+  #main_menu_setup a:hover {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .cal_nav_font a:hover {
+    background-color: black;
+    color: #FFFFFF;
+  }
+  

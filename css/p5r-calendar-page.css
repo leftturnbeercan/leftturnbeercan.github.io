@@ -8,53 +8,73 @@
   src: url(/css/fonts/p5hatty.ttf);
 }
 
-main {
-  border: 5px solid black;
+body {
+  background-color: #111; /* Dark background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  background-color: #d62e2e; /* Red background */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  padding: 20px 0;
 }
 
 h1 {
-  font-size: 60px;
-  text-align: center;
-  color: black;
-  border-bottom: 5px solid black;
-  padding: 10px;
-}
-
-body {
-  background-color: #d62e2e;
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-family: "Bubblegum Superstar";
 }
 
 nav {
-  position: relative;
-  width: 180px;
-  float: inline-start;
-  padding: 10px;
-  /*border-right: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;*/
+  background-color: #222; /* Darker background */
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-nav h3 {
-  width: 120px;
-  /*float:left;*/
-  margin-left: 2px;
-  border: 5px solid black;
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
 }
 
-nav a {
+.month-grid li {
+  list-style: none;
+}
+
+.month-grid a {
   display: block;
-  padding: 3px;
+  text-align: center;
   text-decoration: none;
-  background-color: #fff;
-  color: #d62e2e;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px;
+  background-color: #d62e2e; /* Red background */
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/*------------------------------------------------*/
-/*all action based css commands below this comment*/
-/*------------------------------------------------*/
+.month-grid a:hover {
+  background-color: white;
+  color: #d62e2e;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
 
-/*changes the color of the list items when hovered over*/
-nav a:hover {
-  background-color: black;
-  color: #fff;
+main {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px; /* Limit the width for better readability */
+  border: 1px solid #d62e2e; /* Red border */
+  background-color: #222; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }

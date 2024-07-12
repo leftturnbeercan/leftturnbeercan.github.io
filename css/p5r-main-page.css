@@ -8,57 +8,98 @@
   src: url(/css/fonts/p5hatty.ttf);
 }
 
-main {
-  border: 5px solid black;
-}
-
-h1 {
-  font-size: 60px;
-  text-align: center;
-  color: black;
-  border-bottom: 5px solid black;
-  padding: 10px;
-}
-
 body {
-  background-color: #d62e2e;
+  background-color: #111; /* Dark background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
 }
 
-section {
-  position: inherit;
+header {
+  text-align: center;
+  background-color: #d62e2e; /* Red background */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  padding: 20px 0;
+}
+
+.title-container {
+  display: flex;
   align-items: center;
-  background-color: black;
-  border: 5px solid #d62e2e;
-  border-style: outset;
+  justify-content: center;
+}
+
+.title-container img {
+  margin-right: 10px;
+  height: 80px;
+}
+
+.title-container h1 {
+  font-size: 60px;
+  color: white;
+  margin: 0;
+  font-family: "Bubblegum Superstar";
 }
 
 nav {
-  position: fixed;
-  margin-top: -60px;
-  width: 180px;
-  float: left;
-  padding: 10px;
-  /*border-right: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;*/
+  background-color: #111; /* Darker background */
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
-nav a {
-  display: block;
-  padding: 3px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
   text-decoration: none;
-  background-color: #fff;
-  color: #d62e2e;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #d62e2e; /* Red background */
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h3 {
-  color: White;
+nav ul li a:hover {
+  background-color: white;
+  color: #d62e2e;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+main {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px; /* Limit the width for better readability */
+  border: 1px solid #d62e2e; /* Red border */
+  background-color: #222; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+section {
+  background-color: #333; /* Darker background */
+  border: 1px solid #d62e2e; /* Red border */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+h3, h4, h5, p {
   text-align: center;
+  color: white;
 }
 
 h4 {
-  color: white;
-  text-align: center;
   font-weight: bold;
 }
 
@@ -66,11 +107,12 @@ h5 {
   font-family: "Bubblegum Superstar";
   font-size: 25px;
   font-weight: bold;
-  text-align: center;
-  color: white;
 }
 
-p {
-  color: white;
+footer {
   text-align: center;
+  padding: 20px;
+  background-color: #333; /* Dark background */
+  color: white;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }

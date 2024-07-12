@@ -8,181 +8,256 @@
   src: url(/css/fonts/p5hatty.ttf);
 }
 
-/*creates a border around main page*/
-main {
-  border: 5px solid black;
+body {
+  background-color: #111; /* Dark background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  background-color: #d62e2e; /* Red background */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  padding: 20px 0;
 }
 
 h1 {
-  font-family: "Persona5MenuFontPrototype";
-  font-size: 60px;
-  text-align: center;
-  color: black;
-  border-bottom: 5px solid black;
-  padding: 10px;
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  font-family: "Bubblegum Superstar";
 }
 
-body {
-  background-color: #d62e2e;
-}
-
-/*basically removes dots from list*/
 .main_menu_style {
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/*sets the placement of the nav menu and adds a border around it*/
-#main_menu_setup {
-  position: fixed;
-  width: 180px;
-  float: left;
-  padding: 10px;
-  border-right: 5px solid black;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
+.main_menu_style li {
+  margin: 0 15px;
 }
 
-/*adds border around the list items*/
-#main_menu_setup li {
-  width: 120px;
-  float: left;
-  margin-left: 2px;
-  border: 5px solid black;
-}
-
-/*helps mimick the list items as buttons*/
-#main_menu_setup a {
-  display: block;
-  padding: 3px;
-  text-decoration: none;
-  background-color: #fff;
-  color: #d62e2e;
-}
-
-/*sets position of nav calendar*/
-#cal_nav {
-  position: fixed;
-  top: 310px;
-  width: 180px;
-  float: left;
-  padding: 10px;
-  border-right: 5px solid black;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-.cal_nav_font a {
+.main_menu_style a {
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #333; /* Darker background */
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.cal_nav_border,
-.cal_nav_th_font,
-.cal_nav_font {
-  border: 5px solid black;
+
+.main_menu_style a:hover {
+  background-color: white;
+  color: #d62e2e;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.calendar-nav {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calendar-nav th, .calendar-nav td {
+  border: 1px solid #d62e2e;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+.calendar-nav th {
+  background-color: #333;
+}
+
+.calendar-nav td a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.calendar-nav td a:hover {
+  background-color: #d62e2e;
+  color: white;
+}
+
+.calendar-nav td.current-day {
+  background-color: #d62e2e;
+  color: white;
+}
+
+main {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px; /* Limit the width for better readability */
+  border: 1px solid #d62e2e; /* Red border */
+  background-color: #222; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
 section {
-  align-items: center;
-  background-color: black;
-  border: 5px solid #d62e2e;
-  border-style: outset;
-}
-
-#content-days {
-  margin-left: 400px;
-  border-left: 2px solid black;
-  padding: 10px;
-  line-height: 2em;
-}
-
-h3 {
-  font-family: "Bubblegum Superstar";
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
+  background-color: #333; /* Darker background */
+  border: 1px solid #d62e2e; /* Red border */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 
 h3.date-font {
   font-family: "Persona5MenuFontPrototype";
   font-weight: bolder;
-  text-align: center;
   font-size: 30px;
   font-style: italic;
-  color: whitesmoke;
   text-decoration: underline;
+  color: white;
 }
 
-h4 {
-  font-family: "p5hatty";
-  font-size: 20px;
+#content-days {
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.6em;
+  border-left: 2px solid #d62e2e;
+}
+
+section h4 {
+  font-size: 1.1em;
+  color: #f4f4f4;
   font-weight: bold;
-  text-align: center;
-  color: white;
-}
-p {
-  font-family: "Arsenal";
-  font-size: 16px;
-  text-align: center;
-  color: white;
-}
-.p5r-romance {
-  color: #d62e2e;
+  margin: 10px 0;
 }
 
-ol {
-  list-style-position: inside;
-  font-family: "Arsenal";
-  font-size: 16px;
+section p {
+  color: #d1d1d1;
+  line-height: 1.4em;
+}
+
+footer {
   text-align: center;
+  padding: 10px 0;
+  background-color: #d62e2e;
   color: white;
+  border-top: 1px solid #333;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
-ul {
-  list-style-position: inside;
-  font-family: "Arsenal";
-  font-size: 16px;
-  text-align: center;
-  color: white;
-}
-
-table,
-th,
-td {
-  border: 5px solid #d62e2e;
-}
-
-table {
+.confidant-table {
+  width: 100%;
   border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px 0;
+  font-size: 1.1em;
+  text-align: left;
+  background-color: #222;
+  color: #f4f4f4;
 }
 
-th {
-  font-family: "Arsenal";
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
-
-td {
-  font-family: "Arsenal";
-  font-size: 16px;
-  text-align: center;
-  color: white;
-}
-/*------------------------------------------------*/
-/*all action based css commands below this comment*/
-/*------------------------------------------------*/
-
-/*changes the color of the list items when hovered over*/
-#main_menu_setup a:hover {
-  background-color: black;
-  color: #fff;
-}
-
-.cal_nav_font a:hover {
-  background-color: black;
+.confidant-table caption {
+  font-size: 1.3em;
+  margin-bottom: 10px;
   color: #d62e2e;
+  font-weight: bold;
+}
+
+.confidant-table th, .confidant-table td {
+  padding: 12px 15px;
+  border: 1px solid #d62e2e;
+}
+
+.confidant-table th {
+  background-color: #333;
+  color: white;
+}
+
+.confidant-table tbody tr:nth-of-type(even) {
+  background-color: #2a2a2a;
+}
+
+.confidant-table tbody tr:hover {
+  background-color: #d62e2e;
+  color: white;
+}
+
+
+/* Existing styles... */
+
+.completed {
+  background-color: #555; /* Darker background for completed sections */
+  text-decoration: line-through; /* Strike through text */
+  opacity: 0.8;
+}
+
+label.completed {
+  background-color: #444;
+  color: #bbb;
+}
+
+.progress-checkbox {
+  display: none; /* Hide the default checkbox */
+}
+
+.progress-checkbox + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #f4f4f4;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.progress-checkbox + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #d62e2e; /* Red border for checkbox */
+  border-radius: 5px;
+  background-color: #111; /* Dark background for checkbox */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.progress-checkbox:checked + label:before {
+  content: '\2713'; /* Checkmark */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 23px;
+  background-color: #d62e2e; /* Red background when checked */
+  border-color: #d62e2e; /* Red border when checked */
+}
+
+.progress-checkbox + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.progress-checkbox:hover + label:after {
+  border-color: #d62e2e; /* Red border on hover */
 }

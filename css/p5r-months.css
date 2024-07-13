@@ -191,9 +191,6 @@ footer {
   color: white;
 }
 
-
-/* Existing styles... */
-
 .completed p, .completed h4 {
   background-color: #555; /* Darker background for completed sections */
   text-decoration: line-through; /* Strike through text */
@@ -262,5 +259,3 @@ label.completed {
 .progress-checkbox:hover + label:after {
   border-color: #d62e2e; /* Red border on hover */
 }
-
-

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar: July</title>
     <link
       href="/css/fonts/bubblegum-superstar.ttf"
       rel="stylesheet"
       type="text/css"
     />
     <link href="/css/p5r-months.css" rel="stylesheet" />
-    <title>Calendar: July</title>
+    <script src="/js/progress-tracking.js" defer></script>
   </head>
   <main>
     <header>
@@ -24,15 +27,15 @@
       <nav>
         <table class="calendar-nav">
           <thead>
-              <tr>
-                  <th>Sun</th>
-                  <th>Mon</th>
-                  <th>Tue</th>
-                  <th>Wed</th>
-                  <th>Thu</th>
-                  <th>Fri</th>
-                  <th>Sat</th>
-              </tr>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -97,45 +100,109 @@
     <section id="content-days">
       <section>
         <h3 class="date-font" id="p5r-july-1">July 1 Friday</h3>
-        <h3>Required Arcan: Lovers, Temperance</h3>
+        <h3>Required Arcana: Lovers, Temperance</h3>
         <h4>[Early Morning | Weather: Sunny]</h4>
-        <p>Train Reading: ABCs of Crafting [1/1]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-1"
+          data-id="p5r-july-1-1"
+        />
+        <label for="p5r-july-1-1">Train Reading: ABCs of Crafting [1/1]</label>
 
         <h4>[Morning | Weather: Sunny]</h4>
-        <p>Teachers Question:</p>
-        <p>Answer: Barbarian's head [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-2"
+          data-id="p5r-july-1-2"
+        />
+        <label for="p5r-july-1-2"
+          >Teacher's Question: Answer: Barbarian's head [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Return The Gallant Rogue to Library</p>
-        <p>Borrow Speed Reader from Library</p>
-        <p>
-          Head to the Shujin Academy[School Store] and buy Yakisoba Pan [150
-          Yen]
-        </p>
-        <p>
-          Head to Yongen-Jaya[SecondhandShop] and buy Retro Game Set [5000 Yen]
-        </p>
-        <p>
-          Head to Shibuya[Station Square] to buy Summer Lotto S at Lottery
-          Stand[5000 Yen]
-        </p>
-        <p>Confidant Lovers Rank 8</p>
-        <p>Location: Shibuya[Underground Mall]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-3"
+          data-id="p5r-july-1-3"
+        />
+        <label for="p5r-july-1-3">Return The Gallant Rogue to Library</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-4"
+          data-id="p5r-july-1-4"
+        />
+        <label for="p5r-july-1-4">Borrow Speed Reader from Library</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-5"
+          data-id="p5r-july-1-5"
+        />
+        <label for="p5r-july-1-5"
+          >Head to the Shujin Academy [School Store] and buy Yakisoba Pan [150
+          Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-6"
+          data-id="p5r-july-1-6"
+        />
+        <label for="p5r-july-1-6"
+          >Head to Yongen-Jaya [Secondhand Shop] and buy Retro Game Set [5000
+          Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-7"
+          data-id="p5r-july-1-7"
+        />
+        <label for="p5r-july-1-7"
+          >Head to Shibuya [Station Square] to buy Summer Lotto S at Lottery
+          Stand [5000 Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-8"
+          data-id="p5r-july-1-8"
+        />
+        <label for="p5r-july-1-8">Confidant Lovers Rank 8</label>
+        <p>Location: Shibuya [Underground Mall]</p>
         <ol>
           <li>Choice 2: You have some real guts [+3]</li>
           <li>Choice 1: There's no doubt in my mind [+3]</li>
           <li>Choice: Any</li>
           <li>Choice 4: I'm sure she already knows [+3]</li>
-          <li>(Phone)Choice 3: You can ask her yourself [+2]</li>
+          <li>(Phone) Choice 3: You can ask her yourself [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Head to Kichijoji and trade Yakisoba Pan to Trader Sakai for Black
-          Robe
-        </p>
-        <p>Confidant Temperance Rank 8 [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-9"
+          data-id="p5r-july-1-9"
+        />
+        <label for="p5r-july-1-9"
+          >Head to Kichijoji and trade Yakisoba Pan to Trader Sakai for Black
+          Robe</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-1-10"
+          data-id="p5r-july-1-10"
+        />
+        <label for="p5r-july-1-10"
+          >Confidant Temperance Rank 8 [5000 Yen]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice 3: Is this really what you want? [+3]</li>
           <li>Choice 2: If that's what you decided [+3]</li>
@@ -143,7 +210,7 @@
           <li>Choice: Any</li>
           <li>Choice 2: That's the right choice [+3]</li>
           <li>Choice 2: That's reassuring [+3]</li>
-          <li>(Phone)Choice 3: I'll do anything for you [+2]</li>
+          <li>(Phone) Choice 3: I'll do anything for you [+2]</li>
         </ol>
       </section>
 
@@ -151,11 +218,29 @@
         <h3 class="date-font" id="p5r-july-2">July 2 Saturday</h3>
         <h3>Required Arcana: Temperance, Priestess, Justice, Chariot</h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Read: Speed Reader [1/1]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-1"
+          data-id="p5r-july-2-1"
+        />
+        <label for="p5r-july-2-1">Read: Speed Reader [1/1]</label>
 
         <h4>[Lunchtime | Weather: Cloudy]</h4>
-        <p>Confidant Temperance Hangout</p>
-        <p>New Request: A Teacher Maid to Suffer</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-2"
+          data-id="p5r-july-2-2"
+        />
+        <label for="p5r-july-2-2">Confidant Temperance Hangout</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-3"
+          data-id="p5r-july-2-3"
+        />
+        <label for="p5r-july-2-3">New Request: A Teacher Maid to Suffer</label>
         <ol>
           <li>Choice: Any</li>
           <li>Choice: Any</li>
@@ -163,10 +248,30 @@
         </ol>
 
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>Return Speed Reader to Library</p>
-        <p>Borrow The Illusory Popess from the Library</p>
-        <p>Confidant Priestess Rank 4</p>
-        <p>Location: Shujin Academy[Student Council Room]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-4"
+          data-id="p5r-july-2-4"
+        />
+        <label for="p5r-july-2-4">Return Speed Reader to Library</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-5"
+          data-id="p5r-july-2-5"
+        />
+        <label for="p5r-july-2-5"
+          >Borrow The Illusory Popess from the Library</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-6"
+          data-id="p5r-july-2-6"
+        />
+        <label for="p5r-july-2-6">Confidant Priestess Rank 4</label>
+        <p>Location: Shujin Academy [Student Council Room]</p>
         <ol>
           <li>Choice 1: That's unlike you [+2]</li>
           <li>Choice: Any</li>
@@ -176,27 +281,45 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>
-          Confidant Justice Rank 3 [Need Charm Rank 3[Suave] and Knowledge Rank
-          3[Scholarly]
-        </p>
-        <p>Location: Kichijoji[Darts Club]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-7"
+          data-id="p5r-july-2-7"
+        />
+        <label for="p5r-july-2-7"
+          >Confidant Justice Rank 3 [Need Charm Rank 3 (Suave) and Knowledge
+          Rank 3 (Scholarly)]</label
+        >
+        <p>Location: Kichijoji [Darts Club]</p>
         <ol>
           <li>Choice: Any</li>
           <li>Choice 1: Should've figured [+3]</li>
           <li>Choice: Any</li>
           <li>Choice: Any</li>
           <li>Choice: Any</li>
-          <li>(Phone)Choice 2: Wasn't it fun? [+2]</li>
+          <li>(Phone) Choice 2: Wasn't it fun? [+2]</li>
         </ol>
-        <p>Accep Ryuji's Invitation</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-2-8"
+          data-id="p5r-july-2-8"
+        />
+        <label for="p5r-july-2-8">Accept Ryuji's Invitation</label>
       </section>
 
       <section>
-        <h3 class="date-font" id="5r-july-3">July 3 Sunday</h3>
+        <h3 class="date-font" id="p5r-july-3">July 3 Sunday</h3>
         <h3>Required Arcana: Chariot</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>Confidant Chariot Hangout</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-3-1"
+          data-id="p5r-july-3-1"
+        />
+        <label for="p5r-july-3-1">Confidant Chariot Hangout</label>
         <p>Hangout Spot: Ichigaya</p>
         <ol>
           <li>Choice 1: This is shady [+3]</li>
@@ -205,56 +328,142 @@
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Drink Nasty Aojiru at Shibuya[Underground Walkway] [5000 Yen, Guts +2]
-        </p>
-        <p>Confidant Sun Rank 7 [Charm +3]</p>
-        <p>Location: Shibuya[Station Square]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-3-2"
+          data-id="p5r-july-3-2"
+        />
+        <label for="p5r-july-3-2"
+          >Drink Nasty Aojiru at Shibuya [Underground Walkway] [5000 Yen, Guts
+          +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-3-3"
+          data-id="p5r-july-3-3"
+        />
+        <label for="p5r-july-3-3">Confidant Sun Rank 7 [Charm +3]</label>
+        <p>Location: Shibuya [Station Square]</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-4">July 4 Monday | Rainy Season</h3>
         <h3>Required Arcana: Emperor</h3>
         <h4>[Early Morning | Weather: Rain]</h4>
-        <p>Train Reading: The Illusory Popess [2/2] [Kindness +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-1"
+          data-id="p5r-july-4-1"
+        />
+        <label for="p5r-july-4-1"
+          >Train Reading: The Illusory Popess [2/2] [Kindness +5]</label
+        >
 
-        <h4>[Monrning | Weather: Rain]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Julius and Augustus [Knowledge +2]</p>
+        <h4>[Morning | Weather: Rain]</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-2"
+          data-id="p5r-july-4-2"
+        />
+        <label for="p5r-july-4-2"
+          >Teacher's Question: Answer: Julius and Augustus [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>Return The Illusory Popess to the Library</p>
-        <p>Borrow The Great Thief from the Library</p>
-        <p>Confidant Emperor Rank 2</p>
-        <p>Location: Shibuya[Underground Walkway]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-3"
+          data-id="p5r-july-4-3"
+        />
+        <label for="p5r-july-4-3"
+          >Return The Illusory Popess to the Library</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-4"
+          data-id="p5r-july-4-4"
+        />
+        <label for="p5r-july-4-4"
+          >Borrow The Great Thief from the Library</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-5"
+          data-id="p5r-july-4-5"
+        />
+        <label for="p5r-july-4-5">Confidant Emperor Rank 2</label>
+        <p>Location: Shibuya [Underground Walkway]</p>
         <ol>
           <li>Choice 2: It's Enigmatic [+2]</li>
           <li>Choice 1: I can't wait [+3]</li>
-          <li>(Phone)Choice 1: You're already doing enough [+2]</li>
+          <li>(Phone) Choice 1: You're already doing enough [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Head to Shinjuku[Fourtune Telling Booth] and talk with Chihaya</p>
-        <p>New Request: Ending the Boyfriend's Abuse</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-6"
+          data-id="p5r-july-4-6"
+        />
+        <label for="p5r-july-4-6"
+          >Head to Shinjuku [Fortune Telling Booth] and talk with Chihaya</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-4-7"
+          data-id="p5r-july-4-7"
+        />
+        <label for="p5r-july-4-7"
+          >New Request: Ending the Boyfriend's Abuse</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-5">July 5 Tuesday | Rainy Season</h3>
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>Head to the hideout and go to Mementos</p>
-        <p>While in Mementos Complete the Following:</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-5-1"
+          data-id="p5r-july-5-1"
+        />
+        <label for="p5r-july-5-1">Head to the hideout and go to Mementos</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-5-2"
+          data-id="p5r-july-5-2"
+        />
+        <label for="p5r-july-5-2"
+          >While in Mementos Complete the Following:</label
+        >
         <ol>
           <li>The Bark and Bite of a Bully [Area: Aiyatsbus Area 2]</li>
           <li>An Elderly's Meaning of Life [Area: Aiyatsbus Area 3]</li>
           <li>If Cats Disappeared from the City [Area: Aiyatsbus Area 6]</li>
           <li>Sadism Is just a Sign of Love [Area: Aiyatsbus Area 7]</li>
           <li>Ending the Boyfriend's Abuse [Area: Chemdah Area 3]</li>
-          <li>Phantom Thieves VS Burglary Ring Area: Chemdah Area 4</li>
+          <li>Phantom Thieves VS Burglary Ring [Area: Chemdah Area 4]</li>
           <li>A Teacher Maid to Suffer [Area: Chemdah Area 7]</li>
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Movie: ICU [2/2] [Kindness +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-5-3"
+          data-id="p5r-july-5-3"
+        />
+        <label for="p5r-july-5-3">Movie: ICU [2/2] [Kindness +5]</label>
       </section>
 
       <section>
@@ -263,18 +472,40 @@
         </h3>
         <h3>Required Arcana: Chariot, Temperance</h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Read: The Great Thief [2/2] [Knowledge +5]</p>
-        <p>Knowledge Rank Up [Scholarly - Encyclopedic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-6-1"
+          data-id="p5r-july-6-1"
+        />
+        <label for="p5r-july-6-1"
+          >Read: The Great Thief [2/2] [Knowledge +5]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-6-2"
+          data-id="p5r-july-6-2"
+        />
+        <label for="p5r-july-6-2"
+          >Knowledge Rank Up [Scholarly - Encyclopedic]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>Confidant Chariot Rank 9</p>
-        <p>Location: Shujin Academy[2F]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-6-3"
+          data-id="p5r-july-6-3"
+        />
+        <label for="p5r-july-6-3">Confidant Chariot Rank 9</label>
+        <p>Location: Shujin Academy [2F]</p>
         <ol>
           <li>Choice 1: Are you satisfied now? [+3]</li>
           <li>Choice 3: Don't do it [+3]</li>
           <li>Choice 2: I never realized that [+3]</li>
           <li>Choice 1: I agree [+2]</li>
-          <li>(Phone)Choice 1: Congratulations [+2]</li>
+          <li>(Phone) Choice 1: Congratulations [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Rain]</h4>
@@ -286,11 +517,18 @@
           *Create a save slot for romance option if reward for Thieves Den is
           wanted*
         </p>
-        <p class="p5r-romance">
-          Confidant Temperance Rank 9 <strong>Romance</strong> [5000 Yen]
-        </p>
-        <p class="p5r-romance">Location: Leblanc Cafe(Payphone)</p>
-        <ol>
+        <input
+          type="checkbox"
+          class="progress-checkbox p5r-romance"
+          id="p5r-july-6-4"
+          data-id="p5r-july-6-4"
+        />
+        <label for="p5r-july-6-4" class="p5r-romance"
+          >Confidant Temperance Rank 9 <strong>Romance</strong> [5000
+          Yen]</label
+        >
+        <p class="p5r-romance">Location: Leblanc Cafe (Payphone)</p>
+        <ol class="p5r-romance">
           <li class="p5r-romance">Choice 1: Nonsense [+3]</li>
           <li class="p5r-romance">Choice 1: What a bummer [+3]</li>
           <li class="p5r-romance">Choice 2: I want to keep seeing you [+2]</li>
@@ -298,14 +536,22 @@
           <li class="p5r-romance">Choice 2: I'm a man; you're a woman [+0]</li>
         </ol>
 
-        <p>Confidant Temperance Rank 9 Friendship [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-6-5"
+          data-id="p5r-july-6-5"
+        />
+        <label for="p5r-july-6-5"
+          >Confidant Temperance Rank 9 Friendship [5000 Yen]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice 1: Nonsense [+3]</li>
           <li>Choice 1: What a bummer [+3]</li>
           <li>Choice 2: I want to keep seeing you [+2]</li>
           <li>Choice 1: Got it [+2]</li>
-          <li>(Phone)Choice 2: You can do it [+2]</li>
+          <li>(Phone) Choice 2: You can do it [+2]</li>
         </ol>
       </section>
 
@@ -313,22 +559,58 @@
         <h3 class="date-font" id="p5r-july-7">July 7 Thursday</h3>
         <h3>Required Arcana: Lovers, Temperance, Faith, Fortune</h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Teacher's Question: [Charm +2] [Lovers +2]</p>
-        <p>Answer: The Milky Way - Soumen noodles</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-1"
+          data-id="p5r-july-7-1"
+        />
+        <label for="p5r-july-7-1"
+          >Teacher's Question: Answer: The Milky Way - Soumen noodles [Charm +2]
+          [Lovers +2]</label
+        >
 
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>Return ICU to Rental Store in Shibuya[Central Street]</p>
-        <p>
-          Borrow The Running Dead from Rental Store at Shibuya[Central Street]
-        </p>
-        <p>
-          Head to Shibuya[Central Street] Bookstore and buy the following books:
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-2"
+          data-id="p5r-july-7-2"
+        />
+        <label for="p5r-july-7-2"
+          >Return ICU to Rental Store in Shibuya [Central Street]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-3"
+          data-id="p5r-july-7-3"
+        />
+        <label for="p5r-july-7-3"
+          >Borrow The Running Dead from Rental Store at Shibuya [Central
+          Street]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-4"
+          data-id="p5r-july-7-4"
+        />
+        <label for="p5r-july-7-4"
+          >Head to Shibuya [Central Street] Bookstore and buy the following
+          books:</label
+        >
         <ul>
-          <li>Ghost Encounters[700 Yen]</li>
+          <li>Ghost Encounters [700 Yen]</li>
         </ul>
 
-        <p>Confidant Faith Rank 4</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-5"
+          data-id="p5r-july-7-5"
+        />
+        <label for="p5r-july-7-5">Confidant Faith Rank 4</label>
         <p>Location: Respond to Text from Kasumi's Message</p>
         <ol>
           <li>Choice 2: You're looking to buy? [+2]</li>
@@ -340,108 +622,255 @@
           <li>Choice: Any</li>
           <li>Choice 1: Everyone deals with that [+2]</li>
           <li>Choice 2: We'll work at it together [+2]</li>
-          <li>(Phone)Choice 1: I'm glad to hear that [+2]</li>
+          <li>(Phone) Choice 1: I'm glad to hear that [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Narcotics [Knowledge +2]</p>
-        <p>Confidant Fortune Rank 1 [Automatic]</p>
-        <p>Location: Shinjuku[Fourtune Telling Booth]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-6"
+          data-id="p5r-july-7-6"
+        />
+        <label for="p5r-july-7-6">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-7"
+          data-id="p5r-july-7-7"
+        />
+        <label for="p5r-july-7-7"
+          >Crossword Answer: Narcotics [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-7-8"
+          data-id="p5r-july-7-8"
+        />
+        <label for="p5r-july-7-8">Confidant Fortune Rank 1 [Automatic]</label>
+        <p>Location: Shinjuku [Fortune Telling Booth]</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-8">July 8 Friday</h3>
         <h3>Required Arcana: Lovers, Temperance</h3>
         <h4>[Early Morning | Weather: Sunny]</h4>
-        <p>Train Reading: Ghost Encounters [2/2] [Guts +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-8-1"
+          data-id="p5r-july-8-1"
+        />
+        <label for="p5r-july-8-1"
+          >Train Reading: Ghost Encounters [2/2] [Guts +5]</label
+        >
 
         <h4>[After School | Weather: Sunny]</h4>
-        <p>
-          Head to Shibuya[Central Street] Convenience Store and buy Soothing
-          Soba [800 Yen]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-8-2"
+          data-id="p5r-july-8-2"
+        />
+        <label for="p5r-july-8-2"
+          >Head to Shibuya [Central Street] Convenience Store and buy Soothing
+          Soba [800 Yen]</label
+        >
         <p>
           *Create a save slot for romance option if reward for Thieves Den is
           wanted*
         </p>
-        <p class="p5r-romance">
-          Confidant Lovers Rank 9 <strong>Romance</strong>
-        </p>
-        <p class="p5r-romance">Location: Shibuya[Underground Mall]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox p5r-romance"
+          id="p5r-july-8-3"
+          data-id="p5r-july-8-3"
+        />
+        <label for="p5r-july-8-3" class="p5r-romance"
+          >Confidant Lovers Rank 9 <strong>Romance</strong></label
+        >
+        <p class="p5r-romance">Location: Shibuya [Underground Mall]</p>
         <ol class="p5r-romance">
           <li class="p5r-romance">Choice: Any</li>
           <li class="p5r-romance">Choice: Any</li>
-          <li class="p5r-romance">Choice 2: I beleive in you, Ann [+3]</li>
+          <li class="p5r-romance">Choice 2: I believe in you, Ann [+3]</li>
           <li class="p5r-romance">Choice 1: You have me [+0]</li>
           <li class="p5r-romance">Choice: Any</li>
-          <li class="p5r-romance">(Phone)Choice 2: Im yours forever [+3]</li>
+          <li class="p5r-romance">(Phone) Choice 2: I'm yours forever [+3]</li>
         </ol>
 
-        <p>Confidant Lovers Rank 9 Friendship</p>
-        <p>Location: Shibuya[Underground Mall]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-8-4"
+          data-id="p5r-july-8-4"
+        />
+        <label for="p5r-july-8-4">Confidant Lovers Rank 9 Friendship</label>
+        <p>Location: Shibuya [Underground Mall]</p>
         <ol>
           <li>Choice: Any</li>
           <li>Choice: Any</li>
-          <li>Choice 2: I beleive in you, Ann [+3]</li>
+          <li>Choice 2: I believe in you, Ann [+3]</li>
           <li>Choice 2: You have the others [+0]</li>
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Head to Shinjuku[Fortune Telling Booth] and ask Chihaya for a Luck
-          Reading [5000 Yen] [Booast to Kindness]
-        </p>
-        <p>
-          Head to your room and feed your plant Mega Fertilizer [Kindness +7]
-        </p>
-        <p>Confidant Temperance Rank 10 [Automatic]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-8-5"
+          data-id="p5r-july-8-5"
+        />
+        <label for="p5r-july-8-5"
+          >Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck
+          Reading [5000 Yen] [Boost to Kindness]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-8-6"
+          data-id="p5r-july-8-6"
+        />
+        <label for="p5r-july-8-6"
+          >Head to your room and feed your plant Mega Fertilizer [Kindness
+          +7]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-8-7"
+          data-id="p5r-july-8-7"
+        />
+        <label for="p5r-july-8-7"
+          >Confidant Temperance Rank 10 [Automatic]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-9">July 9 Saturday</h3>
         <h4>[Morning | Weather: Sunny]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: A triangle [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-9-1"
+          data-id="p5r-july-9-1"
+        />
+        <label for="p5r-july-9-1"
+          >Teacher's Question: Answer: A triangle [Knowledge +2]</label
+        >
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Confidant Star Rank 1 [Automatic] [Knowledge +2] [Requirment Charm
-          Rank 3 (Suave)]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-9-2"
+          data-id="p5r-july-9-2"
+        />
+        <label for="p5r-july-9-2"
+          >Confidant Star Rank 1 [Automatic] [Knowledge +2] [Requirement Charm
+          Rank 3 (Suave)]</label
+        >
         <p>Location: Kanda</p>
-        <p>Confidant Judgement Rank 1 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-9-3"
+          data-id="p5r-july-9-3"
+        />
+        <label for="p5r-july-9-3">Confidant Judgement Rank 1 [Automatic]</label>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-10">July 10 Sunday</h3>
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>New Request: The lovesick Cyberstalking Girl</p>
-        <p>*Create a save point for dodge during class tomorrow*</p>
-        <p>Watch Movie: The Running Dead [1/2] [Guts +5]</p>
-        <p>Guts Rank Up [Staunch - Dauntless]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-10-1"
+          data-id="p5r-july-10-1"
+        />
+        <label for="p5r-july-10-1"
+          >New Request: The lovesick Cyberstalking Girl</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-10-2"
+          data-id="p5r-july-10-2"
+        />
+        <label for="p5r-july-10-2"
+          >*Create a save point for dodge during class tomorrow*</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-10-3"
+          data-id="p5r-july-10-3"
+        />
+        <label for="p5r-july-10-3"
+          >Watch Movie: The Running Dead [1/2] [Guts +5]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-10-4"
+          data-id="p5r-july-10-4"
+        />
+        <label for="p5r-july-10-4">Guts Rank Up [Staunch - Dauntless]</label>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-11">July 11 Monday</h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Teacher's Question:</p>
-        <p>
-          Answer: Memories that last a long time - Infinite - Forever [Knowledge
-          +2]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-11-1"
+          data-id="p5r-july-11-1"
+        />
+        <label for="p5r-july-11-1"
+          >Teacher's Question: Answer: Memories that last a long time - Infinite
+          - Forever [Knowledge +2]</label
+        >
 
-        <h4>[Afternoon | Weather: ]</h4>
-        <p>Chalk dodge [Charm +3] [Reload if needed]</p>
-        <p>Charm Rank Up [Suave - Charismatic]</p>
+        <h4>[Afternoon | Weather: Cloudy]</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-11-2"
+          data-id="p5r-july-11-2"
+        />
+        <label for="p5r-july-11-2"
+          >Chalk dodge [Charm +3] [Reload if needed]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-11-3"
+          data-id="p5r-july-11-3"
+        />
+        <label for="p5r-july-11-3">Charm Rank Up [Suave - Charismatic]</label>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>
-          Head to Kichijoji[Back Alley] to talk to the Sakai and trade Soothing
-          Soba for Koedo Sword
-        </p>
-        <p>Confidant Moon Rank 3 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-11-4"
+          data-id="p5r-july-11-4"
+        />
+        <label for="p5r-july-11-4"
+          >Head to Kichijoji [Back Alley] to talk to the Sakai and trade
+          Soothing Soba for Koedo Sword</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-11-5"
+          data-id="p5r-july-11-5"
+        />
+        <label for="p5r-july-11-5">Confidant Moon Rank 3 [Automatic]</label>
         <p>Location: Shinjuku</p>
       </section>
 
@@ -449,103 +878,258 @@
         <h3 class="date-font" id="p5r-july-12">July 12 Tuesday</h3>
         <h3>Required Arcana: Emperor, Fortune</h3>
         <h4>[Morning | Weather: Sunny]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Thievery [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-1"
+          data-id="p5r-july-12-1"
+        />
+        <label for="p5r-july-12-1"
+          >Teacher's Question: Answer: Thievery [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Sunny]</h4>
-        <p>New Request: One Who Bullies Bullies</p>
-        <p>Head to the Shujin Academy[School Gates] to Investigate</p>
-        <p>Confidant Emperor Rank 3</p>
-        <p>Location: Shibuya[Underground Walkway]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-2"
+          data-id="p5r-july-12-2"
+        />
+        <label for="p5r-july-12-2">New Request: One Who Bullies Bullies</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-3"
+          data-id="p5r-july-12-3"
+        />
+        <label for="p5r-july-12-3"
+          >Head to the Shujin Academy [School Gates] to Investigate</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-4"
+          data-id="p5r-july-12-4"
+        />
+        <label for="p5r-july-12-4">Confidant Emperor Rank 3</label>
+        <p>Location: Shibuya [Underground Walkway]</p>
         <ol>
           <li>Choice 3: Don't let it bother you [+2]</li>
           <li>Choice: Any</li>
           <li>Choice 2: This isn't like you [+3]</li>
           <li>Choice 2: That's the spirit [+2]</li>
-          <li>(Phone)Choice 1: That's the spirit [+2]</li>
+          <li>(Phone) Choice 1: That's the spirit [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Vacation [Knowledge +2]</p>
-        <p>Confidant Fortune Rank 2</p>
-        <p>Location: Shinjuku[Fourtune Telling Booth]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-5"
+          data-id="p5r-july-12-5"
+        />
+        <label for="p5r-july-12-5">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-6"
+          data-id="p5r-july-12-6"
+        />
+        <label for="p5r-july-12-6"
+          >Crossword Answer: Vacation [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-12-7"
+          data-id="p5r-july-12-7"
+        />
+        <label for="p5r-july-12-7">Confidant Fortune Rank 2</label>
+        <p>Location: Shinjuku [Fortune Telling Booth]</p>
         <ol>
           <li>Choice 3: Encourage her [+0]</li>
           <li>Choice 2: Overturn your fate! [+0]</li>
           <li>Choice 2: Open your mind to change [+2]</li>
-          <li>(Phone)Choice 1: Of course I am [+2]</li>
+          <li>(Phone) Choice 1: Of course I am [+2]</li>
         </ol>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-13">July 13 Wednesday</h3>
-        <p>Exam Answers</p>
-        <ul>
-          <li>64 degrees</li>
-          <li>Zhuge Liang</li>
-          <li>Barbarians' Heads</li>
-          <li>To offer them instead of heads</li>
-        </ul>
+        <h4>Exam Answers:</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-13-1"
+          data-id="p5r-july-13-1"
+        />
+        <label for="p5r-july-13-1">Answer: 64 degrees</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-13-2"
+          data-id="p5r-july-13-2"
+        />
+        <label for="p5r-july-13-2">Answer: Zhuge Liang</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-13-3"
+          data-id="p5r-july-13-3"
+        />
+        <label for="p5r-july-13-3">Answer: Barbarians' Heads</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-13-4"
+          data-id="p5r-july-13-4"
+        />
+        <label for="p5r-july-13-4"
+          >Answer: To offer them instead of heads</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-14">July 14 Thursday</h3>
-        <p>Exam Answers:</p>
-        <ul>
-          <li>Red King Crab (Paralithodes)</li>
-          <li>It caused confusion in the eceonomy</li>
-        </ul>
+        <h4>Exam Answers:</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-14-1"
+          data-id="p5r-july-14-1"
+        />
+        <label for="p5r-july-14-1">Answer: Red King Crab (Paralithodes)</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-14-2"
+          data-id="p5r-july-14-2"
+        />
+        <label for="p5r-july-14-2"
+          >Answer: It caused confusion in the economy</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-15">July 15 Friday</h3>
-        <p>Exam Answers:</p>
-        <ul>
-          <li>Raining cats and dogs</li>
-          <li>Demon Guts</li>
-        </ul>
+        <h4>Exam Answers:</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-15-1"
+          data-id="p5r-july-15-1"
+        />
+        <label for="p5r-july-15-1">Answer: Raining cats and dogs</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-15-2"
+          data-id="p5r-july-15-2"
+        />
+        <label for="p5r-july-15-2">Answer: Demon Guts</label>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-16">July 16 Saturday</h3>
-        <p>Enjoy the story. Nothing to worry about on this day.</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-16-1"
+          data-id="p5r-july-16-1"
+        />
+        <label for="p5r-july-16-1"
+          >Enjoy the story. Nothing to worry about on this day.</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-17">July 17 Sunday | Heatwave</h3>
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>
-          Drink Onsen Aojiru at Shibuya[Underground Walkway] [5000 Yen, Kindness
-          +2]
-        </p>
-        <p>
-          Head to Shinjuku[Fortune Telling Booth] and ask Chihaya for a Luck
-          Reading [5000 Yen] [Booast to Chaarm]
-        </p>
-        <p>Confidant Sun Rank 8 [Charm +7]</p>
-        <p>Location: Shubuya[Station Square]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-17-1"
+          data-id="p5r-july-17-1"
+        />
+        <label for="p5r-july-17-1"
+          >Drink Onsen Aojiru at Shibuya [Underground Walkway] [5000 Yen,
+          Kindness +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-17-2"
+          data-id="p5r-july-17-2"
+        />
+        <label for="p5r-july-17-2"
+          >Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck
+          Reading [5000 Yen] [Boost to Charm]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-17-3"
+          data-id="p5r-july-17-3"
+        />
+        <label for="p5r-july-17-3">Confidant Sun Rank 8 [Charm +7]</label>
+        <p>Location: Shibuya [Station Square]</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-18">July 18 Monday</h3>
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Movie: The Running Dead [2/2] [Guts +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-18-1"
+          data-id="p5r-july-18-1"
+        />
+        <label for="p5r-july-18-1"
+          >Movie: The Running Dead [2/2] [Guts +5]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-19">July 19 Tuesday</h3>
         <h3>Required Arcana: Priestess, Fortune</h3>
         <h4>[Lunchtime | Weather: Sunny]</h4>
-        <p>Exam Results [Charm +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-1"
+          data-id="p5r-july-19-1"
+        />
+        <label for="p5r-july-19-1">Exam Results [Charm +5]</label>
 
         <h4>[After School | Weather: Sunny]</h4>
-        <p>
-          Return The Running Dead to Rental Store in Shibuya[Central Street]
-        </p>
-        <p>Borrow Jail Break from Rental Store at Shibuya[Central Street]</p>
-        <p>Confidant Priestess Rank 5</p>
-        <p>Location: Shujin Academy[Student Council Room]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-2"
+          data-id="p5r-july-19-2"
+        />
+        <label for="p5r-july-19-2"
+          >Return The Running Dead to Rental Store in Shibuya [Central
+          Street]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-3"
+          data-id="p5r-july-19-3"
+        />
+        <label for="p5r-july-19-3"
+          >Borrow Jail Break from Rental Store at Shibuya [Central
+          Street]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-4"
+          data-id="p5r-july-19-4"
+        />
+        <label for="p5r-july-19-4">Confidant Priestess Rank 5</label>
+        <p>Location: Shujin Academy [Student Council Room]</p>
         <ol>
           <li>Choice 3: He sounds suspicious [+3]</li>
           <li>Choice 1: I got this [+3]</li>
@@ -553,71 +1137,196 @@
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Finals [Knowledge +2]</p>
-        <p>Talk with Sojiro for exam reward (Dandy Miror, Counterstrike)</p>
-        <p>Confidant Fortune Rank 3</p>
-        <p>Location: Shinjuku[Fourtune Telling Booth]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-5"
+          data-id="p5r-july-19-5"
+        />
+        <label for="p5r-july-19-5">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-6"
+          data-id="p5r-july-19-6"
+        />
+        <label for="p5r-july-19-6"
+          >Crossword Answer: Finals [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-7"
+          data-id="p5r-july-19-7"
+        />
+        <label for="p5r-july-19-7"
+          >Talk with Sojiro for exam reward (Dandy Mirror, Counterstrike)</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-19-8"
+          data-id="p5r-july-19-8"
+        />
+        <label for="p5r-july-19-8">Confidant Fortune Rank 3</label>
+        <p>Location: Shinjuku [Fortune Telling Booth]</p>
         <ol>
           <li>Choice 2: Follow his heart [+0]</li>
-          <li>Choice 1: Thieves may steel her away [+0]</li>
+          <li>Choice 1: Thieves may steal her away [+0]</li>
           <li>Choice: Any</li>
         </ol>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-20">July 20 Wednesday</h3>
-
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>*Create a save to reload from for crafting*</p>
-        <p>Craft [Proficiency +5] [Reload if needed]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-20-1"
+          data-id="p5r-july-20-1"
+        />
+        <label for="p5r-july-20-1"
+          >*Create a save to reload from for crafting*</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-20-2"
+          data-id="p5r-july-20-2"
+        />
+        <label for="p5r-july-20-2"
+          >Craft [Proficiency +5] [Reload if needed]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-21">July 21 Thursday</h3>
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Video Game: Star Forneus [1/3] [Guts +3]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-21-1"
+          data-id="p5r-july-21-1"
+        />
+        <label for="p5r-july-21-1"
+          >Video Game: Star Forneus [1/3] [Guts +3]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-22">July 22 Friday</h3>
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Movie: Jail Break [1/2] [Proficiency +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-22-1"
+          data-id="p5r-july-22-1"
+        />
+        <label for="p5r-july-22-1"
+          >Movie: Jail Break [1/2] [Proficiency +5]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-23">July 23 Saturday</h3>
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Movie: Jail break [2/2] [Proficiency +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-23-1"
+          data-id="p5r-july-23-1"
+        />
+        <label for="p5r-july-23-1"
+          >Movie: Jail Break [2/2] [Proficiency +5]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-24">July 24 Sunday</h3>
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>In your room feed plant Mega Fertilizer [Kindness +5]</p>
-        <p>Confidant Judgement Rank 2 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-24-1"
+          data-id="p5r-july-24-1"
+        />
+        <label for="p5r-july-24-1"
+          >In your room feed plant Mega Fertilizer [Kindness +5]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-24-2"
+          data-id="p5r-july-24-2"
+        />
+        <label for="p5r-july-24-2"
+          >Confidant Judgement Rank 2 [Automatic]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-25">July 25 Monday</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>Confidant Magician Rank 6 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-25-1"
+          data-id="p5r-july-25-1"
+        />
+        <label for="p5r-july-25-1">Confidant Magician Rank 6 [Automatic]</label>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>*Save for creating*</p>
-        <p>Craft [Proficiency +5] [Reload if needed]</p>
-        <p>Proficiency Rank Up [Skilled - Masterful]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-25-2"
+          data-id="p5r-july-25-2"
+        />
+        <label for="p5r-july-25-2">*Save for creating*</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-25-3"
+          data-id="p5r-july-25-3"
+        />
+        <label for="p5r-july-25-3"
+          >Craft [Proficiency +5] [Reload if needed]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-25-4"
+          data-id="p5r-july-25-4"
+        />
+        <label for="p5r-july-25-4"
+          >Proficiency Rank Up [Skilled - Masterful]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-july-26">July 26 Tuesday | Heatwave</h3>
         <h3>Required Arcana: Fortune</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>
-          Head to Shinjuku[Fortune Telling Booth] and ask Chihaya for a Money
-          Reading [5000 Yen]
-        </p>
-        <p>Reach the treasure in the Pyramid Palace</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-1"
+          data-id="p5r-july-26-1"
+        />
+        <label for="p5r-july-26-1"
+          >Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Money
+          Reading [5000 Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-2"
+          data-id="p5r-july-26-2"
+        />
+        <label for="p5r-july-26-2"
+          >Reach the treasure in the Pyramid Palace</label
+        >
         <p>Get the following while in the Pyramid Palace:</p>
         <ul>
           <li>Obtain Arcana: Hermit</li>
@@ -627,38 +1336,104 @@
         </ul>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>
-          Call Kawakami and have her give you a message to be able to headout
-          for the night.
-        </p>
-        <p>*Create a save point for Vending Machine*</p>
-        <p>
-          Head to Shibuya[Central Street] Airsoft Shop and get MRE Ration from
-          the Vending Machine. [Reload if needed]
-        </p>
-        <p>
-          Head to Kichijoji and trade MRE Ration to Trader Sakai for
-          Factorization Guide
-        </p>
-        <p>Confidant Fortune Hangout</p>
-        <p>Location: Shinjuku[Fourtune Telling Booth]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-3"
+          data-id="p5r-july-26-3"
+        />
+        <label for="p5r-july-26-3"
+          >Call Kawakami and have her give you a message to be able to head out
+          for the night.</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-4"
+          data-id="p5r-july-26-4"
+        />
+        <label for="p5r-july-26-4"
+          >*Create a save point for Vending Machine*</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-5"
+          data-id="p5r-july-26-5"
+        />
+        <label for="p5r-july-26-5"
+          >Head to Shibuya [Central Street] Airsoft Shop and get MRE Ration from
+          the Vending Machine. [Reload if needed]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-6"
+          data-id="p5r-july-26-6"
+        />
+        <label for="p5r-july-26-6"
+          >Head to Kichijoji and trade MRE Ration to Trader Sakai for
+          Factorization Guide</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-26-7"
+          data-id="p5r-july-26-7"
+        />
+        <label for="p5r-july-26-7">Confidant Fortune Hangout</label>
+        <p>Location: Shinjuku [Fortune Telling Booth]</p>
       </section>
 
       <section>
-        <h3 class="date-font">July 27 Wednesday | Torrential Rain</h3>
+        <h3 class="date-font" id="p5r-july-27">
+          July 27 Wednesday | Torrential Rain
+        </h3>
         <h3>Required Arcana: Star</h3>
         <h4>[Daytime | Weather: Rain]</h4>
-        <p>Clear Pyramid Palace</p>
-        <p>Location: Leblanc Cafe[Attic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-27-1"
+          data-id="p5r-july-27-1"
+        />
+        <label for="p5r-july-27-1">Clear Pyramid Palace</label>
+        <p>Location: Leblanc Cafe [Attic]</p>
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>
-          Call Kawakami and have her give you a message to be able to headout
-          for the night.
-        </p>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Fireworks [Knowledge +2]</p>
-        <p>Confidant Star Rank 2 [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-27-2"
+          data-id="p5r-july-27-2"
+        />
+        <label for="p5r-july-27-2"
+          >Call Kawakami and have her give you a message to be able to head out
+          for the night.</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-27-3"
+          data-id="p5r-july-27-3"
+        />
+        <label for="p5r-july-27-3">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-27-4"
+          data-id="p5r-july-27-4"
+        />
+        <label for="p5r-july-27-4"
+          >Crossword Answer: Fireworks [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-27-5"
+          data-id="p5r-july-27-5"
+        />
+        <label for="p5r-july-27-5">Confidant Star Rank 2 [Knowledge +2]</label>
         <p>Location: Kanda</p>
         <ol>
           <li>Choice 1: That's interesting [+2]</li>
@@ -668,37 +1443,65 @@
       </section>
 
       <section>
-        <h3 class="date-font">July 28 Thursday</h3>
+        <h3 class="date-font" id="p5r-july-28">July 28 Thursday</h3>
         <h3>Required Arcana: Emperor, Fortune, Justice</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>Confidant Emperor Rank 4</p>
-        <p>Location: Shibuya[Underground Walkway]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-28-1"
+          data-id="p5r-july-28-1"
+        />
+        <label for="p5r-july-28-1">Confidant Emperor Rank 4</label>
+        <p>Location: Shibuya [Underground Walkway]</p>
         <ol>
           <li>Choice 3: I should bring a girl here [+2]</li>
-          <li>Cho0ice 1: Love comes in all forms [+3]</li>
-          <li>(Phone)Choice 1: Don't get discouraged [+2]</li>
+          <li>Choice 1: Love comes in all forms [+3]</li>
+          <li>(Phone) Choice 1: Don't get discouraged [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Confidant Fortube Rank 4</p>
-        <p>Location: Shinjuku[Fourtune Telling Booth]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-28-2"
+          data-id="p5r-july-28-2"
+        />
+        <label for="p5r-july-28-2">Confidant Fortune Rank 4</label>
+        <p>Location: Shinjuku [Fortune Telling Booth]</p>
         <ol>
           <li>Choice: Any</li>
           <li>Choice 3: Trust in yourself [+3]</li>
           <li>Choice: Any</li>
           <li>Choice: Any</li>
           <li>Choice: Any</li>
-          <li>(Phone)Choice 2: I didn't do much [+2]</li>
+          <li>(Phone) Choice 2: I didn't do much [+2]</li>
         </ol>
-        <p>Accept Confidant Justice Hangout Invitation</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-28-3"
+          data-id="p5r-july-28-3"
+        />
+        <label for="p5r-july-28-3"
+          >Accept Confidant Justice Hangout Invitation</label
+        >
       </section>
 
       <section>
-        <h3 class="date-font">July 29 Friday | Torrential Rain</h3>
+        <h3 class="date-font" id="p5r-july-29">
+          July 29 Friday | Torrential Rain
+        </h3>
         <h3>Required Arcana: Justice, Devil</h3>
-        <h4>[Daytime | Weather: ]</h4>
-        <p>Confidant Justice Hangout</p>
-        <p>Hangout Spot: Shinaagawa</p>
+        <h4>[Daytime | Weather: Rain]</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-29-1"
+          data-id="p5r-july-29-1"
+        />
+        <label for="p5r-july-29-1">Confidant Justice Hangout</label>
+        <p>Hangout Spot: Shinagawa</p>
         <ol>
           <li>Choice 1: It's a nice place [+3]</li>
           <li>Choice: Any</li>
@@ -707,29 +1510,69 @@
         </ol>
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Confidant Strength Hangout</p>
-        <p>Location: Shibuya[Central Street]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-29-2"
+          data-id="p5r-july-29-2"
+        />
+        <label for="p5r-july-29-2">Confidant Strength Hangout</label>
+        <p>Location: Shibuya [Central Street]</p>
         <p>Hangout Spot: Gym</p>
       </section>
 
       <section>
-        <h3 class="date-font">July 30 Saturday | Heatwave</h3>
+        <h3 class="date-font" id="p5r-july-30">July 30 Saturday | Heatwave</h3>
         <h3>Required Arcana: Fortune</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>
-          Head to Shinjuku[Fortune Telling Booth] and ask Chihaya for a Luck
-          Reading [5000 Yen] [Booast to Guts]
-        </p>
-        <p>
-          Head to Kichijoji[Furniture Store] and sit on the blue sofa in front
-          of the store. Keep sitting until you acquire Gut [Guts +3]
-        </p>
-        <p>Head to Shinjuku[theater] and Watch Like a Dragon [+10]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-30-1"
+          data-id="p5r-july-30-1"
+        />
+        <label for="p5r-july-30-1"
+          >Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck
+          Reading [5000 Yen] [Boost to Guts]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-30-2"
+          data-id="p5r-july-30-2"
+        />
+        <label for="p5r-july-30-2"
+          >Head to Kichijoji [Furniture Store] and sit on the blue sofa in front
+          of the store. Keep sitting until you acquire Guts [Guts +3]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-30-3"
+          data-id="p5r-july-30-3"
+        />
+        <label for="p5r-july-30-3"
+          >Head to Shinjuku [Theater] and Watch Like a Dragon [+10 Guts]</label
+        >
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Head to Kichijoji[Donut Shop] Answer:10 [Guts +3]</p>
-        <p>Confidant Fortune Rank 5</p>
-        <p>Location: Shinjuku[Fourtune Telling Booth]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-30-4"
+          data-id="p5r-july-30-4"
+        />
+        <label for="p5r-july-30-4"
+          >Head to Kichijoji [Donut Shop] and Answer: 10 [Guts +3]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-30-5"
+          data-id="p5r-july-30-5"
+        />
+        <label for="p5r-july-30-5">Confidant Fortune Rank 5</label>
+        <p>Location: Shinjuku [Fortune Telling Booth]</p>
         <ol>
           <li>Choice 1: You're such a hard worker [+3]</li>
           <li>Choice: Any</li>
@@ -738,137 +1581,169 @@
       </section>
 
       <section>
-        <h3 class="date-font">July 31 Sunday | Heatwave</h3>
+        <h3 class="date-font" id="p5r-july-31">July 31 Sunday | Heatwave</h3>
         <h3>Required Arcana: Chariot</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>
-          Head to Shinjuku[Fortune Telling Booth] and ask Chihaya for a Affinity
-          Reading [5000 Yen] [Ryuji, Chariot +2]
-        </p>
-        <p>
-          Head to Shinjuku[Fortune Telling Booth] and ask Chihaya for a Luck
-          Reading [5000 Yen] [Booast to Charm]
-        </p>
-        <p>
-          Drink Beauty Aojiru at Shibuya[Underground Walkway] [5000 Yen, Charm
-          +3]
-        </p>
-        <p>Head to Shibuya[Central Street]Theater and Watch Movie[Charm +10]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-31-1"
+          data-id="p5r-july-31-1"
+        />
+        <label for="p5r-july-31-1"
+          >Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for an
+          Affinity Reading [5000 Yen] [Ryuji, Chariot +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-31-2"
+          data-id="p5r-july-31-2"
+        />
+        <label for="p5r-july-31-2"
+          >Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck
+          Reading [5000 Yen] [Boost to Charm]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-31-3"
+          data-id="p5r-july-31-3"
+        />
+        <label for="p5r-july-31-3"
+          >Drink Beauty Aojiru at Shibuya [Underground Walkway] [5000 Yen, Charm
+          +3]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-31-4"
+          data-id="p5r-july-31-4"
+        />
+        <label for="p5r-july-31-4"
+          >Head to Shibuya [Central Street] Theater and Watch Movie [Charm
+          +10]</label
+        >
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Confidant Sun Rank 9 [Automatic]</p>
-        <p>Location: Shubuya[Station Square]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-july-31-5"
+          data-id="p5r-july-31-5"
+        />
+        <label for="p5r-july-31-5">Confidant Sun Rank 9 [Automatic]</label>
+        <p>Location: Shibuya [Station Square]</p>
       </section>
-
-      <section>
-        <table>
-          <h3>July Confidant Rank Update</h3>
-          <thead>
-            <tr>
-              <th>Persona Arcana</th>
-              <th>Rank</th>
-              <th>Current Month Progress</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Fool (Prison Master)</td>
-              <td>6</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Magician (Morgana)</td>
-              <td>6</td>
-              <td>Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Priestess (Makoto Niijima)</td>
-              <td>5</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Emperor (Yusuke Kitagawa)</td>
-              <td>4</td>
-              <td>Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Hierophant (Sojiro Sakura)</td>
-              <td>4</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Lovers (Ann Takamaki)</td>
-              <td>9</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Chariot (Ryuji Sakamoto)</td>
-              <td>9</td>
-              <td>Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Justice (Goro Akechi)</td>
-              <td>3</td>
-              <td>Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Fortune (Fortune Teller)</td>
-              <td>5</td>
-              <td>New, Rank Up +5</td>
-            </tr>
-            <tr>
-              <td>Strength (Twin Wardens)</td>
-              <td>1</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Death (Back-Alley Doctor)</td>
-              <td>7</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Temperance (Sadayo Kawakami)</td>
-              <td>10</td>
-              <td>Complete, Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Devil (Ichiko Ohya)</td>
-              <td>1</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Star (Hifumi Togo)</td>
-              <td>2</td>
-              <td>New, Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Moon (Yuuki Mishima)</td>
-              <td>3</td>
-              <td>Rank UP +1</td>
-            </tr>
-            <tr>
-              <td>Sun (Man of the People)</td>
-              <td>9</td>
-              <td>Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Judgement (Prosecutor)</td>
-              <td>2</td>
-              <td>New, Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Faith (Kasumi Yoshizawa)</td>
-              <td>4</td>
-              <td>Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Councillor (Takuto Maruki)</td>
-              <td>5</td>
-              <td>Unchanged</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    </section>
+    <section>
+      <table class="confidant-table">
+        <h3>July Confidant Rank Update</h3>
+        <thead>
+          <tr>
+            <th>Persona Arcana</th>
+            <th>Rank</th>
+            <th>Current Month Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fool (Prison Master)</td>
+            <td>6</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Magician (Morgana)</td>
+            <td>6</td>
+            <td>Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Priestess (Makoto Niijima)</td>
+            <td>5</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Emperor (Yusuke Kitagawa)</td>
+            <td>4</td>
+            <td>Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Hierophant (Sojiro Sakura)</td>
+            <td>4</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Lovers (Ann Takamaki)</td>
+            <td>9</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Chariot (Ryuji Sakamoto)</td>
+            <td>9</td>
+            <td>Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Justice (Goro Akechi)</td>
+            <td>3</td>
+            <td>Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Fortune (Fortune Teller)</td>
+            <td>5</td>
+            <td>New, Rank Up +5</td>
+          </tr>
+          <tr>
+            <td>Strength (Twin Wardens)</td>
+            <td>1</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Death (Back-Alley Doctor)</td>
+            <td>7</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Temperance (Sadayo Kawakami)</td>
+            <td>10</td>
+            <td>Complete, Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Devil (Ichiko Ohya)</td>
+            <td>1</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Star (Hifumi Togo)</td>
+            <td>2</td>
+            <td>New, Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Moon (Yuuki Mishima)</td>
+            <td>3</td>
+            <td>Rank UP +1</td>
+          </tr>
+          <tr>
+            <td>Sun (Man of the People)</td>
+            <td>9</td>
+            <td>Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Judgement (Prosecutor)</td>
+            <td>2</td>
+            <td>New, Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Faith (Kasumi Yoshizawa)</td>
+            <td>4</td>
+            <td>Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Councillor (Takuto Maruki)</td>
+            <td>5</td>
+            <td>Unchanged</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 </html>

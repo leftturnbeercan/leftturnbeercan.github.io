@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar: June</title>
     <link
       href="/css/fonts/bubblegum-superstar.ttf"
       rel="stylesheet"
       type="text/css"
     />
     <link href="/css/p5r-months.css" rel="stylesheet" />
-    <title>Calendar: June</title>
+    <script src="/js/progress-tracking.js" defer></script>
   </head>
   <main>
     <header>
@@ -32,7 +35,7 @@
               <th>Thu</th>
               <th>Fri</th>
               <th>Sat</th>
-          </tr>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -92,7 +95,13 @@
         </h3>
         <h3>Required Arcana: Chariot</h3>
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Confidant Chariot Rank 8</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-1-1"
+          data-id="p5r-june-1-1"
+        />
+        <label for="p5r-june-1-1">Confidant Chariot Rank 8</label>
         <p>Location: Shujin Academy 2F</p>
         <ol>
           <li>Choice: Any</li>
@@ -103,10 +112,16 @@
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Head to Dinner at Shibuya(Central Street) and order Surprise Sando
-          [Knowledge +2, Guts +2]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-1-2"
+          data-id="p5r-june-1-2"
+        />
+        <label for="p5r-june-1-2"
+          >Head to Dinner at Shibuya (Central Street) and order Surprise Sando
+          [Knowledge +2, Guts +2]</label
+        >
       </section>
 
       <section>
@@ -115,7 +130,13 @@
         </h3>
         <h3>Required Arcana: Death, Hierophant</h3>
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Confidant Death Rank 6 [Guts +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-2-1"
+          data-id="p5r-june-2-1"
+        />
+        <label for="p5r-june-2-1">Confidant Death Rank 6 [Guts +2]</label>
         <p>Location: Yongen-Jaya Clinic</p>
         <ol>
           <li>Choice: Any</li>
@@ -125,12 +146,27 @@
         </ol>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>TV Quiz:</p>
-        <p>TV Quiz Answer: Probation officers are unpaid [Knowledge +2]</p>
-        <p>Confidant Hierophant Rank 4 [Kindness +3]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-2-2"
+          data-id="p5r-june-2-2"
+        />
+        <label for="p5r-june-2-2"
+          >TV Quiz: Answer: Probation officers are unpaid [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-2-3"
+          data-id="p5r-june-2-3"
+        />
+        <label for="p5r-june-2-3"
+          >Confidant Hierophant Rank 4 [Kindness +3]</label
+        >
         <p>Location: Leblanc Cafe</p>
         <ol>
-          <li>Choice 1: Tel me more [+3]</li>
+          <li>Choice 1: Tell me more [+3]</li>
           <li>Choice 2: Call Sojiro phone [+3]</li>
           <li>(Phone)Choice 1: Understood [+2]</li>
         </ol>
@@ -140,14 +176,34 @@
         <h3 class="date-font" id="p5r-june-3">June 3 Friday</h3>
         <h3>Required Arcana: Lovers, Temperance</h3>
         <h4>[Early Morning | Weather: Cloudy]</h4>
-        <p>Train Reading: Buchiko's Story [1/2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-3-1"
+          data-id="p5r-june-3-1"
+        />
+        <label for="p5r-june-3-1">Train Reading: Buchiko's Story [1/2]</label>
 
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>FreeTime: Read Buchiko's Story [2/2] [Kindness +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-3-2"
+          data-id="p5r-june-3-2"
+        />
+        <label for="p5r-june-3-2"
+          >FreeTime: Read Buchiko's Story [2/2] [Kindness +5]</label
+        >
 
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>Confidant Lovers Rank 6</p>
-        <p>Location: Shibuya[Underground Mall]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-3-3"
+          data-id="p5r-june-3-3"
+        />
+        <label for="p5r-june-3-3">Confidant Lovers Rank 6</label>
+        <p>Location: Shibuya [Underground Mall]</p>
         <ol>
           <li>Choice 1: It seems that way [+3]</li>
           <li>Choice: Any</li>
@@ -157,10 +213,23 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Crossword:</p>
-        <p>Answer for Crossword: Master [Knowledge +2]</p>
-        <p>Confidant Temperance Rank 3 [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-3-4"
+          data-id="p5r-june-3-4"
+        />
+        <label for="p5r-june-3-4"
+          >Crossword: Answer: Master [Knowledge +2]</label
+        ><br />
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-3-5"
+          data-id="p5r-june-3-5"
+        />
+        <label for="p5r-june-3-5">Confidant Temperance Rank 3 [5000 Yen]</label>
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice 1: Yeah, they do [+2]</li>
           <li>Choice: Any</li>
@@ -174,12 +243,25 @@
         <h3 class="date-font" id="p5r-june-4">June 4 Saturday</h3>
         <h3>Required Arcana: Lovers, Temperance</h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: The halo effect [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-4-1"
+          data-id="p5r-june-4-1"
+        />
+        <label for="p5r-june-4-1"
+          >Teacher's Question: Answer: The halo effect [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>Confidant Lovers Hangout</p>
-        <p>Location: Shibuya[Underground Mall]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-4-2"
+          data-id="p5r-june-4-2"
+        />
+        <label for="p5r-june-4-2">Confidant Lovers Hangout</label>
+        <p>Location: Shibuya [Underground Mall]</p>
         <p>Hangout Spot: Shibuya</p>
         <ol>
           <li>Choice 1: Sounds like a good plan [+3]</li>
@@ -189,46 +271,128 @@
         </ul>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Confidant Temperance Hangout [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-4-3"
+          data-id="p5r-june-4-3"
+        />
+        <label for="p5r-june-4-3"
+          >Confidant Temperance Hangout [5000 Yen]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-5">June 5 Sunday</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>
-          While in Kichijoji just follow the story events, "DO NOT TALK" with
-          the receptionist at the Info Stand.
-        </p>
-        <p>Ryuji: Batton Pass Rank 2</p>
-        <p>Yourself: Batton Pass Rank 2</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-1"
+          data-id="p5r-june-5-1"
+        />
+        <label for="p5r-june-5-1"
+          >While in Kichijoji just follow the story events, "DO NOT TALK" with
+          the receptionist at the Info Stand.</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-2"
+          data-id="p5r-june-5-2"
+        />
+        <label for="p5r-june-5-2">Ryuji: Batton Pass Rank 2</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-3"
+          data-id="p5r-june-5-3"
+        />
+        <label for="p5r-june-5-3">Yourself: Batton Pass Rank 2</label>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>New Request: An Elderly's Meaning of Life:</p>
-        <p>Investigate Kichijoji[Harmony Alley]</p>
-        <p>
-          Drink Beauty Aojiru at Shibuya[Underground Walkway] [5000 Yen, Charm
-          +2]
-        </p>
-        <p>*Create a save for Chalk reload on next day*</p>
-        <p>Confidant Sun Rank 4 [Charm +3]</p>
-        <p>Location: Shubuya[Station Square]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-4"
+          data-id="p5r-june-5-4"
+        />
+        <label for="p5r-june-5-4"
+          >New Request: An Elderly's Meaning of Life: Investigate Kichijoji
+          [Harmony Alley]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-5"
+          data-id="p5r-june-5-5"
+        />
+        <label for="p5r-june-5-5"
+          >Drink Beauty Aojiru at Shibuya [Underground Walkway] [5000 Yen, Charm
+          +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-6"
+          data-id="p5r-june-5-6"
+        />
+        <label for="p5r-june-5-6"
+          >*Create a save for Chalk reload on next day*</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-5-7"
+          data-id="p5r-june-5-7"
+        />
+        <label for="p5r-june-5-7">Confidant Sun Rank 4 [Charm +3]</label>
+        <p>Location: Shibuya [Station Square]</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-6">June 6 Monday</h3>
         <h3>Required Arcana: Councillor</h3>
         <h4>[Afternoon | Weather: Rain]</h4>
-        <p>Chalk Dodge [Charm +3] [Reaload if needed]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-6-1"
+          data-id="p5r-june-6-1"
+        />
+        <label for="p5r-june-6-1"
+          >Chalk Dodge [Charm +3] [Reload if needed]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>New Request: Sadism Is Just a Sign of Love</p>
-        <p>
-          Head to Shibuya[Underground Mall] and buy Imported Protein from the
-          Sports Store []
-        </p>
-        <p>Confidant Councillor Rank 4</p>
-        <p>Location: Shujin Academy[Practice Building 1F]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-6-2"
+          data-id="p5r-june-6-2"
+        />
+        <label for="p5r-june-6-2"
+          >New Request: Sadism Is Just a Sign of Love</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-6-3"
+          data-id="p5r-june-6-3"
+        />
+        <label for="p5r-june-6-3"
+          >Head to Shibuya [Underground Mall] and buy Imported Protein from the
+          Sports Store</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-6-4"
+          data-id="p5r-june-6-4"
+        />
+        <label for="p5r-june-6-4">Confidant Councillor Rank 4</label>
+        <p>Location: Shujin Academy [Practice Building 1F]</p>
         <ol>
           <li>Choice: Any</li>
           <li>Choice 1: I know, right? [+3]</li>
@@ -240,9 +404,23 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Head to your room and feed plant Bio Nutrients [Kindness +3]</p>
-        <p>Confidant Strength Hangout</p>
-        <p>Location: Shibuya[Central Street]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-6-5"
+          data-id="p5r-june-6-5"
+        />
+        <label for="p5r-june-6-5"
+          >Head to your room and feed plant Bio Nutrients [Kindness +3]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-6-6"
+          data-id="p5r-june-6-6"
+        />
+        <label for="p5r-june-6-6">Confidant Strength Hangout</label>
+        <p>Location: Shibuya [Central Street]</p>
         <p>Hangout Spot: Big Bang Burger</p>
         <p>Reward: Maragi, Mabufu</p>
       </section>
@@ -251,12 +429,33 @@
         <h3 class="date-font" id="p5r-june-7">June 7 Tuesday</h3>
         <h3>Required Arcana: Death</h3>
         <h4>[Morning | Weather: Rain]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: The number of legs [Knowledge +2]</p>
-        <p>Knowledge Rank Up [Learned - Scholarly]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-7-1"
+          data-id="p5r-june-7-1"
+        />
+        <label for="p5r-june-7-1"
+          >Teacher's Question: Answer: The number of legs [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-7-2"
+          data-id="p5r-june-7-2"
+        />
+        <label for="p5r-june-7-2"
+          >Knowledge Rank Up [Learned - Scholarly]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>Confidant Death Rank 7 [Guts +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-7-3"
+          data-id="p5r-june-7-3"
+        />
+        <label for="p5r-june-7-3">Confidant Death Rank 7 [Guts +2]</label>
         <p>Location: Yongen-Jaya Clinic</p>
         <ol>
           <li>Choice 2: She's a great doctor [+2]</li>
@@ -266,10 +465,30 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Conference [Knowledge +2]</p>
-        <p>Confidant Strength Hangout</p>
-        <p>Location: Shibuya[Central Street]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-7-4"
+          data-id="p5r-june-7-4"
+        />
+        <label for="p5r-june-7-4">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-7-5"
+          data-id="p5r-june-7-5"
+        />
+        <label for="p5r-june-7-5"
+          >Crossword Answer: Conference [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-7-6"
+          data-id="p5r-june-7-6"
+        />
+        <label for="p5r-june-7-6">Confidant Strength Hangout</label>
+        <p>Location: Shibuya [Central Street]</p>
         <p>Hangout Spot: Movie Theater</p>
         <p>Reward: Frei, Psi</p>
       </section>
@@ -277,11 +496,25 @@
       <section>
         <h3 class="date-font" id="p5r-june-8">June 8 Wednesday</h3>
         <h4>[Morning | Weather: Sunny]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Controlling public thought [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-8-1"
+          data-id="p5r-june-8-1"
+        />
+        <label for="p5r-june-8-1"
+          >Teacher's Question: Answer: Controlling public thought [Knowledge
+          +2]</label
+        >
 
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Confidant Faith Raank 2</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-8-2"
+          data-id="p5r-june-8-2"
+        />
+        <label for="p5r-june-8-2">Confidant Faith Rank 2</label>
         <p>Location: Respond to Text from Kasumi's Message</p>
         <ol>
           <li>Choice 1: We're just getting started [+2]</li>
@@ -292,31 +525,57 @@
           <li>(Phone)Choice 1: Impressive [+2]</li>
         </ol>
 
-        <h4>[Evening | Weahter: Cloudy]</h4>
-        <p>
-          Head to Dinner at Shibuya(Central Street) and order Surprise Sando
-          [Knowledge +2, Guts +2]
-        </p>
+        <h4>[Evening | Weather: Cloudy]</h4>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-8-3"
+          data-id="p5r-june-8-3"
+        />
+        <label for="p5r-june-8-3"
+          >Head to Dinner at Shibuya (Central Street) and order Surprise Sando
+          [Knowledge +2, Guts +2]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-9">June 9 Thursday</h3>
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Head to Dinner at Shibuya(Central Street) and order Surprise Sando
-          [Knowledge +2, Guts +2]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-9-1"
+          data-id="p5r-june-9-1"
+        />
+        <label for="p5r-june-9-1"
+          >Head to Dinner at Shibuya (Central Street) and order Surprise Sando
+          [Knowledge +2, Guts +2]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-10">June 10 Friday</h3>
         <h3>Required Arcana: Temperance</h3>
         <h4>[Afternoon | Weather: Sunny]</h4>
-        <p>Confidant Justice Rank 1 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-10-1"
+          data-id="p5r-june-10-1"
+        />
+        <label for="p5r-june-10-1">Confidant Justice Rank 1 [Automatic]</label>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Confidant Temperance Rank 4 [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-10-2"
+          data-id="p5r-june-10-2"
+        />
+        <label for="p5r-june-10-2"
+          >Confidant Temperance Rank 4 [5000 Yen]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice: Any</li>
           <li>Choice 1: How rude [+2]</li>
@@ -330,20 +589,38 @@
         <p>Enjoy the story. Nothing to worry about on this day.</p>
 
         <h4>[Late Night]</h4>
-        <p>Confidant Fool Rank 5 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-11-1"
+          data-id="p5r-june-11-1"
+        />
+        <label for="p5r-june-11-1">Confidant Fool Rank 5 [Automatic]</label>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-12">June 12 Sunday</h3>
         <h3>Required Arcana: Lovers</h3>
         <h4>[Daytime | Weather: Sunny]</h4>
-        <p>
-          Drink Vitality Aojiru at Shibuya[Underground Walkway] [5000 Yen,
-          Proficiency +2]
-        </p>
-        <p>Confidant Lovers Rank 7</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-12-1"
+          data-id="p5r-june-12-1"
+        />
+        <label for="p5r-june-12-1"
+          >Drink Vitality Aojiru at Shibuya [Underground Walkway] [5000 Yen,
+          Proficiency +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-12-2"
+          data-id="p5r-june-12-2"
+        />
+        <label for="p5r-june-12-2">Confidant Lovers Rank 7</label>
         <p>Unlocked: Asakusa-Oshiage</p>
-        <p>Location: Shibuya[Underground Mall]</p>
+        <p>Location: Shibuya [Underground Mall]</p>
         <ol>
           <li>Choice 2: She admires you [+2]</li>
           <li>Choice: Any</li>
@@ -353,12 +630,24 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>
-          Head to Kichijoji[Back Alley] to Talk to the Sakai and trade Imported
-          Proten for Decorative Whip
-        </p>
-        <p>Confidant Sun Rank 5 [Charm +3]</p>
-        <p>Location: Shubuya[Station Square]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-12-3"
+          data-id="p5r-june-12-3"
+        />
+        <label for="p5r-june-12-3"
+          >Head to Kichijoji [Back Alley] to Talk to the Sakai and trade
+          Imported Protein for Decorative Whip</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-12-4"
+          data-id="p5r-june-12-4"
+        />
+        <label for="p5r-june-12-4">Confidant Sun Rank 5 [Charm +3]</label>
+        <p>Location: Shibuya [Station Square]</p>
       </section>
 
       <section>
@@ -366,11 +655,26 @@
           June 13 Monday | Rainy Season
         </h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Green [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-13-1"
+          data-id="p5r-june-13-1"
+        />
+        <label for="p5r-june-13-1"
+          >Teacher's Question: Answer: Green [Knowledge +2]</label
+        >
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Head to the Bathhouse. [Charm +3, Guts +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-13-2"
+          data-id="p5r-june-13-2"
+        />
+        <label for="p5r-june-13-2"
+          >Head to the Bathhouse. [Charm +3, Guts +2]</label
+        >
       </section>
 
       <section>
@@ -378,12 +682,31 @@
           June 14 Tuesday | Rainy Season
         </h3>
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Head to Shibuy[Book Store]</p>
-        <p>Buy the following Book:</p>
-        <ul>
-          <li>The Art of Charm [700 Yen]</li>
-        </ul>
-        <p>Head to the Bathhouse. [Charm +3, Guts +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-14-1"
+          data-id="p5r-june-14-1"
+        />
+        <label for="p5r-june-14-1">Head to Shibuya [Book Store]</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-14-2"
+          data-id="p5r-june-14-2"
+        />
+        <label for="p5r-june-14-2"
+          >Buy the following Book: The Art of Charm [700 Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-14-3"
+          data-id="p5r-june-14-3"
+        />
+        <label for="p5r-june-14-3"
+          >Head to the Bathhouse. [Charm +3, Guts +2]</label
+        >
       </section>
 
       <section>
@@ -392,15 +715,36 @@
         </h3>
         <h3>Required Arcana: Temperance</h3>
         <h4>[Early Morning | Weather: Rain]</h4>
-        <p>Train Reading: The Art of Charm [1/2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-15-1"
+          data-id="p5r-june-15-1"
+        />
+        <label for="p5r-june-15-1">Train Reading: The Art of Charm [1/2]</label>
 
         <h4>[Afternoon | Weather: Rain]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Coins [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-15-2"
+          data-id="p5r-june-15-2"
+        />
+        <label for="p5r-june-15-2"
+          >Teacher's Question: Answer: Coins [Knowledge +2]</label
+        >
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Confidant Temperance Rank 5 [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-15-3"
+          data-id="p5r-june-15-3"
+        />
+        <label for="p5r-june-15-3"
+          >Confidant Temperance Rank 5 [5000 Yen]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice 1: It's fun [+2]</li>
           <li>Choice 1: How terrible [+2]</li>
@@ -416,12 +760,42 @@
           June 16 Thursday | Rainy Season
         </h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Read: The Art of Charm [2/2] [Charm +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-16-1"
+          data-id="p5r-june-16-1"
+        />
+        <label for="p5r-june-16-1"
+          >Read: The Art of Charm [2/2] [Charm +5]</label
+        >
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Wardrobe [Knowledge +2]</p>
-        <p>Head to the Bathhouse. [Charm +3, Guts +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-16-2"
+          data-id="p5r-june-16-2"
+        />
+        <label for="p5r-june-16-2">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-16-3"
+          data-id="p5r-june-16-3"
+        />
+        <label for="p5r-june-16-3"
+          >Crossword Answer: Wardrobe [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-16-4"
+          data-id="p5r-june-16-4"
+        />
+        <label for="p5r-june-16-4"
+          >Head to the Bathhouse. [Charm +3, Guts +2]</label
+        >
       </section>
 
       <section>
@@ -430,8 +804,16 @@
         </h3>
         <h3>Required Arcana: Temperance</h3>
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Confidant Temperance Rank 6 [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-17-1"
+          data-id="p5r-june-17-1"
+        />
+        <label for="p5r-june-17-1"
+          >Confidant Temperance Rank 6 [5000 Yen]</label
+        >
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice 2: Want to rest a bit? [+2]</li>
           <li>Choice 1: Are you all right? [+3]</li>
@@ -443,26 +825,72 @@
       <section>
         <h3 class="date-font" id="p5r-june-18">June 18 Saturday</h3>
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Head to Shibuya[Underground walkway] and talk to Yusuke</p>
-        <p>Confidant Emperor Rank 1 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-18-1"
+          data-id="p5r-june-18-1"
+        />
+        <label for="p5r-june-18-1"
+          >Head to Shibuya [Underground walkway] and talk to Yusuke</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-18-2"
+          data-id="p5r-june-18-2"
+        />
+        <label for="p5r-june-18-2">Confidant Emperor Rank 1 [Automatic]</label>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>*Create a save point to reload from*</p>
-        <p>
-          Craft at your desk in your room [Proficiency +5] [If needed reload
-          until Proficiency has been acquired]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-18-3"
+          data-id="p5r-june-18-3"
+        />
+        <label for="p5r-june-18-3">*Create a save point to reload from*</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-18-4"
+          data-id="p5r-june-18-4"
+        />
+        <label for="p5r-june-18-4"
+          >Craft at your desk in your room [Proficiency +5] [If needed reload
+          until Proficiency has been acquired]</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-19">June 19 Sunday</h3>
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>*Create a save point to reload from*</p>
-        <p>
-          Craft at your desk in your room [Proficiency +5] [If needed reload
-          until Proficiency has been acquired]
-        </p>
-        <p>Proficiency Rank Up [Decent - Skilled]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-19-1"
+          data-id="p5r-june-19-1"
+        />
+        <label for="p5r-june-19-1">*Create a save point to reload from*</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-19-2"
+          data-id="p5r-june-19-2"
+        />
+        <label for="p5r-june-19-2"
+          >Craft at your desk in your room [Proficiency +5] [If needed reload
+          until Proficiency has been acquired]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-19-3"
+          data-id="p5r-june-19-3"
+        />
+        <label for="p5r-june-19-3"
+          >Proficiency Rank Up [Decent - Skilled]</label
+        >
       </section>
 
       <section>
@@ -471,16 +899,44 @@
         </h3>
         <h3>Required Arcana: Lovers</h3>
         <h4>[Morning | Weather: Rain]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Smartphone [Charm +2, Lovers +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-20-1"
+          data-id="p5r-june-20-1"
+        />
+        <label for="p5r-june-20-1"
+          >Teacher's Question: Answer: Smartphone [Charm +2, Lovers +2]</label
+        >
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>*Create a save point to reload from for crafting and chalk dodge*</p>
-        <p>
-          Craft at your desk in your room [Proficiency +5] [If needed reload
-          until Proficiency has been acquired]
-        </p>
-        <p>Confidant Magician Rank 4 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-20-2"
+          data-id="p5r-june-20-2"
+        />
+        <label for="p5r-june-20-2"
+          >*Create a save point to reload from for crafting and chalk
+          dodge*</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-20-3"
+          data-id="p5r-june-20-3"
+        />
+        <label for="p5r-june-20-3"
+          >Craft at your desk in your room [Proficiency +5] [If needed reload
+          until Proficiency has been acquired]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-20-4"
+          data-id="p5r-june-20-4"
+        />
+        <label for="p5r-june-20-4">Confidant Magician Rank 4 [Automatic]</label>
       </section>
 
       <section>
@@ -488,55 +944,165 @@
           June 21 Tuesday | Rainy Season
         </h3>
         <h4>[Afternoon | Weather: Cloudy]</h4>
-        <p>Dodge chalk [Charm +3] [Reload if needed]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-21-1"
+          data-id="p5r-june-21-1"
+        />
+        <label for="p5r-june-21-1"
+          >Dodge chalk [Charm +3] [Reload if needed]</label
+        >
 
         <h4>[After Class | Weather: Cloudy]</h4>
-        <p>Buy SP Adhessive 3 from Yongen-Jaya[Clinic] [50000 Yen]</p>
-        <p>Head to the Bank Palace from Shibuya[Hibeout]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-21-2"
+          data-id="p5r-june-21-2"
+        />
+        <label for="p5r-june-21-2"
+          >Buy SP Adhesive 3 from Yongen-Jaya [Clinic] [50000 Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-21-3"
+          data-id="p5r-june-21-3"
+        />
+        <label for="p5r-june-21-3"
+          >Head to the Bank Palace from Shibuya [Hideout]</label
+        >
         <h4>While in Bank Palace:</h4>
         <ul>
           <li>Reach Bank Palace Treasure</li>
           <li>Obtain Arcana: Priestess</li>
           <li>Obtain Arcana: Emperor</li>
-          <li>Obsstain Arcana: Justice</li>
+          <li>Obtain Arcana: Justice</li>
           <li>Obtain Arcana: Faith</li>
           <li>Acquire at least 200000 Yen</li>
         </ul>
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Study in Leblanc Cafe [Knowledge +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-21-4"
+          data-id="p5r-june-21-4"
+        />
+        <label for="p5r-june-21-4">Study in Leblanc Cafe [Knowledge +5]</label>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-22">June 22 Wednesday</h3>
         <h3>Required Arcana: Justice</h3>
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>
-          Head to Shibuya[Underground Walkway] and sign up for the Rafflesia
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-1"
+          data-id="p5r-june-22-1"
+        />
+        <label for="p5r-june-22-1"
+          >Head to Shibuya [Underground Walkway] and sign up for the Rafflesia
           Flower Shop job from the Part-Time Listings. [Job Required Charm Rank
-          2 Head-Turning or above]
-        </p>
-        <p>
-          Work at Rafflesia Flower Shop at Shibuya[Underground Mall] [Kindness
-          +3]
-        </p>
+          2 Head-Turning or above]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-2"
+          data-id="p5r-june-22-2"
+        />
+        <label for="p5r-june-22-2"
+          >Work at Rafflesia Flower Shop at Shibuya [Underground Mall] [Kindness
+          +3]</label
+        >
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Return X Folders at Rental Store in Shibuya[Central Street]</p>
-        <p>Rent ICU from Rental Store in Shibuya[Central Street]</p>
-        <p>Buy 6 Mega Fertilizers from Shinjuku[Flower Shop] [18000 Yen]</p>
-        <p>Buy the following books from Shinjuku BookStore:</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-3"
+          data-id="p5r-june-22-3"
+        />
+        <label for="p5r-june-22-3"
+          >Return X Folders at Rental Store in Shibuya [Central Street]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-4"
+          data-id="p5r-june-22-4"
+        />
+        <label for="p5r-june-22-4"
+          >Rent ICU from Rental Store in Shibuya [Central Street]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-5"
+          data-id="p5r-june-22-5"
+        />
+        <label for="p5r-june-22-5"
+          >Buy 6 Mega Fertilizers from Shinjuku [Flower Shop] [18000 Yen]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-6"
+          data-id="p5r-june-22-6"
+        />
+        <label for="p5r-june-22-6"
+          >Buy the following books from Shinjuku BookStore:</label
+        >
         <ul>
           <li>The Craft of Cinema [2800 Yen]</li>
           <li>Flowerpedia [2800 Yen]</li>
           <li>ABCs of Crafting [2000 Yen]</li>
         </ul>
-        <p>Head to your room and feed plant Mega Fertilizer [Kindness +5]</p>
-        <p>Kindness Rank Up [Considerate - Empathetic]</p>
-        <p>Crossword Puzzle</p>
-        <p>Crossword Answer: Currency [Knowledge +2]</p>
-        <p>Confidant Justice Rank 2</p>
-        <p>Location: Kichijoji[Darts Club]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-7"
+          data-id="p5r-june-22-7"
+        />
+        <label for="p5r-june-22-7"
+          >Head to your room and feed plant Mega Fertilizer [Kindness +5]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-8"
+          data-id="p5r-june-22-8"
+        />
+        <label for="p5r-june-22-8"
+          >Kindness Rank Up [Considerate - Empathetic]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-9"
+          data-id="p5r-june-22-9"
+        />
+        <label for="p5r-june-22-9">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-10"
+          data-id="p5r-june-22-10"
+        />
+        <label for="p5r-june-22-10"
+          >Crossword Answer: Currency [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-22-11"
+          data-id="p5r-june-22-11"
+        />
+        <label for="p5r-june-22-11">Confidant Justice Rank 2</label>
+        <p>Location: Kichijoji [Darts Club]</p>
         <ol>
           <li>Choice 1: You always seem so busy [+2]</li>
           <li>Choice: Any</li>
@@ -552,19 +1118,60 @@
           June 23 Thursday | Rainy Season
         </h3>
         <h4>[Early Morning | Weather: Rain]</h4>
-        <p>Train Reading: The Craft of Cinema [1/1]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-23-1"
+          data-id="p5r-june-23-1"
+        />
+        <label for="p5r-june-23-1"
+          >Train Reading: The Craft of Cinema [1/1]</label
+        >
 
         <h4>[Morning | Weather: Rain]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: A pope [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-23-2"
+          data-id="p5r-june-23-2"
+        />
+        <label for="p5r-june-23-2"
+          >Teacher's Question: Answer: A pope [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>Send Calling Card</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-23-3"
+          data-id="p5r-june-23-3"
+        />
+        <label for="p5r-june-23-3">Send Calling Card</label>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>TV Quiz</p>
-        <p>TV Quiz Answer: Ordering food without money [Knowledge +2]</p>
-        <p>Watch ICU [1/2] [Kindness +5]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-23-4"
+          data-id="p5r-june-23-4"
+        />
+        <label for="p5r-june-23-4">TV Quiz</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-23-5"
+          data-id="p5r-june-23-5"
+        />
+        <label for="p5r-june-23-5"
+          >TV Quiz Answer: Ordering food without money [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-23-6"
+          data-id="p5r-june-23-6"
+        />
+        <label for="p5r-june-23-6">Watch ICU [1/2] [Kindness +5]</label>
       </section>
 
       <section>
@@ -572,41 +1179,104 @@
           June 24 Friday | Take Your Heart
         </h3>
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>Clear Bank Palace</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-24-1"
+          data-id="p5r-june-24-1"
+        />
+        <label for="p5r-june-24-1">Clear Bank Palace</label>
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Study at Leblanc [Knowledge +5]</p>
-        <p>Confidant Magician Rank 5 [Automatic]</p>
-        <p>Confidant Fool Rank 6 [Automatic]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-24-2"
+          data-id="p5r-june-24-2"
+        />
+        <label for="p5r-june-24-2">Study at Leblanc [Knowledge +5]</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-24-3"
+          data-id="p5r-june-24-3"
+        />
+        <label for="p5r-june-24-3">Confidant Magician Rank 5 [Automatic]</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-24-4"
+          data-id="p5r-june-24-4"
+        />
+        <label for="p5r-june-24-4">Confidant Fool Rank 6 [Automatic]</label>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-25">June 25 Saturday</h3>
         <h3>Required Arcana: Temperance, Priestess</h3>
         <h4>[Morning | Weather: Sunny]</h4>
-        <p>Read: Flowerpedia [1/1]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-25-1"
+          data-id="p5r-june-25-1"
+        />
+        <label for="p5r-june-25-1">Read: Flowerpedia [1/1]</label>
 
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Shujin Academy[Student Council Room] talk to Makoto</p>
-        <p>
-          Confidant Priestess Rank 1 [Requires Knowledge Rank 3 ] [Automatic]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-25-2"
+          data-id="p5r-june-25-2"
+        />
+        <label for="p5r-june-25-2"
+          >Shujin Academy [Student Council Room] talk to Makoto</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-25-3"
+          data-id="p5r-june-25-3"
+        />
+        <label for="p5r-june-25-3"
+          >Confidant Priestess Rank 1 [Requires Knowledge Rank 3]
+          [Automatic]</label
+        >
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>Temperance Hangout [5000 Yen]</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-25-4"
+          data-id="p5r-june-25-4"
+        />
+        <label for="p5r-june-25-4">Temperance Hangout [5000 Yen]</label>
+        <p>Location: Leblanc Cafe (Payphone)</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-26">June 26 Sunday</h3>
         <h3>Required Arcana: Priestess</h3>
         <h4>[Daytime | Weather: Cloudy]</h4>
-        <p>
-          Drink Vatality Aojiru at Shibuya[Underground Walkway] [5000 Yen,
-          Proficiency +2]
-        </p>
-        <p>Confidant Priestess Rank 2</p>
-        <p>Location: Aoyama-Itchome[School Gate]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-26-1"
+          data-id="p5r-june-26-1"
+        />
+        <label for="p5r-june-26-1"
+          >Drink Vitality Aojiru at Shibuya [Underground Walkway] [5000 Yen,
+          Proficiency +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-26-2"
+          data-id="p5r-june-26-2"
+        />
+        <label for="p5r-june-26-2">Confidant Priestess Rank 2</label>
+        <p>Location: Aoyama-Itchome [School Gate]</p>
         <ol>
           <li>Choice 1: You're very well informed [+2]</li>
           <li>Choice 2: That was dangerous [+3]</li>
@@ -615,8 +1285,14 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Confidant Sun Rank 6</p>
-        <p>Location: Shibuya[Station Square]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-26-3"
+          data-id="p5r-june-26-3"
+        />
+        <label for="p5r-june-26-3">Confidant Sun Rank 6</label>
+        <p>Location: Shibuya [Station Square]</p>
       </section>
 
       <section>
@@ -625,32 +1301,59 @@
         </h3>
         <h3>Required Arcana: Councillor</h3>
         <h4>[Morning | Weather: Rain]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Dogs [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-27-1"
+          data-id="p5r-june-27-1"
+        />
+        <label for="p5r-june-27-1"
+          >Teacher's Question: Answer: Dogs [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Rain]</h4>
-        <p>Confidant Councillor Rank 5</p>
-        <p>Location: Shujin Academy[Practice Building 1F]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-27-2"
+          data-id="p5r-june-27-2"
+        />
+        <label for="p5r-june-27-2">Confidant Councillor Rank 5</label>
+        <p>Location: Shujin Academy [Practice Building 1F]</p>
         <ol>
           <li>Choice 1: This looks great! [+3]</li>
           <li>Choice: Any</li>
           <li>Choice 3: You know, you're right [+3]</li>
           <li>Choice 2: Hey, as long as it tastes good [+2]</li>
           <li>Choice 2: I guess so [+2]</li>
-          <li>(Phone)Choice 1: I really dont mind [+2]</li>
+          <li>(Phone)Choice 1: I really don’t mind [+2]</li>
         </ol>
 
         <h4>[Evening | Weather: Rain]</h4>
-        <p>Confidant Devil Rank 1 [Charm +3] [Automatic]</p>
-        <p>Location: Shinjuku[Bar Crossroads]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-27-3"
+          data-id="p5r-june-27-3"
+        />
+        <label for="p5r-june-27-3"
+          >Confidant Devil Rank 1 [Charm +3] [Automatic]</label
+        >
+        <p>Location: Shinjuku [Bar Crossroads]</p>
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-28">June 28 Tuesday</h3>
         <h3>Required Arcana: Lovers</h3>
         <h4>[After School | Weather: Sunny]</h4>
-        <p>Confidant Lovers Hangout</p>
-        <p>Location: Shibuya[Underground Mall]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-28-1"
+          data-id="p5r-june-28-1"
+        />
+        <label for="p5r-june-28-1">Confidant Lovers Hangout</label>
+        <p>Location: Shibuya [Underground Mall]</p>
         <p>Hangout Spot: Harajuku</p>
         <ol>
           <li>Choice 1: Yeah [+3]</li>
@@ -660,21 +1363,40 @@
         </ul>
 
         <h4>[Evening | Weather: Sunny]</h4>
-        <p>
-          Head to Shinjuku[Fourtune Telling Booth] and talk with Cheerful
-          Fortune Teller
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-28-2"
+          data-id="p5r-june-28-2"
+        />
+        <label for="p5r-june-28-2"
+          >Head to Shinjuku [Fortune Telling Booth] and talk with Cheerful
+          Fortune Teller</label
+        >
       </section>
 
       <section>
         <h3 class="date-font" id="p5r-june-29">June 29 Wednesday</h3>
         <h3>Required Arcana: Faith, Temperance</h3>
         <h4>[Morning | Weather: Cloudy]</h4>
-        <p>Teacher's Question:</p>
-        <p>Answer: Gold [Knowledge +2]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-29-1"
+          data-id="p5r-june-29-1"
+        />
+        <label for="p5r-june-29-1"
+          >Teacher's Question: Answer: Gold [Knowledge +2]</label
+        >
 
         <h4>[After School | Weather: Cloudy]</h4>
-        <p>Confidant Faith Rank 3</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-29-2"
+          data-id="p5r-june-29-2"
+        />
+        <label for="p5r-june-29-2">Confidant Faith Rank 3</label>
         <p>Location: Respond to Text from Kasumi's Message</p>
         <ol>
           <li>Choice 1: Making bento? [+3]</li>
@@ -689,8 +1411,14 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Confidant Temperance Rank 7</p>
-        <p>Location: Leblanc Cafe(Payphone)</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-29-3"
+          data-id="p5r-june-29-3"
+        />
+        <label for="p5r-june-29-3">Confidant Temperance Rank 7</label>
+        <p>Location: Leblanc Cafe (Payphone)</p>
         <ol>
           <li>Choice 3: Don't pay them [+3]</li>
           <li>Choice 3: Think this through more [+3]</li>
@@ -704,8 +1432,14 @@
         </h3>
         <h3>Required Arcana: Priestess</h3>
         <h4>[After School | Weather: Rain]</h4>
-        <p>Confidant Priestess Rank 3</p>
-        <p>Location: Shujin Academy[Student Council Room]</p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-30-1"
+          data-id="p5r-june-30-1"
+        />
+        <label for="p5r-june-30-1">Confidant Priestess Rank 3</label>
+        <p>Location: Shujin Academy [Student Council Room]</p>
         <ol>
           <li>Choice 1: You have the wrong idea [+2]</li>
           <li>Choice 2: You can change [+3]</li>
@@ -713,108 +1447,127 @@
         </ol>
 
         <h4>[Evening | Weather: Cloudy]</h4>
-        <p>Crossworld Puzzle</p>
-        <p>Crossword Answer: Front [Knowledge +2]</p>
-        <p>
-          Head to Shinjuku[Fourtune Telling Booth] and talk with Chihaya [100000
-          Yen]
-        </p>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-30-2"
+          data-id="p5r-june-30-2"
+        />
+        <label for="p5r-june-30-2">Crossword Puzzle</label>
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-30-3"
+          data-id="p5r-june-30-3"
+        />
+        <label for="p5r-june-30-3"
+          >Crossword Answer: Front [Knowledge +2]</label
+        >
+        <input
+          type="checkbox"
+          class="progress-checkbox"
+          id="p5r-june-30-4"
+          data-id="p5r-june-30-4"
+        />
+        <label for="p5r-june-30-4"
+          >Head to Shinjuku [Fortune Telling Booth] and talk with Chihaya
+          [100000 Yen]</label
+        >
       </section>
-
-      <section>
-        <table>
-          <h3>June Confidant Rank Update</h3>
-          <thead>
-            <tr>
-              <th>Persona Arcana</th>
-              <th>Rank</th>
-              <th>Current Month Progress</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Fool (Prison Master)</td>
-              <td>6</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Magician (Morgana)</td>
-              <td>5</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Priestess (Makoto Niijima)</td>
-              <td>3</td>
-              <td>New, Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Emperor (Yusuke Kitagawa)</td>
-              <td>1</td>
-              <td>New, +1</td>
-            </tr>
-            <tr>
-              <td>Hierophant (Sojiro Sakura)</td>
-              <td>4</td>
-              <td>Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Lovers (Ann Takamaki)</td>
-              <td>7</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Chariot (Ryuji Sakamoto)</td>
-              <td>8</td>
-              <td>Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Justice (Goro Akechi)</td>
-              <td>2</td>
-              <td>New, Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Strength (Twin Waradens)</td>
-              <td>1</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Death (Back-Alley Doctor)</td>
-              <td>7</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Temperance (Sadayo Kawakami)</td>
-              <td>7</td>
-              <td>Rank Up +5</td>
-            </tr>
-            <tr>
-              <td>Devil (Ichiko Ohya)</td>
-              <td>1</td>
-              <td>New, Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Moon (Yuuki Mishima)</td>
-              <td>2</td>
-              <td>Unchanged</td>
-            </tr>
-            <tr>
-              <td>Sun (Man of the People)</td>
-              <td>6</td>
-              <td>Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Faith (Kasumi Yoshizawa)</td>
-              <td>3</td>
-              <td>Rank Up +2</td>
-            </tr>
-            <tr>
-              <td>Councillor (Takuto Maruki)</td>
-              <td>5</td>
-              <td>Rank Up +2</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    </section>
+    <section>
+      <table class="confidant-table">
+        <h3>June Confidant Rank Update</h3>
+        <thead>
+          <tr>
+            <th>Persona Arcana</th>
+            <th>Rank</th>
+            <th>Current Month Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fool (Prison Master)</td>
+            <td>6</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Magician (Morgana)</td>
+            <td>5</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Priestess (Makoto Niijima)</td>
+            <td>3</td>
+            <td>New, Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Emperor (Yusuke Kitagawa)</td>
+            <td>1</td>
+            <td>New, +1</td>
+          </tr>
+          <tr>
+            <td>Hierophant (Sojiro Sakura)</td>
+            <td>4</td>
+            <td>Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Lovers (Ann Takamaki)</td>
+            <td>7</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Chariot (Ryuji Sakamoto)</td>
+            <td>8</td>
+            <td>Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Justice (Goro Akechi)</td>
+            <td>2</td>
+            <td>New, Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Strength (Twin Waradens)</td>
+            <td>1</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Death (Back-Alley Doctor)</td>
+            <td>7</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Temperance (Sadayo Kawakami)</td>
+            <td>7</td>
+            <td>Rank Up +5</td>
+          </tr>
+          <tr>
+            <td>Devil (Ichiko Ohya)</td>
+            <td>1</td>
+            <td>New, Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Moon (Yuuki Mishima)</td>
+            <td>2</td>
+            <td>Unchanged</td>
+          </tr>
+          <tr>
+            <td>Sun (Man of the People)</td>
+            <td>6</td>
+            <td>Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Faith (Kasumi Yoshizawa)</td>
+            <td>3</td>
+            <td>Rank Up +2</td>
+          </tr>
+          <tr>
+            <td>Councillor (Takuto Maruki)</td>
+            <td>5</td>
+            <td>Rank Up +2</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 </html>

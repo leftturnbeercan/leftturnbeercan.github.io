@@ -1,430 +1,485 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--<link
+
+<head>
+  <!--<link
       href="/css/fonts/bubblegum-superstar.ttf"
       rel="stylesheet"
       type="text/css"
     />-->
-    <link href="/css/p3r-months.css" rel="stylesheet">
-    <title>Calendar: April(Persona 4 Reload)</title>
-  </head>
-  <main>
-    <header>
-      <h1>
-        <u>April</u>
-      </h1>
-      <nav>
-        <ul id="main_menu_setup" class="main_menu_style">
-          <li><a href="/Persona3reload/persona3reload.html">Home</a></li>
-          <li><a href="/Persona3reload/calendar-p3r.html">Month</a></li>
-        </ul>
-      </nav>
+  <link href="/css/p3r-months.css" rel="stylesheet">
+  <script src="/js/progress-tracking.js" defer></script>
+  <title>Calendar: April(Persona 4 Reload)</title>
+</head>
+<main>
+  <header>
+    <h1>
+      <u>April</u>
+    </h1>
+    <nav>
+      <ul id="main_menu_setup" class="navbar">
+        <li><a href="/Persona3reload/persona3reload.html">Home</a></li>
+        <li><a href="/Persona3reload/calendar-p3r.html">Month</a></li>
+      </ul>
+    </nav>
 
-      <nav>
-        <table class="cal_nav_border" id="cal_nav">
-          <thead>
-            <tr>
-              <th class="cal_nav_th_font">Sun</th>
-              <th class="cal_nav_th_font">Mon</th>
-              <th class="cal_nav_th_font">Tue</th>
-              <th class="cal_nav_th_font">Wed</th>
-              <th class="cal_nav_th_font">Thur</th>
-              <th class="cal_nav_th_font">Fri</th>
-              <th class="cal_nav_th_font">Sat</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="cal_nav_font"></td>
-              <td class="cal_nav_font"></td>
-              <td class="cal_nav_font"></td>
-              <td class="cal_nav_font">1</td>
-              <td class="cal_nav_font">2</td>
-              <td class="cal_nav_font">3</td>
-              <td class="cal_nav_font">4</td>
-            </tr>
-            <tr>
-              <td class="cal_nav_font">5</td>
-              <td class="cal_nav_font"><a href="#p3r-april-6">6</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-7">7</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-8">8</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-9">9</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-10">10</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-11">11</a></td>
-            </tr>
-            <tr>
-              <td class="cal_nav_font"><a href="#p3r-april-12">12</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-13">13</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-14">14</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-15">15</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-16">16</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-17">17</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-18">18</a></td>
-            </tr>
-            <tr>
-              <td class="cal_nav_font"><a href="#p3r-april-19">19</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-20">20</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-21">21</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-22">22</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-23">23</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-24">24</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-25">25</a></td>
-            </tr>
-            <tr>
-              <td class="cal_nav_font"><a href="#p3r-april-26">26</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-27">27</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-28">28</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-29">29</a></td>
-              <td class="cal_nav_font"><a href="#p3r-april-30">30</a></td>
-              <td class="cal_nav_font"><a href=""></a></td>
-              <td class="cal_nav_font"><a href=""></a></td>
-            </tr>
-          </tbody>
-        </table>
-      </nav>
-    </header>
+    <nav>
+      <table class="cal_nav_border" id="cal_nav">
+        <thead>
+          <tr>
+            <th class="cal_nav_th_font">Sun</th>
+            <th class="cal_nav_th_font">Mon</th>
+            <th class="cal_nav_th_font">Tue</th>
+            <th class="cal_nav_th_font">Wed</th>
+            <th class="cal_nav_th_font">Thur</th>
+            <th class="cal_nav_th_font">Fri</th>
+            <th class="cal_nav_th_font">Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cal_nav_font"></td>
+            <td class="cal_nav_font"></td>
+            <td class="cal_nav_font"></td>
+            <td class="cal_nav_font">1</td>
+            <td class="cal_nav_font">2</td>
+            <td class="cal_nav_font">3</td>
+            <td class="cal_nav_font">4</td>
+          </tr>
+          <tr>
+            <td class="cal_nav_font">5</td>
+            <td class="cal_nav_font"><a href="#p3r-april-6">6</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-7">7</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-8">8</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-9">9</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-10">10</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-11">11</a></td>
+          </tr>
+          <tr>
+            <td class="cal_nav_font"><a href="#p3r-april-12">12</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-13">13</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-14">14</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-15">15</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-16">16</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-17">17</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-18">18</a></td>
+          </tr>
+          <tr>
+            <td class="cal_nav_font"><a href="#p3r-april-19">19</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-20">20</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-21">21</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-22">22</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-23">23</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-24">24</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-25">25</a></td>
+          </tr>
+          <tr>
+            <td class="cal_nav_font"><a href="#p3r-april-26">26</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-27">27</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-28">28</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-29">29</a></td>
+            <td class="cal_nav_font"><a href="#p3r-april-30">30</a></td>
+            <td class="cal_nav_font"><a href=""></a></td>
+            <td class="cal_nav_font"><a href=""></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </nav>
+  </header>
 
-    <section id="content-days">
-      <section>
-        <h3 class="" id="p3r-april-6">Monday April 6</h3>
-        <p>Nothing</p>
-      </section>
+  <section id="content-days">
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-6">Monday April 6</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-7">Tuesday April 7</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-7">Tuesday April 7</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-8">Wednesday April 8</h3>
-        <h4>[Afternoon]</h4>
-        <p>Teacher Question:</p>
-        <p>Vivid carp streamers</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-8">Wednesday April 8</h3>
+      <h4>[Afternoon]</h4>
+      <p>Teacher Question:</p>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-8-1" data-id="p3r-april-8-1">
+      <label for="p3r-april-8-1">Answer: Vivid carp streamers</label>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-9">Thursday April 9</h3>
-        <h4>[Morning]</h4>
-        <p>During Class:</p>
-        <p>Stay Awake</p>
-      </section>
 
-      <section>
-        <h3 class="" id="p3r-april-10">Friday April 10</h3>
-       <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-9">Thursday April 9</h3>
+      <h4>[Morning]</h4>
+      <p>During Class:</p>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-9-1" data-id="p3r-april-9-1">
+      <label for="p3r-april-9-1">Stay Awake</label>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-11">Saturday April 11</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-10">Friday April 10</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-12">Sunday April 12</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-11">Saturday April 11</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-13">Monday April 13</h3>
-        <p>Nothing</p>
-      </section>
 
-      <section>
-        <h3 class="" id="p3r-april-14">Tuesday April 14</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-12">Sunday April 12</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-15">Wednesday April 15</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-13">Monday April 13</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-16">Thursday April 16</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-14">Tuesday April 14</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-17">Friday April 17</h3>
-        <p>Nothing</p>
-      </section>
 
-      <section>
-        <h3 class="" id="p3r-april-18">Saturday April 18</h3>
-        <h4>[Afternoon]</h4>
-        <p>Teacher Question:</p>
-        <p>Middens</p>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-15">Wednesday April 15</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Social Link Fool Rank 1 [Automatic]
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-16">Thursday April 16</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-19">Sunday April 19</h3>
-        <p>Nothing</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-17">Friday April 17</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-20">Monday April 20</h3>
-        <h4>[Dark Hour]</h4>
-        <p>After Tartarus Tutorial: Social Link Fool Rank 2 [Automatic]</p>
-      </section>
 
-      <section>
-        <h3 class="" id="p3r-april-21">Tuesday April 21</h3>
-        <h4>[Afternoon]</h4>
-        <p>During Class:</p>
-        <p>Stay Awake</p>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-18">Saturday April 18</h3>
+      <h4>[Afternoon]</h4>
+      <p>Teacher Question:</p>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-18-1" data-id="p3r-april-18-1">
+      <label for="p3r-april-18-1">Answer: Middens</label>
 
-        <h4>[After School]</h4>
-        <p>*Note: Do not buy weapons*</p>
-        <p>Head to Iwatodai Strip Mall and buy Weird Takoyaki[400 Yen] from Octopia</p>
-        <p>Head to Paulownia Mall[Arcade] and play House of the Deceased[3000 Yen]</p>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-18-2" data-id="p3r-april-18-2">
+      <label for="p3r-april-18-2">Social Link Fool Rank 1 [Automatic]</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Head to Tartarus to activate the Dark Hour</p>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-19">Sunday April 19</h3>
+      <p>Nothing planned for this day.</p>
+    </section>
 
-        <h4>[Dark Hour]</h4>
-        <p>While in Tartarus complete the following</p>
-        <ul>
-          <li>Reach Floor 22</li>
-          <li>Make sure to reach level 11 or higher</li>
-          <li>Obtain enough materials to be sold for next day to acquire 40,000 Yen or more.(Make sure to create a save point before heading out of Tartarus to reload from incase enough materials was not received to sell.)</li>
-          <li>Obtain a Odd Morsel</li>
-          <li>Acquire Persona Forneus</li>
-          <li>Acquire Persona Pixie</li>
-          <li>Acquire Persona Silky</li>
-          <li>Acquire Persona Angel</li>
-          <li>Acquire Persona Apsaras</li>
-          <li>Fuse: Silky + Apsaras for Jack Frost</li>
-          <li>Fuse: Jack Frost + Angel or Opheus + Jack Frost for Omoikane</li>
-          <li>Fuse: Pixie + Jack Frost for Ara Mitama or Aquire Ara Mitama</li>
-        </ul>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-20">Monday April 20</h3>
+      <h4>[Dark Hour]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-20-1" data-id="p3r-april-20-1">
+      <label for="p3r-april-20-1">After Tartarus Tutorial: Social Link Fool Rank 2 [Automatic]</label>
+    </section>
 
-      <section>
-        <h3 class="" id="p3r-april-22">Wednesday April 22</h3>
-        <h3>Required Arcana: Magician</h3>
-        <h4>[After School]</h4>
-        <p>Social Link Magician Rank 1 [Automatic]</p>
 
-        <h4>[Evneing]</h4>
-        <p>Head to Paulowania Mall[Polica Station] to sell all materials.</p>
-        <p>*Make sure 40,000 Yen is acquired or more after selling materials, if not reload from previous save and farm for more materials.*</p>
-        <p>Head to Paulownia Mall[Mandragora] and Sing solo karaoke</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-21">Tuesday April 21</h3>
+      <h4>[Afternoon]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-21-1" data-id="p3r-april-21-1">
+      <label for="p3r-april-21-1">During Class: Stay Awake</label>
 
-      <section>
-        <h3 class="" id="p3r-april-23">Thursday April 23</h3>
-        <h3>Required Arcana: Chariot</h3>
-        <h4>[After School]</h4>
-        <p>Join Track Team</p>
-        <p>Location: Gekkoukan High School[Gym Hallway(Practice Field)]</p>
-        <p>Social Link Chariot Rank 1</p>
-        <ul>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-        </ul>
-        <p>Accept the event with Yuko</p>
-        <ul>
-          <li>Choice 1: Wanna walk home together?</li>
-        </ul>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-21-2" data-id="p3r-april-21-2">
+      <label for="p3r-april-21-2">Head to Iwatodai Strip Mall and buy Weird Takoyaki [400 Yen] from Octopia</label>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-21-3" data-id="p3r-april-21-3">
+      <label for="p3r-april-21-3">Head to Paulownia Mall [Arcade] and play House of the Deceased [3000 Yen]</label>
 
-        <h4>[Evening]</h4>
-        <p>While in the dorm head to the 2F and buy Mad Bull [110 Yen] from the Vending Machine.</p>
-        <p>Head out to Paulownia Mall[Game Parade] and play High School of Youth [1500 Yen]</p>
-      </section>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-21-4" data-id="p3r-april-21-4">
+      <label for="p3r-april-21-4">Head to Tartarus to activate the Dark Hour</label>
 
-      <section>
-        <h3 class="" id="p3r-april-24">Friday April 24</h3>
-        <h3>Required Arcana: Chariot, Strength</h3>
-        <h4>[After School]</h4>
-        <p>Social Link Chariot Rank 2</p>
-        <p>Location: Gekkoukan High School[Classroom 2-F]</p>
-        <ul>
-          <li>Choice 2: Toughen Up!</li>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-        </ul>
-        <p>Social Link Strength Rank 1</p>
-        <p>Accept the event with Yuko</p>
-        <p>Location: Unavailable</p>
-        <ul>
-          <li>Choice 1: Wanna walk home together?</li>
-          <li>Choice: Any</li>
-        </ul>
+      <h4>[Dark Hour]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-21-5" data-id="p3r-april-21-5">
+      <label for="p3r-april-21-5">While in Tartarus, complete the following tasks:</label>
+      <ul>
+        <li>Reach Floor 22</li>
+        <li>Make sure to reach level 11 or higher</li>
+        <li>Obtain enough materials to be sold for next day to acquire 40,000 Yen or more (Create a save point before
+          heading out of Tartarus to reload from in case enough materials were not received)</li>
+        <li>Obtain an Odd Morsel</li>
+        <li>Acquire Persona Forneus</li>
+        <li>Acquire Persona Pixie</li>
+        <li>Acquire Persona Silky</li>
+        <li>Acquire Persona Angel</li>
+        <li>Acquire Persona Apsaras</li>
+        <li>Fuse: Silky + Apsaras for Jack Frost</li>
+        <li>Fuse: Jack Frost + Angel or Orpheus + Jack Frost for Omoikane</li>
+        <li>Fuse: Pixie + Jack Frost for Ara Mitama or acquire Ara Mitama</li>
+      </ul>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Head to Paulownia Mall[Game Parade] and play House of the Deceased[3000 Yen]</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-22">Wednesday April 22</h3>
+      <h3>Required Arcana: Magician</h3>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-22-1" data-id="p3r-april-22-1">
+      <label for="p3r-april-22-1">Social Link Magician Rank 1 [Automatic]</label>
 
-      <section>
-        <h3 class="" id="p3r-april-25">Saturday April 25</h3>
-        <h3>Required Arcana: Hierophant</h3>
-        <h4>[After School]</h4>
-        <p>Head to Iwatodai Strip Mall[Bookworms] to start the prerequiste for Hirophant Social Link</p>
-        <p>Head to Gekkoukan High School[Corridor] and interact with the persimmon tree to obtain the persimmon leaf</p>
-        <p>Social Link Hierophant Rank 1</p>
-        <p>Head back to Iwatodai Strip Mall[Bookworms] and talk with the could couple to unlock Hierophant Social Link</p>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-22-2" data-id="p3r-april-22-2">
+      <label for="p3r-april-22-2">Head to Paulownia Mall [Police Station] to sell all materials</label>
+      <p>*Make sure 40,000 Yen is acquired or more after selling materials, if not reload from previous save and farm
+        for more materials.*</p>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-22-3" data-id="p3r-april-22-3">
+      <label for="p3r-april-22-3">Head to Paulownia Mall [Mandragora] and Sing solo karaoke</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Head to Paulownia Mall[Game Parade] and play You're the Answer [3000 Yen]</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-23">Thursday April 23</h3>
+      <h3>Required Arcana: Chariot</h3>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-23-1" data-id="p3r-april-23-1">
+      <label for="p3r-april-23-1">Join Track Team</label>
+      <p>Location: Gekkoukan High School [Gym Hallway (Practice Field)]</p>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-23-2" data-id="p3r-april-23-2">
+      <label for="p3r-april-23-2">Social Link Chariot Rank 1</label>
+      <ul>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+      </ul>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-23-3" data-id="p3r-april-23-3">
+      <label for="p3r-april-23-3">Accept the event with Yuko</label>
+      <ul>
+        <li>Choice 1: Wanna walk home together?</li>
+      </ul>
 
-      <section>
-        <h3 class="" id="p3r-april-26">Sunday April 26</h3>
-        <h3>Required Arcana: Hierophant</h3>
-        <h4>[Daytime]</h4>
-        <p>Social Link Hierophant Rank 2</p>
-        <p>Location: Iwatodai Strip Mall[Bookwomrs]</p>
-        <ul>
-          <li>Choice 1: [Name]</li>
-          <li>Choice 1: Thank you</li>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-        </ul>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-23-4" data-id="p3r-april-23-4">
+      <label for="p3r-april-23-4">Head to the dorm, buy Mad Bull [110 Yen] from the vending machine on the 2nd
+        floor</label>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-23-5" data-id="p3r-april-23-5">
+      <label for="p3r-april-23-5">Head to Paulownia Mall [Game Parade] and play High School of Youth [1500 Yen]</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Head to Iwatodai Strip Mall[Wild Duck Burger] and dine out there [1000 Yen].</p>
-      </section>
 
-      <section>
-        <h3 class="" id="p3r-april-27">Monday April 27</h3>
-        <h3>Required Arcana: Emperor</h3>
-        <h4>[Afternoon]</h4>
-        <p>Teacher Question:</p>
-        <p>A</p>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-24">Friday April 24</h3>
+      <h3>Required Arcana: Chariot, Strength</h3>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-24-1" data-id="p3r-april-24-1">
+      <label for="p3r-april-24-1">Social Link Chariot Rank 2</label>
+      <p>Location: Gekkoukan High School [Classroom 2-F]</p>
+      <ul>
+        <li>Choice 2: Toughen Up!</li>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+      </ul>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-24-2" data-id="p3r-april-24-2">
+      <label for="p3r-april-24-2">Social Link Strength Rank 1</label>
+      <p>Accept the event with Yuko</p>
+      <ul>
+        <li>Choice 1: Wanna walk home together?</li>
+        <li>Choice: Any</li>
+      </ul>
 
-        <h4>[After School]</h4>
-        <p>Head to Gekkoukan High School[Faculty Office] and join the Student Council</p>
-        <p>Social Link Emperor Rank 1 [Automatic]</p>
-        <p>Location: Gekkoukan High School[Student Council Room]</p>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-24-3" data-id="p3r-april-24-3">
+      <label for="p3r-april-24-3">Head to Paulownia Mall [Game Parade] and play House of the Deceased [3000 Yen]</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Head to Iwatodai Strip Mall[Wakatsu Kitchen] to dine out there [680 Yen]</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-25">Saturday April 25</h3>
+      <h3>Required Arcana: Hierophant</h3>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-25-1" data-id="p3r-april-25-1">
+      <label for="p3r-april-25-1">Head to Iwatodai Strip Mall [Bookworms] to start the prerequisite for Hierophant
+        Social Link</label>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-25-2" data-id="p3r-april-25-2">
+      <label for="p3r-april-25-2">Head to Gekkoukan High School [Corridor] and interact with the persimmon tree to
+        obtain the persimmon leaf</label>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-25-3" data-id="p3r-april-25-3">
+      <label for="p3r-april-25-3">Social Link Hierophant Rank 1</label>
+      <p>Head back to Iwatodai Strip Mall [Bookworms] and talk with the old couple to unlock Hierophant Social Link</p>
 
-      <section>
-        <h3 class="" id="p3r-april-28">Tuesday April 28</h3>
-        <h3>Required Arcana: Chariot</h3>
-        <h4>[After School]</h4>
-        <p>Head to F2 of Gekkoukan High School and talk to Chiriro</p>
-        <ul>
-          <li>Choice: I just wanted to talk...</li>
-        </ul>
-        <p>Social Link Chariot Rank 3</p>
-        <p>Location: Gekkoukan High School[Classroom]</p>
-        <ul>
-          <li>Choice 2: Are you going to be okay?</li>
-          <li>Choice 1: Will it heal?</li>
-        </ul>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-25-4" data-id="p3r-april-25-4">
+      <label for="p3r-april-25-4">Head to Paulownia Mall [Game Parade] and play You're the Answer [3000 Yen]</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>head to Iwatodai Strip Mall[Wildduck Burger] and Dine Out [1000 Yen]</p>
-        <p>*Courange Rank Up - 2*</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-26">Sunday April 26</h3>
+      <h3>Required Arcana: Hierophant</h3>
+      <h4>[Daytime]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-26-1" data-id="p3r-april-26-1">
+      <label for="p3r-april-26-1">Social Link Hierophant Rank 2</label>
+      <p>Location: Iwatodai Strip Mall [Bookworms]</p>
+      <ul>
+        <li>Choice 1: [Name]</li>
+        <li>Choice 1: Thank you</li>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+      </ul>
 
-      <section>
-        <h3 class="" id="p3r-april-29">Wednesday April 29</h3>
-        <h4>[Daytime]</h4>
-        <p>Social Link Hermit Rank 1 [Automatic]</p>
-        <p>Location: Dorm[Bedroom] </p>
-        <p>Play the MMORPG(Innocent Sin Online) to start the Hermit Social Link</p>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-26-2" data-id="p3r-april-26-2">
+      <label for="p3r-april-26-2">Head to Iwatodai Strip Mall [Wild Duck Burger] and dine out there [1000 Yen]</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>While in the dorm, head to the Shared Computer on 1F and select Digital Cram School</p>
-      </section>
 
-      <section>
-        <h3 class="" id="p3r-april-30">Thursday April 30</h3>
-        <h3>Required Arcana: Hierophant</h3>
-        <h4>[Afternoon]</h4>
-        <p>Stay awake in class</p>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-27">Monday April 27</h3>
+      <h3>Required Arcana: Emperor</h3>
+      <h4>[Afternoon]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-27-1" data-id="p3r-april-27-1">
+      <label for="p3r-april-27-1">Teacher Question: Answer A</label>
 
-        <h4>[After School]</h4>
-        <p>Head to F2 of Gekkoukan High School and talk to Chiriro</p>
-        <ul>
-          <li>Choice: I'm a guy</li>
-        </ul>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-27-2" data-id="p3r-april-27-2">
+      <label for="p3r-april-27-2">Head to Gekkoukan High School [Faculty Office] and join the Student Council</label>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-27-3" data-id="p3r-april-27-3">
+      <label for="p3r-april-27-3">Social Link Emperor Rank 1 [Automatic]</label>
+      <p>Location: Gekkoukan High School [Student Council Room]</p>
 
-        <p>Social Link Hierophant Rank 3</p>
-        <p>Location: Iwatodai Strip Mall[Bookwomrs]</p>
-        <ul>
-          <li>Choice 1: Looking for something?</li>
-          <li>Choice 2: Can I help?</li>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-          <li>Choice: Any</li>
-        </ul>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-27-4" data-id="p3r-april-27-4">
+      <label for="p3r-april-27-4">Head to Iwatodai Strip Mall [Wakatsu Kitchen] to dine out [680 Yen]</label>
+    </section>
 
-        <h4>[Evening]</h4>
-        <p>Head to Iwatodai Strip Mall[Net Cafe] and buy the following</p>
-        <ul>
-          <li>Lessons in Etiquette [1200 Yen]</li>
-          <li>Virtual Diet [1200 Yen]</li>
-          <li>Language Made Easy [1200 Yen]</li>
-          <li>Animal Othello [1200 Yen]</li>
-          <li>TypinGhoul [1200 Yen]</li>
-          <li>Muscle Boot Camp [2000 Yen]</li>
-          <li>Mindful Boot Camp [2000 Yen]</li>
-          <li>Umiushi Fan Book [450 Yen]</li>
-        </ul>
-        <p>Head to back to the Dorm and interact with the shared computer. Select Animal Orthello</p>
-      </section>
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-28">Tuesday April 28</h3>
+      <h3>Required Arcana: Chariot</h3>
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-28-1" data-id="p3r-april-28-1">
+      <label for="p3r-april-28-1">Head to 2F of Gekkoukan High School and talk to Chihiro</label>
+      <ul>
+        <li>Choice: I just wanted to talk...</li>
+      </ul>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-28-2" data-id="p3r-april-28-2">
+      <label for="p3r-april-28-2">Social Link Chariot Rank 3</label>
+      <p>Location: Gekkoukan High School [Classroom]</p>
+      <ul>
+        <li>Choice 2: Are you going to be okay?</li>
+        <li>Choice 1: Will it heal?</li>
+      </ul>
 
-      <section>
-        <table>
-          <h3>April Social Link Update</h3>
-          <thead>
-            <tr>
-              <th>Persona Arcana</th>
-              <th>Rank</th>
-              <th>Current Month Progress</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Fool(SEES)</td>
-              <td>2</td>
-              <td>New, Rank UP +2</td>
-            </tr>
-            <tr>
-              <td>Magician(Classmate)</td>
-              <td>1</td>
-              <td>New, Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Emperor</td>
-              <td>1</td>
-              <td>New, Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Hierophant(Old Couple)</td>
-              <td>3</td>
-              <td>New, Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Chariot(Track Team)</td>
-              <td>3</td>
-              <td>New, Rank Up +3</td>
-            </tr>
-            <tr>
-              <td>Hermit(Online Game)</td>
-              <td>1</td>
-              <td>New, Rank Up +1</td>
-            </tr>
-            <tr>
-              <td>Strength(Team Manager)</td>
-              <td>1</td>
-              <td>New, Rank Up +1</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-28-3" data-id="p3r-april-28-3">
+      <label for="p3r-april-28-3">Head to Iwatodai Strip Mall [Wild Duck Burger] and dine out [1000 Yen]</label>
+      <p>*Courage Rank Up - 2*</p>
+    </section>
+
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-29">Wednesday April 29</h3>
+      <h4>[Daytime]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-29-1" data-id="p3r-april-29-1">
+      <label for="p3r-april-29-1">Social Link Hermit Rank 1 [Automatic]</label>
+      <p>Location: Dorm [Bedroom]</p>
+      <p>Play the MMORPG (Innocent Sin Online) to start the Hermit Social Link</p>
+
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-29-2" data-id="p3r-april-29-2">
+      <label for="p3r-april-29-2">While in the dorm, head to the Shared Computer on 1F and select Digital Cram
+        School</label>
+    </section>
+
+    <section class="daily-content">
+      <h3 class="date-font" id="p3r-april-30">Thursday April 30</h3>
+      <h3>Required Arcana: Hierophant</h3>
+      <h4>[Afternoon]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-30-1" data-id="p3r-april-30-1">
+      <label for="p3r-april-30-1">Stay awake in class</label>
+
+      <h4>[After School]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-30-2" data-id="p3r-april-30-2">
+      <label for="p3r-april-30-2">Head to 2F of Gekkoukan High School and talk to Chihiro</label>
+      <ul>
+        <li>Choice: I'm a guy</li>
+      </ul>
+
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-30-3" data-id="p3r-april-30-3">
+      <label for="p3r-april-30-3">Social Link Hierophant Rank 3</label>
+      <p>Location: Iwatodai Strip Mall [Bookworms]</p>
+      <ul>
+        <li>Choice 1: Looking for something?</li>
+        <li>Choice 2: Can I help?</li>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+        <li>Choice: Any</li>
+      </ul>
+
+      <h4>[Evening]</h4>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-30-4" data-id="p3r-april-30-4">
+      <label for="p3r-april-30-4">Head to Iwatodai Strip Mall [Net Cafe] and buy the following:</label>
+      <ul>
+        <li>Lessons in Etiquette [1200 Yen]</li>
+        <li>Virtual Diet [1200 Yen]</li>
+        <li>Language Made Easy [1200 Yen]</li>
+        <li>Animal Othello [1200 Yen]</li>
+        <li>TypinGhoul [1200 Yen]</li>
+        <li>Muscle Boot Camp [2000 Yen]</li>
+        <li>Mindful Boot Camp [2000 Yen]</li>
+        <li>Umiushi Fan Book [450 Yen]</li>
+      </ul>
+      <input type="checkbox" class="progress-checkbox" id="p3r-april-30-5" data-id="p3r-april-30-5">
+      <label for="p3r-april-30-5">Head back to the Dorm and interact with the shared computer. Select Animal
+        Othello</label>
+    </section>
+
+
+    <section>
+      <table class="confidant-table">
+        <h3>April Social Link Update</h3>
+        <thead>
+          <tr>
+            <th>Persona Arcana</th>
+            <th>Rank</th>
+            <th>Current Month Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fool(SEES)</td>
+            <td>2</td>
+            <td>New, Rank UP +2</td>
+          </tr>
+          <tr>
+            <td>Magician(Classmate)</td>
+            <td>1</td>
+            <td>New, Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Emperor</td>
+            <td>1</td>
+            <td>New, Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Hierophant(Old Couple)</td>
+            <td>3</td>
+            <td>New, Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Chariot(Track Team)</td>
+            <td>3</td>
+            <td>New, Rank Up +3</td>
+          </tr>
+          <tr>
+            <td>Hermit(Online Game)</td>
+            <td>1</td>
+            <td>New, Rank Up +1</td>
+          </tr>
+          <tr>
+            <td>Strength(Team Manager)</td>
+            <td>1</td>
+            <td>New, Rank Up +1</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <!--</section>-->
-  </main>
+</main>
+
 </html>

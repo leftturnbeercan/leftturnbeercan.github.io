@@ -1,61 +1,59 @@
-/*@font-face {
-    font-family: Persona5MenuFontPrototype;
-    src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: p5hatty;
-    src: url(/css/fonts/p5hatty.ttf);
-  }
-  */
-  main {
-    border: 5px solid #FFFFFF;
-  }
-  
-  h1 {
-    font-size: 60px;
-    text-align: center;
-    color: black;
-    border-bottom: 5px solid #FFFFFF;
-    padding: 10px;
-  }
-  
-  body {
-    background-color: #4682B4;
-  }
-  
-  nav {
-    position: relative;
-    width: 180px;
-    float: inline-start;
-    padding: 10px;
-    /*border-right: 5px solid black;
-      border-top: 5px solid black;
-      border-bottom: 5px solid black;*/
-  }
-  
-  nav h3 {
-    width: 120px;
-    /*float:left;*/
-    margin-left: 2px;
-    border: 5px solid #FFFFFF;
-  }
-  
-  nav a {
-    display: block;
-    padding: 3px;
-    text-decoration: none;
-    background-color: #fff;
-    color: black;
-  }
-  
-  /*------------------------------------------------*/
-  /*all action based css commands below this comment*/
-  /*------------------------------------------------*/
-  
-  /*changes the color of the list items when hovered over*/
-  nav a:hover {
-    background-color: #4682B4;
-    color: #fff;
-  }
-  
+/* Body Styling */
+body {
+  background-color: #1B2838; /* Dark blue background */
+  color: #E0E6ED; /* Light text color */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+main {
+  border: 5px solid #3A506B; /* Blue-gray border */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #273D56; /* Slightly lighter blue for contrast */
+  border-radius: 10px;
+}
+
+/* Header Styling */
+header h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #00A1E4; /* Bright blue for the title */
+  border-bottom: 3px solid #3A506B;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+nav {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #1B2838; /* Darker background for the nav */
+  border-radius: 5px;
+}
+
+nav h3 {
+  margin: 10px 0;
+  border: 2px solid #3A506B;
+  text-align: center;
+  border-radius: 5px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #273D56; /* Matches main content background */
+  color: #E0E6ED;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #00A1E4; /* Bright blue hover effect */
+  color: #E0E6ED;
+}

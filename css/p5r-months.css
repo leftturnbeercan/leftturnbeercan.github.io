@@ -191,7 +191,7 @@ footer {
   color: white;
 }
 
-.completed p, .completed h4 {
+.completed p, .completed h4, .completed li, .completed label{
   background-color: #555; /* Darker background for completed sections */
   text-decoration: line-through; /* Strike through text */
   opacity: 0.8;

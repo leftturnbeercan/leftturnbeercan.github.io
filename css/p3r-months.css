@@ -168,3 +168,72 @@ table.cal_nav_border td:hover {
   background-color: #1A252F;
   color: #ECF0F1;
 }
+
+.completed p, .completed h4, .completed li, .completed label{
+  background-color: #2980B9; /* Darker background for completed sections */
+  text-decoration: line-through; /* Strike through text */
+  opacity: 0.8;
+}
+
+label.completed {
+  background-color: #444;
+  color: #bbb;
+}
+
+.progress-checkbox {
+  display: none; /* Hide the default checkbox */
+}
+
+.progress-checkbox + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #f4f4f4;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.progress-checkbox + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #2980B9; /* Red border for checkbox */
+  border-radius: 5px;
+  background-color: #ECF0F1; /* Dark background for checkbox */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.progress-checkbox:checked + label:before {
+  content: '\2713'; /* Checkmark */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 23px;
+  background-color: #2980B9; /* Red background when checked */
+  border-color: #ECF0F1; /* Red border when checked */
+}
+
+.progress-checkbox + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.progress-checkbox:hover + label:after {
+  border-color: #111; /* Red border on hover */
+}

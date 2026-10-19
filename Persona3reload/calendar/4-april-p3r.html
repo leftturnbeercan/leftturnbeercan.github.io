@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071c38">
   <link href="/css/p3r-months.css" rel="stylesheet">
   <script src="/js/progress-tracking.js" defer></script>
   <title>Calendar: April(Persona 3 Reload)</title>
 </head>
+<body>
 <main>
   <header>
     <h1>
@@ -81,6 +85,16 @@
         </tbody>
       </table>
     </nav>
+
+    <section class="progress-panel" aria-label="April guide progress">
+      <div>
+        <span class="progress-kicker">April completion</span>
+        <strong id="progress-text">0 of 0 tasks (0%)</strong>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="April completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span id="progress-fill"></span>
+      </div>
+    </section>
   </header>
 
   <section id="content-days">
@@ -563,9 +577,10 @@
     </section>
 
 
-    <section>
+    <section class="social-summary">
+      <h3>April Social Link Update</h3>
+      <div class="table-scroll">
       <table class="confidant-table">
-        <h3>April Social Link Update</h3>
         <thead>
           <tr>
             <th>Persona Arcana</th>
@@ -611,9 +626,10 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </section>
 
     <!--</section>-->
 </main>
-
+</body>
 </html>

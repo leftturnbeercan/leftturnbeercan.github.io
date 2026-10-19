@@ -1,1722 +1,1664 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Persona 3 Reload: Elizabeth Requests</title>
-    <link href="/css/p3r-months.css" rel="stylesheet">
-    <script src="/js/progress-tracking.js" defer></script>
+<html lang="en">
+<head><meta content="#071c38" name="theme-color"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Persona 3 Reload: Elizabeth Requests</title>
+<link href="/css/p3r-quests.css" rel="stylesheet"/>
+<script defer="" src="/js/quest-tracking.js"></script>
 </head>
-
 <body>
-    <main>
-        <header>
-            <h1>Elizabeth Requests</h1>
-            <nav>
-                <ul id="main_menu_setup" class="navbar">
-                    <li><a href="/Persona3reload/persona3reload.html">Home</a></li>
-                    <li><a href="/Persona3reload/calendar-p3r.html">Month</a></li>
-                  </ul>
-            </nav>
-        </header>
+<main>
+<header>
+<h1>Elizabeth Requests</h1>
+<nav>
+<ul class="navbar" id="main_menu_setup">
+<li><a href="/Persona3reload/persona3reload.html">Home</a></li>
+<li><a href="/Persona3reload/calendar-p3r.html">Month</a></li>
+</ul>
+</nav>
+<section aria-label="Elizabeth Request progress" class="quest-dashboard">
+<div class="quest-progress-copy"><span>Request completion</span><strong id="quest-progress-text">0 of 0 requests (0%)</strong></div>
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="quest-progress-track" role="progressbar"><span id="quest-progress-fill"></span></div>
+<div class="quest-tools"><label class="quest-search"><span>Search requests</span><input id="quest-search" placeholder="Request number or text..." type="search"/></label><div aria-label="Filter requests" class="quest-filters"><button class="is-active" data-filter="all" type="button">All</button><button data-filter="incomplete" type="button">Incomplete</button><button data-filter="complete" type="button">Complete</button><button data-filter="missable" type="button">Missable</button></div><button id="next-incomplete" type="button">Next incomplete request</button></div>
+<p aria-live="polite" class="quest-results" id="quest-results"></p>
+</section></header>
+<section class="quest-list" id="content-days">
+<section class="daily-content quest-card" data-missable="false" data-number="1" data-search="request 1: bring me a muscle drink request: bring elizabeth one muscle drink. resolution: you can buy a muscle drink from the in paulownia mall[pharmacy][1,000 yen]. bring to
+                        elizabeth. reward: 5 soul drop"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-1" id="p3r-quest-1" type="checkbox"/><label for="p3r-quest-1">Request 1: Bring me a Muscle Drink</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-        <section id="content-days">
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-1" data-id="p3r-quest-1">
-                <label for="p3r-quest-1">Request 1: Bring me a Muscle Drink</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring Elizabeth one Muscle Drink.
                     </li>
-                    <li>
+<li>
                         Resolution: You can buy a Muscle drink from the in Paulownia Mall[Pharmacy][1,000 Yen]. Bring to
                         Elizabeth.
                     </li>
-                    <li>
+<li>
                         Reward: 5 Soul Drop
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="2" data-search="request 2: retrieve the first old document request: retrieve the “old document 01.” resolution: the first old document can be found on the 22nd floor of tartarus. reward: 10,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-2" id="p3r-quest-2" type="checkbox"/><label for="p3r-quest-2">Request 2: Retrieve the first old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-2" data-id="p3r-quest-2">
-                <label for="p3r-quest-2">Request 2: Retrieve the first old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Retrieve the “Old Document 01.”
                     </li>
-                    <li>
+<li>
                         Resolution: The first old document can be found on the 22nd Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 10,000 yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="3" data-search="request 3: shadow hunting milestone request: defeat a total of 100 shadows. resolution: defeat 100 shadows in tartarus reward: 3 cure water"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-3" id="p3r-quest-3" type="checkbox"/><label for="p3r-quest-3">Request 3: Shadow hunting Milestone</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-3" data-id="p3r-quest-3">
-                <label for="p3r-quest-3">Request 3: Shadow hunting Milestone</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat a total of 100 Shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: Defeat 100 Shadows in Tartarus
                     </li>
-                    <li>
+<li>
                         Reward: 3 Cure Water
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="4" data-search="request 4: treasure hunting milestone request: open a total of 50 treasure chests. resolution: open a total of 50 treasure chests in tartarus. reward: 2 snuff soul"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-4" id="p3r-quest-4" type="checkbox"/><label for="p3r-quest-4">Request 4: Treasure Hunting Milestone</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-4" data-id="p3r-quest-4">
-                <label for="p3r-quest-4">Request 4: Treasure Hunting Milestone</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Open a total of 50 treasure chests.
                     </li>
-                    <li>
+<li>
                         Resolution: Open a total of 50 treasure chests in Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 2 Snuff Soul
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="5" data-search="request 5: create a persona that's level 13 or above request: have a persona that is level 13 or higher in your possession resolution: have a persona that is level 13 or higher in your possession and report to
+                        elizabeth. reward: 3 bufula gem"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-5" id="p3r-quest-5" type="checkbox"/><label for="p3r-quest-5">Request 5: Create a Persona that's level 13 or above</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-5" data-id="p3r-quest-5">
-                <label for="p3r-quest-5">Request 5: Create a Persona that's level 13 or above</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Persona that is level 13 or higher in your Possession
                     </li>
-                    <li>
+<li>
                         Resolution: Have a Persona that is level 13 or higher in your Possession and report to
                         Elizabeth.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Bufula Gem
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="6" data-search="request 6: create a persona with kouha request: have a persona with the skill, kouha, in your possession resolution: archangel has kouha, to fuse him, use this recipe: nigi mitama + nekomata. reward: 2 fierce sutra"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-6" id="p3r-quest-6" type="checkbox"/><label for="p3r-quest-6">Request 6: Create a Persona with Kouha</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-6" data-id="p3r-quest-6">
-                <label for="p3r-quest-6">Request 6: Create a Persona with Kouha</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Persona with the skill, Kouha, in your possession
                     </li>
-                    <li>
+<li>
                         Resolution: Archangel has Kouha, to fuse him, use this recipe: Nigi Mitama + Nekomata.
                     </li>
-                    <li>
+<li>
                         Reward: 2 Fierce Sutra
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="7" data-search="request 7: bring me a juzumaru request: show elizabeth a juzumaru. resolution: a juzumaru can be found in chests in tartarus, usually on a boss floor. reward: makouha skill card"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-7" id="p3r-quest-7" type="checkbox"/><label for="p3r-quest-7">Request 7: Bring me a Juzumaru</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-7" data-id="p3r-quest-7">
-                <label for="p3r-quest-7">Request 7: Bring me a Juzumaru</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth a Juzumaru.
                     </li>
-                    <li>
+<li>
                         Resolution: A Juzumaru can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: Makouha Skill Card
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="8" data-search="request 8: experiment with fortune telling request: make use of the “rarity fortune” that increases the appearances of rare shadows. resolution: you can get a rarity fortune reading from the fortune teller in paulownia[club
+                        escapade] reward: 3 speed incense i"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-8" id="p3r-quest-8" type="checkbox"/><label for="p3r-quest-8">Request 8: Experiment with fortune telling</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-8" data-id="p3r-quest-8">
-                <label for="p3r-quest-8">Request 8: Experiment with fortune telling</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Make use of the “Rarity Fortune” that increases the appearances of rare Shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: You can get a Rarity Fortune reading from the Fortune Teller in Paulownia[Club
                         Escapade]
                     </li>
-                    <li>
+<li>
                         Reward: 3 Speed Incense I
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="9" data-search="request 9: i'd like to try all kinds of drinks request: collect 12 different drinks from vending machines for elizabeth. resolution: purchase all the drinks available at all four vending machines. there are two
+                        vending
+                        machines in iwatodai dorm, one in port island station, and one in the strip mall. reward: media skill card"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-9" id="p3r-quest-9" type="checkbox"/><label for="p3r-quest-9">Request 9: I'd like to try all kinds of drinks</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-9" data-id="p3r-quest-9">
-                <label for="p3r-quest-9">Request 9: I'd like to try all kinds of drinks</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Collect 12 different drinks from vending machines for Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Purchase all the drinks available at all four vending machines. There are two
                         vending
                         machines in Iwatodai Dorm, one in Port Island Station, and one in the Strip Mall.
                     </li>
-                    <li>
+<li>
                         Reward: Media Skill Card
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="10" data-search="request 10: i'd like to try a beef bowl request: bring 1 umiushi beef bowl. resolution: boot up the software for the umiushi fan book on the dorm shared computer, on the
+                        next day, you
+                        will be able to order this from the beef bowl shop on the third floor of iwatodai strip mall. reward: 1 male uniforms (w)"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-10" id="p3r-quest-10" type="checkbox"/><label for="p3r-quest-10">Request 10: I'd like to try a beef bowl</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-10" data-id="p3r-quest-10">
-                <label for="p3r-quest-10">Request 10: I'd like to try a beef bowl</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring 1 Umiushi Beef Bowl.
                     </li>
-                    <li>
+<li>
                         Resolution: Boot up the software for the Umiushi Fan Book on the Dorm Shared computer, on the
                         next day, you
                         will be able to order this from the Beef Bowl shop on the third floor of Iwatodai Strip Mall.
                     </li>
-                    <li>
+<li>
                         Reward: 1 Male Uniforms (W)
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="11" data-search="request 11: please prevail in the big eater challenge request: complete the big eater challenge at wild duck burger. resolution:take the big eater challenge at wild duck burger. choice 2: choice 1: choice 2: reward: 3 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-11" id="p3r-quest-11" type="checkbox"/><label for="p3r-quest-11">Request 11: Please prevail in the Big Eater Challenge</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-11" data-id="p3r-quest-11">
-                <label for="p3r-quest-11">Request 11: Please prevail in the Big Eater Challenge</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Complete the Big Eater Challenge at Wild Duck Burger.
                     <li>
                         Resolution:Take the Big Eater Challenge at Wild Duck Burger.
                         <ul>
-                            <li>
-                                <input type="checkbox" class="progress-checkbox" id="p3r-quest-11-1"
-                                    data-id="p3r-quest-11-1">
-                                <label for="p3r-quest-11-1">Choice 2:</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="progress-checkbox" id="p3r-quest-11-2"
-                                    data-id="p3r-quest-11-2">
-                                <label for="p3r-quest-11-2">Choice 1:</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="progress-checkbox" id="p3r-quest-11-3"
-                                    data-id="p3r-quest-11-3">
-                                <label for="p3r-quest-11-3">Choice 2:</label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+<li>
+<input class="progress-checkbox" data-id="p3r-quest-11-1" id="p3r-quest-11-1" type="checkbox"/>
+<label for="p3r-quest-11-1">Choice 2:</label>
+</li>
+<li>
+<input class="progress-checkbox" data-id="p3r-quest-11-2" id="p3r-quest-11-2" type="checkbox"/>
+<label for="p3r-quest-11-2">Choice 1:</label>
+</li>
+<li>
+<input class="progress-checkbox" data-id="p3r-quest-11-3" id="p3r-quest-11-3" type="checkbox"/>
+<label for="p3r-quest-11-3">Choice 2:</label>
+</li>
+</ul>
+</li>
+<li>
                         Reward: 3 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</li></ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="12" data-search="request 12: bring me pine resin (missable - called out in guide on
+                        5/10) request: bring the item that elizabeth is asking for[pine resin]. resolution: talk to yukari at the dorm to obtain pine resin. reward: toy bow"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-12" id="p3r-quest-12" type="checkbox"/><label for="p3r-quest-12">Request 12: Bring me Pine Resin <strong>(Missable - Called out in guide on
+                        5/10)</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-12" data-id="p3r-quest-12">
-                <label for="p3r-quest-12">Request 12: Bring me Pine Resin <strong>(Missable - Called out in guide on
-                        5/10)</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for[Pine Resin].
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Yukari at the dorm to obtain Pine Resin.
                     </li>
-                    <li>
+<li>
                         Reward: Toy Bow
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="13" data-search="request 13: bring me a handheld game console (missable - called out in
+                        guide on 5/10) request: bring the item that elizabeth is asking for [handheld game console]. resolution: talk to junpei at the dorm to obtain a handheld game console. reward: pixel vest"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-13" id="p3r-quest-13" type="checkbox"/><label for="p3r-quest-13">Request 13: Bring me a handheld game console <strong>(Missable - Called out in
+                        guide on 5/10)</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-13" data-id="p3r-quest-13">
-                <label for="p3r-quest-13">Request 13: Bring me a handheld game console <strong>(Missable - Called out in
-                        guide on 5/10)</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for [Handheld Game Console].
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Junpei at the dorm to obtain a Handheld Game Console.
                     </li>
-                    <li>
+<li>
                         Reward: Pixel Vest
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="14" data-search="request 14: retrieve the second old document request: bring the old document 02. resolution: the second old document can be found on the 43rd floor of tartarus. reward: 20,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-14" id="p3r-quest-14" type="checkbox"/><label for="p3r-quest-14">Request 14: Retrieve the second old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-14" data-id="p3r-quest-14">
-                <label for="p3r-quest-14">Request 14: Retrieve the second old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 02.
                     </li>
-                    <li>
+<li>
                         Resolution: The second old document can be found on the 43rd Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 20,000 Yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="15" data-search="request 15: shadow hunting milestone #2 request: defeat a total of 200 shadows. resolution: defeat a total of 200 shadows in tartarus. reward: 3 umugi water"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-15" id="p3r-quest-15" type="checkbox"/><label for="p3r-quest-15">Request 15: Shadow hunting Milestone #2</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-15" data-id="p3r-quest-15">
-                <label for="p3r-quest-15">Request 15: Shadow hunting Milestone #2</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat a total of 200 shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: Defeat a total of 200 shadows in Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Umugi Water
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="16" data-search="request 16: treasure hunting milestone #2 request: open a total of 100 treasure chests. resolution: open a total of 100 treasure chests in tartarus. reward: 2 chewing soul"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-16" id="p3r-quest-16" type="checkbox"/><label for="p3r-quest-16">Request 16: Treasure Hunting Milestone #2</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-16" data-id="p3r-quest-16">
-                <label for="p3r-quest-16">Request 16: Treasure Hunting Milestone #2</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Open a total of 100 treasure chests.
                     </li>
-                    <li>
+<li>
                         Resolution: Open a total of 100 treasure chests in Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 2 Chewing Soul
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="17" data-search="request 17: fusion series #1: emperor, oberon request: have an oberon with the skill mazio in your possession and report to elizabeth. resolution: oberon will learn the skill mazio when you level him up. oberon fusion recipe:
+                        king frost + take-mikazuchi. reward: female uniforms (w)"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-17" id="p3r-quest-17" type="checkbox"/><label for="p3r-quest-17">Request 17: Fusion series #1: Emperor, Oberon</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-17" data-id="p3r-quest-17">
-                <label for="p3r-quest-17">Request 17: Fusion series #1: Emperor, Oberon</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have an Oberon with the skill Mazio in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Oberon will learn the skill Mazio when you level him up. Oberon Fusion Recipe:
                         King Frost + Take-Mikazuchi.
                     </li>
-                    <li>
+<li>
                         Reward: Female Uniforms (W)
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="18" data-search="request 18: i'd like to be gifted a bouqet of flowers request: bring 1 rose bouquet. resolution: you can buy a rose bouquet at port island station[flower shop]. reward: female winter garb"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-18" id="p3r-quest-18" type="checkbox"/><label for="p3r-quest-18">Request 18: I'd like to be gifted a bouqet of flowers</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-18" data-id="p3r-quest-18">
-                <label for="p3r-quest-18">Request 18: I'd like to be gifted a bouqet of flowers</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring 1 Rose Bouquet.
                     </li>
-                    <li>
+<li>
                         Resolution: You can buy a Rose Bouquet at Port Island Station[Flower Shop].
                     </li>
-                    <li>
+<li>
                         Reward: Female Winter Garb
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="19" data-search="request 19: i want jack frost dolls request: bring elizabeth not one jack frost doll, but three of them. resolution: jack frost dolls can be won at the crane machine, outside of paulownia
+                        mall[game paradise]. the odds of winning are random, but keep trying until you win three jack
+                        frost dolls. reward: 3 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-19" id="p3r-quest-19" type="checkbox"/><label for="p3r-quest-19">Request 19: I want Jack Frost dolls</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-19" data-id="p3r-quest-19">
-                <label for="p3r-quest-19">Request 19: I want Jack Frost dolls</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring Elizabeth not one Jack Frost Doll, but three of them.
                     </li>
-                    <li>
+<li>
                         Resolution: Jack Frost Dolls can be won at the crane machine, outside of Paulownia
                         Mall[Game Paradise]. The odds of winning are random, but keep trying until you win three Jack
                         Frost Dolls.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="20" data-search="request 20: bring me some potent medicine request: bring one potent medicine. resolution: you can obtain the medicine by visiting the nurse's office on a day after you
+                        visited tartarus. reward: steel pipe"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-20" id="p3r-quest-20" type="checkbox"/><label for="p3r-quest-20">Request 20: Bring me some potent medicine</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-20" data-id="p3r-quest-20">
-                <label for="p3r-quest-20">Request 20: Bring me some potent medicine</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring one Potent Medicine.
                     </li>
-                    <li>
+<li>
                         Resolution: You can obtain the Medicine by visiting the Nurse's Office on a day after you
                         visited Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: Steel Pipe
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="21" data-search="request 21: retrieve the third document request: bring the old document 03. resolution: the third old document can be found on the 69th floor of tartarus. reward: 30,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-21" id="p3r-quest-21" type="checkbox"/><label for="p3r-quest-21">Request 21: Retrieve the third document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-21" data-id="p3r-quest-21">
-                <label for="p3r-quest-21">Request 21: Retrieve the third document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 03.
                     </li>
-                    <li>
+<li>
                         Resolution: The third old document can be found on the 69th Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 30,000 Yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="22" data-search="request 22: shadow hunting milestone #3 request: defeat a total of 300 shadows. resolution: defeat a total of 300 shadows in tartarus reward: 3 bead"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-22" id="p3r-quest-22" type="checkbox"/><label for="p3r-quest-22">Request 22: Shadow Hunting Milestone #3</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-22" data-id="p3r-quest-22">
-                <label for="p3r-quest-22">Request 22: Shadow Hunting Milestone #3</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat a total of 300 shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: Defeat a total of 300 shadows in Tartarus
                     </li>
-                    <li>
+<li>
                         Reward: 3 Bead
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="23" data-search="request 23: persona fusion milestone request: conduct a total of 20 persona fusions. resolution: reward: 5 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-23" id="p3r-quest-23" type="checkbox"/><label for="p3r-quest-23">Request 23: Persona Fusion Milestone</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-23" data-id="p3r-quest-23">
-                <label for="p3r-quest-23">Request 23: Persona Fusion Milestone</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Conduct a total of 20 Persona fusions.
                     </li>
-                    <li>
+<li>
                         Resolution:
                     </li>
-                    <li>
+<li>
                         Reward: 5 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="24" data-search="request 24: create a persona that's level 23 or above request: have a persona that is level 23 or higher in your possession and report to elizabeth. resolution: reward: 1 sugar key"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-24" id="p3r-quest-24" type="checkbox"/><label for="p3r-quest-24">Request 24: Create a Persona that's level 23 or above</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-24" data-id="p3r-quest-24">
-                <label for="p3r-quest-24">Request 24: Create a Persona that's level 23 or above</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Persona that is level 23 or higher in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution:
                     </li>
-                    <li>
+<li>
                         Reward: 1 Sugar Key
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="25" data-search="request 25: fusion series #2 chariot, mithras request: have a mithras at level 26 or higher in your possession and report to elizabeth. resolution: mithras can be fused with the following recipe: leanan sidhe + oberon. reward: male winter garb"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-25" id="p3r-quest-25" type="checkbox"/><label for="p3r-quest-25">Request 25: Fusion Series #2 Chariot, Mithras</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-25" data-id="p3r-quest-25">
-                <label for="p3r-quest-25">Request 25: Fusion Series #2 Chariot, Mithras</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Mithras at level 26 or higher in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Mithras can be fused with the following recipe: Leanan Sidhe + Oberon.
                     </li>
-                    <li>
+<li>
                         Reward: Male Winter Garb
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="26" data-search="request 26: bring me an onimaru kunitsuma request: show elizabeth an onimaru kunitsuma. resolution: a onimaru kunitsuma can be found in chests in tartarus, usually on a boss floor. reward: crit rate boost"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-26" id="p3r-quest-26" type="checkbox"/><label for="p3r-quest-26">Request 26: Bring me an Onimaru Kunitsuma</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-26" data-id="p3r-quest-26">
-                <label for="p3r-quest-26">Request 26: Bring me an Onimaru Kunitsuma</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth an Onimaru Kunitsuma.
                     </li>
-                    <li>
+<li>
                         Resolution: A Onimaru Kunitsuma can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: Crit Rate Boost
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="27" data-search="request 27: bring me a triangular sword (missable - ) request: bring the item that elizabeth is asking for triangular sword. resolution: talk to mitsuru at the dorm to obtain a triangular sword. reward: gallant sneakers"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-27" id="p3r-quest-27" type="checkbox"/><label for="p3r-quest-27">Request 27: Bring me a Triangular Sword <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-27" data-id="p3r-quest-27">
-                <label for="p3r-quest-27">Request 27: Bring me a Triangular Sword <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for Triangular Sword.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Mitsuru at the dorm to obtain a Triangular Sword.
                     </li>
-                    <li>
+<li>
                         Reward: Gallant Sneakers
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="28" data-search="request 28: bring me a protein not for pros. (missable -
+                        ) request: bring the item elizebeth is asking for protein. resolution: talk to akihiko at the dorm to obtain the protein. reward: spiked bat"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-28" id="p3r-quest-28" type="checkbox"/><label for="p3r-quest-28">Request 28: Bring me a protein not for pros. <strong>(Missable -
+                        )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-28" data-id="p3r-quest-28">
-                <label for="p3r-quest-28">Request 28: Bring me a protein not for pros. <strong>(Missable -
-                        )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item Elizebeth is asking for protein.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Akihiko at the dorm to obtain the Protein.
                     </li>
-                    <li>
+<li>
                         Reward: Spiked Bat
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="29" data-search="request 29: i want to look fashionable (missable - ) request: bring a fashionable item. resolution: the fashionable item can be purchased from the bartender at paulownia[club
+                        escapade]. you
+                        can purchase it for 100,000 yen or trade a black quartz (can be found in the second block
+                        of tartarus) and purchase it for 10,000 yen. reward: 5 power incense i"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-29" id="p3r-quest-29" type="checkbox"/><label for="p3r-quest-29">Request 29: I want to look Fashionable <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-29" data-id="p3r-quest-29">
-                <label for="p3r-quest-29">Request 29: I want to look Fashionable <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a fashionable item.
                     </li>
-                    <li>
+<li>
                         Resolution: The Fashionable item can be purchased from the Bartender at Paulownia[Club
                         Escapade]. You
                         can purchase it for 100,000 yen or trade a Black Quartz (Can be found in the Second Block
                         of Tartarus) and purchase it for 10,000 yen.
                     </li>
-                    <li>
+<li>
                         Reward: 5 Power Incense I
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="30" data-search="request 30: retrieve the fourth old document request: bring the old document 04. resolution: the fourth old document can be found on the 92nd floor of tartarus. reward: 40,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-30" id="p3r-quest-30" type="checkbox"/><label for="p3r-quest-30">Request 30: Retrieve the fourth old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-30" data-id="p3r-quest-30">
-                <label for="p3r-quest-30">Request 30: Retrieve the fourth old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 04.
                     </li>
-                    <li>
+<li>
                         Resolution: The fourth old document can be found on the 92nd Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 40,000 yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="31" data-search="request 31: shadow hunting milestone #4 request: defeat a total of 450 shadows. resolution: defeat a total of 450 shadows in tartarus. reward: 2 kamimusubi water"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-31" id="p3r-quest-31" type="checkbox"/><label for="p3r-quest-31">Request 31: Shadow Hunting Milestone #4</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-31" data-id="p3r-quest-31">
-                <label for="p3r-quest-31">Request 31: Shadow Hunting Milestone #4</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat a total of 450 shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: Defeat a total of 450 shadows in Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 2 Kamimusubi Water
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="32" data-search="request 32: treasure hunting milestone #3 request: open a total of 150 treasure chests. resolution: open a total of 150 treasure chests inside of tartarus. reward: 6 snuff soul"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-32" id="p3r-quest-32" type="checkbox"/><label for="p3r-quest-32">Request 32: Treasure Hunting Milestone #3</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-32" data-id="p3r-quest-32">
-                <label for="p3r-quest-32">Request 32: Treasure Hunting Milestone #3</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Open a total of 150 treasure chests.
                     </li>
-                    <li>
+<li>
                         Resolution: Open a total of 150 treasure chests inside of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 6 Snuff Soul
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="33" data-search="request 33: persona fucsion milestone #2 request: conduct a total of 35 persona fusions. resolution: conduct a total of 35 persona fucsions within the velvet room. reward: 5 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-33" id="p3r-quest-33" type="checkbox"/><label for="p3r-quest-33">Request 33: Persona Fucsion Milestone #2</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-33" data-id="p3r-quest-33">
-                <label for="p3r-quest-33">Request 33: Persona Fucsion Milestone #2</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Conduct a total of 35 Persona fusions.
                     </li>
-                    <li>
+<li>
                         Resolution: Conduct a total of 35 Persona fucsions within the Velvet Room.
                     </li>
-                    <li>
+<li>
                         Reward: 5 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="34" data-search="request 34: create a persona with torrent shot request: have a persona with the skill, torrent shot, in your possession and report to
+                        elizabeth. resolution: eligor has torent shot, to fuse him, use this recipe: leanan sidhe + mokoi. reward: 3 attack mirror"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-34" id="p3r-quest-34" type="checkbox"/><label for="p3r-quest-34">Request 34: Create a Persona with Torrent Shot</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-34" data-id="p3r-quest-34">
-                <label for="p3r-quest-34">Request 34: Create a Persona with Torrent Shot</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Persona with the skill, Torrent Shot, in your possession and report to
                         Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Eligor has Torent Shot, to fuse him, use this recipe: Leanan Sidhe + Mokoi.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Attack Mirror
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="35" data-search="request 35: fusion series #3 hermit, mothman request: have mothman with the skill, agilao, in your possession and report to elizabeth. resolution: lamia starts with agilao. fuse lamia with dakini to make a mothman with agilao. reward: maid outfit"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-35" id="p3r-quest-35" type="checkbox"/><label for="p3r-quest-35">Request 35: Fusion Series #3 Hermit, Mothman</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-35" data-id="p3r-quest-35">
-                <label for="p3r-quest-35">Request 35: Fusion Series #3 Hermit, Mothman</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have Mothman with the skill, Agilao, in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Lamia starts with Agilao. Fuse Lamia with Dakini to make a Mothman with Agilao.
                     </li>
-                    <li>
+<li>
                         Reward: Maid Outfit
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="36" data-search="request 36: defeat a rare shadow #1 request: defeat the rare shadow in the third block, yabbashah, and bring back 1 rustic coin. resolution: you can get a rarity fortune reading from paulownia[club escapade] to increase the
+                        chances of rare shadows spawning. be sure to defeat one in yabbashah to complete this request. reward: 7 onyx"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-36" id="p3r-quest-36" type="checkbox"/><label for="p3r-quest-36">Request 36: Defeat a rare Shadow #1</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-36" data-id="p3r-quest-36">
-                <label for="p3r-quest-36">Request 36: Defeat a rare Shadow #1</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat the rare Shadow in the third block, Yabbashah, and bring back 1 Rustic Coin.
                     </li>
-                    <li>
+<li>
                         Resolution: You can get a Rarity Fortune Reading from Paulownia[Club Escapade] to increase the
                         chances of rare shadows spawning. Be sure to defeat one in Yabbashah to complete this request.
                     </li>
-                    <li>
+<li>
                         Reward: 7 Onyx
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="37" data-search="request 37: traverse the monad passage request: defeat all the shadows lurking within the monad passage on the 91st floor in yabbashah,
+                        the third block. resolution: refer to request reward: black sword"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-37" id="p3r-quest-37" type="checkbox"/><label for="p3r-quest-37">Request 37: Traverse the Monad Passage</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-37" data-id="p3r-quest-37">
-                <label for="p3r-quest-37">Request 37: Traverse the Monad Passage</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat all the Shadows lurking within the Monad Passage on the 91st floor in Yabbashah,
                         the third block.
                     </li>
-                    <li>
+<li>
                         Resolution: Refer to Request
                     </li>
-                    <li>
+<li>
                         Reward: Black Sword
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="38" data-search="request 38: i want to eat some chilled taiyaki request: bring 1 chilled taiyaki. resolution: buy a lukewarm taiyaki from the school cafeteria, and then put it in the fridge at
+                        the iwatodai dorm kitchen. when you come back the next day, take it out and it’ll be chilled. reward: nihil cloth"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-38" id="p3r-quest-38" type="checkbox"/><label for="p3r-quest-38">Request 38: I want to eat some Chilled Taiyaki</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-38" data-id="p3r-quest-38">
-                <label for="p3r-quest-38">Request 38: I want to eat some Chilled Taiyaki</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring 1 Chilled Taiyaki.
                     </li>
-                    <li>
+<li>
                         Resolution: Buy a Lukewarm Taiyaki from the School Cafeteria, and then put it in the fridge at
                         the Iwatodai Dorm kitchen. When you come back the next day, take it out and it’ll be chilled.
                     </li>
-                    <li>
+<li>
                         Reward: Nihil Cloth
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="39" data-search="request 39: let me hear music unique to gekkoukan request: bring a cd associated with gekkoukan high school. resolution: enter the pa room in gekkoukan high school to obtain the cd. reward: female uniform (s)"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-39" id="p3r-quest-39" type="checkbox"/><label for="p3r-quest-39">Request 39: Let me hear music unique to Gekkoukan</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-39" data-id="p3r-quest-39">
-                <label for="p3r-quest-39">Request 39: Let me hear music unique to Gekkoukan</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a CD associated with Gekkoukan High School.
                     </li>
-                    <li>
+<li>
                         Resolution: Enter the PA Room in Gekkoukan High School to obtain the CD.
                     </li>
-                    <li>
+<li>
                         Reward: Female Uniform (S)
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="40" data-search="request 40: i'd like to see a pair of max safety shoes (missable -
+                        ) request: bring 1 pair of max safety shoes resolution: on 7/12, buy the max safety shoes set from the shopping channel. reward: 3 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-40" id="p3r-quest-40" type="checkbox"/><label for="p3r-quest-40">Request 40: I'd like to see a pair of Max Safety Shoes <strong>(Missable -
+                        )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-40" data-id="p3r-quest-40">
-                <label for="p3r-quest-40">Request 40: I'd like to see a pair of Max Safety Shoes <strong>(Missable -
-                        )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring 1 pair of Max Safety Shoes
                     </li>
-                    <li>
+<li>
                         Resolution: On 7/12, buy the Max Safety Shoes set from the Shopping Channel.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="41" data-search="request 41: bring me the mysterious person's autograph (missable -
+                        ) request: get an autograph from president tanaka of tanaka’s amazing commodities. resolution: unknown reward: unknown"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-41" id="p3r-quest-41" type="checkbox"/><label for="p3r-quest-41">Request 41: Bring me the mysterious person's autograph <strong>(Missable -
+                        )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-41" data-id="p3r-quest-41">
-                <label for="p3r-quest-41">Request 41: Bring me the mysterious person's autograph <strong>(Missable -
-                        )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Get an autograph from President Tanaka of Tanaka’s Amazing Commodities.
                     </li>
-                    <li>
+<li>
                         Resolution: Unknown
                     </li>
-                    <li>
+<li>
                         Reward: Unknown
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="42" data-search="request 42: please feed the cat request: give the hungry cat some food. resolution: buy 4 super cat foods from the pharmacy, then feed the cat in the port island
+                        station outskirts, on 4 different days. reward: male summer garb"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-42" id="p3r-quest-42" type="checkbox"/><label for="p3r-quest-42">Request 42: Please feed the cat</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-42" data-id="p3r-quest-42">
-                <label for="p3r-quest-42">Request 42: Please feed the cat</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Give the hungry cat some food.
                     </li>
-                    <li>
+<li>
                         Resolution: Buy 4 Super Cat Foods from the Pharmacy, then feed the cat in the Port Island
                         Station Outskirts, on 4 different days.
                     </li>
-                    <li>
+<li>
                         Reward: Male Summer Garb
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="43" data-search="request 43: bring me a christmas star (missable - ) request: bring the item that elizabeth is asking for. resolution: talk to fuuka in the dorm at night to obtain the christmas star. reward: jack's gloves"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-43" id="p3r-quest-43" type="checkbox"/><label for="p3r-quest-43">Request 43: Bring me a Christmas Star <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-43" data-id="p3r-quest-43">
-                <label for="p3r-quest-43">Request 43: Bring me a Christmas Star <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Fuuka in the Dorm at night to obtain the Christmas Star.
                     </li>
-                    <li>
+<li>
                         Reward: Jack's Gloves
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="44" data-search="request 44: i wish to feel the ocean (missable - ) request: bring something you find from the ocean. resolution: during your trip on 7/20, collect the seashell near the bridge, or any other item on
+                        the beach, and return it to elizabeth. reward: 5 amethyst"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-44" id="p3r-quest-44" type="checkbox"/><label for="p3r-quest-44">Request 44: I wish to feel the ocean <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-44" data-id="p3r-quest-44">
-                <label for="p3r-quest-44">Request 44: I wish to feel the ocean <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring something you find from the ocean.
                     </li>
-                    <li>
+<li>
                         Resolution: During your trip on 7/20, Collect the Seashell near the bridge, or any other item on
                         the beach, and return it to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Reward: 5 Amethyst
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="45" data-search="request 45: retrieve the fifth old document request: bring the old document 05. resolution: the fifth old document can be found on the 118th floor of tartarus. reward: 50,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-45" id="p3r-quest-45" type="checkbox"/><label for="p3r-quest-45">Request 45: Retrieve the fifth old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-45" data-id="p3r-quest-45">
-                <label for="p3r-quest-45">Request 45: Retrieve the fifth old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 05.
                     </li>
-                    <li>
+<li>
                         Resolution: The fifth old document can be found on the 118th Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 50,000 yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="46" data-search="request 46: shadow hunting milestone #5 request: defeat a total of 600 shadows. resolution: defeat a total of 600 shadows in tartarus reward: 2 bead chain"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-46" id="p3r-quest-46" type="checkbox"/><label for="p3r-quest-46">Request 46: Shadow Hunting Milestone #5</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-46" data-id="p3r-quest-46">
-                <label for="p3r-quest-46">Request 46: Shadow Hunting Milestone #5</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat a total of 600 shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: Defeat a total of 600 shadows in Tartarus
                     </li>
-                    <li>
+<li>
                         Reward: 2 Bead Chain
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="47" data-search="request 47: treasuer hunting milestone #4 request: open a total of 200 treasure chests. resolution: open a total of 200 treasure chests in tartarus reward: 2 precious egg"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-47" id="p3r-quest-47" type="checkbox"/><label for="p3r-quest-47">Request 47: Treasuer Hunting Milestone #4</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-47" data-id="p3r-quest-47">
-                <label for="p3r-quest-47">Request 47: Treasuer Hunting Milestone #4</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Open a total of 200 treasure chests.
                     </li>
-                    <li>
+<li>
                         Resolution: Open a total of 200 treasure chests in Tartarus
                     </li>
-                    <li>
+<li>
                         Reward: 2 Precious Egg
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="48" data-search="request 48: persona fusion milestone #3 request: conduct a total of 50 persona fusions. resolution: conduct a total of 50 persona fusions within the velvet room reward: 5 twilight fragments"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-48" id="p3r-quest-48" type="checkbox"/><label for="p3r-quest-48">Request 48: Persona Fusion Milestone #3</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-48" data-id="p3r-quest-48">
-                <label for="p3r-quest-48">Request 48: Persona Fusion Milestone #3</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Conduct a total of 50 Persona Fusions.
                     </li>
-                    <li>
+<li>
                         Resolution: Conduct a total of 50 Persona Fusions within the Velvet Room
                     </li>
-                    <li>
+<li>
                         Reward: 5 Twilight Fragments
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="49" data-search="request 49: create a persona that's level 38 or above request: have a persona that is level 38 or higher in your possession and report to elizabeth. resolution: refer to request reward: marionette"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-49" id="p3r-quest-49" type="checkbox"/><label for="p3r-quest-49">Request 49: Create a Persona that's level 38 or above</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-49" data-id="p3r-quest-49">
-                <label for="p3r-quest-49">Request 49: Create a Persona that's level 38 or above</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Persona that is level 38 or higher in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: refer to Request
                     </li>
-                    <li>
+<li>
                         Reward: Marionette
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="50" data-search="request 50: perform king and i request: the fusion spell “king and i” requires you to have both black frost and king frost
+                        registered in the compendium. resolution: complete tese fusions king frost recipe = hanuman + mothman black frost recipe =
+                        jack frost + jack-o'-lantern + king frost reward: x3 guard incense ii"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-50" id="p3r-quest-50" type="checkbox"/><label for="p3r-quest-50">Request 50: Perform King and I</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-50" data-id="p3r-quest-50">
-                <label for="p3r-quest-50">Request 50: Perform King and I</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: The Fusion spell “King and I” requires you to have both Black Frost and King Frost
                         registered in the compendium.
                     </li>
-                    <li>
+<li>
                         Resolution: Complete tese fusions King Frost Recipe = Hanuman + Mothman Black Frost Recipe =
                         Jack Frost + Jack-o'-Lantern + King Frost
                     </li>
-                    <li>
+<li>
                         Reward: x3 Guard Incense II
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="51" data-search="request 51: bring me an outenta mitsuyo request: show elizabeth an outenta mitsuyo. resolution: a outenta mitsuyo can be found in chests in tartarus, usually on a boss floor. reward: multi-target boost"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-51" id="p3r-quest-51" type="checkbox"/><label for="p3r-quest-51">Request 51: Bring me an Outenta Mitsuyo</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-51" data-id="p3r-quest-51">
-                <label for="p3r-quest-51">Request 51: Bring me an Outenta Mitsuyo</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth an Outenta Mitsuyo.
                     </li>
-                    <li>
+<li>
                         Resolution: A Outenta Mitsuyo can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: Multi-Target Boost
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="52" data-search="request 52: i'd like to try a home-cooked meal request: bring a food or drink you made together with someone at the dorm. resolution: during night time at the dorm, you can sometimes head to the kitchen with a
+                        teammate and cook with them. bring one of these cooked items to elizabeth. reward: legendary cleaver"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-52" id="p3r-quest-52" type="checkbox"/><label for="p3r-quest-52">Request 52: I'd like to try a home-cooked meal</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-52" data-id="p3r-quest-52">
-                <label for="p3r-quest-52">Request 52: I'd like to try a home-cooked meal</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a food or drink you made together with someone at the dorm.
                     </li>
-                    <li>
+<li>
                         Resolution: During night time at the dorm, you can sometimes head to the kitchen with a
                         teammate and cook with them. Bring one of these cooked items to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Reward: Legendary Cleaver
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="53" data-search="request 53: i'd like to see a mysterious potato request: bring a potato that you've grown. resolution: grow a potato using the buff potato sprout, which can be purchased from the flower
+                        shop lady at port island station. reward: 1 ergotite shard"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-53" id="p3r-quest-53" type="checkbox"/><label for="p3r-quest-53">Request 53: I'd like to see a mysterious potato</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-53" data-id="p3r-quest-53">
-                <label for="p3r-quest-53">Request 53: I'd like to see a mysterious potato</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a potato that you've grown.
                     </li>
-                    <li>
+<li>
                         Resolution: Grow a Potato using the Buff Potato Sprout, which can be purchased from the Flower
                         Shop Lady at Port Island Station.
                     </li>
-                    <li>
+<li>
                         Reward: 1 Ergotite Shard
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="54" data-search="request 54: attempt a hundred shrine visits request: bring what you receive from praying at the shrine. resolution: pray at the shrine every day until you complete this request. you don't need to
+                        actually go there 100 times. reward: lime swimwear"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-54" id="p3r-quest-54" type="checkbox"/><label for="p3r-quest-54">Request 54: Attempt a hundred shrine visits</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-54" data-id="p3r-quest-54">
-                <label for="p3r-quest-54">Request 54: Attempt a hundred shrine visits</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring what you receive from praying at the shrine.
                     </li>
-                    <li>
+<li>
                         Resolution: Pray at the shrine every day until you complete this request. You don't need to
                         actually go there 100 times.
                     </li>
-                    <li>
+<li>
                         Reward: Lime Swimwear
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="55" data-search="request 55: i'd like to see proof of a bond request: bring an item you can only receive when a social link has been maxed out. resolution: refer to request reward: space badge"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-55" id="p3r-quest-55" type="checkbox"/><label for="p3r-quest-55">Request 55: I'd like to see proof of a bond</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-55" data-id="p3r-quest-55">
-                <label for="p3r-quest-55">Request 55: I'd like to see proof of a bond</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring an item you can only receive when a Social Link has been maxed out.
                     </li>
-                    <li>
+<li>
                         Resolution: refer to Request
                     </li>
-                    <li>
+<li>
                         Reward: Space Badge
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="56" data-search="request 56: look for the drink with my name request: bring a drink that shares a name with elizabeth. resolution: you can find the drink in the port island outskirts, inside que sera sera. reward: as genetic material"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-56" id="p3r-quest-56" type="checkbox"/><label for="p3r-quest-56">Request 56: Look for the drink with my name</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-56" data-id="p3r-quest-56">
-                <label for="p3r-quest-56">Request 56: Look for the drink with my name</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a drink that shares a name with Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: You can find the drink in the Port Island Outskirts, inside Que sera sera.
                     </li>
-                    <li>
+<li>
                         Reward: AS Genetic Material
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="57" data-search="request 57: i'd like to try aojiru request: bring 1 true aohige aojiru. resolution: talk to the man in the paulownia mall pharmacy, you'll then need to trade a vintage
+                        yagen for the juice. craft it at miyado antiques for x2 topaz and x1 turquoise, then
+                        give the yagen to the pharmacy owner next door. reward: 8 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-57" id="p3r-quest-57" type="checkbox"/><label for="p3r-quest-57">Request 57: I'd like to try Aojiru</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-57" data-id="p3r-quest-57">
-                <label for="p3r-quest-57">Request 57: I'd like to try Aojiru</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring 1 True Aohige Aojiru.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to the man in the Paulownia Mall Pharmacy, you'll then need to trade a Vintage
                         Yagen for the Juice. Craft it at Miyado Antiques for x2 Topaz and x1 Turquoise, then
                         give the Yagen to the pharmacy owner next door.
                     </li>
-                    <li>
+<li>
                         Reward: 8 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="58" data-search="request 58: i wish to become a straw millionaire (missable -
+                        ) request: bring what you get after bartering items. resolution: talk to the man in the port island station alley, then the man outside the port
+                        island station alley, finally talk to the kid at iwatodai strip mall. reward: 20 turquoise"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-58" id="p3r-quest-58" type="checkbox"/><label for="p3r-quest-58">Request 58: I wish to become a straw millionaire <strong>(Missable -
+                        )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-58" data-id="p3r-quest-58">
-                <label for="p3r-quest-58">Request 58: I wish to become a straw millionaire <strong>(Missable -
-                        )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring what you get after bartering items.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to the man in the Port Island Station Alley, then the man outside the Port
                         Island Station Alley, Finally talk to the kid at Iwatodai Strip Mall.
                     </li>
-                    <li>
+<li>
                         Reward: 20 Turquoise
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="59" data-search="request 59: retrieve the sicth old document request: bring the old document 06. resolution: the sixth old document can be found on the 144th floor of tartarus. reward: 70,000yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-59" id="p3r-quest-59" type="checkbox"/><label for="p3r-quest-59">Request 59: Retrieve the sicth old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-59" data-id="p3r-quest-59">
-                <label for="p3r-quest-59">Request 59: Retrieve the sicth old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 06.
                     </li>
-                    <li>
+<li>
                         Resolution: The sixth old document can be found on the 144th Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 70,000yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="60" data-search="request 60: shadow hunting milestone #6 request: defeat a total of 800 shadows. resolution: defeat a total of 800 shadows in tartarus reward: soma"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-60" id="p3r-quest-60" type="checkbox"/><label for="p3r-quest-60">Request 60: Shadow Hunting Milestone #6</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-60" data-id="p3r-quest-60">
-                <label for="p3r-quest-60">Request 60: Shadow Hunting Milestone #6</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat a total of 800 Shadows.
                     </li>
-                    <li>
+<li>
                         Resolution: Defeat a total of 800 Shadows in Tartarus
                     </li>
-                    <li>
+<li>
                         Reward: Soma
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="61" data-search="request 61: create a persona that is level 46 or above request: have a persona that is level 46 or higher in your possession and report to elizabeth. resolution: refer to request reward: 2 atrophying sutra"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-61" id="p3r-quest-61" type="checkbox"/><label for="p3r-quest-61">Request 61: Create a Persona that is level 46 or above</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-61" data-id="p3r-quest-61">
-                <label for="p3r-quest-61">Request 61: Create a Persona that is level 46 or above</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Persona that is level 46 or higher in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Refer to Request
                     </li>
-                    <li>
+<li>
                         Reward: 2 Atrophying Sutra
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="62" data-search="request 62: fusion series #4 lovers,titania request: have a titania with the skill matarukaja, in your possession and report to elizabeth. resolution: fusion recipe: mishaguji with tarukaja + parvati = titania with matarukaja. reward: male uniform (s)"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-62" id="p3r-quest-62" type="checkbox"/><label for="p3r-quest-62">Request 62: Fusion Series #4 Lovers,Titania</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-62" data-id="p3r-quest-62">
-                <label for="p3r-quest-62">Request 62: Fusion Series #4 Lovers,Titania</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Titania with the skill Matarukaja, in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Fusion Recipe: Mishaguji with Tarukaja + Parvati = Titania with Matarukaja.
                     </li>
-                    <li>
+<li>
                         Reward: Male Uniform (S)
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="63" data-search="request 63: fusion series #5 magician, rangda request: have a rangda at level 54 or higher in your possession and report to elizabeth. resolution: rangda recipe = dominion + kurama tengu. reward: (unknown)"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-63" id="p3r-quest-63" type="checkbox"/><label for="p3r-quest-63">Request 63: Fusion Series #5 Magician, Rangda</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-63" data-id="p3r-quest-63">
-                <label for="p3r-quest-63">Request 63: Fusion Series #5 Magician, Rangda</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Rangda at level 54 or higher in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Rangda Recipe = Dominion + Kurama Tengu.
                     </li>
-                    <li>
+<li>
                         Reward: (Unknown)
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="64" data-search="request 64: defeat a rare shadow #2 request: defeat the rare shadow in the fourth block, tziah, and bring back 1 sumptuous coin. resolution: you can get a rarity fortune reading from club escapade to increase the chances
+                        of rare shadows spawning. be sure to defeat one in tziah to complete this request. reward: 7 topaz"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-64" id="p3r-quest-64" type="checkbox"/><label for="p3r-quest-64">Request 64: Defeat a rare Shadow #2</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-64" data-id="p3r-quest-64">
-                <label for="p3r-quest-64">Request 64: Defeat a rare Shadow #2</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat the rare Shadow in the fourth block, Tziah, and bring back 1 Sumptuous Coin.
                     </li>
-                    <li>
+<li>
                         Resolution: You can get a Rarity Fortune Reading from Club Escapade to increase the chances
                         of rare shadows spawning. Be sure to defeat one in Tziah to complete this request.
                     </li>
-                    <li>
+<li>
                         Reward: 7 Topaz
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="65" data-search="request 65: bring me an ote-gine request: show elizabeth an ote-gine. resolution: a ote-gine can be found in chests in tartarus, usually on a boss floor. reward: quality nihil ore"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-65" id="p3r-quest-65" type="checkbox"/><label for="p3r-quest-65">Request 65: Bring me an Ote-gine</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-65" data-id="p3r-quest-65">
-                <label for="p3r-quest-65">Request 65: Bring me an Ote-gine</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth an Ote-gine.
                     </li>
-                    <li>
+<li>
                         Resolution: A Ote-gine can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: Quality Nihil Ore
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="66" data-search="request 66: bring me a giant, creepy doll (missable -
+                        ) request: bring a doll that is also used for teaching. resolution: the doll in question can be found at the school, inside the laboratory. reward: quality nihil blade"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-66" id="p3r-quest-66" type="checkbox"/><label for="p3r-quest-66">Request 66: Bring me a giant, creepy doll <strong>(Missable -
+                        )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-66" data-id="p3r-quest-66">
-                <label for="p3r-quest-66">Request 66: Bring me a giant, creepy doll <strong>(Missable -
-                        )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a doll that is also used for teaching.
                     </li>
-                    <li>
+<li>
                         Resolution: The doll in question can be found at the School, inside the Laboratory.
                     </li>
-                    <li>
+<li>
                         Reward: Quality Nihil Blade
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="67" data-search="request 67: find me a beautiful tile request: bring a tile with a peacock design. resolution: you can find a beautiful tile in the mahjong parlour, at the iwatodai station
+                        outskirts. reward: scrub brush"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-67" id="p3r-quest-67" type="checkbox"/><label for="p3r-quest-67">Request 67: Find me a beautiful tile</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-67" data-id="p3r-quest-67">
-                <label for="p3r-quest-67">Request 67: Find me a beautiful tile</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a tile with a peacock design.
                     </li>
-                    <li>
+<li>
                         Resolution: You can find a beautiful tile in the Mahjong Parlour, at the Iwatodai Station
                         Outskirts.
                     </li>
-                    <li>
+<li>
                         Reward: Scrub Brush
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="68" data-search="request 68: bring me a fruit knife (missable - ) request: bring the item that elizabeth is asking for. resolution: you can get a fruit knife from shinjiro in the dorm at night. reward: bus stop sign"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-68" id="p3r-quest-68" type="checkbox"/><label for="p3r-quest-68">Request 68: Bring me a fruit knife<strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-68" data-id="p3r-quest-68">
-                <label for="p3r-quest-68">Request 68: Bring me a fruit knife<strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for.
                     </li>
-                    <li>
+<li>
                         Resolution: You can get a fruit knife from Shinjiro in the dorm at night.
                     </li>
-                    <li>
+<li>
                         Reward: Bus Stop Sign
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="69" data-search="request 69: bring me oil (missable - ) request: bring the item that elizabeth is asking for. resolution: you can get oil from aigis in the dorm at night. reward: rocket punch"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-69" id="p3r-quest-69" type="checkbox"/><label for="p3r-quest-69">Request 69: Bring me oil<strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-69" data-id="p3r-quest-69">
-                <label for="p3r-quest-69">Request 69: Bring me oil<strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for.
                     </li>
-                    <li>
+<li>
                         Resolution: You can get Oil from Aigis in the dorm at night.
                     </li>
-                    <li>
+<li>
                         Reward: Rocket Punch
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="70" data-search="request 70: retrieve the seventh old document request: bring the old document 07. resolution: the seventh old document can be found on the 172nd floor of tartarus. reward: 90,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-70" id="p3r-quest-70" type="checkbox"/><label for="p3r-quest-70">Request 70: Retrieve the seventh old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-70" data-id="p3r-quest-70">
-                <label for="p3r-quest-70">Request 70: Retrieve the seventh old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 07.
                     </li>
-                    <li>
+<li>
                         Resolution: The seventh old document can be found on the 172nd Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 90,000 yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="71" data-search="request 71: fusion series #6 strength, siegfried request: have a siegfried with the skill, endure in your possession and report to elizabeth. resolution: siegfried recipe = ganesha with endure + rangda = siegfried with endure. reward: unknown"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-71" id="p3r-quest-71" type="checkbox"/><label for="p3r-quest-71">Request 71: Fusion Series #6 Strength, Siegfried</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-71" data-id="p3r-quest-71">
-                <label for="p3r-quest-71">Request 71: Fusion Series #6 Strength, Siegfried</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Siegfried with the skill, Endure in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Siegfried Recipe = Ganesha with Endure + Rangda = Siegfried with Endure.
                     </li>
-                    <li>
+<li>
                         Reward: Unknown
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="72" data-search="request 72: fusion series #7 hierophant, daisoujou request: have a daisoujou with the skill, regenerate 3 in your possession and report to
+                        elizabeth. resolution: daisoujou recipe = mada + suzaku with regenerate 3 = daisoujou with regenerate 3. reward: blue shorts"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-72" id="p3r-quest-72" type="checkbox"/><label for="p3r-quest-72">Request 72: Fusion Series #7 Hierophant, Daisoujou</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-72" data-id="p3r-quest-72">
-                <label for="p3r-quest-72">Request 72: Fusion Series #7 Hierophant, Daisoujou</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Daisoujou with the skill, Regenerate 3 in your possession and report to
                         Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Daisoujou Recipe = Mada + Suzaku with Regenerate 3 = Daisoujou with Regenerate 3.
                     </li>
-                    <li>
+<li>
                         Reward: Blue Shorts
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="73" data-search="request 73: bring me a mikazuki munechika request: show elizabeth a mikazuki munechika. resolution: a mikazuki munechika can be found in chests in tartarus, usually on a boss floor. reward: endure skill card"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-73" id="p3r-quest-73" type="checkbox"/><label for="p3r-quest-73">Request 73: Bring me a Mikazuki Munechika</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-73" data-id="p3r-quest-73">
-                <label for="p3r-quest-73">Request 73: Bring me a Mikazuki Munechika</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth a Mikazuki Munechika.
                     </li>
-                    <li>
+<li>
                         Resolution: A Mikazuki Munechika can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: Endure Skill Card
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="74" data-search="request 74: i'd like to try sushi request: bring sushi to elizabeth. resolution: speak to the inari at the shrine where you duplicate skill cards in order to obtain
+                        the sushi. reward: ergotite chunk"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-74" id="p3r-quest-74" type="checkbox"/><label for="p3r-quest-74">Request 74: I'd like to try sushi</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-74" data-id="p3r-quest-74">
-                <label for="p3r-quest-74">Request 74: I'd like to try sushi</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring sushi to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Speak to the Inari at the shrine where you duplicate skill cards in order to obtain
                         the Sushi.
                     </li>
-                    <li>
+<li>
                         Reward: Ergotite Chunk
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="75" data-search="request 75: bring me a sengoku-era helm request: bring a helm to elizabeth from the sengoku era. resolution: head to the faculty office at the school every day until a teacher rewards you with
+                        the helmet. reward: 7 twilight fragment"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-75" id="p3r-quest-75" type="checkbox"/><label for="p3r-quest-75">Request 75: Bring me a sengoku-era helm</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-75" data-id="p3r-quest-75">
-                <label for="p3r-quest-75">Request 75: Bring me a sengoku-era helm</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring a helm to Elizabeth from the Sengoku era.
                     </li>
-                    <li>
+<li>
                         Resolution: Head to the Faculty Office at the School every day until a teacher rewards you with
                         the helmet.
                     </li>
-                    <li>
+<li>
                         Reward: 7 Twilight Fragment
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="76" data-search="request 76: bring me a glasses wipe (missable - ) request: bring the item that elizabeth is asking for (glasses wipe). resolution: you can get a glasses wipe from ikutsuki in the dorm at night. reward: 5 garnet"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-76" id="p3r-quest-76" type="checkbox"/><label for="p3r-quest-76">Request 76: Bring me a glasses wipe <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-76" data-id="p3r-quest-76">
-                <label for="p3r-quest-76">Request 76: Bring me a glasses wipe <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the item that Elizabeth is asking for (Glasses Wipe).
                     </li>
-                    <li>
+<li>
                         Resolution: You can get a glasses wipe from Ikutsuki in the dorm at night.
                     </li>
-                    <li>
+<li>
                         Reward: 5 Garnet
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="77" data-search="request 77: i'd like to walk around paulownia mall request: show elizabeth around paulownia mall. resolution: once you have accepted this request, go on a date with elizabeth during the daytime. reward: small cheongsam"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-77" id="p3r-quest-77" type="checkbox"/><label for="p3r-quest-77">Request 77: I'd like to walk around Paulownia Mall</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-77" data-id="p3r-quest-77">
-                <label for="p3r-quest-77">Request 77: I'd like to walk around Paulownia Mall</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth around Paulownia Mall.
                     </li>
-                    <li>
+<li>
                         Resolution: Once you have accepted this request, go on a date with Elizabeth during the daytime.
                     </li>
-                    <li>
+<li>
                         Reward: Small Cheongsam
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="78" data-search="request 78: i'd like to visit iwatodai station request: walk around iwatodai with elizabeth. resolution: once you have accepted this request, go on a date with elizabeth during the daytime. reward: book of the ancients"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-78" id="p3r-quest-78" type="checkbox"/><label for="p3r-quest-78">Request 78: I'd like to visit Iwatodai Station</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-78" data-id="p3r-quest-78">
-                <label for="p3r-quest-78">Request 78: I'd like to visit Iwatodai Station</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Walk around Iwatodai with Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Once you have accepted this request, go on a date with Elizabeth during the daytime.
                     </li>
-                    <li>
+<li>
                         Reward: Book of the Ancients
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="79" data-search="request 79: i'd like to visit naganaki shrine request: walk around naganaki shrine with elizabeth. resolution: once you have accepted this request, go on a date with elizabeth during the daytime. reward: unknown"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-79" id="p3r-quest-79" type="checkbox"/><label for="p3r-quest-79">Request 79: I'd like to visit Naganaki Shrine</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-79" data-id="p3r-quest-79">
-                <label for="p3r-quest-79">Request 79: I'd like to visit Naganaki Shrine</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Walk around Naganaki Shrine with Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Once you have accepted this request, go on a date with Elizabeth during the daytime.
                     </li>
-                    <li>
+<li>
                         Reward: Unknown
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="80" data-search="request 80: i'd like to visit gekkoukan high request: show elizabeth around gekkoukan high. resolution: once you have accepted this request, go on a date with elizabeth during the daytime. reward: unknown"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-80" id="p3r-quest-80" type="checkbox"/><label for="p3r-quest-80">Request 80: I'd like to visit Gekkoukan High</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-80" data-id="p3r-quest-80">
-                <label for="p3r-quest-80">Request 80: I'd like to visit Gekkoukan High</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Show Elizabeth around Gekkoukan High.
                     </li>
-                    <li>
+<li>
                         Resolution: Once you have accepted this request, go on a date with Elizabeth during the daytime.
                     </li>
-                    <li>
+<li>
                         Reward: Unknown
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="81" data-search="request 81: i'd like to visit your room request: invite elizabeth to your room. resolution: once you have accepted this request, go on a date with elizabeth during the daytime. reward: tyrant's horn"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-81" id="p3r-quest-81" type="checkbox"/><label for="p3r-quest-81">Request 81: I'd like to visit your room</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-81" data-id="p3r-quest-81">
-                <label for="p3r-quest-81">Request 81: I'd like to visit your room</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Invite Elizabeth to your room.
                     </li>
-                    <li>
+<li>
                         Resolution: Once you have accepted this request, go on a date with Elizabeth during the daytime.
                     </li>
-                    <li>
+<li>
                         Reward: Tyrant's Horn
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="82" data-search="request 82: retrieve the last old document request: bring the old document 08. resolution: the final old document can be found on the 198th floor of tartarus. reward: 120,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-82" id="p3r-quest-82" type="checkbox"/><label for="p3r-quest-82">Request 82: Retrieve the last old document</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-82" data-id="p3r-quest-82">
-                <label for="p3r-quest-82">Request 82: Retrieve the last old document</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Old Document 08.
                     </li>
-                    <li>
+<li>
                         Resolution: The final old document can be found on the 198th Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 120,000 yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="83" data-search="request 83: bring the progress report request: bring the “progress report.” resolution: the progress report can be found on the 226th floor of tartarus. reward: 150,000 yen"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-83" id="p3r-quest-83" type="checkbox"/><label for="p3r-quest-83">Request 83: Bring the Progress report</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-83" data-id="p3r-quest-83">
-                <label for="p3r-quest-83">Request 83: Bring the Progress report</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the “Progress Report.”
                     </li>
-                    <li>
+<li>
                         Resolution: The Progress Report can be found on the 226th Floor of Tartarus.
                     </li>
-                    <li>
+<li>
                         Reward: 150,000 yen
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="84" data-search="request 84: create a persona with tempest slash request: have a persona with the skill, tempest slash, in your possession and report to
+                        elizabeth. resolution: chernobog has tempest slash, to fuse it, use this recipe: siegfried + suzaku. reward: 3 empowering sutra"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-84" id="p3r-quest-84" type="checkbox"/><label for="p3r-quest-84">Request 84: Create a Persona with Tempest Slash</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-84" data-id="p3r-quest-84">
-                <label for="p3r-quest-84">Request 84: Create a Persona with Tempest Slash</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Have a Persona with the skill, Tempest Slash, in your possession and report to
                         Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Chernobog has Tempest Slash, to fuse it, use this recipe: Siegfried + Suzaku.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Empowering Sutra
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="85" data-search="request 85: create a persona with auto-maraku request: have a persona with the skill, auto-maraku, in your possession and report to elizabeth. resolution: cybele has auto-maraku, to fuse it, use this recipe: futsunushi + lakshmi. reward: 3 debilitor sutra"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-85" id="p3r-quest-85" type="checkbox"/><label for="p3r-quest-85">Request 85: Create a persona with Auto-Maraku</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-85" data-id="p3r-quest-85">
-                <label for="p3r-quest-85">Request 85: Create a persona with Auto-Maraku</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Have a Persona with the skill, Auto-Maraku, in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Cybele has Auto-Maraku, to fuse it, use this recipe: Futsunushi + Lakshmi.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Debilitor Sutra
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="86" data-search="request 86: fusion series #8 death, alice request: have alice in your possession and report to elizabeth. resolution: alice recipe = pixie + lilim + narcissus + titania. reward: maid outfit"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-86" id="p3r-quest-86" type="checkbox"/><label for="p3r-quest-86">Request 86: Fusion Series #8 Death, Alice</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-86" data-id="p3r-quest-86">
-                <label for="p3r-quest-86">Request 86: Fusion Series #8 Death, Alice</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Have Alice in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Alice Recipe = Pixie + Lilim + Narcissus + Titania.
                     </li>
-                    <li>
+<li>
                         Reward: Maid Outfit
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="87" data-search="request 87: fuision series #9 fool, loki request: have a loki at level 75 or higher in your possession and report to elizabeth. resolution: loki recipe = siegfried + mother harlot. reward: masakados"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-87" id="p3r-quest-87" type="checkbox"/><label for="p3r-quest-87">Request 87: Fuision Series #9 Fool, Loki</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-87" data-id="p3r-quest-87">
-                <label for="p3r-quest-87">Request 87: Fuision Series #9 Fool, Loki</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Have a Loki at level 75 or higher in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Loki Recipe = Siegfried + Mother Harlot.
                     </li>
-                    <li>
+<li>
                         Reward: Masakados
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="88" data-search="request 88: defeat a greedy shadow request: defeat the greedy shadow in harabah, the fifth block of tartarus, and bring back a gold
+                        medal. resolution: greedy shadows can appear randomly on floors in tartarus, and an event will
+                        occur when one is around. you must randomly choose to turn either left or right in order to
+                        catch it. if you can catch it, be sure to defeat it to complete this request. reward: life aid skill card"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-88" id="p3r-quest-88" type="checkbox"/><label for="p3r-quest-88">Request 88: Defeat a Greedy Shadow</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-88" data-id="p3r-quest-88">
-                <label for="p3r-quest-88">Request 88: Defeat a Greedy Shadow</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Defeat the Greedy Shadow in Harabah, the fifth block of Tartarus, and bring back a Gold
                         Medal.
                     </li>
-                    <li>
+<li>
                         Resolution: Greedy Shadows can appear randomly on floors in Tartarus, and an event will
                         occur when one is around. You must randomly choose to turn either left or right in order to
                         catch it. If you can catch it, be sure to defeat it to complete this Request.
                     </li>
-                    <li>
+<li>
                         Reward: Life Aid Skill Card
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="89" data-search="request 89: bring me a rai kumimitsu request: show elizabeth a rai kunimitsu. resolution: a rai kunimitsu can be found in chests in tartarus, usually on a boss floor. reward: prime nihil ore"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-89" id="p3r-quest-89" type="checkbox"/><label for="p3r-quest-89">Request 89: Bring me a Rai Kumimitsu</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-89" data-id="p3r-quest-89">
-                <label for="p3r-quest-89">Request 89: Bring me a Rai Kumimitsu</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Show Elizabeth a Rai Kunimitsu.
                     </li>
-                    <li>
+<li>
                         Resolution: A Rai Kunimitsu can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: Prime Nihil Ore
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="90" data-search="request 90: bring me a dojigiri yasautsuna request: show elizabeth a dojigiri yasutsuna. resolution: a dojigiri yasutsuna can be found in chests in tartarus, usually on a boss floor. reward: as refined material"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-90" id="p3r-quest-90" type="checkbox"/><label for="p3r-quest-90">Request 90: Bring me a Dojigiri Yasautsuna</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-90" data-id="p3r-quest-90">
-                <label for="p3r-quest-90">Request 90: Bring me a Dojigiri Yasautsuna</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Show Elizabeth a Dojigiri Yasutsuna.
                     </li>
-                    <li>
+<li>
                         Resolution: A Dojigiri Yasutsuna can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: AS Refined Material
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="91" data-search="request 91: bring me a tombo-kiri request: show elizabeth a tonbo-kiri. resolution: a tonbo-kiri can be found in chests in tartarus, usually on a boss floor. reward: 2 nihil black model"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-91" id="p3r-quest-91" type="checkbox"/><label for="p3r-quest-91">Request 91: Bring me a Tombo-kiri</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-91" data-id="p3r-quest-91">
-                <label for="p3r-quest-91">Request 91: Bring me a Tombo-kiri</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Show Elizabeth a Tonbo-kiri.
                     </li>
-                    <li>
+<li>
                         Resolution: A Tonbo-kiri can be found in chests in Tartarus, usually on a Boss Floor.
                     </li>
-                    <li>
+<li>
                         Reward: 2 Nihil Black Model
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="92" data-search="request 92: go clean a restroom request: bring the cleaning supplies and clean the restroom. resolution: you will need to head to the restroom near the station at port island station to complete this quest. reward: maid outfit"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-92" id="p3r-quest-92" type="checkbox"/><label for="p3r-quest-92">Request 92: Go clean a restroom</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-92" data-id="p3r-quest-92">
-                <label for="p3r-quest-92">Request 92: Go clean a restroom</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the cleaning supplies and clean the restroom.
                     </li>
-                    <li>
+<li>
                         Resolution: You will need to head to the restroom near the station at Port Island station to complete this quest.
                     </li>
-                    <li>
+<li>
                         Reward: Maid Outfit
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="93" data-search="request 93: go water the flowers request: water the flower bed at school. resolution: head to the school rooftop and approach the flowers to water them and complete this quest. reward: maid outfit"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-93" id="p3r-quest-93" type="checkbox"/><label for="p3r-quest-93">Request 93: Go water the flowers</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-93" data-id="p3r-quest-93">
-                <label for="p3r-quest-93">Request 93: Go water the flowers</label>
-                <ul>
-                    <li>
+<ul>
+<li>
                         Request: Water the flower bed at school.
                     </li>
-                    <li>
+<li>
                         Resolution: Head to the School Rooftop and approach the flowers to water them and complete this quest.
                     </li>
-                    <li>
+<li>
                         Reward: Maid Outfit
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="94" data-search="request 94: bring me food for a furry friend (missable - ) request: bring dog food that elizabeth is asking for. resolution: talk to koromaru in the dorm at night to obtain the dog food. reward: bone"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-94" id="p3r-quest-94" type="checkbox"/><label for="p3r-quest-94">Request 94: Bring me food for a furry friend <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-94" data-id="p3r-quest-94">
-                <label for="p3r-quest-94">Request 94: Bring me food for a furry friend <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring dog food that Elizabeth is asking for.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Koromaru in the Dorm at night to obtain the dog food.
                     </li>
-                    <li>
+<li>
                         Reward: Bone
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="95" data-search="request 95: bring me a featherman r action figure (missable - ) request: bring the action figure that elizabeth is asking for. resolution: talk to ken in the dorm at night to obtain the action figure. reward: sacrificial idol"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-95" id="p3r-quest-95" type="checkbox"/><label for="p3r-quest-95">Request 95: Bring me a Featherman R action figure <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-95" data-id="p3r-quest-95">
-                <label for="p3r-quest-95">Request 95: Bring me a Featherman R action figure <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the action figure that Elizabeth is asking for.
                     </li>
-                    <li>
+<li>
                         Resolution: Talk to Ken in the Dorm at night to obtain the action figure.
                     </li>
-                    <li>
+<li>
                         Reward: Sacrificial Idol
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="96" data-search="request 96: i'd like to try oden juice request: bring some oden juice to elizabeth. resolution: before the kyoto trip begins, head to the school and talk to the friendly student
+                        by the persimmon tree. once you are in kyoto, buy all the drinks from the vending machine
+                        on the second floor. when the kyoto trip is over and you are back in school, return to the
+                        friendly student and buy the oden juice from her. reward: winter uniform"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-96" id="p3r-quest-96" type="checkbox"/><label for="p3r-quest-96">Request 96: I'd like to try Oden Juice</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-96" data-id="p3r-quest-96">
-                <label for="p3r-quest-96">Request 96: I'd like to try Oden Juice</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring some Oden Juice to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Before the Kyoto Trip begins, Head to the School and Talk to the Friendly Student
                         by the Persimmon Tree. Once you are in Kyoto, buy all the drinks from the Vending Machine
                         on the Second Floor. When the Kyoto Trip is over and you are back in school, return to the
                         Friendly Student and buy the Oden Juice from her.
                     </li>
-                    <li>
+<li>
                         Reward: Winter Uniform
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="true" data-number="97" data-search="request 97: bring me my christmas present (missable - ) request: get elizabeth's present from santa. resolution: at night time, talk to the man on the second floor of iwatodai strip mall. if you
+                        saved the missing person “ayako yoshimoto” back in june, on floor 50, you can trade the
+                        thank you note for a christmas present. bring the present to elizabeth to complete the
+                        request. reward: 3 ruby"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-97" id="p3r-quest-97" type="checkbox"/><label for="p3r-quest-97">Request 97: Bring me my Christmas present <strong>(Missable - )</strong></label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-97" data-id="p3r-quest-97">
-                <label for="p3r-quest-97">Request 97: Bring me my Christmas present <strong>(Missable - )</strong></label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Get Elizabeth's present from Santa.
                     </li>
-                    <li>
+<li>
                         Resolution: At night time, talk to the man on the second floor of Iwatodai Strip Mall. If you
                         saved the Missing Person “Ayako Yoshimoto” back in June, on floor 50, you can trade the
                         Thank You Note for a Christmas Present. Bring the Present to Elizabeth to complete the
                         Request.
                     </li>
-                    <li>
+<li>
                         Reward: 3 Ruby
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="98" data-search="request 98: fusion series #10 tower, masakado request: have a masakado with the skill “charge” in your possession and report to elizabeth. resolution: cu chulainn with charge + shiva = bishamonten with charge. masakado recipe = zouchouten + jikokuten + koumokuten + bishamonten. reward: 2 nihil white model"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-98" id="p3r-quest-98" type="checkbox"/><label for="p3r-quest-98">Request 98: Fusion Series #10 Tower, Masakado</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-98" data-id="p3r-quest-98">
-                <label for="p3r-quest-98">Request 98: Fusion Series #10 Tower, Masakado</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Have a Masakado with the skill “Charge” in your possession and report to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Cu Chulainn with Charge + Shiva = Bishamonten with Charge. Masakado Recipe = Zouchouten + Jikokuten + Koumokuten + Bishamonten.
                     </li>
-                    <li>
+<li>
                         Reward: 2 NIHIL White Model
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="99" data-search="request 99: defeat the shadow of the void request: defeat the “shadow of the voice” lurking within the monad passage on the 255th floor
+                        in adamah, the sixth block. resolution: see request reward: dead moons husk"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-99" id="p3r-quest-99" type="checkbox"/><label for="p3r-quest-99">Request 99: Defeat the Shadow of the Void</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-99" data-id="p3r-quest-99">
-                <label for="p3r-quest-99">Request 99: Defeat the Shadow of the Void</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat the “Shadow of the Voice” lurking within the Monad Passage on the 255th floor
                         in Adamah, the sixth block.
                     </li>
-                    <li>
+<li>
                         Resolution: See Request
                     </li>
-                    <li>
+<li>
                         Reward: Dead Moons Husk
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="100" data-search="request 100: bring me a bloddy button request: bring the bloody button to elizabeth. resolution: spawn the reaper by waiting on the same floor of tartarus for 5 minutes, then
+                        defeat it to obtain a bloody button. reward: 1 divine pillar"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-100" id="p3r-quest-100" type="checkbox"/><label for="p3r-quest-100">Request 100: Bring me a Bloddy Button</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-100" data-id="p3r-quest-100">
-                <label for="p3r-quest-100">Request 100: Bring me a Bloddy Button</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Bring the Bloody Button to Elizabeth.
                     </li>
-                    <li>
+<li>
                         Resolution: Spawn the Reaper by waiting on the same floor of Tartarus for 5 minutes, then
                         defeat it to obtain a Bloody Button.
                     </li>
-                    <li>
+<li>
                         Reward: 1 Divine Pillar
                     </li>
-                </ul>
-            </section>
+</ul>
+</div></section>
+<section class="daily-content quest-card" data-missable="false" data-number="101" data-search="request 101: take out the ultimate adversary request: defeat the ultimate adversary. resolution: after clearing all of the monad doors, wait for the promised day on 1/31. head to
+                        the monad door on the 255th floor alone, without anyone in your party to challenge the
+                        ultimate adversary. reward: unknown"><div class="quest-card-heading"><input class="progress-checkbox" data-id="p3r-quest-101" id="p3r-quest-101" type="checkbox"/><label for="p3r-quest-101">Request 101: Take out the ultimate adversary</label><button aria-expanded="false" class="quest-details-toggle" type="button">View details</button></div><div class="quest-details" hidden="">
 
-            <section class="daily-content">
-                <input type="checkbox" class="progress-checkbox" id="p3r-quest-101" data-id="p3r-quest-101">
-                <label for="p3r-quest-101">Request 101: Take out the ultimate adversary</label>
-                <ul>
-                    <li>
+
+<ul>
+<li>
                         Request: Defeat the ultimate adversary.
                     </li>
-                    <li>
+<li>
                         Resolution: After clearing all of the Monad Doors, wait for the Promised day on 1/31. Head to
                         the Monad Door on the 255th floor alone, without anyone in your party to challenge the
                         ultimate adversary.
                     </li>
-                    <li>
+<li>
                         Reward: Unknown
                     </li>
-                </ul>
-            </section>
-
-        </section>
-    </main>
+</ul>
+</div></section>
+</section>
+</main>
 </body>
-
 </html>

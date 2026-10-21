@@ -1,0 +1,139 @@
+/* Progressive weather replacement: text stays visible until animation is ready. */
+.p5-weather {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.p5-weather__prefix,
+.p5-weather__fallback {
+  font: inherit;
+}
+
+.p5-weather__icon {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 30px;
+  margin-left: 2px;
+  vertical-align: middle;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .75));
+}
+
+.p5-weather.is-animated .p5-weather__icon {
+  display: inline-block;
+}
+
+.p5-weather.is-animated .p5-weather__fallback {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.p5-weather__sun {
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  background: #ffd21f;
+  box-shadow:
+    0 -7px 0 -5px #ffd21f,
+    0 7px 0 -5px #ffd21f,
+    7px 0 0 -5px #ffd21f,
+    -7px 0 0 -5px #ffd21f;
+  animation: p5-weather-spin 5s linear infinite;
+}
+
+.p5-weather__cloud {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  width: 29px;
+  height: 13px;
+  border: 2px solid #111;
+  border-radius: 12px 12px 7px 7px;
+  background: #f7f7f7;
+  animation: p5-weather-drift 2.4s ease-in-out infinite;
+}
+
+.p5-weather__cloud::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -9px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #111;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+  background: #f7f7f7;
+}
+
+.p5-weather__rain {
+  position: absolute;
+  left: 16px;
+  top: 23px;
+  width: 3px;
+  height: 8px;
+  background: #59c7ff;
+  box-shadow: 9px 0 #59c7ff, 18px 0 #59c7ff;
+  transform: skew(-18deg);
+  animation: p5-weather-rain .65s linear infinite;
+}
+
+.p5-weather--sunny .p5-weather__cloud,
+.p5-weather--sunny .p5-weather__rain,
+.p5-weather--clear .p5-weather__cloud,
+.p5-weather--clear .p5-weather__rain {
+  display: none;
+}
+
+.p5-weather--cloudy .p5-weather__rain {
+  display: none;
+}
+
+.p5-weather--cloudy .p5-weather__sun {
+  opacity: .55;
+}
+
+.p5-weather--rain .p5-weather__sun {
+  opacity: .28;
+}
+
+@keyframes p5-weather-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes p5-weather-drift {
+  50% { transform: translate(3px, -1px); }
+}
+
+@keyframes p5-weather-rain {
+  0% { opacity: 0; transform: translateY(-4px) skew(-18deg); }
+  100% { opacity: 1; transform: translateY(4px) skew(-18deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p5-weather__icon { display: none !important; }
+  .p5-weather__fallback {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    clip-path: none !important;
+    white-space: normal !important;
+  }
+}

@@ -1,0 +1,101 @@
+/* Production checkbox-row alignment.
+   Requires each tracked label's text in .task-label-text. */
+body[data-game="p5r"] .progress-checkbox {
+  position: absolute !important;
+  inline-size: 1px !important;
+  block-size: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+  clip-path: inset(50%);
+}
+
+body[data-game="p5r"] .progress-checkbox + label {
+  --check-size: clamp(1.35rem, 3.2cqi, 1.65rem);
+  position: relative;
+  display: grid !important;
+  grid-template-columns: var(--check-size) minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: clamp(.65rem, 1.5cqi, .9rem) !important;
+  inline-size: 100% !important;
+  min-block-size: calc(var(--check-size) + 1rem) !important;
+  margin-block: .45rem !important;
+  padding: .55rem clamp(.7rem, 1.8cqi, 1rem) !important;
+  box-sizing: border-box !important;
+}
+
+body[data-game="p5r"] .progress-checkbox + label::before {
+  content: '';
+  position: static !important;
+  inset: auto !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  align-self: center !important;
+  justify-self: center !important;
+  inline-size: var(--check-size) !important;
+  block-size: var(--check-size) !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  background: #080808;
+  border: 3px solid var(--p5-red, #e60012);
+  box-shadow: .14rem .14rem 0 #fff;
+  transform: rotate(-3deg) !important;
+}
+
+body[data-game="p5r"] .progress-checkbox + label::after {
+  display: none !important;
+  content: none !important;
+}
+
+body[data-game="p5r"] .progress-checkbox + label > .task-label-text {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  align-self: center;
+  min-inline-size: 0;
+  margin: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+body[data-game="p5r"] .progress-checkbox:checked + label::before {
+  content: '✓';
+  display: grid !important;
+  place-items: center;
+  color: #080808;
+  background: var(--p5-green, #66df45);
+  border-color: #080808;
+  font-size: calc(var(--check-size) * .68);
+  font-weight: 900;
+  line-height: 1;
+}
+
+body[data-game="p5r"] .daily-content ul:has(> .progress-checkbox),
+body[data-game="p5r"] .daily-content ol:has(> .progress-checkbox) {
+  margin-inline: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+@container p5-day (max-width: 30rem) {
+  body[data-game="p5r"] .progress-checkbox + label {
+    --check-size: 1.3rem;
+    gap: .6rem !important;
+    padding: .5rem .62rem !important;
+  }
+}
+
+/* Tracked Confidant answers and list choices */
+body[data-game="p5r"] .choice-label {
+  margin-inline-start: clamp(.75rem, 2.2cqi, 1.5rem) !important;
+  inline-size: calc(100% - clamp(.75rem, 2.2cqi, 1.5rem)) !important;
+  background: rgba(0, 0, 0, .27) !important;
+  border-inline-start-color: rgba(230, 0, 18, .72) !important;
+}
+
+body[data-game="p5r"] .choice-label > .task-label-text {
+  font-size: .94em;
+}
+
+body[data-game="p5r"] .choice-checkbox:checked + .choice-label {
+  background: rgba(102, 223, 69, .08) !important;
+}

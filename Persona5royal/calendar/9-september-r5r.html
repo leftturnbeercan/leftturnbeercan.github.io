@@ -1,877 +1,798 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar: September</title>
-    <link
-      href="/css/fonts/bubblegum-superstar.ttf"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="/css/p5r-months.css" rel="stylesheet" />
-    <script src="/js/progress-tracking.js" defer></script>
-  </head>
-<main>
-    <header>
-        <h1>
-            <u>September</u>
-        </h1>
-        <nav>
-            <ul id="main_menu_setup" class="main_menu_style">
-                <li><a href="/Persona5royal/persona5royal.html">Home</a></li>
-                <li><a href="/Persona5royal/calendar-r5r.html">Month</a></li>
-            </ul>
-        </nav>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calendar: September</title>
+<link href="/css/fonts/bubblegum-superstar.ttf" rel="stylesheet" type="text/css"/>
+<link href="/css/p5r-months.css" rel="stylesheet"/>
+<script defer="" src="/js/progress-tracking.js"></script>
+<link href="/css/p5r-checkbox-alignment.css" rel="stylesheet"/><link href="/css/p5r-weather-animations.css" rel="stylesheet"/><script defer="True" src="/js/p5r-weather-animations.js"></script><script defer="True" src="/js/p5r-modern-ui.js"></script></head>
 
-        <nav>
-            <table class="calendar-nav">
-                <thead>
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="cal_nav_font"><a href=""></a></td>
-                        <td class="cal_nav_font"><a href=""></a></td>
-                        <td class="cal_nav_font"><a href=""></a></td>
-                        <td class="cal_nav_font"><a href=""></a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-1">1</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-2">2</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-3">3</a></td>
-                    </tr>
-                    <tr>
-                        <td class="cal_nav_font"><a href="#p5r-september-4">4</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-5">5</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-6">6</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-7">7</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-8">8</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-9">9</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-10">10</a></td>
-                    </tr>
-                    <tr>
-                        <td class="cal_nav_font"><a href="#p5r-september-11">11</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-12">12</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-13">13</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-14">14</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-15">15</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-16">16</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-17">17</a></td>
-                    </tr>
-                    <tr>
-                        <td class="cal_nav_font"><a href="#p5r-september-18">18</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-19">19</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-20">20</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-21">21</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-22">22</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-23">23</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-24">24</a></td>
-                    </tr>
-                    <tr>
-                        <td class="cal_nav_font"><a href="#p5r-september-25">25</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-26">26</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-27">27</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-28">28</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-29">29</a></td>
-                        <td class="cal_nav_font"><a href="#p5r-september-30">30</a></td>
-                        <td class="cal_nav_font"><a href=""></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </nav>
-    </header>
+<body data-game="p5r" data-month="september" data-view="focused-day"><main>
+<header>
+<h1>
+<u>September</u>
+</h1>
+<nav>
+<ul class="main_menu_style" id="main_menu_setup">
+<li><a href="/Persona5royal/persona5royal.html">Home</a></li>
+<li><a href="/Persona5royal/calendar-r5r.html">Month</a></li>
+</ul>
+</nav>
+<nav>
+<table class="calendar-nav" id="cal_nav">
+<thead>
+<tr>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cal_nav_font"></td>
+<td class="cal_nav_font"></td>
+<td class="cal_nav_font"></td>
+<td class="cal_nav_font"></td>
+<td class="cal_nav_font"><a href="#p5r-september-1">1</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-2">2</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-3">3</a></td>
+</tr>
+<tr>
+<td class="cal_nav_font"><a href="#p5r-september-4">4</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-5">5</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-6">6</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-7">7</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-8">8</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-9">9</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-10">10</a></td>
+</tr>
+<tr>
+<td class="cal_nav_font"><a href="#p5r-september-11">11</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-12">12</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-13">13</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-14">14</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-15">15</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-16">16</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-17">17</a></td>
+</tr>
+<tr>
+<td class="cal_nav_font"><a href="#p5r-september-18">18</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-19">19</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-20">20</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-21">21</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-22">22</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-23">23</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-24">24</a></td>
+</tr>
+<tr>
+<td class="cal_nav_font"><a href="#p5r-september-25">25</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-26">26</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-27">27</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-28">28</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-29">29</a></td>
+<td class="cal_nav_font"><a href="#p5r-september-30">30</a></td>
+<td class="cal_nav_font"></td>
+</tr>
+</tbody>
+</table>
+</nav><section aria-labelledby="month-progress-heading" class="month-progress"><div class="month-progress-copy"><span class="progress-kicker" id="month-progress-heading">September Completion</span><strong aria-live="polite" id="progress-text">0 of 233 tasks (0%)</strong></div><div aria-label="September guide completion" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-track" role="progressbar"><div id="progress-fill"></div></div></section>
+</header>
+<section id="content-days">
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-1">September 1 Thursday</h3>
+<h3>Required Arcana: Fortune</h3>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-1-1" id="p5r-september-1-1" type="checkbox"/>
+<label for="p5r-september-1-1"><span class="task-label-text">Confidant Fortune Rank 7.1</span></label>
+<p>Location: Shinjuku [Fortune Telling Booth]</p>
+<input class="progress-checkbox" data-id="p5r-september-1-2" id="p5r-september-1-2" type="checkbox"/>
+<label for="p5r-september-1-2"><span class="task-label-text">New Request: Debunking the Psychic</span></label>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-1-choice-1" id="p5r-september-1-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-1-choice-1"><span class="task-label-text">Choice: Any</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-1-choice-2" id="p5r-september-1-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-1-choice-2"><span class="task-label-text">Choice: Any</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-1-choice-3" id="p5r-september-1-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-1-choice-3"><span class="task-label-text">Choice: Any</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-2">September 2 Friday</h3>
+<h4>[After School | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-2-1" id="p5r-september-2-1" type="checkbox"/>
+<label for="p5r-september-2-1"><span class="task-label-text">Head to [Yongen-Jaya (SecondHand Shop)] and buy the Broken Laptop [500 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-2-2" id="p5r-september-2-2" type="checkbox"/>
+<label for="p5r-september-2-2"><span class="task-label-text">Head to [Akihabara (Machine Parts Shop)] and buy PC Tool Set [8,000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-2-3" id="p5r-september-2-3" type="checkbox"/>
+<label for="p5r-september-2-3"><span class="task-label-text">Head to Jinbocho and buy Master Swordsman [8,000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-2-4" id="p5r-september-2-4" type="checkbox"/>
+<label for="p5r-september-2-4"><span class="task-label-text">Head to [Shibuya (Discount Store)] and buy</span></label>
+<ul>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-2-choice-1" id="p5r-september-2-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-2-choice-1"><span class="task-label-text">Phantom Wafers [500 Yen]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-2-choice-2" id="p5r-september-2-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-2-choice-2"><span class="task-label-text">Thief Mask [2,000 Yen]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-2-choice-3" id="p5r-september-2-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-2-choice-3"><span class="task-label-text">Calling Postcard [500 Yen]</span></label>
+</ul>
+<input class="progress-checkbox" data-id="p5r-september-2-5" id="p5r-september-2-5" type="checkbox"/>
+<label for="p5r-september-2-5"><span class="task-label-text">Confidant Strength Hangout</span></label>
+<p>Location: Shibuya [Central Street]</p>
+<p>Hangout: Miura Beach</p>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-2-6" id="p5r-september-2-6" type="checkbox"/>
+<label for="p5r-september-2-6"><span class="task-label-text">Crossword Puzzle</span></label>
+<input class="progress-checkbox" data-id="p5r-september-2-7" id="p5r-september-2-7" type="checkbox"/>
+<label for="p5r-september-2-7"><span class="task-label-text">Crossword Answer: Typhoon [Knowledge +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-2-8" id="p5r-september-2-8" type="checkbox"/>
+<label for="p5r-september-2-8"><span class="task-label-text">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck Reading [5000 Yen] [Boost to Proficiency]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-2-9" id="p5r-september-2-9" type="checkbox"/>
+<label for="p5r-september-2-9"><span class="task-label-text">Head to your room in [Yongen-Jaya (Cafe Leblanc)] and interact with your desk to repair Broken Laptop [Proficiency +7]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-3">September 3 Saturday</h3>
+<h3>Required Arcana: Justice</h3>
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-3-1" id="p5r-september-3-1" type="checkbox"/>
+<label for="p5r-september-3-1"><span class="task-label-text">Teacher's Question: Answer: Prosperity [Knowledge +2]</span></label>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-3-2" id="p5r-september-3-2" type="checkbox"/>
+<label for="p5r-september-3-2"><span class="task-label-text">Confidant Justice Rank 6</span></label>
+<p>Location: Leblanc Cafe</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-1" id="p5r-september-3-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-1"><span class="task-label-text">Choice 3: A while, huh? [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-2" id="p5r-september-3-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-2"><span class="task-label-text">Choice 2: ...You've been through a lot [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-3" id="p5r-september-3-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-3"><span class="task-label-text">Choice 1: This is nothing [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-4" id="p5r-september-3-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-4"><span class="task-label-text">Choice 1: Same [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-5" id="p5r-september-3-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-5"><span class="task-label-text">Choice 2: Because we're similar [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-6" id="p5r-september-3-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-6"><span class="task-label-text">Choice 1: I think you're right [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-3-choice-7" id="p5r-september-3-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-3-choice-7"><span class="task-label-text">(Phone) Choice 3: My bad, I guess [+2]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-4">September 4 Sunday</h3>
+<h3>Required Arcana: Hermit</h3>
+<h4>[Daytime | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-4-1" id="p5r-september-4-1" type="checkbox"/>
+<label for="p5r-september-4-1"><span class="task-label-text">New Request: Winners Don't Use Cheats</span></label>
+<input class="progress-checkbox" data-id="p5r-september-4-2" id="p5r-september-4-2" type="checkbox"/>
+<label for="p5r-september-4-2"><span class="task-label-text">Drink Seafood Aojiru at Shibuya [Underground Walkway] [5000 Yen, Knowledge +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-4-3" id="p5r-september-4-3" type="checkbox"/>
+<label for="p5r-september-4-3"><span class="task-label-text">Investigate within the Arcade in Shibuya to finish unlocking the above request</span></label>
+<input class="progress-checkbox" data-id="p5r-september-4-4" id="p5r-september-4-4" type="checkbox"/>
+<label for="p5r-september-4-4"><span class="task-label-text">Confidant Hermit Rank 2 [Kindness Rank 4 Required]</span></label>
+<p>Location: Cafe Leblanc (Outside of the Cafe)</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-4-choice-1" id="p5r-september-4-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-4-choice-1"><span class="task-label-text">Choice 2: That's a great idea [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-4-choice-2" id="p5r-september-4-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-4-choice-2"><span class="task-label-text">Choice 1: If we work together [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-4-choice-3" id="p5r-september-4-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-4-choice-3"><span class="task-label-text">Choice 1: Sounds good to me [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-4-choice-4" id="p5r-september-4-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-4-choice-4"><span class="task-label-text">(Phone) Choice 1: I bet it will [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-4-5" id="p5r-september-4-5" type="checkbox"/>
+<label for="p5r-september-4-5"><span class="task-label-text">Head to Kichijoji [Back Alley] to talk to the Sakai and trade Phantom Wafers for Strength Up Ofuda</span></label>
+<input class="progress-checkbox" data-id="p5r-september-4-6" id="p5r-september-4-6" type="checkbox"/>
+<label for="p5r-september-4-6"><span class="task-label-text">Hangout: [Kichijoji (Jazz Club)]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-4-7" id="p5r-september-4-7" type="checkbox"/>
+<label for="p5r-september-4-7"><span class="task-label-text">Confidant: Emperor (Learns Charge)</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-5">September 5 Monday</h3>
+<h3>Required Arcana: Hermit, Hierophant</h3>
+<h4>[After School | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-5-1" id="p5r-september-5-1" type="checkbox"/>
+<label for="p5r-september-5-1"><span class="task-label-text">Confidant Hermit Rank 3</span></label>
+<p>Location: Cafe Leblanc (Outside of the Cafe)</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-1" id="p5r-september-5-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-1"><span class="task-label-text">Choice 3: I was about to come find you [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-2" id="p5r-september-5-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-2"><span class="task-label-text">Choice 1: Good to see you again [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-3" id="p5r-september-5-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-3"><span class="task-label-text">(Phone) Choice 3: We'll both do our best [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-5-2" id="p5r-september-5-2" type="checkbox"/>
+<label for="p5r-september-5-2"><span class="task-label-text">Confidant Hierophant Rank 5 [Kindness +3]</span></label>
+<p>Location: Leblanc Cafe</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-4" id="p5r-september-5-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-4"><span class="task-label-text">Choice 3: I think I'm addicted [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-5" id="p5r-september-5-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-5"><span class="task-label-text">Choice 2: She wasn't normal, huh?</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-6" id="p5r-september-5-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-6"><span class="task-label-text">Choice 1: It really paid off in the end [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-5-choice-7" id="p5r-september-5-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-5-choice-7"><span class="task-label-text">(Phone) Choice 2: She needs a balanced diet [+2]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-6">September 6 Tuesday</h3>
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-6-1" id="p5r-september-6-1" type="checkbox"/>
+<label for="p5r-september-6-1"><span class="task-label-text">Teacher's Question: Answer: Chronostasis [Knowledge +2]</span></label>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-6-2" id="p5r-september-6-2" type="checkbox"/>
+<label for="p5r-september-6-2"><span class="task-label-text">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Money Reading [5000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-6-3" id="p5r-september-6-3" type="checkbox"/>
+<label for="p5r-september-6-3"><span class="task-label-text">Head to the hideout and go to Mementos</span></label>
+<input class="progress-checkbox" data-id="p5r-september-6-4" id="p5r-september-6-4" type="checkbox"/>
+<label for="p5r-september-6-4"><span class="task-label-text">Complete the following in Mementos:</span></label>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-1" id="p5r-september-6-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-1"><span class="task-label-text">One Who Bullies Bullies [Area: Aiyatsbus Area 5]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-2" id="p5r-september-6-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-2"><span class="task-label-text">Part-Time Job, Full-Time Hell [Area: Chemdah Area 1]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-3" id="p5r-september-6-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-3"><span class="task-label-text">Bad Medicine [Area: Chemdah Area 2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-4" id="p5r-september-6-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-4"><span class="task-label-text">The Lovesick Cyberstalking Girl [Area: Chemdah Area 8]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-5" id="p5r-september-6-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-5"><span class="task-label-text">Calling for Justice for Cats [Area: Kaitul Area 1]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-6" id="p5r-september-6-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-6"><span class="task-label-text">Debunking the Psychic! [Area: Kaitul: Area 3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-7" id="p5r-september-6-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-7"><span class="task-label-text">Who's Been Assaulting People? [Area: Kaitul Area 5]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-8" id="p5r-september-6-choice-8" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-8"><span class="task-label-text">We Aren't Just Your Slaves [Area: Kaitul Area 8]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-9" id="p5r-september-6-choice-9" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-9"><span class="task-label-text">Fighting for Truth of Journalism [Area: Kaitul Area 9]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-10" id="p5r-september-6-choice-10" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-10"><span class="task-label-text">Who's Muscling in Yongen-Jaya [Area: Kaitul Area 10]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-6-choice-11" id="p5r-september-6-choice-11" type="checkbox"/><label class="choice-label" for="p5r-september-6-choice-11"><span class="task-label-text">Winners Don't Use Cheats [Area: Akzeriyyuth Area 5]</span></label>
+<p>*Note: Winners Don't Cheat will not be completeable here but after attempting the fight will lead to unlocking another confidant. Will come back to this request later*</p>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-7">September 7 Wednesday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-7-1" id="p5r-september-7-1" type="checkbox"/>
+<label for="p5r-september-7-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-8">September 8 Thursday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-8-1" id="p5r-september-8-1" type="checkbox"/>
+<label for="p5r-september-8-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-9">September 9 Friday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-9-1" id="p5r-september-9-1" type="checkbox"/>
+<label for="p5r-september-9-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-10">September 10 Saturday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-10-1" id="p5r-september-10-1" type="checkbox"/>
+<label for="p5r-september-10-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-11">September 11 Sunday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-11-1" id="p5r-september-11-1" type="checkbox"/>
+<label for="p5r-september-11-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-12">September 12 Monday</h3>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-12-1" id="p5r-september-12-1" type="checkbox"/>
+<label for="p5r-september-12-1"><span class="task-label-text">While in your room, feed your plant Mega Fertilizer [Kindness +5]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-13">September 13 Tuesday</h3>
+<h4>[Daytime | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-13-1" id="p5r-september-13-1" type="checkbox"/>
+<label for="p5r-september-13-1"><span class="task-label-text">Confidant Judgement Rank 4 [Automatic]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-14">September 14 Wednesday</h3>
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-14-1" id="p5r-september-14-1" type="checkbox"/>
+<label for="p5r-september-14-1"><span class="task-label-text">Teacher's Question: Answer: Money loans for collateral [Knowledge +2]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-15">September 15 Thursday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-15-1" id="p5r-september-15-1" type="checkbox"/>
+<label for="p5r-september-15-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-16">September 16 Friday</h3>
+<h4>[All Day]</h4>
+<input class="progress-checkbox" data-id="p5r-september-16-1" id="p5r-september-16-1" type="checkbox"/>
+<label for="p5r-september-16-1"><span class="task-label-text">Enjoy the story. Nothing to worry about on this day.</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-17">September 17 Saturday</h3>
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-17-1" id="p5r-september-17-1" type="checkbox"/>
+<label for="p5r-september-17-1"><span class="task-label-text">Teacher's Question: Answer: Cats eating human tongues [Knowledge +2]</span></label>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-17-2" id="p5r-september-17-2" type="checkbox"/>
+<label for="p5r-september-17-2"><span class="task-label-text">Confidant Magician Rank 8 [Automatic]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-18">September 18 Sunday</h3>
+<h4>[Evening]</h4>
+<input class="progress-checkbox" data-id="p5r-september-18-1" id="p5r-september-18-1" type="checkbox"/>
+<label for="p5r-september-18-1"><span class="task-label-text">Read: Master Swordsman [2/3]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-19">September 19 Monday</h3>
+<h3>Required Arcana: Star</h3>
+<h4>[Daytime | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-19-1" id="p5r-september-19-1" type="checkbox"/>
+<label for="p5r-september-19-1"><span class="task-label-text">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Money Reading [5000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-2" id="p5r-september-19-2" type="checkbox"/>
+<label for="p5r-september-19-2"><span class="task-label-text">Ask Chihaya for a Luck Reading [5000 Yen] [Boost Knowledge]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-3" id="p5r-september-19-3" type="checkbox"/>
+<label for="p5r-september-19-3"><span class="task-label-text">Head to Kichijoji and interact with the Information Desk. Make sure to go through all questions while at the Information Desk. [Knowledge +3]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-4" id="p5r-september-19-4" type="checkbox"/>
+<label for="p5r-september-19-4"><span class="task-label-text">Reach the treasure in the Spaceport Palace</span></label>
+<ul>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-19-choice-1" id="p5r-september-19-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-19-choice-1"><span class="task-label-text">Obtain Arcana: Tower</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-19-choice-2" id="p5r-september-19-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-19-choice-2"><span class="task-label-text">Obtain Arcana: Empress</span></label>
+</ul>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-19-5" id="p5r-september-19-5" type="checkbox"/>
+<label for="p5r-september-19-5"><span class="task-label-text">Call Kawakami for a massage with the phone in Cafe Leblanc</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-6" id="p5r-september-19-6" type="checkbox"/>
+<label for="p5r-september-19-6"><span class="task-label-text">Crossword Puzzle</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-7" id="p5r-september-19-7" type="checkbox"/>
+<label for="p5r-september-19-7"><span class="task-label-text">Crossword Answer: Festival [Knowledge +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-8" id="p5r-september-19-8" type="checkbox"/>
+<label for="p5r-september-19-8"><span class="task-label-text">Head to Kichijoji [Back Alley] to talk to the Sakai and trade Thief Mask for Magic Up Fuda</span></label>
+<input class="progress-checkbox" data-id="p5r-september-19-9" id="p5r-september-19-9" type="checkbox"/>
+<label for="p5r-september-19-9"><span class="task-label-text">Confidant Star Rank 6 [Knowledge +3]</span></label>
+<p>Knowledge Rank Up [Encyclopedic - Erudite]</p>
+<p>Location: Kanda</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-19-choice-3" id="p5r-september-19-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-19-choice-3"><span class="task-label-text">Choice 2: Is that frustrating [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-19-choice-4" id="p5r-september-19-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-19-choice-4"><span class="task-label-text">Choice 3: Do what you love [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-19-choice-5" id="p5r-september-19-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-19-choice-5"><span class="task-label-text">(Phone) Choice 2: You're imagining things [+2]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-20">September 20 Tuesday</h3>
+<h3>Required Arcana: Star</h3>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-20-1" id="p5r-september-20-1" type="checkbox"/>
+<label for="p5r-september-20-1"><span class="task-label-text">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for an Affinity Reading [5000 Yen] [Star +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-20-2" id="p5r-september-20-2" type="checkbox"/>
+<label for="p5r-september-20-2"><span class="task-label-text">Ask Chihaya for a Luck Reading [5000 Yen] [Boost to Guts]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-20-3" id="p5r-september-20-3" type="checkbox"/>
+<label for="p5r-september-20-3"><span class="task-label-text">Head to the hideout and send out the calling card</span></label>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-20-4" id="p5r-september-20-4" type="checkbox"/>
+<label for="p5r-september-20-4"><span class="task-label-text">Read: Master Swordsman [3/3] [Guts +10]</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-21">September 21 Wednesday | Take Your Heart</h3>
+<h4>[Afternoon | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-21-1" id="p5r-september-21-1" type="checkbox"/>
+<label for="p5r-september-21-1"><span class="task-label-text">Teacher's Question: Answer: Central Europe [Knowledge +2]</span></label>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-21-2" id="p5r-september-21-2" type="checkbox"/>
+<label for="p5r-september-21-2"><span class="task-label-text">Clear the Spaceport Palace</span></label>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-21-3" id="p5r-september-21-3" type="checkbox"/>
+<label for="p5r-september-21-3"><span class="task-label-text">Confidant Magician Rank 9 [Automatic]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-21-4" id="p5r-september-21-4" type="checkbox"/>
+<label for="p5r-september-21-4"><span class="task-label-text">Call Kawakami for a massage with the phone in Cafe Leblanc</span></label>
+<input class="progress-checkbox" data-id="p5r-september-21-5" id="p5r-september-21-5" type="checkbox"/>
+<label for="p5r-september-21-5"><span class="task-label-text">Confidant Moon Rank 6.1</span></label>
+<p>Location: Akihabara</p>
+<p>Talk to Mishima [Automatic]</p>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-22">September 22 Thursday</h3>
+<h3>Required Arcana: Tower, Hierophant</h3>
+<h4>[Daytime | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-22-1" id="p5r-september-22-1" type="checkbox"/>
+<label for="p5r-september-22-1"><span class="task-label-text">Head to Jinbocho and buy Heroic Revelations [8,000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-2" id="p5r-september-22-2" type="checkbox"/>
+<label for="p5r-september-22-2"><span class="task-label-text">Head to Akihabara and go to the arcade to talk to Shinya</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-3" id="p5r-september-22-3" type="checkbox"/>
+<label for="p5r-september-22-3"><span class="task-label-text">Head to Yongen-Jaya (Leblanc Cafe). Talk to Futaba outside of the cafe to have her hack the website</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-4" id="p5r-september-22-4" type="checkbox"/>
+<label for="p5r-september-22-4"><span class="task-label-text">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck Reading [5000 Yen] [Boost to Kindness]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-5" id="p5r-september-22-5" type="checkbox"/>
+<label for="p5r-september-22-5"><span class="task-label-text">Head back to Akihabara and speak to Shinya to start the Confidant Tower</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-6" id="p5r-september-22-6" type="checkbox"/>
+<label for="p5r-september-22-6"><span class="task-label-text">Confidant Tower Rank 1 [Automatic]</span></label>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-22-7" id="p5r-september-22-7" type="checkbox"/>
+<label for="p5r-september-22-7"><span class="task-label-text">TV Quiz</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-8" id="p5r-september-22-8" type="checkbox"/>
+<label for="p5r-september-22-8"><span class="task-label-text">TV Quiz Answer: Ten years in prison [Knowledge +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-22-9" id="p5r-september-22-9" type="checkbox"/>
+<label for="p5r-september-22-9"><span class="task-label-text">Confidant Hierophant Rank 6 [Kindness +7]</span></label>
+<p>Kindness Rank Up [Selfless - Angelic]</p>
+<p>Location: Leblanc Cafe</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-22-choice-1" id="p5r-september-22-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-22-choice-1"><span class="task-label-text">Choice 3: To each his own [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-22-choice-2" id="p5r-september-22-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-22-choice-2"><span class="task-label-text">Choice 3: Shut your mouth [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-22-choice-3" id="p5r-september-22-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-22-choice-3"><span class="task-label-text">Choice 1: Saving Futaba was no mistake [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-22-choice-4" id="p5r-september-22-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-22-choice-4"><span class="task-label-text">(Phone) Choice 3: If I can help somehow... [+2]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-23">September 23 Friday</h3>
+<h3>Required Arcana: Councillor, Devil
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-23-1" id="p5r-september-23-1" type="checkbox"/>
+<label for="p5r-september-23-1"><span class="task-label-text">Read: Heroic Revelations [2/3]</span></label>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-23-2" id="p5r-september-23-2" type="checkbox"/>
+<label for="p5r-september-23-2"><span class="task-label-text">Confidant Councillor Rank 5</span></label>
+<p>Location: Shujin Academy [Practice Building 1F]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-1" id="p5r-september-23-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-1"><span class="task-label-text">Choice 2: Another cup [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-2" id="p5r-september-23-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-2"><span class="task-label-text">Choice 1: I can do that [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-3" id="p5r-september-23-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-3"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-4" id="p5r-september-23-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-4"><span class="task-label-text">Choice 3: So give up [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-5" id="p5r-september-23-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-5"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-6" id="p5r-september-23-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-6"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-7" id="p5r-september-23-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-7"><span class="task-label-text">(Phone) Choice 1: Calm down [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-23-3" id="p5r-september-23-3" type="checkbox"/>
+<label for="p5r-september-23-3"><span class="task-label-text">Confidant Devil Rank 8 [Charm +5]</span></label>
+<p>Location: Shinjuku [Crossroads]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-8" id="p5r-september-23-choice-8" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-8"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-9" id="p5r-september-23-choice-9" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-9"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-10" id="p5r-september-23-choice-10" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-10"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-11" id="p5r-september-23-choice-11" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-11"><span class="task-label-text">Choice 3: I'll go with you [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-23-choice-12" id="p5r-september-23-choice-12" type="checkbox"/><label class="choice-label" for="p5r-september-23-choice-12"><span class="task-label-text">(Phone) Choice 1: Good luck [+2]</span></label>
+</ol>
+</h3></section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-24">September 24 Saturday</h3>
+<h3>Required Arcana: Hermit, Hanged Man</h3>
+<h4>[Early Morning | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-24-1" id="p5r-september-24-1" type="checkbox"/>
+<label for="p5r-september-24-1"><span class="task-label-text">Read: Heroic Revelations [3/3] [Knowledge +7]</span></label>
+<h4>[Afternoon | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-24-2" id="p5r-september-24-2" type="checkbox"/>
+<label for="p5r-september-24-2"><span class="task-label-text">Teacher's Question: Answer: 20 white and 12 black [Knowledge +2]</span></label>
+<h4>[After School | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-24-3" id="p5r-september-24-3" type="checkbox"/>
+<label for="p5r-september-24-3"><span class="task-label-text">Head to Jinbocho and buy Call Me Chief [8,000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-24-4" id="p5r-september-24-4" type="checkbox"/>
+<label for="p5r-september-24-4"><span class="task-label-text">Confidant Hermit Rank 4</span></label>
+<p>Location: Cafe Leblanc (Outside of the Cafe)</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-1" id="p5r-september-24-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-1"><span class="task-label-text">Choice 2: Let's do this together [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-2" id="p5r-september-24-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-2"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-3" id="p5r-september-24-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-3"><span class="task-label-text">Choice 3: I think it's cute [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-4" id="p5r-september-24-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-4"><span class="task-label-text">(Phone) Choice 3: I'll help you anytime [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-24-5" id="p5r-september-24-5" type="checkbox"/>
+<label for="p5r-september-24-5"><span class="task-label-text">Confidant Hanged Man Rank 6</span></label>
+<p>Location: Shibuya (Airsoft Shop)</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-5" id="p5r-september-24-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-5"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-6" id="p5r-september-24-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-6"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-7" id="p5r-september-24-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-7"><span class="task-label-text">Choice 2: Girls [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-8" id="p5r-september-24-choice-8" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-8"><span class="task-label-text">Choice 3: You should buy us something [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-24-choice-9" id="p5r-september-24-choice-9" type="checkbox"/><label class="choice-label" for="p5r-september-24-choice-9"><span class="task-label-text">(Phone) Choice 1: He's my age, so it comes easier [+2]</span></label>
+</ol>
+<p>*If Rank 6 is not available Invite Iwai to Inokashira Park*</p>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-25">September 25 Sunday</h3>
+<h3>Required Arcana: Hanged Man, Priestess</h3>
+<h4>[Daytime | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-25-1" id="p5r-september-25-1" type="checkbox"/>
+<label for="p5r-september-25-1"><span class="task-label-text">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for an Affinity Reading [5000 Yen] [Hanged +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-25-2" id="p5r-september-25-2" type="checkbox"/>
+<label for="p5r-september-25-2"><span class="task-label-text">Confidant Priestess Rank 9 Romance</span></label>
+<p class="p5r-romance">Location: Shujin Academy [School Gate]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-1" id="p5r-september-25-choice-1" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-1"><span class="task-label-text">Choice 2: Your fight's with me [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-2" id="p5r-september-25-choice-2" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-2"><span class="task-label-text">Choice 1: We should get out of here [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-3" id="p5r-september-25-choice-3" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-3"><span class="task-label-text">Choice 2: That was the right move [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-4" id="p5r-september-25-choice-4" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-4"><span class="task-label-text">Choice 1: I'm a regular here [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-5" id="p5r-september-25-choice-5" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-5"><span class="task-label-text">Choice 2: I'll be your study partner [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-6" id="p5r-september-25-choice-6" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-6"><span class="task-label-text">Choice 1: I do [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-7" id="p5r-september-25-choice-7" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-25-choice-7"><span class="task-label-text">(Phone) Choice 1: I'd do anything for you [+2]</span></label>
+</ol>
+<input class="progress-checkbox" data-id="p5r-september-25-3" id="p5r-september-25-3" type="checkbox"/>
+<label for="p5r-september-25-3"><span class="task-label-text">Confidant Priestess Rank 9 Friendship</span></label>
+<p>Location: Shujin Academy [School Gate]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-8" id="p5r-september-25-choice-8" type="checkbox"/><label class="choice-label" for="p5r-september-25-choice-8"><span class="task-label-text">Choice 2: Your fight's with me [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-9" id="p5r-september-25-choice-9" type="checkbox"/><label class="choice-label" for="p5r-september-25-choice-9"><span class="task-label-text">Choice 1: We should get out of here [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-10" id="p5r-september-25-choice-10" type="checkbox"/><label class="choice-label" for="p5r-september-25-choice-10"><span class="task-label-text">Choice 2: That was the right move [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-11" id="p5r-september-25-choice-11" type="checkbox"/><label class="choice-label" for="p5r-september-25-choice-11"><span class="task-label-text">Choice 1: I'm a regular here [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-12" id="p5r-september-25-choice-12" type="checkbox"/><label class="choice-label" for="p5r-september-25-choice-12"><span class="task-label-text">Choice 1: You'll find someone someday [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-25-choice-13" id="p5r-september-25-choice-13" type="checkbox"/><label class="choice-label" for="p5r-september-25-choice-13"><span class="task-label-text">(Phone) Choice 1: No problem at all [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-25-4" id="p5r-september-25-4" type="checkbox"/>
+<label for="p5r-september-25-4"><span class="task-label-text">Hangout: [Kichijoji (Jazz Club)]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-25-5" id="p5r-september-25-5" type="checkbox"/>
+<label for="p5r-september-25-5"><span class="task-label-text">Confidant: Priestess (Learns Concentrate)</span></label>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-26">September 26 Monday</h3>
+<h3>Required Arcana: Tower, Star</h3>
+<h4>[After School | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-26-1" id="p5r-september-26-1" type="checkbox"/>
+<label for="p5r-september-26-1"><span class="task-label-text">Confidant Tower Rank 2 [Kindness +5]</span></label>
+<p>Location: Akihabara [Arcade]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-1" id="p5r-september-26-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-1"><span class="task-label-text">Choice 2: Don't compare me to you [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-2" id="p5r-september-26-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-2"><span class="task-label-text">Choice 2: What a rude employee [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-3" id="p5r-september-26-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-3"><span class="task-label-text">Choice 2: Do you admire them [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-4" id="p5r-september-26-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-4"><span class="task-label-text">Choice 3: I'll let them know [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-5" id="p5r-september-26-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-5"><span class="task-label-text">(Phone) Choice 1: I'll work hard [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Rain]</h4>
+<input class="progress-checkbox" data-id="p5r-september-26-2" id="p5r-september-26-2" type="checkbox"/>
+<label for="p5r-september-26-2"><span class="task-label-text">Confidant Star Rank 6 [Knowledge +2]</span></label>
+<p>Location: Kanda</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-6" id="p5r-september-26-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-6"><span class="task-label-text">Choice 3: It may come down to luck [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-26-choice-7" id="p5r-september-26-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-26-choice-7"><span class="task-label-text">Choice 2: I believe in you [+3]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-27">September 27 Tuesday</h3>
+<h3>Required Arcana: Death, Fortune</h3>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-27-1" id="p5r-september-27-1" type="checkbox"/>
+<label for="p5r-september-27-1"><span class="task-label-text">Head to Akihabara [Arcade] to play the Crane Game</span></label>
+<ul>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-1" id="p5r-september-27-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-1"><span class="task-label-text">*Make sure to play the Crane Game Where Jack Frost are.*</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-2" id="p5r-september-27-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-2"><span class="task-label-text">*Keep trying until you acquire Jack Frost Doll or reload from a save point if you do not want to waste any money*</span></label>
+</ul>
+<input class="progress-checkbox" data-id="p5r-september-27-2" id="p5r-september-27-2" type="checkbox"/>
+<label for="p5r-september-27-2"><span class="task-label-text">Confidant Death Rank 8 [Guts +2]</span></label>
+<p>Location: Yongen-Jaya (Clinic)</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-3" id="p5r-september-27-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-3"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-4" id="p5r-september-27-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-4"><span class="task-label-text">Choice 2: Let's get to work, doctor [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-5" id="p5r-september-27-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-5"><span class="task-label-text">Choice 1: It's for Miwa-chan [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-6" id="p5r-september-27-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-6"><span class="task-label-text">(Phone) Choice 1: I'll be cheering you on [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-27-3" id="p5r-september-27-3" type="checkbox"/>
+<label for="p5r-september-27-3"><span class="task-label-text">Confidant Fortune Rank 8</span></label>
+<p>Location: Shinjuku [Fortune Telling Booth]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-7" id="p5r-september-27-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-7"><span class="task-label-text">Choice 2: I know [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-8" id="p5r-september-27-choice-8" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-8"><span class="task-label-text">Choice 3: It's because you're strong [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-9" id="p5r-september-27-choice-9" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-9"><span class="task-label-text">Choice 2: Hell yea I am [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-27-choice-10" id="p5r-september-27-choice-10" type="checkbox"/><label class="choice-label" for="p5r-september-27-choice-10"><span class="task-label-text">(Phone) Choice 2: It was all your own will [+2]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-28">September 28 Wednesday</h3>
+<h3>Required Arcana: Hermit, Star</h3>
+<h4>[Early Morning | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-28-1" id="p5r-september-28-1" type="checkbox"/>
+<label for="p5r-september-28-1"><span class="task-label-text">Read: Call Me Chief [2/3]</span></label>
+<h4>[Afternoon | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-28-2" id="p5r-september-28-2" type="checkbox"/>
+<label for="p5r-september-28-2"><span class="task-label-text">Teacher's Question: Answer: Phantom, Vibration, and Syndrome [Knowledge +2]</span></label>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-28-3" id="p5r-september-28-3" type="checkbox"/>
+<label for="p5r-september-28-3"><span class="task-label-text">Confidant Hermit Rank 5</span></label>
+<p>Location: Cafe Leblanc (Outside of the Cafe)</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-1" id="p5r-september-28-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-1"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-2" id="p5r-september-28-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-2"><span class="task-label-text">Choice 1: I think you're right [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-3" id="p5r-september-28-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-3"><span class="task-label-text">Choice 3: He's the protagonist [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-4" id="p5r-september-28-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-4"><span class="task-label-text">(Phone) Choice 1: You did great [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-28-4" id="p5r-september-28-4" type="checkbox"/>
+<label for="p5r-september-28-4"><span class="task-label-text">Crossword Puzzle</span></label>
+<input class="progress-checkbox" data-id="p5r-september-28-5" id="p5r-september-28-5" type="checkbox"/>
+<label for="p5r-september-28-5"><span class="task-label-text">Crossword Answer: Ranking [Knowledge +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-28-6" id="p5r-september-28-6" type="checkbox"/>
+<label for="p5r-september-28-6"><span class="task-label-text">Confidant Star Rank 7.1 [Knowledge Rank 5 Required]</span></label>
+<p>New request: Upstaging the Stage Mother</p>
+<p>Location: Kanda</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-5" id="p5r-september-28-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-5"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-6" id="p5r-september-28-choice-6" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-6"><span class="task-label-text">Choice 1: That won't work [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-7" id="p5r-september-28-choice-7" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-7"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-28-choice-8" id="p5r-september-28-choice-8" type="checkbox"/><label class="choice-label" for="p5r-september-28-choice-8"><span class="task-label-text">Choice: Any [+0]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-29">September 29 Thursday</h3>
+<h3>Required Arcana: Tower, Fortune</h3>
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-29-1" id="p5r-september-29-1" type="checkbox"/>
+<label for="p5r-september-29-1"><span class="task-label-text">Teacher's Question: Answer: Imperial Household Agency [Knowledge +2]</span></label>
+<h4>[After School | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-29-2" id="p5r-september-29-2" type="checkbox"/>
+<label for="p5r-september-29-2"><span class="task-label-text">Confidant Tower Rank 2 [Kindness +3]</span></label>
+<p>Location: Akihabara [Arcade]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-1" id="p5r-september-29-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-1"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-2" id="p5r-september-29-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-2"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-3" id="p5r-september-29-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-3"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-4" id="p5r-september-29-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-4"><span class="task-label-text">Choice 1: That's the spirit [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-5" id="p5r-september-29-choice-5" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-5"><span class="task-label-text">(Phone) Choice 1: Sure [+2]</span></label>
+</ol>
+<h4>[Evening | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-29-3" id="p5r-september-29-3" type="checkbox"/>
+<label for="p5r-september-29-3"><span class="task-label-text">TV Quiz</span></label>
+<input class="progress-checkbox" data-id="p5r-september-29-4" id="p5r-september-29-4" type="checkbox"/>
+<label for="p5r-september-29-4"><span class="task-label-text">TV Quiz Answer: Divulging someone's crimes [Knowledge +2]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-29-5" id="p5r-september-29-5" type="checkbox"/>
+<label for="p5r-september-29-5"><span class="task-label-text">Confidant Fortune Rank 9 Romance</span></label>
+<p class="p5r-romance">Location: Shinjuku [Fortune Telling Booth]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-6" id="p5r-september-29-choice-6" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-29-choice-6"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-7" id="p5r-september-29-choice-7" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-29-choice-7"><span class="task-label-text">Choice 2: Well, fate can be changed [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-8" id="p5r-september-29-choice-8" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-29-choice-8"><span class="task-label-text">Choice 2: So I can be with you [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-9" id="p5r-september-29-choice-9" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-29-choice-9"><span class="task-label-text">(Phone) Choice 1: I wanted to hear your voice too [+2]</span></label>
+</ol>
+<input class="progress-checkbox" data-id="p5r-september-29-6" id="p5r-september-29-6" type="checkbox"/>
+<label for="p5r-september-29-6"><span class="task-label-text">Confidant Fortune Rank 9 Friendship</span></label>
+<p>Location: Shinjuku [Fortune Telling Booth]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-10" id="p5r-september-29-choice-10" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-10"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-11" id="p5r-september-29-choice-11" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-11"><span class="task-label-text">Choice 2: Well, fate can be changed [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-12" id="p5r-september-29-choice-12" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-12"><span class="task-label-text">Choice 1: I like having my fortune read [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-29-choice-13" id="p5r-september-29-choice-13" type="checkbox"/><label class="choice-label" for="p5r-september-29-choice-13"><span class="task-label-text">(Phone) Choice 1: I'm planning on it [+2]</span></label>
+</ol>
+</section>
+<section class="daily-content">
+<h3 class="date-font" id="p5r-september-30">September 30 Friday</h3>
+<h3>Required Arcana: Councillor, Devil</h3>
+<h4>[Morning | Weather: Sunny]</h4>
+<input class="progress-checkbox" data-id="p5r-september-30-1" id="p5r-september-30-1" type="checkbox"/>
+<label for="p5r-september-30-1"><span class="task-label-text">Read: Call Me Chief [3/3] [Kindness +7]</span></label>
+<h4>[After School | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-30-2" id="p5r-september-30-2" type="checkbox"/>
+<label for="p5r-september-30-2"><span class="task-label-text">Head to Jinbocho and buy The Art of Automata [8,000 Yen]</span></label>
+<input class="progress-checkbox" data-id="p5r-september-30-3" id="p5r-september-30-3" type="checkbox"/>
+<label for="p5r-september-30-3"><span class="task-label-text">Confidant Councillor Rank 7</span></label>
+<p>Location: Shujin Academy [Practice Building 1F]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-1" id="p5r-september-30-choice-1" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-1"><span class="task-label-text">Choice 3: Are you a fan [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-2" id="p5r-september-30-choice-2" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-2"><span class="task-label-text">Choice 2: As in, removing them [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-3" id="p5r-september-30-choice-3" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-3"><span class="task-label-text">Choice 1: The change of heart [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-4" id="p5r-september-30-choice-4" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-4"><span class="task-label-text">Choice 3: It's intriguing [+3]</span></label>
+</ol>
+<h4>[Evening | Weather: Cloudy]</h4>
+<input class="progress-checkbox" data-id="p5r-september-30-4" id="p5r-september-30-4" type="checkbox"/>
+<label for="p5r-september-30-4"><span class="task-label-text">Confidant Devil Rank 9 Romance</span></label>
+<p class="p5r-romance">Location: Shinjuku [Crossroads]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-5" id="p5r-september-30-choice-5" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-5"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-6" id="p5r-september-30-choice-6" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-6"><span class="task-label-text">Choice 2: You're not giving up, are you? [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-7" id="p5r-september-30-choice-7" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-7"><span class="task-label-text">Choice 1: I can't leave you [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-8" id="p5r-september-30-choice-8" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-8"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-9" id="p5r-september-30-choice-9" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-9"><span class="task-label-text">Choice 1: I took it seriously [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-10" id="p5r-september-30-choice-10" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-10"><span class="task-label-text">Choice 6: I love you, Ichiko [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-11" id="p5r-september-30-choice-11" type="checkbox"/><label class="choice-label p5r-romance" for="p5r-september-30-choice-11"><span class="task-label-text">(Phone) Choice 1: I wanted to hear your voice [+2]</span></label>
+</ol>
+<input class="progress-checkbox" data-id="p5r-september-30-5" id="p5r-september-30-5" type="checkbox"/>
+<label for="p5r-september-30-5"><span class="task-label-text">Confidant Devil Rank 9 Friendship</span></label>
+<p>Location: Shinjuku [Crossroads]</p>
+<ol>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-12" id="p5r-september-30-choice-12" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-12"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-13" id="p5r-september-30-choice-13" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-13"><span class="task-label-text">Choice 2: You're not giving up, are you? [+2]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-14" id="p5r-september-30-choice-14" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-14"><span class="task-label-text">Choice 1: I can't leave you [+3]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-15" id="p5r-september-30-choice-15" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-15"><span class="task-label-text">Choice: Any [+0]</span></label>
+<input class="progress-checkbox choice-checkbox" data-id="p5r-september-30-choice-16" id="p5r-september-30-choice-16" type="checkbox"/><label class="choice-label" for="p5r-september-30-choice-16"><span class="task-label-text">Choice 2: I didn't take it seriously [+0]</span></label>
+</ol>
+</section>
+<section aria-hidden="true" aria-labelledby="september-confidant-summary-title" class="social-summary" tabindex="-1">
+<h3 id="september-confidant-summary-title">September Confidant Rank Update</h3><table class="confidant-table">
 
-    <section id="content-days">
-
-        <section>
-            <h3 class="date-font" id="p5r-september-1">September 1 Thursday</h3>
-            <h3>Required Arcana: Fortune</h3>
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-1-1" data-id="p5r-september-1-1">
-            <label for="p5r-september-1-1">Confidant Fortune Rank 7.1</label>
-            <p>Location: Shinjuku [Fortune Telling Booth]</p>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-1-2" data-id="p5r-september-1-2">
-            <label for="p5r-september-1-2">New Request: Debunking the Psychic</label>
-            <ol>
-                <li>Choice: Any</li>
-                <li>Choice: Any</li>
-                <li>Choice: Any</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-2">September 2 Friday</h3>
-            <h4>[After School | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-1" data-id="p5r-september-2-1">
-            <label for="p5r-september-2-1">Head to [Yongen-Jaya (SecondHand Shop)] and buy the Broken Laptop [500 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-2" data-id="p5r-september-2-2">
-            <label for="p5r-september-2-2">Head to [Akihabara (Machine Parts Shop)] and buy PC Tool Set [8,000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-3" data-id="p5r-september-2-3">
-            <label for="p5r-september-2-3">Head to Jinbocho and buy Master Swordsman [8,000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-4" data-id="p5r-september-2-4">
-            <label for="p5r-september-2-4">Head to [Shibuya (Discount Store)] and buy</label>
-            <ul>
-                <li>Phantom Wafers [500 Yen]</li>
-                <li>Thief Mask [2,000 Yen]</li>
-                <li>Calling Postcard [500 Yen]</li>
-            </ul>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-5" data-id="p5r-september-2-5">
-            <label for="p5r-september-2-5">Confidant Strength Hangout</label>
-            <p>Location: Shibuya [Central Street]</p>
-            <p>Hangout: Miura Beach</p>
-        
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-6" data-id="p5r-september-2-6">
-            <label for="p5r-september-2-6">Crossword Puzzle</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-7" data-id="p5r-september-2-7">
-            <label for="p5r-september-2-7">Crossword Answer: Typhoon [Knowledge +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-8" data-id="p5r-september-2-8">
-            <label for="p5r-september-2-8">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck Reading [5000 Yen] [Boost to Proficiency]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-2-9" data-id="p5r-september-2-9">
-            <label for="p5r-september-2-9">Head to your room in [Yongen-Jaya (Cafe Leblanc)] and interact with your desk to repair Broken Laptop [Proficiency +7]</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-3">September 3 Saturday</h3>
-            <h3>Required Arcana: Justice</h3>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-3-1" data-id="p5r-september-3-1">
-            <label for="p5r-september-3-1">Teacher's Question: Answer: Prosperity [Knowledge +2]</label>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-3-2" data-id="p5r-september-3-2">
-            <label for="p5r-september-3-2">Confidant Justice Rank 6</label>
-            <p>Location: Leblanc Cafe</p>
-            <ol>
-                <li>Choice 3: A while, huh? [+3]</li>
-                <li>Choice 2: ...You've been through a lot [+2]</li>
-                <li>Choice 1: This is nothing [+3]</li>
-                <li>Choice 1: Same [+3]</li>
-                <li>Choice 2: Because we're similar [+2]</li>
-                <li>Choice 1: I think you're right [+3]</li>
-                <li>(Phone) Choice 3: My bad, I guess [+2]</li>
-            </ol>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-4">September 4 Sunday</h3>
-            <h3>Required Arcana: Hermit</h3>
-            <h4>[Daytime | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-1" data-id="p5r-september-4-1">
-            <label for="p5r-september-4-1">New Request: Winners Don't Use Cheats</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-2" data-id="p5r-september-4-2">
-            <label for="p5r-september-4-2">Drink Seafood Aojiru at Shibuya [Underground Walkway] [5000 Yen, Knowledge +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-3" data-id="p5r-september-4-3">
-            <label for="p5r-september-4-3">Investigate within the Arcade in Shibuya to finish unlocking the above request</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-4" data-id="p5r-september-4-4">
-            <label for="p5r-september-4-4">Confidant Hermit Rank 2 [Kindness Rank 4 Required]</label>
-            <p>Location: Cafe Leblanc (Outside of the Cafe)</p>
-            <ol>
-                <li>Choice 2: That's a great idea [+2]</li>
-                <li>Choice 1: If we work together [+3]</li>
-                <li>Choice 1: Sounds good to me [+0]</li>
-                <li>(Phone) Choice 1: I bet it will [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-5" data-id="p5r-september-4-5">
-            <label for="p5r-september-4-5">Head to Kichijoji [Back Alley] to talk to the Sakai and trade Phantom Wafers for Strength Up Ofuda</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-6" data-id="p5r-september-4-6">
-            <label for="p5r-september-4-6">Hangout: [Kichijoji (Jazz Club)]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-4-7" data-id="p5r-september-4-7">
-            <label for="p5r-september-4-7">Confidant: Emperor (Learns Charge)</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-5">September 5 Monday</h3>
-            <h3>Required Arcana: Hermit, Hierophant</h3>
-            <h4>[After School | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-5-1" data-id="p5r-september-5-1">
-            <label for="p5r-september-5-1">Confidant Hermit Rank 3</label>
-            <p>Location: Cafe Leblanc (Outside of the Cafe)</p>
-            <ol>
-                <li>Choice 3: I was about to come find you [+3]</li>
-                <li>Choice 1: Good to see you again [+3]</li>
-                <li>(Phone) Choice 3: We'll both do our best [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-5-2" data-id="p5r-september-5-2">
-            <label for="p5r-september-5-2">Confidant Hierophant Rank 5 [Kindness +3]</label>
-            <p>Location: Leblanc Cafe</p>
-            <ol>
-                <li>Choice 3: I think I'm addicted [+3]</li>
-                <li>Choice 2: She wasn't normal, huh?</li>
-                <li>Choice 1: It really paid off in the end [+2]</li>
-                <li>(Phone) Choice 2: She needs a balanced diet [+2]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-6">September 6 Tuesday</h3>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-6-1" data-id="p5r-september-6-1">
-            <label for="p5r-september-6-1">Teacher's Question: Answer: Chronostasis [Knowledge +2]</label>
-        
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-6-2" data-id="p5r-september-6-2">
-            <label for="p5r-september-6-2">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Money Reading [5000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-6-3" data-id="p5r-september-6-3">
-            <label for="p5r-september-6-3">Head to the hideout and go to Mementos</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-6-4" data-id="p5r-september-6-4">
-            <label for="p5r-september-6-4">Complete the following in Mementos:</label>
-            <ol>
-                <li>One Who Bullies Bullies [Area: Aiyatsbus Area 5]</li>
-                <li>Part-Time Job, Full-Time Hell [Area: Chemdah Area 1]</li>
-                <li>Bad Medicine [Area: Chemdah Area 2]</li>
-                <li>The Lovesick Cyberstalking Girl [Area: Chemdah Area 8]</li>
-                <li>Calling for Justice for Cats [Area: Kaitul Area 1]</li>
-                <li>Debunking the Psychic! [Area: Kaitul: Area 3]</li>
-                <li>Who's Been Assaulting People? [Area: Kaitul Area 5]</li>
-                <li>We Aren't Just Your Slaves [Area: Kaitul Area 8]</li>
-                <li>Fighting for Truth of Journalism [Area: Kaitul Area 9]</li>
-                <li>Who's Muscling in Yongen-Jaya [Area: Kaitul Area 10]</li>
-                <li>Winners Don't Use Cheats [Area: Akzeriyyuth Area 5]</li>
-                <p>*Note: Winners Don't Cheat will not be completeable here but after attempting the fight will lead to unlocking another confidant. Will come back to this request later*</p>
-            </ol>
-        </section>
-        
-                
-        <section>
-            <h3 class="date-font" id="p5r-september-7">September 7 Wednesday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-7-1" data-id="p5r-september-7-1">
-            <label for="p5r-september-7-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-8">September 8 Thursday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-8-1" data-id="p5r-september-8-1">
-            <label for="p5r-september-8-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-9">September 9 Friday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-9-1" data-id="p5r-september-9-1">
-            <label for="p5r-september-9-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-10">September 10 Saturday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-10-1" data-id="p5r-september-10-1">
-            <label for="p5r-september-10-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-11">September 11 Sunday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-11-1" data-id="p5r-september-11-1">
-            <label for="p5r-september-11-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-12">September 12 Monday</h3>
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-12-1" data-id="p5r-september-12-1">
-            <label for="p5r-september-12-1">While in your room, feed your plant Mega Fertilizer [Kindness +5]</label>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-13">September 13 Tuesday</h3>
-            <h4>[Daytime | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-13-1" data-id="p5r-september-13-1">
-            <label for="p5r-september-13-1">Confidant Judgement Rank 4 [Automatic]</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-14">September 14 Wednesday</h3>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-14-1" data-id="p5r-september-14-1">
-            <label for="p5r-september-14-1">Teacher's Question: Answer: Money loans for collateral [Knowledge +2]</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-15">September 15 Thursday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-15-1" data-id="p5r-september-15-1">
-            <label for="p5r-september-15-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-16">September 16 Friday</h3>
-            <h4>[All Day]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-16-1" data-id="p5r-september-16-1">
-            <label for="p5r-september-16-1">Enjoy the story. Nothing to worry about on this day.</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-17">September 17 Saturday</h3>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-17-1" data-id="p5r-september-17-1">
-            <label for="p5r-september-17-1">Teacher's Question: Answer: Cats eating human tongues [Knowledge +2]</label>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-17-2" data-id="p5r-september-17-2">
-            <label for="p5r-september-17-2">Confidant Magician Rank 8 [Automatic]</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-18">September 18 Sunday</h3>
-            <h4>[Evening]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-18-1" data-id="p5r-september-18-1">
-            <label for="p5r-september-18-1">Read: Master Swordsman [2/3]</label>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-19">September 19 Monday</h3>
-            <h3>Required Arcana: Star</h3>
-            <h4>[Daytime | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-1" data-id="p5r-september-19-1">
-            <label for="p5r-september-19-1">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Money Reading [5000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-2" data-id="p5r-september-19-2">
-            <label for="p5r-september-19-2">Ask Chihaya for a Luck Reading [5000 Yen] [Boost Knowledge]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-3" data-id="p5r-september-19-3">
-            <label for="p5r-september-19-3">Head to Kichijoji and interact with the Information Desk. Make sure to go through all questions while at the Information Desk. [Knowledge +3]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-4" data-id="p5r-september-19-4">
-            <label for="p5r-september-19-4">Reach the treasure in the Spaceport Palace</label>
-            <ul>
-                <li>Obtain Arcana: Tower</li>
-                <li>Obtain Arcana: Empress</li>
-            </ul>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-5" data-id="p5r-september-19-5">
-            <label for="p5r-september-19-5">Call Kawakami for a massage with the phone in Cafe Leblanc</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-6" data-id="p5r-september-19-6">
-            <label for="p5r-september-19-6">Crossword Puzzle</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-7" data-id="p5r-september-19-7">
-            <label for="p5r-september-19-7">Crossword Answer: Festival [Knowledge +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-8" data-id="p5r-september-19-8">
-            <label for="p5r-september-19-8">Head to Kichijoji [Back Alley] to talk to the Sakai and trade Thief Mask for Magic Up Fuda</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-19-9" data-id="p5r-september-19-9">
-            <label for="p5r-september-19-9">Confidant Star Rank 6 [Knowledge +3]</label>
-            <p>Knowledge Rank Up [Encyclopedic - Erudite]</p>
-            <p>Location: Kanda</p>
-            <ol>
-                <li>Choice 2: Is that frustrating [+2]</li>
-                <li>Choice 3: Do what you love [+2]</li>
-                <li>(Phone) Choice 2: You're imagining things [+2]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-20">September 20 Tuesday</h3>
-            <h3>Required Arcana: Star</h3>
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-20-1" data-id="p5r-september-20-1">
-            <label for="p5r-september-20-1">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for an Affinity Reading [5000 Yen] [Star +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-20-2" data-id="p5r-september-20-2">
-            <label for="p5r-september-20-2">Ask Chihaya for a Luck Reading [5000 Yen] [Boost to Guts]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-20-3" data-id="p5r-september-20-3">
-            <label for="p5r-september-20-3">Head to the hideout and send out the calling card</label>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-20-4" data-id="p5r-september-20-4">
-            <label for="p5r-september-20-4">Read: Master Swordsman [3/3] [Guts +10]</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-21">September 21 Wednesday | Take Your Heart</h3>
-            <h4>[Afternoon | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-21-1" data-id="p5r-september-21-1">
-            <label for="p5r-september-21-1">Teacher's Question: Answer: Central Europe [Knowledge +2]</label>
-        
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-21-2" data-id="p5r-september-21-2">
-            <label for="p5r-september-21-2">Clear the Spaceport Palace</label>
-        
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-21-3" data-id="p5r-september-21-3">
-            <label for="p5r-september-21-3">Confidant Magician Rank 9 [Automatic]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-21-4" data-id="p5r-september-21-4">
-            <label for="p5r-september-21-4">Call Kawakami for a massage with the phone in Cafe Leblanc</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-21-5" data-id="p5r-september-21-5">
-            <label for="p5r-september-21-5">Confidant Moon Rank 6.1</label>
-            <p>Location: Akihabara</p>
-            <p>Talk to Mishima [Automatic]</p>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-22">September 22 Thursday</h3>
-            <h3>Required Arcana: Tower, Hierophant</h3>
-            <h4>[Daytime | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-1" data-id="p5r-september-22-1">
-            <label for="p5r-september-22-1">Head to Jinbocho and buy Heroic Revelations [8,000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-2" data-id="p5r-september-22-2">
-            <label for="p5r-september-22-2">Head to Akihabara and go to the arcade to talk to Shinya</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-3" data-id="p5r-september-22-3">
-            <label for="p5r-september-22-3">Head to Yongen-Jaya (Leblanc Cafe). Talk to Futaba outside of the cafe to have her hack the website</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-4" data-id="p5r-september-22-4">
-            <label for="p5r-september-22-4">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for a Luck Reading [5000 Yen] [Boost to Kindness]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-5" data-id="p5r-september-22-5">
-            <label for="p5r-september-22-5">Head back to Akihabara and speak to Shinya to start the Confidant Tower</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-6" data-id="p5r-september-22-6">
-            <label for="p5r-september-22-6">Confidant Tower Rank 1 [Automatic]</label>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-7" data-id="p5r-september-22-7">
-            <label for="p5r-september-22-7">TV Quiz</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-8" data-id="p5r-september-22-8">
-            <label for="p5r-september-22-8">TV Quiz Answer: Ten years in prison [Knowledge +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-22-9" data-id="p5r-september-22-9">
-            <label for="p5r-september-22-9">Confidant Hierophant Rank 6 [Kindness +7]</label>
-            <p>Kindness Rank Up [Selfless - Angelic]</p>
-            <p>Location: Leblanc Cafe</p>
-            <ol>
-                <li>Choice 3: To each his own [+2]</li>
-                <li>Choice 3: Shut your mouth [+3]</li>
-                <li>Choice 1: Saving Futaba was no mistake [+2]</li>
-                <li>(Phone) Choice 3: If I can help somehow... [+2]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-23">September 23 Friday</h3>
-            <h3>Required Arcana: Councillor, Devil</h4>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-23-1" data-id="p5r-september-23-1">
-            <label for="p5r-september-23-1">Read: Heroic Revelations [2/3]</label>
-        
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-23-2" data-id="p5r-september-23-2">
-            <label for="p5r-september-23-2">Confidant Councillor Rank 5</label>
-            <p>Location: Shujin Academy [Practice Building 1F]</p>
-            <ol>
-                <li>Choice 2: Another cup [+2]</li>
-                <li>Choice 1: I can do that [+3]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 3: So give up [+2]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-                <li>(Phone) Choice 1: Calm down [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-23-3" data-id="p5r-september-23-3">
-            <label for="p5r-september-23-3">Confidant Devil Rank 8 [Charm +5]</label>
-            <p>Location: Shinjuku [Crossroads]</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 3: I'll go with you [+3]</li>
-                <li>(Phone) Choice 1: Good luck [+2]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-24">September 24 Saturday</h3>
-            <h3>Required Arcana: Hermit, Hanged Man</h3>
-            <h4>[Early Morning | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-24-1" data-id="p5r-september-24-1">
-            <label for="p5r-september-24-1">Read: Heroic Revelations [3/3] [Knowledge +7]</label>
-        
-            <h4>[Afternoon | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-24-2" data-id="p5r-september-24-2">
-            <label for="p5r-september-24-2">Teacher's Question: Answer: 20 white and 12 black [Knowledge +2]</label>
-        
-            <h4>[After School | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-24-3" data-id="p5r-september-24-3">
-            <label for="p5r-september-24-3">Head to Jinbocho and buy Call Me Chief [8,000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-24-4" data-id="p5r-september-24-4">
-            <label for="p5r-september-24-4">Confidant Hermit Rank 4</label>
-            <p>Location: Cafe Leblanc (Outside of the Cafe)</p>
-            <ol>
-                <li>Choice 2: Let's do this together [+3]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 3: I think it's cute [+3]</li>
-                <li>(Phone) Choice 3: I'll help you anytime [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-24-5" data-id="p5r-september-24-5">
-            <label for="p5r-september-24-5">Confidant Hanged Man Rank 6</label>
-            <p>Location: Shibuya (Airsoft Shop)</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 2: Girls [+3]</li>
-                <li>Choice 3: You should buy us something [+3]</li>
-                <li>(Phone) Choice 1: He's my age, so it comes easier [+2]</li>
-            </ol>
-            <p>*If Rank 6 is not available Invite Iwai to Inokashira Park*</p>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-25">September 25 Sunday</h3>
-            <h3>Required Arcana: Hanged Man, Priestess</h3>
-            <h4>[Daytime | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-25-1" data-id="p5r-september-25-1">
-            <label for="p5r-september-25-1">Head to Shinjuku [Fortune Telling Booth] and ask Chihaya for an Affinity Reading [5000 Yen] [Hanged +2]</label>
-        
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-25-2" data-id="p5r-september-25-2">
-            <label for="p5r-september-25-2">Confidant Priestess Rank 9 <strong>Romance</strong></label>
-            <p class="p5r-romance">Location: Shujin Academy [School Gate]</p>
-            <ol>
-                <li class="p5r-romance">Choice 2: Your fight's with me [+3]</li>
-                <li class="p5r-romance">Choice 1: We should get out of here [+2]</li>
-                <li class="p5r-romance">Choice 2: That was the right move [+2]</li>
-                <li class="p5r-romance">Choice 1: I'm a regular here [+3]</li>
-                <li class="p5r-romance">Choice 2: I'll be your study partner [+0]</li>
-                <li class="p5r-romance">Choice 1: I do [+3]</li>
-                <li class="p5r-romance">(Phone) Choice 1: I'd do anything for you [+2]</li>
-            </ol>
-        
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-25-3" data-id="p5r-september-25-3">
-            <label for="p5r-september-25-3">Confidant Priestess Rank 9 Friendship</label>
-            <p>Location: Shujin Academy [School Gate]</p>
-            <ol>
-                <li>Choice 2: Your fight's with me [+3]</li>
-                <li>Choice 1: We should get out of here [+2]</li>
-                <li>Choice 2: That was the right move [+2]</li>
-                <li>Choice 1: I'm a regular here [+3]</li>
-                <li>Choice 1: You'll find someone someday [+3]</li>
-                <li>(Phone) Choice 1: No problem at all [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-25-4" data-id="p5r-september-25-4">
-            <label for="p5r-september-25-4">Hangout: [Kichijoji (Jazz Club)]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-25-5" data-id="p5r-september-25-5">
-            <label for="p5r-september-25-5">Confidant: Priestess (Learns Concentrate)</label>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-26">September 26 Monday</h3>
-            <h3>Required Arcana: Tower, Star</h3>
-            <h4>[After School | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-26-1" data-id="p5r-september-26-1">
-            <label for="p5r-september-26-1">Confidant Tower Rank 2 [Kindness +5]</label>
-            <p>Location: Akihabara [Arcade]</p>
-            <ol>
-                <li>Choice 2: Don't compare me to you [+3]</li>
-                <li>Choice 2: What a rude employee [+2]</li>
-                <li>Choice 2: Do you admire them [+2]</li>
-                <li>Choice 3: I'll let them know [+3]</li>
-                <li>(Phone) Choice 1: I'll work hard [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Rain]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-26-2" data-id="p5r-september-26-2">
-            <label for="p5r-september-26-2">Confidant Star Rank 6 [Knowledge +2]</label>
-            <p>Location: Kanda</p>
-            <ol>
-                <li>Choice 3: It may come down to luck [+3]</li>
-                <li>Choice 2: I believe in you [+3]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-27">September 27 Tuesday</h3>
-            <h3>Required Arcana: Death, Fortune</h3>
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-27-1" data-id="p5r-september-27-1">
-            <label for="p5r-september-27-1">Head to Akihabara [Arcade] to play the Crane Game</label>
-            <ul>
-                <li>*Make sure to play the Crane Game Where Jack Frost are.*</li>
-                <li>*Keep trying until you acquire Jack Frost Doll or reload from a save point if you do not want to waste any money*</li>
-            </ul>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-27-2" data-id="p5r-september-27-2">
-            <label for="p5r-september-27-2">Confidant Death Rank 8 [Guts +2]</label>
-            <p>Location: Yongen-Jaya (Clinic)</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 2: Let's get to work, doctor [+3]</li>
-                <li>Choice 1: It's for Miwa-chan [+3]</li>
-                <li>(Phone) Choice 1: I'll be cheering you on [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-27-3" data-id="p5r-september-27-3">
-            <label for="p5r-september-27-3">Confidant Fortune Rank 8</label>
-            <p>Location: Shinjuku [Fortune Telling Booth]</p>
-            <ol>
-                <li>Choice 2: I know [+3]</li>
-                <li>Choice 3: It's because you're strong [+3]</li>
-                <li>Choice 2: Hell yea I am [+3]</li>
-                <li>(Phone) Choice 2: It was all your own will [+2]</li>
-            </ol>
-        </section>
-        
-
-        <section>
-            <h3 class="date-font" id="p5r-september-28">September 28 Wednesday</h3>
-            <h3>Required Arcana: Hermit, Star</h3>
-            <h4>[Early Morning | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-28-1" data-id="p5r-september-28-1">
-            <label for="p5r-september-28-1">Read: Call Me Chief [2/3]</label>
-        
-            <h4>[Afternoon | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-28-2" data-id="p5r-september-28-2">
-            <label for="p5r-september-28-2">Teacher's Question: Answer: Phantom, Vibration, and Syndrome [Knowledge +2]</label>
-        
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-28-3" data-id="p5r-september-28-3">
-            <label for="p5r-september-28-3">Confidant Hermit Rank 5</label>
-            <p>Location: Cafe Leblanc (Outside of the Cafe)</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 1: I think you're right [+3]</li>
-                <li>Choice 3: He's the protagonist [+3]</li>
-                <li>(Phone) Choice 1: You did great [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-28-4" data-id="p5r-september-28-4">
-            <label for="p5r-september-28-4">Crossword Puzzle</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-28-5" data-id="p5r-september-28-5">
-            <label for="p5r-september-28-5">Crossword Answer: Ranking [Knowledge +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-28-6" data-id="p5r-september-28-6">
-            <label for="p5r-september-28-6">Confidant Star Rank 7.1 [Knowledge Rank 5 Required]</label>
-            <p>New request: Upstaging the Stage Mother</p>
-            <p>Location: Kanda</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 1: That won't work [+2]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-29">September 29 Thursday</h3>
-            <h3>Required Arcana: Tower, Fortune</h3>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-29-1" data-id="p5r-september-29-1">
-            <label for="p5r-september-29-1">Teacher's Question: Answer: Imperial Household Agency [Knowledge +2]</label>
-        
-            <h4>[After School | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-29-2" data-id="p5r-september-29-2">
-            <label for="p5r-september-29-2">Confidant Tower Rank 2 [Kindness +3]</label>
-            <p>Location: Akihabara [Arcade]</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 1: That's the spirit [+2]</li>
-                <li>(Phone) Choice 1: Sure [+2]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-29-3" data-id="p5r-september-29-3">
-            <label for="p5r-september-29-3">TV Quiz</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-29-4" data-id="p5r-september-29-4">
-            <label for="p5r-september-29-4">TV Quiz Answer: Divulging someone's crimes [Knowledge +2]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-29-5" data-id="p5r-september-29-5">
-            <label for="p5r-september-29-5">Confidant Fortune Rank 9 Romance</label>
-            <p class="p5r-romance">Location: Shinjuku [Fortune Telling Booth]</p>
-            <ol>
-                <li class="p5r-romance">Choice: Any [+0]</li>
-                <li class="p5r-romance">Choice 2: Well, fate can be changed [+3]</li>
-                <li class="p5r-romance">Choice 2: So I can be with you [+0]</li>
-                <li class="p5r-romance">(Phone) Choice 1: I wanted to hear your voice too [+2]</li>
-            </ol>
-        
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-29-6" data-id="p5r-september-29-6">
-            <label for="p5r-september-29-6">Confidant Fortune Rank 9 Friendship</label>
-            <p>Location: Shinjuku [Fortune Telling Booth]</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 2: Well, fate can be changed [+3]</li>
-                <li>Choice 1: I like having my fortune read [+0]</li>
-                <li>(Phone) Choice 1: I'm planning on it [+2]</li>
-            </ol>
-        </section>
-        
-        <section>
-            <h3 class="date-font" id="p5r-september-30">September 30 Friday</h3>
-            <h3>Required Arcana: Councillor, Devil</h3>
-            <h4>[Morning | Weather: Sunny]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-30-1" data-id="p5r-september-30-1">
-            <label for="p5r-september-30-1">Read: Call Me Chief [3/3] [Kindness +7]</label>
-        
-            <h4>[After School | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-30-2" data-id="p5r-september-30-2">
-            <label for="p5r-september-30-2">Head to Jinbocho and buy The Art of Automata [8,000 Yen]</label>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-30-3" data-id="p5r-september-30-3">
-            <label for="p5r-september-30-3">Confidant Councillor Rank 7</label>
-            <p>Location: Shujin Academy [Practice Building 1F]</p>
-            <ol>
-                <li>Choice 3: Are you a fan [+3]</li>
-                <li>Choice 2: As in, removing them [+3]</li>
-                <li>Choice 1: The change of heart [+3]</li>
-                <li>Choice 3: It's intriguing [+3]</li>
-            </ol>
-        
-            <h4>[Evening | Weather: Cloudy]</h4>
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-30-4" data-id="p5r-september-30-4">
-            <label for="p5r-september-30-4">Confidant Devil Rank 9 Romance</label>
-            <p class="p5r-romance">Location: Shinjuku [Crossroads]</p>
-            <ol>
-                <li class="p5r-romance">Choice: Any [+0]</li>
-                <li class="p5r-romance">Choice 2: You're not giving up, are you? [+2]</li>
-                <li class="p5r-romance">Choice 1: I can't leave you [+3]</li>
-                <li class="p5r-romance">Choice: Any [+0]</li>
-                <li class="p5r-romance">Choice 1: I took it seriously [+0]</li>
-                <li class="p5r-romance">Choice 6: I love you, Ichiko [+0]</li>
-                <li class="p5r-romance">(Phone) Choice 1: I wanted to hear your voice [+2]</li>
-            </ol>
-        
-            <input type="checkbox" class="progress-checkbox" id="p5r-september-30-5" data-id="p5r-september-30-5">
-            <label for="p5r-september-30-5">Confidant Devil Rank 9 Friendship</label>
-            <p>Location: Shinjuku [Crossroads]</p>
-            <ol>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 2: You're not giving up, are you? [+2]</li>
-                <li>Choice 1: I can't leave you [+3]</li>
-                <li>Choice: Any [+0]</li>
-                <li>Choice 2: I didn't take it seriously [+0]</li>
-            </ol>
-        </section>
-        
-
-        <section>
-            <table class="confidant-table">
-                <h3>September Confidant Rank Update</h3>
-                <thead>
-                    <tr>
-                        <th>Persona Arcana</th>
-                        <th>Rank</th>
-                        <th>Current Month Progress</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fool (Prison Master)</td>
-                        <td>8</td>
-                        <td>Unchanged</td>
-                    </tr>
-                    <tr>
-                        <td>Magician (Morgana)</td>
-                        <td>9</td>
-                        <td>Rank Up +2</td>
-                    </tr>
-                    <tr>
-                        <td>Priestess (Makoto Niijima)</td>
-                        <td>9</td>
-                        <td>Rank Up +1</td>
-                    </tr>
-                    <tr>
-                        <td>Emperor (Yusuke Kitagawa)</td>
-                        <td>10</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Hierophant (Sojiro Sakura)</td>
-                        <td>6</td>
-                        <td>Rank Up +2</td>
-                    </tr>
-                    <tr>
-                        <td>Lovers (Ann Takamaki)</td>
-                        <td>10</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Chariot (Ryuji Sakamoto)</td>
-                        <td>10</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Justice (Goro Akechi)</td>
-                        <td>6</td>
-                        <td>Rank Up +1</td>
-                    </tr>
-                    <tr>
-                        <td>Hermit (Futaba Sakura)</td>
-                        <td>5</td>
-                        <td>Rank Up +4</td>
-                    </tr>
-                    <tr>
-                        <td>Fortune (Fortune Teller)</td>
-                        <td>9</td>
-                        <td>Rank Up +2</td>
-                    </tr>
-                    <tr>
-                        <td>Hanged Man (Weapons Dealer)</td>
-                        <td>5</td>
-                        <td>Unchanged *There is a chance this could be Rank 6 on some playthroughs*</td>
-                    </tr>
-                    <tr>
-                        <td>Death (Back-Alley Doctor)</td>
-                        <td>8</td>
-                        <td>Rank Up +1</td>
-                    </tr>
-                    <tr>
-                        <td>Temperance (Sadayo Kawakami)</td>
-                        <td>10</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Devil (Ichiko Ohya)</td>
-                        <td>9</td>
-                        <td>Rank Up +2</td>
-                    </tr>
-                    <tr>
-                        <td>Tower (Skilled Gamer)</td>
-                        <td>3</td>
-                        <td>New, Rank Up +3</td>
-                    </tr>
-                    <tr>
-                        <td>Star (Hifumi Togo)</td>
-                        <td>7</td>
-                        <td>Rank Up +2</td>
-                    </tr>
-                    <tr>
-                        <td>Moon (Yuuki Mishima)</td>
-                        <td>6</td>
-                        <td>Unchanged</td>
-                    </tr>
-                    <tr>
-                        <td>Sun (Man of the People)</td>
-                        <td>10</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Judgement (Prosecutor)</td>
-                        <td>4</td>
-                        <td>Rank Up +1</td>
-                    </tr>
-                    <tr>
-                        <td>Faith (Kasumi Yoshizawa)</td>
-                        <td>5</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Councillor (Takuto Maruki)</td>
-                        <td>7</td>
-                        <td>Rank Up +2</td>
-                    </tr>
-                    <tr>
-                        <td>Strength (Twin Wardens)</td>
-                        <td>1</td>
-                        <td>Unchanged</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-
-</main>
-</html>
+<thead>
+<tr>
+<th>Persona Arcana</th>
+<th>Rank</th>
+<th>Current Month Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fool (Prison Master)</td>
+<td>8</td>
+<td>Unchanged</td>
+</tr>
+<tr>
+<td>Magician (Morgana)</td>
+<td>9</td>
+<td>Rank Up +2</td>
+</tr>
+<tr>
+<td>Priestess (Makoto Niijima)</td>
+<td>9</td>
+<td>Rank Up +1</td>
+</tr>
+<tr>
+<td>Emperor (Yusuke Kitagawa)</td>
+<td>10</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Hierophant (Sojiro Sakura)</td>
+<td>6</td>
+<td>Rank Up +2</td>
+</tr>
+<tr>
+<td>Lovers (Ann Takamaki)</td>
+<td>10</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Chariot (Ryuji Sakamoto)</td>
+<td>10</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Justice (Goro Akechi)</td>
+<td>6</td>
+<td>Rank Up +1</td>
+</tr>
+<tr>
+<td>Hermit (Futaba Sakura)</td>
+<td>5</td>
+<td>Rank Up +4</td>
+</tr>
+<tr>
+<td>Fortune (Fortune Teller)</td>
+<td>9</td>
+<td>Rank Up +2</td>
+</tr>
+<tr>
+<td>Hanged Man (Weapons Dealer)</td>
+<td>5</td>
+<td>Unchanged *There is a chance this could be Rank 6 on some playthroughs*</td>
+</tr>
+<tr>
+<td>Death (Back-Alley Doctor)</td>
+<td>8</td>
+<td>Rank Up +1</td>
+</tr>
+<tr>
+<td>Temperance (Sadayo Kawakami)</td>
+<td>10</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Devil (Ichiko Ohya)</td>
+<td>9</td>
+<td>Rank Up +2</td>
+</tr>
+<tr>
+<td>Tower (Skilled Gamer)</td>
+<td>3</td>
+<td>New, Rank Up +3</td>
+</tr>
+<tr>
+<td>Star (Hifumi Togo)</td>
+<td>7</td>
+<td>Rank Up +2</td>
+</tr>
+<tr>
+<td>Moon (Yuuki Mishima)</td>
+<td>6</td>
+<td>Unchanged</td>
+</tr>
+<tr>
+<td>Sun (Man of the People)</td>
+<td>10</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Judgement (Prosecutor)</td>
+<td>4</td>
+<td>Rank Up +1</td>
+</tr>
+<tr>
+<td>Faith (Kasumi Yoshizawa)</td>
+<td>5</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Councillor (Takuto Maruki)</td>
+<td>7</td>
+<td>Rank Up +2</td>
+</tr>
+<tr>
+<td>Strength (Twin Wardens)</td>
+<td>1</td>
+<td>Unchanged</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section></main></body></html>

@@ -9,8 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const monthHeading = document.querySelector('h1')?.textContent.trim() || 'Month';
   const monthName = monthHeading.replace(/[^a-zA-Z]/g, '') || 'Month';
   const firstDayId = daySections.map(section => section.querySelector('.date-font[id]')?.id).find(Boolean) || '';
-  const monthSlug = firstDayId.match(/^p3r-([a-z]+)-/)?.[1] || monthName.toLowerCase();
-  const storageKey = `p3r-${monthSlug}-last-viewed-day`;
+  const pageMatch = firstDayId.match(/^(p[345]r)-([a-z]+)-/i);
+  const gameSlug = (document.body.dataset.game || pageMatch?.[1] || 'persona').toLowerCase();
+  const monthSlug = (document.body.dataset.month || pageMatch?.[2] || monthName).toLowerCase();
+  const storageKey = `${gameSlug}-${monthSlug}-last-viewed-day`;
   const cssEscape = window.CSS?.escape || (value => value.replace(/[^a-zA-Z0-9_-]/g, '\\$&'));
 
   let activeIndex = 0;
@@ -92,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     daySections.forEach((section, i) => {
       const active = i === activeIndex;
       section.classList.toggle('is-active-day', active);
+      section.hidden = !active;
       section.setAttribute('aria-hidden', active ? 'false' : 'true');
     });
     const activeSection = daySections[activeIndex];
@@ -121,13 +124,34 @@ document.addEventListener('DOMContentLoaded', () => {
     readerNav = document.createElement('nav');
     readerNav.className = 'day-reader-nav';
     readerNav.setAttribute('aria-label', 'Day navigation');
-    previousButton = document.createElement('button'); previousButton.type = 'button'; previousButton.textContent = '← Previous Day';
+    previousButton = document.createElement('button'); previousButton.type = 'button'; previousButton.className = 'day-nav-button previous-day'; previousButton.innerHTML = '<span aria-hidden="true">←</span><span>Previous Day</span>';
     dayStatus = document.createElement('span'); dayStatus.className = 'day-reader-status'; dayStatus.setAttribute('aria-live', 'polite');
-    nextButton = document.createElement('button'); nextButton.type = 'button'; nextButton.textContent = 'Next Day →';
+    nextButton = document.createElement('button'); nextButton.type = 'button'; nextButton.className = 'day-nav-button next-day'; nextButton.innerHTML = '<span>Next Day</span><span aria-hidden="true">→</span>';
     readerNav.append(previousButton, dayStatus, nextButton);
     daySections[0].insertAdjacentElement('afterend', readerNav);
-    previousButton.addEventListener('click', () => showDay(activeIndex - 1, { scroll: true }));
-    nextButton.addEventListener('click', () => showDay(activeIndex + 1, { scroll: true }));
+    previousButton.addEventListener('click', () => { pulse(previousButton, 'nav-pressed'); showDay(activeIndex - 1, { scroll: true }); });
+    nextButton.addEventListener('click', () => { pulse(nextButton, 'nav-pressed'); showDay(activeIndex + 1, { scroll: true }); });
+  }
+
+  function pulse(element, className) {
+    element.classList.remove(className);
+    void element.offsetWidth;
+    element.classList.add(className);
+    window.setTimeout(() => element.classList.remove(className), 360);
+  }
+
+  function cleanTimeHeaders() {
+    daySections.forEach(section => section.querySelectorAll('h4').forEach(heading => {
+      Array.from(heading.childNodes).forEach(node => {
+        if (node.nodeType !== Node.TEXT_NODE) return;
+        node.textContent = node.textContent
+          .replace(/^\s*\[\s*/, '')
+          .replace(/\s*\]\s*$/, '')
+          .replace(/\s+\]/g, '')
+          .trim();
+      });
+      heading.classList.add('time-weather-heading');
+    }));
   }
 
   checkboxes.forEach(checkbox => {
@@ -137,11 +161,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (id) checkbox.checked ? localStorage.setItem(id, 'completed') : localStorage.removeItem(id);
       const section = checkbox.closest('.daily-content');
       if (section) updateSection(section);
+      pulse(checkbox.nextElementSibling, checkbox.checked ? 'task-checked-pop' : 'task-unchecked-pop');
       updateProgress();
     });
   });
 
   daySections.forEach(updateSection);
+  cleanTimeHeaders();
   createReaderNavigation();
   document.querySelectorAll('#cal_nav a[href^="#"]').forEach(link => link.addEventListener('click', event => {
     const index = findIndexById(link.getAttribute('href').slice(1));

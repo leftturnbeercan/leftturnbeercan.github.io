@@ -1,118 +1,265 @@
 @font-face {
-  font-family: Persona5MenuFontPrototype;
-  src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+  font-family: Persona5Menu;
+  src: url('/css/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
-@font-face {
-  font-family: p5hatty;
-  src: url(/css/fonts/p5hatty.ttf);
+:root {
+  --p5-red: #e60012;
+  --p5-red-dark: #a9000d;
+  --p5-black: #080808;
+  --p5-panel: #171717;
+  --p5-panel-alt: #242424;
+  --p5-white: #f7f7f7;
+  --page-max: 72rem;
 }
 
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-  background-color: #111; /* Dark background */
+  min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #f4f4f4;
-}
-
-header {
-  text-align: center;
-  background-color: #d62e2e; /* Red background */
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-  padding: 20px 0;
-}
-
-.title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title-container img {
-  margin-right: 10px;
-  height: 80px;
-}
-
-.title-container h1 {
-  font-size: 60px;
-  color: white;
-  margin: 0;
-  font-family: "Bubblegum Superstar";
-}
-
-nav {
-  background-color: #111; /* Darker background */
-  padding: 15px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  background-color: #d62e2e; /* Red background */
-  border-radius: 25px;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-nav ul li a:hover {
-  background-color: white;
-  color: #d62e2e;
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  overflow-x: hidden;
+  color: var(--p5-white);
+  background:
+    radial-gradient(circle at 88% 7%, rgba(230,0,18,.12), transparent 26rem),
+    repeating-linear-gradient(-11deg, transparent 0 44px, rgba(255,255,255,.025) 45px 47px),
+    #0b0b0b;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px; /* Limit the width for better readability */
-  border: 1px solid #d62e2e; /* Red border */
-  background-color: #222; /* Dark background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  width: min(calc(100% - 1rem), var(--page-max));
+  margin-inline: auto;
+  padding-block: clamp(.75rem,2vw,1.5rem) 4rem;
 }
 
-section {
-  background-color: #333; /* Darker background */
-  border: 1px solid #d62e2e; /* Red border */
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
+/* P3R-inspired hero structure with a distinct P5R treatment. */
+.guide-hero {
+  container: p5-home / inline-size;
+  position: relative;
+  display: grid;
+  gap: clamp(1rem, 2.4cqi, 1.5rem);
+  min-height: clamp(19rem, 45cqi, 27rem);
+  padding: clamp(1.35rem, 4cqi, 3rem);
+  overflow: hidden;
+  background:
+    linear-gradient(118deg, rgba(0,0,0,.2) 0 28%, transparent 28%),
+    linear-gradient(155deg, #bb000e 0 34%, var(--p5-red) 34% 100%);
+  box-shadow: .75rem .75rem 0 #fff, 1.2rem 1.2rem 0 #050505;
+  clip-path: polygon(0 0, 100% 1%, 97.5% 100%, 2% 98%);
 }
 
-h3, h4, h5, p {
-  text-align: center;
-  color: white;
+.guide-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .22;
+  background:
+    repeating-linear-gradient(-24deg, transparent 0 26px, #000 27px 29px),
+    radial-gradient(circle at 86% 18%, transparent 0 70px, rgba(255,255,255,.18) 71px 74px, transparent 75px),
+    radial-gradient(circle at 86% 18%, transparent 0 115px, rgba(0,0,0,.12) 116px 119px, transparent 120px);
 }
 
-h4 {
-  font-weight: bold;
+.guide-hero > * { position: relative; z-index: 1; }
+
+.back-link {
+  justify-self: start;
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.back-link:hover,.back-link:focus-visible { text-decoration: underline; outline-offset: 4px; }
+
+.hero-kicker {
+  margin: 1.5rem 0 -.4rem;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+  text-transform: uppercase;
 }
 
-h5 {
-  font-family: "Bubblegum Superstar";
-  font-size: 25px;
-  font-weight: bold;
+h1 {
+  display: grid;
+  width: fit-content;
+  max-width: 92%;
+  margin: 0;
+  line-height: .78;
+  text-transform: uppercase;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333; /* Dark background */
-  color: white;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+.title-persona {
+  color: #fff;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(4rem, 13cqi, 8.2rem);
+  letter-spacing: .015em;
+  text-shadow: .34rem .34rem 0 #000;
+  transform: skew(-4deg);
+}
+
+.title-royal {
+  color: #090909;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(3.4rem, 11cqi, 7rem);
+  letter-spacing: .025em;
+  text-shadow: .14rem .14rem 0 #fff, .3rem .3rem 0 rgba(0,0,0,.45);
+  transform: skew(-6deg);
+}
+
+.hero-description {
+  max-width: 42rem;
+  margin: .25rem 0 0;
+  font-size: clamp(.95rem, 2cqi, 1.08rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Large navigation rows modeled after the P3R main page. */
+.guide-links {
+  display: grid;
+  gap: clamp(1rem, 2.5vw, 1.55rem);
+  margin-block-start: clamp(2.3rem, 6vw, 4.5rem);
+}
+
+.guide-link-card {
+  container: guide-link / inline-size;
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr) auto;
+  align-items: center;
+  gap: clamp(1rem, 2.5cqi, 1.6rem);
+  min-height: 7.5rem;
+  padding: clamp(1rem, 2.4cqi, 1.55rem);
+  color: #fff;
+  background:
+    linear-gradient(110deg, rgba(230,0,18,.14), transparent 28%),
+    rgba(21,21,21,.94);
+  border-inline-start: .38rem solid var(--p5-red);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.09);
+  text-decoration: none;
+  transition: transform .16s ease, background-color .16s ease, box-shadow .16s ease;
+  clip-path: polygon(0 0, 100% 4%, 98.7% 100%, 1% 97%);
+}
+
+.guide-link-card:nth-child(even) {
+  margin-inline: clamp(0rem, 3vw, 2rem);
+  background:
+    linear-gradient(110deg, rgba(255,255,255,.04), transparent 30%),
+    rgba(29,29,29,.95);
+}
+
+.guide-link-card:hover,
+.guide-link-card:focus-visible {
+  z-index: 1;
+  outline: 3px solid #fff;
+  transform: translateY(-3px) translateX(.25rem);
+  box-shadow: .45rem .45rem 0 var(--p5-red);
+}
+
+.link-number {
+  min-width: 3.2rem;
+  color: var(--p5-red);
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(2.4rem, 6cqi, 3.6rem);
+  font-style: italic;
+  line-height: 1;
+  text-shadow: .12rem .12rem 0 #fff;
+}
+
+.link-copy { min-width: 0; }
+.link-kicker {
+  display: block;
+  margin-bottom: .35rem;
+  color: #ff5964;
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.link-title {
+  display: block;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(1.7rem, 4.5cqi, 2.7rem);
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: .12rem .12rem 0 var(--p5-red);
+}
+.link-description {
+  display: block;
+  margin-top: .55rem;
+  color: #d8d8d8;
+  font-size: clamp(.8rem, 1.7cqi, .94rem);
+  line-height: 1.45;
+}
+.link-action {
+  padding: .7rem .95rem;
+  border: 2px solid #fff;
+  font-size: .72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.guide-link-card:hover .link-action,
+.guide-link-card:focus-visible .link-action { color:#000; background:#fff; }
+
+/* Informational panel, matching the P3R page's simple lower callout. */
+.guide-note {
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr);
+  gap: 1rem;
+  margin: clamp(2rem,5vw,3.5rem) clamp(0rem,4vw,2.5rem) 0;
+  padding: clamp(1rem,2.5vw,1.5rem);
+  color: #fff;
+  background: rgba(27,27,27,.95);
+  border-inline-start: .35rem solid var(--p5-red);
+}
+
+.note-icon {
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 2px solid var(--p5-red);
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.note-kicker { margin:0 0 .35rem; font-size:.67rem; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+.guide-note h2 { margin:0 0 .55rem; font-size:clamp(1.25rem,3vw,1.75rem); text-transform:uppercase; }
+.guide-note p { margin:0; color:#d7d7d7; line-height:1.55; }
+.guide-note strong { color:#fff; }
+
+.romance-note { margin-top:1rem; border-inline-start-color:#ff7180; }
+.romance-note .note-icon { border-color:#ff7180; }
+
+@container p5-home (max-width:40rem) {
+  .hero-kicker { margin-top:.5rem; }
+  .title-persona { font-size:clamp(3.2rem,15cqi,5rem); }
+  .title-royal { font-size:clamp(2.8rem,13cqi,4.4rem); }
+}
+
+@container guide-link (max-width:34rem) {
+  .guide-link-card { grid-template-columns:auto minmax(0,1fr); }
+  .link-action { grid-column:1/-1; text-align:center; }
+}
+
+@media(max-width:600px) {
+  main { width:calc(100% - .55rem); }
+  .guide-hero { min-height:auto; padding:1rem .75rem 1.5rem; clip-path:none; box-shadow:.35rem .35rem 0 #fff,.65rem .65rem 0 #050505; }
+  .guide-link-card,.guide-link-card:nth-child(even) { margin-inline:0; clip-path:none; }
+  .guide-note { margin-inline:0; }
+}
+
+@media(max-width:390px) {
+  .guide-link-card { grid-template-columns:1fr !important; }
+  .link-number { min-width:0; }
+  .guide-note { grid-template-columns:1fr; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { transition-duration:.01ms!important; animation-duration:.01ms!important; }
 }

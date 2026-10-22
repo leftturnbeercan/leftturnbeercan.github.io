@@ -1,80 +1,398 @@
 @font-face {
-  font-family: Persona5MenuFontPrototype;
-  src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+  font-family: Persona5Menu;
+  src: url('/css/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
-@font-face {
-  font-family: p5hatty;
-  src: url(/css/fonts/p5hatty.ttf);
+:root {
+  --p5-red: #e60012;
+  --p5-black: #080808;
+  --p5-white: #f7f7f7;
+  --p5-yellow: #ffd21f;
+  --p5-green: #66df45;
+  --page-max: 72rem;
 }
 
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-  background-color: #111; /* Dark background */
+  min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #f4f4f4;
+  overflow-x: hidden;
+  color: var(--p5-white);
+  background:
+    radial-gradient(circle at 88% 5%, rgba(230,0,18,.17), transparent 27rem),
+    linear-gradient(155deg, transparent 0 69%, rgba(230,0,18,.07) 69% 70%, transparent 70%),
+    repeating-linear-gradient(-11deg, transparent 0 44px, rgba(255,255,255,.025) 45px 47px),
+    #0b0b0b;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  text-align: center;
-  background-color: #d62e2e; /* Red background */
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-  padding: 20px 0;
+main {
+  width: min(calc(100% - 1rem), var(--page-max));
+  margin-inline: auto;
+  padding-block: .8rem 3rem;
+}
+
+.calendar-hero {
+  container: calendar-hero / inline-size;
+  display: grid;
+  gap: clamp(1rem, 2.8cqi, 1.75rem);
+  padding: clamp(1rem, 4cqi, 2.6rem);
+  background:
+    repeating-linear-gradient(-25deg, transparent 0 26px, rgba(0,0,0,.25) 27px 29px),
+    linear-gradient(165deg, #ec0013 0 70%, #bd000e 70% 100%);
+  box-shadow: .65rem .65rem 0 #fff, 1rem 1rem 0 #050505;
+  clip-path: polygon(0 0,100% 1%,98.5% 100%,1% 98.5%);
+}
+
+.hero-topline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 h1 {
-  font-size: 50px;
-  color: white;
+  width: fit-content;
+  max-width: 90%;
   margin: 0;
-  font-family: "Bubblegum Superstar";
+  padding: .12em .38em .18em;
+  color: #fff;
+  background: var(--p5-black);
+  border: 3px solid #fff;
+  box-shadow: .4rem .4rem 0 rgba(0,0,0,.65);
+  font-family: Persona5Menu, Impact, sans-serif;
+  font-size: clamp(2.8rem, 8cqi, 6rem);
+  line-height: .88;
+  text-shadow: .22rem .22rem 0 var(--p5-red);
+  text-transform: uppercase;
+  transform: rotate(-2deg) skew(-4deg);
 }
 
-nav {
-  background-color: #222; /* Darker background */
-  padding: 20px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+.home-link {
+  flex: none;
+  padding: .65rem 1rem;
+  color: #fff;
+  background: #101010;
+  border: 2px solid #fff;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: skew(-5deg);
 }
+.home-link:hover,.home-link:focus-visible { color:#000; background:#fff; outline:3px solid #000; }
+
+.calendar-intro {
+  max-width: 48rem;
+  margin: 0;
+  font-size: clamp(.9rem, 2cqi, 1.05rem);
+  line-height: 1.55;
+}
+
+.overall-progress {
+  display: grid;
+  grid-template-columns: minmax(9rem,auto) minmax(10rem,1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: .85rem 1rem;
+  color: #fff;
+  background: #101010;
+  border: 3px solid #fff;
+}
+.overall-copy { display:flex; flex-direction:column; gap:.15rem; }
+.overall-label { font-size:.72rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+#overall-progress-text { font-weight:800; }
+.overall-track,.month-track { overflow:hidden; background:#303030; border:2px solid #fff; }
+.overall-track { height:1.15rem; transform:skew(-7deg); }
+#overall-progress-fill,.month-fill { width:0; height:100%; background:repeating-linear-gradient(-45deg,var(--p5-red) 0 12px,#ff3947 12px 24px); transition:width .35s ease; }
+
+.calendar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+}
+.continue-button,.reset-button {
+  min-height: 2.7rem;
+  padding: .65rem 1rem;
+  border: 3px solid #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.continue-button { color:#fff; background:#080808; text-decoration:none; }
+.continue-button:hover,.continue-button:focus-visible { color:#000; background:#fff; outline:3px solid #000; }
+.reset-button { color:#fff; background:#83000a; }
+.reset-button:hover,.reset-button:focus-visible { background:#b6000e; outline:3px solid #000; }
+
+.month-section {
+  margin-block-start: clamp(2.5rem,6vw,4.5rem);
+}
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section-heading h2 { margin:0; font-size:clamp(1.25rem,3vw,1.8rem); text-transform:uppercase; }
+.section-heading p { margin:0; color:#cfcfcf; font-size:.85rem; }
 
 .month-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,15rem),1fr));
+  gap: clamp(.8rem,2vw,1.2rem);
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.month-grid li {
-  list-style: none;
+.month-card {
+  container: month-card / inline-size;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: .75rem;
+  min-height: 12rem;
+  padding: 1rem;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(120deg,#2b2b2b 0 77%,#202020 77%);
+  border-inline-start: .5rem solid var(--p5-red);
+  box-shadow: .35rem .35rem 0 var(--p5-red),.65rem .65rem 0 #fff;
+  clip-path: polygon(0 0,99% 1%,100% 96%,2% 100%);
+}
+.month-card.is-partial { border-inline-start-color:var(--p5-yellow); box-shadow:.35rem .35rem 0 var(--p5-yellow),.65rem .65rem 0 #fff; }
+.month-card.is-complete { border-inline-start-color:var(--p5-green); box-shadow:.35rem .35rem 0 var(--p5-green),.65rem .65rem 0 #fff; }
+
+.month-card-top { display:flex; align-items:flex-start; justify-content:space-between; gap:.7rem; }
+.month-name { margin:0; font-family:Persona5Menu,Impact,sans-serif; font-size:clamp(1.65rem,7cqi,2.35rem); line-height:.9; text-transform:uppercase; }
+.month-state { padding:.25rem .45rem; color:#111; background:#aaa; font-size:.62rem; font-weight:900; text-transform:uppercase; white-space:nowrap; }
+.month-card.is-partial .month-state { background:var(--p5-yellow); }
+.month-card.is-complete .month-state { background:var(--p5-green); }
+.month-count { color:#d5d5d5; font-size:.82rem; }
+.month-track { height:.8rem; }
+.month-card.is-complete .month-fill { background:var(--p5-green); }
+.month-link { display:block; align-self:end; padding:.6rem .8rem; color:#fff; background:#080808; border:2px solid #fff; font-weight:900; text-align:center; text-decoration:none; text-transform:uppercase; }
+.month-link:hover,.month-link:focus-visible { color:#000; background:#fff; outline:2px solid var(--p5-red); }
+
+.third-semester { margin-top:2rem; padding-top:1.5rem; border-top:2px solid rgba(255,255,255,.28); }
+.third-semester .section-heading h2::after { content:' Royal'; color:var(--p5-red); }
+
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+
+@container calendar-hero (max-width:38rem) {
+  .hero-topline { align-items:flex-start; flex-direction:column; }
+  h1 { max-width:100%; }
+  .overall-progress { grid-template-columns:1fr; }
 }
 
-.month-grid a {
-  display: block;
+@media(max-width:430px) {
+  main { width:calc(100% - .5rem); }
+  .calendar-hero { box-shadow:.35rem .35rem 0 #fff,.6rem .6rem 0 #050505; clip-path:none; }
+  .month-card { min-height:10.5rem; clip-path:none; }
+  .section-heading { align-items:flex-start; flex-direction:column; gap:.25rem; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { transition-duration:.01ms !important; animation-duration:.01ms !important; }
+}
+
+/* Typography alignment with the production month pages.
+   Reserve the expressive P5 face for the hero only; use a cleaner,
+   high-impact interface stack for card labels and controls. */
+:root {
+  --p5-display-clean: Impact, "Arial Black", "Franklin Gothic Heavy", sans-serif;
+  --p5-interface: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Persona5Menu, Impact, "Arial Black", sans-serif;
+  letter-spacing: .01em;
+}
+
+.month-name {
+  font-family: var(--p5-display-clean);
+  font-size: clamp(1.5rem, 6cqi, 2.15rem);
+  line-height: .95;
+  letter-spacing: .025em;
+  text-shadow: .12rem .12rem 0 var(--p5-red);
+  transform: skew(-3deg);
+}
+
+.month-state,
+.month-count,
+.month-link,
+.home-link,
+.continue-button,
+.reset-button,
+.overall-label,
+#overall-progress-text,
+.section-heading,
+.calendar-intro {
+  font-family: var(--p5-interface);
+}
+
+.month-state,
+.month-link,
+.home-link,
+.continue-button,
+.reset-button,
+.overall-label {
+  letter-spacing: .035em;
+}
+
+/* Keep the title dramatic without the highly irregular letter spacing
+   currently visible in the screenshot. */
+@container calendar-hero (max-width: 44rem) {
+  h1 {
+    font-size: clamp(2.45rem, 10cqi, 4.5rem);
+    line-height: .92;
+  }
+}
+
+/* Final landing-page polish */
+.calendar-hero {
+  gap: clamp(.75rem, 2.1cqi, 1.25rem);
+  padding: clamp(.9rem, 3.2cqi, 2rem);
+}
+
+.calendar-intro {
+  line-height: 1.4;
+}
+
+.overall-progress {
+  grid-template-columns: minmax(11rem, auto) minmax(12rem, 1fr);
+  padding: .72rem .9rem;
+}
+
+.overall-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .15rem .65rem;
+}
+
+.overall-label,
+#overall-progress-text {
+  grid-column: 1;
+}
+
+.overall-state {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  padding: .28rem .48rem;
+  color: #111;
+  background: #aaa;
+  border: 2px solid #080808;
+  font-size: .62rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: skew(-5deg);
+}
+
+.overall-state.is-partial { background: var(--p5-yellow); }
+.overall-state.is-complete { background: var(--p5-green); }
+.overall-track.is-complete { box-shadow: 0 0 0 2px #080808, 0 0 14px rgba(102, 223, 69, .58); }
+.overall-track.is-complete #overall-progress-fill { background: var(--p5-green); }
+
+.calendar-actions {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.continue-button {
+  min-width: min(100%, 12rem);
   text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  padding: 15px;
-  background-color: #d62e2e; /* Red background */
-  border-radius: 25px;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.month-grid a:hover {
-  background-color: white;
-  color: #d62e2e;
-  transform: scale(1.05); /* Slightly enlarge on hover */
+.reset-action {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  margin-inline-start: auto;
 }
 
-main {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px; /* Limit the width for better readability */
-  border: 1px solid #d62e2e; /* Red border */
-  background-color: #222; /* Dark background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+.reset-button {
+  min-height: 2.25rem;
+  padding: .45rem .7rem;
+  color: #d7d7d7;
+  background: #2c2c2c;
+  border: 2px solid #777;
+  font-size: .68rem;
+  opacity: .82;
+}
+
+.reset-button:hover,
+.reset-button:focus-visible {
+  color: #fff;
+  background: #83000a;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.reset-help {
+  max-width: 13rem;
+  color: rgba(255, 255, 255, .72);
+  font-size: .68rem;
+  line-height: 1.25;
+}
+
+.month-card {
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.month-card:hover,
+.month-card:focus-within {
+  z-index: 1;
+  transform: translateY(-3px);
+}
+
+.month-card.is-complete:hover,
+.month-card.is-complete:focus-within {
+  box-shadow: .45rem .45rem 0 var(--p5-green), .8rem .8rem 0 #fff;
+}
+
+@container calendar-hero (max-width: 38rem) {
+  .calendar-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .continue-button {
+    width: 100%;
+  }
+
+  .reset-action {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-inline-start: 0;
+  }
+
+  .overall-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .overall-state {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+  }
+}
+
+/* Completed guide: the primary route becomes a neutral status, not navigation. */
+.continue-button.is-disabled,
+.continue-button[aria-disabled="true"] {
+  color: #111;
+  background: #a9a9a9;
+  border-color: #d6d6d6;
+  box-shadow: none;
+  cursor: default;
+  opacity: .78;
+  pointer-events: none;
+  transform: none;
 }

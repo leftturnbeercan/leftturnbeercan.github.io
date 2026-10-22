@@ -1,0 +1,81 @@
+/* Snow extension for the modular P5R weather system. */
+.p5-weather--snow .p5-weather__icon {
+  inline-size: 46px;
+  block-size: 34px;
+  overflow: visible;
+}
+
+.p5-snow__cloud {
+  position: absolute;
+  inset-inline-start: 6px;
+  inset-block-start: 2px;
+  inline-size: 34px;
+  block-size: 15px;
+  background: #f5f7fb;
+  border: 2px solid #111;
+  border-radius: 14px 14px 8px 8px;
+  animation: p5-snow-cloud 2.8s ease-in-out infinite;
+}
+
+.p5-snow__cloud::before,
+.p5-snow__cloud::after {
+  content: '';
+  position: absolute;
+  background: #f5f7fb;
+  border: 2px solid #111;
+  border-block-end: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.p5-snow__cloud::before {
+  inset-inline-start: 5px;
+  inset-block-start: -9px;
+  inline-size: 13px;
+  block-size: 11px;
+}
+
+.p5-snow__cloud::after {
+  inset-inline-start: 16px;
+  inset-block-start: -7px;
+  inline-size: 11px;
+  block-size: 9px;
+}
+
+.p5-snow__flake {
+  position: absolute;
+  inset-block-start: 17px;
+  color: #dff5ff;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 1px 1px 0 #111;
+  animation: p5-snow-fall 1.55s linear infinite;
+}
+
+.p5-snow__flake--one { inset-inline-start: 9px; animation-delay: 0s; }
+.p5-snow__flake--two { inset-inline-start: 21px; animation-delay: -.55s; }
+.p5-snow__flake--three { inset-inline-start: 33px; animation-delay: -1.05s; }
+
+@keyframes p5-snow-cloud {
+  50% { transform: translateX(2px) translateY(-1px); }
+}
+
+@keyframes p5-snow-fall {
+  0% { opacity: 0; transform: translate(0, -3px) rotate(0deg) scale(.75); }
+  25% { opacity: 1; }
+  100% { opacity: 0; transform: translate(3px, 12px) rotate(180deg) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p5-weather--snow .p5-weather__icon { display: none !important; }
+  .p5-weather--snow .p5-weather__fallback {
+    position: static !important;
+    inline-size: auto !important;
+    block-size: auto !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    clip-path: none !important;
+    white-space: normal !important;
+  }
+}

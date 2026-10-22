@@ -1,112 +1,35 @@
 @font-face {
-  font-family: Persona5MenuFontPrototype;
-  src: url(/css/fonts/Persona5MenuFontPrototype-Regular.ttf);
+  font-family: Persona5Menu;
+  src: url('/css/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
-@font-face {
-  font-family: p5hatty;
-  src: url(/css/fonts/p5hatty.ttf);
+:root {
+  --p5-red:#e60012;
+  --p5-black:#080808;
+  --p5-white:#f7f7f7;
+  --p5-panel:#1b1b1b;
+  --p5-panel-alt:#272727;
+  --p5-muted:#c9c9c9;
+  --page-max:72rem;
 }
 
-@font-face {
-  font-family: HEAVYHEA;
-  src: url(/css/fonts/HEAVYHEA.TTF);
-}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{min-height:100vh;margin:0;overflow-x:hidden;color:var(--p5-white);background:radial-gradient(circle at 88% 5%,rgba(230,0,18,.15),transparent 27rem),repeating-linear-gradient(-11deg,transparent 0 44px,rgba(255,255,255,.025) 45px 47px),#0b0b0b;font-family:Arial,Helvetica,sans-serif}
+main{width:min(calc(100% - 1rem),var(--page-max));margin-inline:auto;padding-block:.8rem 4rem}
 
-/*creates a border around main page*/
-main {
-  border: 5px solid black;
-}
+.confidant-hero{container:confidant-hero/inline-size;display:grid;gap:clamp(.8rem,2.2cqi,1.35rem);padding:clamp(1rem,3.4cqi,2.2rem);background:repeating-linear-gradient(-24deg,transparent 0 26px,rgba(0,0,0,.24) 27px 29px),linear-gradient(165deg,#ec0013 0 70%,#bd000e 70%);box-shadow:.65rem .65rem 0 #fff,1rem 1rem 0 #050505;clip-path:polygon(0 0,100% 1%,98.5% 100%,1% 98.5%)}
+.hero-topline{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}h1{width:fit-content;max-width:90%;margin:0;padding:.1em .38em .16em;color:#fff;background:#080808;border:3px solid #fff;box-shadow:.4rem .4rem 0 rgba(0,0,0,.65);font-family:Impact,"Arial Black",sans-serif;font-size:clamp(3rem,9cqi,6rem);line-height:.88;text-shadow:.22rem .22rem 0 var(--p5-red);text-transform:uppercase;transform:rotate(-2deg) skew(-4deg)}
+.hero-nav{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}.hero-nav a{display:block;padding:.6rem .9rem;color:#fff;background:#101010;border:2px solid #fff;font-size:.75rem;font-weight:900;text-decoration:none;text-transform:uppercase}.hero-nav a:hover,.hero-nav a:focus-visible{color:#000;background:#fff;outline:3px solid #000}.hero-copy{max-width:48rem;margin:0;line-height:1.5}
 
-h1 {
-  font-family: "Persona5MenuFontPrototype";
-  font-size: 60px;
-  text-align: center;
-  color: black;
-  border-bottom: 5px solid black;
-  padding: 10px;
-}
+.confidant-tools{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.75rem;margin-top:clamp(2.3rem,6vw,4rem);padding:.9rem;background:#171717;border-inline-start:.4rem solid var(--p5-red)}.search-label{display:grid;gap:.35rem;font-size:.68rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.search-label input{width:100%;min-height:2.7rem;padding:.65rem .8rem;color:#fff;background:#080808;border:2px solid #666;font:inherit;font-size:.9rem;letter-spacing:normal;text-transform:none}.search-label input:focus{border-color:#fff;outline:3px solid var(--p5-red)}.result-count{align-self:end;padding:.7rem .85rem;color:#fff;background:#080808;border:2px solid #fff;font-size:.75rem;font-weight:900;white-space:nowrap}
 
-body {
-  background-color: #d62e2e;
-}
+#content-days{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:clamp(1rem,2.5vw,1.4rem);margin-top:1.25rem}.confidant-card{container:confidant-card/inline-size;display:grid;grid-template-columns:4rem minmax(0,1fr);grid-template-rows:auto 1fr;gap:.8rem 1rem;min-height:15rem;padding:1rem;color:#fff;background:linear-gradient(120deg,var(--p5-panel-alt) 0 78%,var(--p5-panel) 78%);border-inline-start:.5rem solid var(--p5-red);box-shadow:.35rem .35rem 0 var(--p5-red),.65rem .65rem 0 #fff;clip-path:polygon(0 0,99% 1%,100% 97%,2% 100%);transition:transform .16s ease,box-shadow .16s ease}.confidant-card:hover,.confidant-card:focus-within{z-index:1;transform:translateY(-3px);box-shadow:.48rem .48rem 0 var(--p5-red),.82rem .82rem 0 #fff}.confidant-card[hidden]{display:none!important}
+.arcana-image{grid-column:1;grid-row:1/span 2;align-self:start;justify-self:center;width:auto;height:clamp(4.5rem,15cqi,6rem);max-width:3.8rem;object-fit:contain;filter:drop-shadow(.18rem .18rem 0 #000)}.card-copy{grid-column:2;min-width:0}.arcana-font{margin:0 0 .75rem;padding:.25em .5em;width:fit-content;color:#fff;background:var(--p5-red);border:2px solid #080808;box-shadow:.22rem .22rem 0 #fff;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(1.45rem,6cqi,2.15rem);line-height:.95;text-transform:uppercase;transform:skew(-4deg)}
+.confidant-fields{display:grid;gap:.5rem;margin:0}.confidant-field{display:grid;gap:.15rem;padding-bottom:.45rem;border-bottom:1px solid rgba(255,255,255,.13)}.field-label{color:#ff7a84;font-size:.66rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.field-value{color:var(--p5-muted);font-size:.86rem;line-height:1.35}.field-value.is-empty{font-style:italic;opacity:.72}
+.rank-jump{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:.75rem}.rank-jump label{font-size:.68rem;font-weight:900;text-transform:uppercase}.rank-jump select{min-height:2.2rem;padding:.4rem .55rem;color:#fff;background:#080808;border:2px solid #fff;font-weight:800}.rank-jump select:disabled{opacity:.5;cursor:not-allowed}
+.empty-state{grid-column:1/-1;padding:2rem;color:#d5d5d5;background:#171717;border-inline-start:.4rem solid var(--p5-red);text-align:center}
 
-/*basically removes dots from list*/
-.main_menu_style {
-  list-style: none;
-}
-
-/*sets the placement of the nav menu and adds a border around it*/
-#main_menu_setup {
-  position: fixed;
-  width: 180px;
-  float: left;
-  padding: 10px;
-  border-right: 5px solid black;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-/*adds border around the list items*/
-#main_menu_setup li {
-  width: 120px;
-  float: left;
-  margin-left: 2px;
-  border: 5px solid black;
-}
-
-/*helps mimick the list items as buttons*/
-#main_menu_setup a {
-  display: block;
-  padding: 3px;
-  text-decoration: none;
-  background-color: #fff;
-  color: #d62e2e;
-}
-
-section {
-  align-items: center;
-  background-color: black;
-  border: 5px solid #d62e2e;
-  border-style: outset;
-}
-
-#content-days {
-  margin-left: 400px;
-  border-left: 2px solid black;
-  padding: 10px;
-  line-height: 2em;
-}
-
-h3 {
-  font-family: "Bubblegum Superstar";
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
-
-h3.arcana-font {
-  font-family: "HEAVYHEA";
-  font-weight: bolder;
-  text-align: left;
-  font-size: 30px;
-  font-style: italic;
-  color: whitesmoke;
-  text-decoration: underline;
-}
-
-p {
-  font-family: "p5hatty";
-  font-size: 16px;
-  text-align: left;
-  color: white;
-}
-
-p.subject {
-  font-family: "Arsenal";
-  font-size: 16px;
-  text-align: left;
-  font-weight: bold;
-  color: white;
-}
+@container confidant-hero (max-width:38rem){.hero-topline{flex-direction:column}h1{max-width:100%}.confidant-tools{grid-template-columns:1fr}.result-count{justify-self:start}}
+@container confidant-card (max-width:22rem){.confidant-card{grid-template-columns:3.3rem minmax(0,1fr);padding:.8rem}.arcana-image{max-width:3rem}.rank-jump{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){main{width:calc(100% - .55rem)}.confidant-hero{padding:1rem .65rem 1.4rem;clip-path:none;box-shadow:.35rem .35rem 0 #fff,.6rem .6rem 0 #050505}#content-days{grid-template-columns:1fr}.confidant-card{clip-path:none;box-shadow:.28rem .28rem 0 var(--p5-red),.5rem .5rem 0 #fff}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}

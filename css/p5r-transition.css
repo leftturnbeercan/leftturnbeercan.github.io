@@ -1,0 +1,955 @@
+/* Persona 5 Royal themed internal navigation transition.
+   Uses original CSS geometry: red-black cut-ins, calling-card slash,
+   halftone texture, speed lines, and a high-contrast white flash. */
+:root {
+  --p5t-red: #e60012;
+  --p5t-red-dark: #8d000b;
+  --p5t-black: #080808;
+  --p5t-white: #fff;
+  --p5t-yellow: #ffd21f;
+}
+
+.guide-hero,
+body > main > header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.guide-hero > :not(.p5r-hero-mark),
+body > main > header > :not(.p5r-hero-mark) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative Phantom slash behind the current homepage title. */
+.p5r-hero-mark {
+  position: absolute;
+  z-index: 1;
+  inset-inline-end: clamp(-2rem, 1vw, 1rem);
+  inset-block-start: clamp(-1.5rem, 3vw, 2rem);
+  width: clamp(11rem, 31cqi, 21rem);
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: .5;
+  transform: rotate(-13deg);
+}
+
+.p5r-hero-mark::before {
+  content: '';
+  position: absolute;
+  inset: 7%;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 22%, rgba(255,255,255,.22) 23% 25%, transparent 26% 38%, rgba(8,8,8,.22) 39% 43%, transparent 44%),
+    repeating-conic-gradient(from 4deg, rgba(8,8,8,.22) 0 4deg, transparent 4deg 13deg);
+  border: clamp(.28rem,.8cqi,.55rem) solid rgba(255,255,255,.28);
+  border-radius: 50%;
+  clip-path: polygon(5% 21%, 100% 0, 80% 100%, 0 78%);
+}
+
+.p5r-hero-mark::after {
+  content: '';
+  position: absolute;
+  left: -3%;
+  top: 45%;
+  width: 110%;
+  height: clamp(1.2rem, 4cqi, 2.7rem);
+  background: linear-gradient(95deg, transparent 0 4%, rgba(8,8,8,.72) 5% 42%, rgba(255,255,255,.32) 43% 49%, rgba(8,8,8,.8) 50% 89%, transparent 90%);
+  clip-path: polygon(0 28%, 100% 0, 83% 64%, 4% 100%);
+}
+
+/* Full-screen P5R transition. */
+.p5r-page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  visibility: hidden;
+  overflow: hidden;
+  background: var(--p5t-black);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .08s ease, visibility 0s linear .55s;
+}
+
+.p5r-page-transition.is-active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .06s ease;
+}
+
+.p5r-transition-halftone,
+.p5r-transition-speed,
+.p5r-transition-cut,
+.p5r-transition-card,
+.p5r-transition-flash {
+  position: absolute;
+  pointer-events: none;
+}
+
+.p5r-transition-halftone {
+  inset: -15%;
+  background:
+    radial-gradient(circle, rgba(255,255,255,.24) 0 1.2px, transparent 1.6px) 0 0 / 8px 8px,
+    linear-gradient(118deg, var(--p5t-red-dark), var(--p5t-red) 58%, #ff3746);
+  transform: translateX(-120%) skewX(-8deg);
+}
+
+.p5r-page-transition.is-active .p5r-transition-halftone {
+  animation: p5r-red-wipe .48s cubic-bezier(.2,.77,.22,1) forwards;
+}
+
+.p5r-transition-speed {
+  inset: -20%;
+  background: repeating-linear-gradient(-19deg, transparent 0 18px, rgba(255,255,255,.17) 19px 21px, transparent 22px 43px);
+  opacity: 0;
+  transform: translateX(-24%);
+}
+
+.p5r-page-transition.is-active .p5r-transition-speed {
+  animation: p5r-speed-lines .45s ease forwards;
+}
+
+.p5r-transition-cut {
+  left: -12%;
+  top: 42%;
+  width: 125%;
+  height: clamp(3rem, 10vw, 7rem);
+  background: var(--p5t-black);
+  box-shadow: 0 -1rem 0 rgba(255,255,255,.94), 0 1rem 0 rgba(255,255,255,.94);
+  clip-path: polygon(0 34%, 100% 0, 91% 66%, 3% 100%);
+  opacity: 0;
+  transform: scaleX(.08) rotate(-3deg);
+}
+
+.p5r-page-transition.is-active .p5r-transition-cut {
+  animation: p5r-slash .42s cubic-bezier(.2,.8,.2,1) forwards;
+}
+
+.p5r-transition-card {
+  left: 50%;
+  top: 50%;
+  width: min(56vw, 26rem);
+  min-width: 13rem;
+  padding: 1rem 1.4rem;
+  color: var(--p5t-black);
+  background: var(--p5t-white);
+  border: clamp(.28rem,.8vw,.55rem) solid var(--p5t-black);
+  box-shadow: .65rem .65rem 0 var(--p5t-red);
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(1.4rem, 5vw, 3.3rem);
+  letter-spacing: .045em;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translate(-50%,-50%) rotate(-8deg) scale(.45);
+  clip-path: polygon(2% 0, 100% 5%, 96% 100%, 0 92%);
+}
+
+.p5r-page-transition.is-active .p5r-transition-card {
+  animation: p5r-card-pop .46s cubic-bezier(.18,.82,.24,1) forwards;
+}
+
+.p5r-transition-flash {
+  inset: 0;
+  background: var(--p5t-white);
+  opacity: 0;
+}
+
+.p5r-page-transition.is-active .p5r-transition-flash {
+  animation: p5r-flash .5s ease forwards;
+}
+
+@keyframes p5r-red-wipe {
+  0% { transform: translateX(-120%) skewX(-8deg); }
+  55%,100% { transform: translateX(0) skewX(-8deg); }
+}
+
+@keyframes p5r-speed-lines {
+  0% { opacity: 0; transform: translateX(-24%); }
+  32% { opacity: .78; }
+  100% { opacity: .2; transform: translateX(18%); }
+}
+
+@keyframes p5r-slash {
+  0%,20% { opacity: 0; transform: scaleX(.08) rotate(-3deg); }
+  48%,100% { opacity: 1; transform: scaleX(1) rotate(-3deg); }
+}
+
+@keyframes p5r-card-pop {
+  0%,28% { opacity: 0; transform: translate(-50%,-50%) rotate(-12deg) scale(.45); }
+  62% { opacity: 1; transform: translate(-50%,-50%) rotate(-5deg) scale(1.08); }
+  100% { opacity: 1; transform: translate(-50%,-50%) rotate(-7deg) scale(1); }
+}
+
+@keyframes p5r-flash {
+  0%,78% { opacity: 0; }
+  90% { opacity: .94; }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 700px) {
+  .p5r-hero-mark {
+    inset-inline-end: -4rem;
+    inset-block-start: 2.4rem;
+    width: clamp(9rem, 47vw, 14rem);
+    opacity: .3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p5r-page-transition { display: none !important; }
+  .p5r-hero-mark { opacity: .24; }
+}
+
+/* Homepage correction: transition only, no decorative hero ornament. */
+.p5r-hero-mark {
+  display: none !important;
+}
+
+/* =========================================================
+   P5R homepage animated Phantom mask visual
+   A clean, title-safe ornament specific to the homepage.
+   ========================================================= */
+.guide-hero {
+  isolation: isolate;
+}
+
+.guide-hero > :not(.p5r-phantom-visual) {
+  position: relative;
+  z-index: 2;
+}
+
+.p5r-phantom-visual {
+  position: absolute;
+  z-index: 1;
+  inset-inline-end: clamp(-1.4rem, 1.5cqi, 1.4rem);
+  inset-block-start: clamp(1.25rem, 7cqi, 4.2rem);
+  inline-size: clamp(12rem, 31cqi, 20rem);
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: .68;
+  transform: rotate(-7deg);
+}
+
+.p5r-phantom-burst {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(
+      from -6deg,
+      rgba(8,8,8,.36) 0 5deg,
+      transparent 5deg 13deg
+    );
+  -webkit-mask: radial-gradient(circle, transparent 0 20%, #000 21% 74%, transparent 75%);
+  mask: radial-gradient(circle, transparent 0 20%, #000 21% 74%, transparent 75%);
+  animation: p5r-burst-turn 24s linear infinite;
+}
+
+.p5r-phantom-burst::before,
+.p5r-phantom-burst::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.p5r-phantom-burst::before {
+  inset: 14%;
+  border: clamp(.22rem,.55cqi,.4rem) solid rgba(255,255,255,.3);
+  box-shadow:
+    0 0 0 clamp(.6rem,1.4cqi,1rem) rgba(8,8,8,.11),
+    inset 0 0 1.3rem rgba(255,255,255,.09);
+}
+
+.p5r-phantom-burst::after {
+  inset: 29%;
+  background: rgba(8,8,8,.15);
+  border: 2px solid rgba(255,255,255,.2);
+}
+
+.p5r-phantom-mask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  inline-size: 68%;
+  block-size: 43%;
+  background: #080808;
+  border: clamp(.2rem,.55cqi,.4rem) solid rgba(255,255,255,.9);
+  box-shadow:
+    .45rem .45rem 0 rgba(230,0,18,.92),
+    0 0 1.2rem rgba(255,255,255,.16);
+  clip-path: polygon(0 24%, 17% 4%, 48% 21%, 82% 0, 100% 22%, 86% 82%, 62% 100%, 49% 70%, 35% 100%, 12% 81%);
+  transform: translate(-50%,-50%) rotate(-3deg);
+  animation: p5r-mask-float 3.4s ease-in-out infinite;
+}
+
+.p5r-mask-eye {
+  position: absolute;
+  top: 36%;
+  inline-size: 27%;
+  block-size: 19%;
+  background: #fff;
+  clip-path: polygon(0 26%, 100% 0, 80% 100%, 15% 72%);
+  animation: p5r-eye-flash 4.2s ease-in-out infinite;
+}
+
+.p5r-mask-eye--left {
+  left: 16%;
+  transform: rotate(4deg);
+}
+
+.p5r-mask-eye--right {
+  right: 16%;
+  transform: scaleX(-1) rotate(4deg);
+}
+
+.p5r-phantom-slash {
+  position: absolute;
+  left: 4%;
+  width: 92%;
+  height: clamp(.45rem,1.2cqi,.85rem);
+  background: rgba(255,255,255,.76);
+  clip-path: polygon(0 42%, 100% 0, 91% 55%, 4% 100%);
+  transform-origin: center;
+}
+
+.p5r-phantom-slash--one {
+  top: 23%;
+  transform: rotate(-17deg);
+  animation: p5r-slash-pulse 3s ease-in-out infinite;
+}
+
+.p5r-phantom-slash--two {
+  bottom: 22%;
+  transform: rotate(16deg);
+  animation: p5r-slash-pulse 3s ease-in-out -.9s infinite;
+}
+
+.p5r-phantom-slash--three {
+  left: 18%;
+  top: 49%;
+  width: 64%;
+  background: rgba(230,0,18,.86);
+  transform: rotate(-4deg);
+  animation: p5r-slash-pulse 3s ease-in-out -1.6s infinite;
+}
+
+@keyframes p5r-burst-turn {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes p5r-mask-float {
+  0%,100% { transform: translate(-50%,-50%) rotate(-3deg) scale(1); }
+  50% { transform: translate(-50%,-54%) rotate(1deg) scale(1.035); }
+}
+
+@keyframes p5r-eye-flash {
+  0%,38%,46%,100% { opacity: .9; filter: none; }
+  42% { opacity: 1; filter: drop-shadow(0 0 .65rem #fff); }
+}
+
+@keyframes p5r-slash-pulse {
+  0%,100% { opacity: .38; transform-origin: center; }
+  50% { opacity: .9; }
+}
+
+@media (max-width: 700px) {
+  .p5r-phantom-visual {
+    inset-inline-end: -4.4rem;
+    inset-block-start: 4.25rem;
+    inline-size: clamp(10rem, 48vw, 15rem);
+    opacity: .32;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p5r-phantom-burst,
+  .p5r-phantom-mask,
+  .p5r-mask-eye,
+  .p5r-phantom-slash {
+    animation: none !important;
+  }
+  .p5r-phantom-visual { opacity: .35; }
+}
+
+/* =========================================================
+   Phantom visual positioning and polish v2
+   Force the ornament into the open right side of the hero.
+   Explicit physical offsets avoid inherited/grid positioning.
+   ========================================================= */
+.guide-hero {
+  position: relative !important;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.guide-hero > .p5r-phantom-visual {
+  position: absolute !important;
+  z-index: 1 !important;
+  top: 50% !important;
+  right: clamp(1.25rem, 5.5vw, 5rem) !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: clamp(13rem, 29vw, 20rem) !important;
+  height: auto !important;
+  aspect-ratio: 1 !important;
+  margin: 0 !important;
+  opacity: .72;
+  transform: translateY(-47%) rotate(-7deg) !important;
+}
+
+/* Replace the soft circular feel with a sharper asymmetric burst. */
+.guide-hero .p5r-phantom-burst {
+  inset: 2%;
+  border-radius: 0;
+  background:
+    repeating-conic-gradient(
+      from -8deg,
+      rgba(8,8,8,.42) 0 4deg,
+      transparent 4deg 11deg
+    );
+  -webkit-mask: radial-gradient(circle, transparent 0 19%, #000 21% 72%, transparent 75%);
+  mask: radial-gradient(circle, transparent 0 19%, #000 21% 72%, transparent 75%);
+  clip-path: polygon(50% 0, 60% 18%, 82% 4%, 79% 27%, 100% 31%, 80% 45%, 98% 65%, 73% 66%, 73% 94%, 54% 75%, 37% 100%, 32% 74%, 4% 84%, 22% 60%, 0 48%, 24% 39%, 8% 16%, 35% 24%);
+  animation: p5r-burst-breathe 5.6s ease-in-out infinite;
+}
+
+.guide-hero .p5r-phantom-burst::before {
+  inset: 13%;
+  border-color: rgba(255,255,255,.42);
+  box-shadow:
+    0 0 0 clamp(.45rem,1vw,.8rem) rgba(8,8,8,.13),
+    inset 0 0 1.2rem rgba(255,255,255,.12);
+}
+
+.guide-hero .p5r-phantom-burst::after {
+  inset: 31%;
+  background: rgba(8,8,8,.2);
+  border-color: rgba(255,255,255,.3);
+}
+
+/* Refined mask: wider brow, narrower nose, pointed lower edges. */
+.guide-hero .p5r-phantom-mask {
+  left: 50%;
+  top: 49%;
+  width: 72%;
+  height: 39%;
+  background:
+    linear-gradient(163deg, rgba(255,255,255,.08), transparent 37%),
+    #070707;
+  border: clamp(.18rem,.48vw,.36rem) solid rgba(255,255,255,.94);
+  box-shadow:
+    .5rem .5rem 0 rgba(128,0,10,.72),
+    -.16rem -.16rem 0 rgba(255,255,255,.18),
+    0 0 1rem rgba(255,255,255,.13);
+  clip-path: polygon(0 28%, 11% 10%, 31% 3%, 49% 17%, 69% 2%, 90% 9%, 100% 28%, 92% 58%, 78% 82%, 62% 100%, 50% 66%, 38% 100%, 21% 82%, 8% 58%);
+  transform: translate(-50%,-50%) rotate(-2deg);
+  animation: p5r-mask-hover 4.2s ease-in-out infinite;
+}
+
+.guide-hero .p5r-mask-eye {
+  top: 33%;
+  width: 28%;
+  height: 18%;
+  background: linear-gradient(95deg, #fff 0 72%, #ffd9dc 100%);
+  box-shadow: 0 0 .4rem rgba(255,255,255,.45);
+  clip-path: polygon(0 22%, 100% 0, 79% 100%, 13% 70%);
+}
+
+.guide-hero .p5r-mask-eye--left { left: 15%; }
+.guide-hero .p5r-mask-eye--right { right: 15%; }
+
+/* Keep the energy marks close to the emblem rather than crossing the title. */
+.guide-hero .p5r-phantom-slash {
+  left: 10%;
+  width: 80%;
+  height: clamp(.35rem,.8vw,.62rem);
+}
+.guide-hero .p5r-phantom-slash--one { top: 21%; transform: rotate(-14deg); }
+.guide-hero .p5r-phantom-slash--two { bottom: 20%; transform: rotate(14deg); }
+.guide-hero .p5r-phantom-slash--three { left: 24%; top: 50%; width: 52%; opacity: .65; }
+
+/* Remove the remaining faint circular pseudo decoration behind the new emblem. */
+.guide-hero::after {
+  opacity: 0 !important;
+}
+
+@keyframes p5r-mask-hover {
+  0%,100% { transform: translate(-50%,-50%) rotate(-2deg) scale(1); }
+  50% { transform: translate(-50%,-54%) rotate(1deg) scale(1.025); }
+}
+
+@keyframes p5r-burst-breathe {
+  0%,100% { transform: rotate(-5deg) scale(.98); opacity: .72; }
+  50% { transform: rotate(4deg) scale(1.035); opacity: .94; }
+}
+
+@media (max-width: 900px) {
+  .guide-hero > .p5r-phantom-visual {
+    right: -2.4rem !important;
+    width: clamp(11rem, 34vw, 16rem) !important;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 700px) {
+  .guide-hero > .p5r-phantom-visual {
+    top: 55% !important;
+    right: -4rem !important;
+    width: clamp(9.5rem, 46vw, 13rem) !important;
+    opacity: .28;
+    transform: translateY(-50%) rotate(-7deg) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guide-hero .p5r-phantom-burst,
+  .guide-hero .p5r-phantom-mask {
+    animation: none !important;
+  }
+}
+
+/* =========================================================
+   Phantom mask refinement v3
+   A more recognizable theatrical domino-mask silhouette:
+   white shell, black eye sockets, swept outer wings, and a
+   pointed center. This is an original CSS interpretation.
+   ========================================================= */
+.guide-hero > .p5r-phantom-visual {
+  top: 49% !important;
+  right: clamp(1.5rem, 5vw, 4.5rem) !important;
+  width: clamp(14rem, 30vw, 21rem) !important;
+  opacity: .82;
+}
+
+.guide-hero .p5r-phantom-mask {
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 43%;
+  border: 0;
+  border-radius: 0;
+  background:
+    linear-gradient(164deg, rgba(255,255,255,.96) 0 34%, rgba(222,222,222,.98) 35% 58%, rgba(255,255,255,.96) 59% 100%);
+  box-shadow:
+    .5rem .55rem 0 rgba(8,8,8,.82),
+    .78rem .8rem 0 rgba(132,0,11,.72),
+    0 0 1.1rem rgba(255,255,255,.2);
+  clip-path: polygon(
+    0 35%,
+    10% 13%,
+    31% 0,
+    47% 16%,
+    50% 27%,
+    53% 16%,
+    70% 0,
+    91% 13%,
+    100% 35%,
+    89% 54%,
+    74% 68%,
+    61% 91%,
+    51% 70%,
+    49% 100%,
+    39% 70%,
+    26% 91%,
+    12% 68%
+  );
+  transform: translate(-50%,-50%) rotate(-2deg);
+  animation: p5r-mask-hover 4.2s ease-in-out infinite;
+}
+
+/* Inner brow gives the white shell a layered, folded-mask appearance. */
+.guide-hero .p5r-phantom-mask::before {
+  content: '';
+  position: absolute;
+  inset: 10% 8% 18%;
+  background: linear-gradient(172deg, rgba(255,255,255,.34), rgba(100,100,100,.14));
+  clip-path: polygon(0 30%, 30% 0, 49% 23%, 69% 0, 100% 30%, 78% 42%, 60% 65%, 50% 49%, 40% 65%, 21% 42%);
+  opacity: .8;
+}
+
+/* Eye sockets now read as cut-outs instead of white painted eyes. */
+.guide-hero .p5r-mask-eye {
+  z-index: 2;
+  top: 31%;
+  width: 29%;
+  height: 25%;
+  background: #070707;
+  box-shadow:
+    inset 0 0 0 .12rem rgba(255,255,255,.12),
+    0 0 .45rem rgba(8,8,8,.55);
+  clip-path: polygon(0 18%, 100% 0, 78% 100%, 15% 73%);
+  animation: p5r-socket-glint 4.6s ease-in-out infinite;
+}
+
+.guide-hero .p5r-mask-eye::after {
+  content: '';
+  position: absolute;
+  left: 24%;
+  top: 31%;
+  width: 52%;
+  height: 24%;
+  background: #fff;
+  clip-path: polygon(0 30%, 100% 0, 78% 100%, 17% 73%);
+  opacity: .88;
+}
+
+.guide-hero .p5r-mask-eye--left {
+  left: 14%;
+  transform: rotate(4deg);
+}
+
+.guide-hero .p5r-mask-eye--right {
+  right: 14%;
+  transform: scaleX(-1) rotate(4deg);
+}
+
+/* Sharper feather-like side accents support the swept mask shape. */
+.guide-hero .p5r-phantom-mask::after {
+  content: '';
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  width: 9%;
+  height: 43%;
+  background: linear-gradient(#d9d9d9, #fff);
+  clip-path: polygon(50% 0, 100% 58%, 50% 100%, 0 58%);
+  opacity: .92;
+}
+
+.guide-hero .p5r-phantom-burst {
+  opacity: .76;
+  filter: drop-shadow(0 0 .3rem rgba(8,8,8,.25));
+}
+
+.guide-hero .p5r-phantom-slash--one,
+.guide-hero .p5r-phantom-slash--two {
+  background: rgba(255,255,255,.62);
+}
+
+.guide-hero .p5r-phantom-slash--three {
+  background: rgba(8,8,8,.72);
+}
+
+@keyframes p5r-socket-glint {
+  0%, 36%, 45%, 100% { filter: none; }
+  40% { filter: drop-shadow(0 0 .4rem rgba(255,255,255,.58)); }
+}
+
+@media (max-width: 700px) {
+  .guide-hero > .p5r-phantom-visual {
+    right: -4.2rem !important;
+    width: clamp(10rem, 48vw, 14rem) !important;
+    opacity: .32;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guide-hero .p5r-mask-eye {
+    animation: none !important;
+  }
+}
+
+/* =========================================================
+   Phantom top-hat homepage ornament v4
+   Replaces the mask with a cleaner P5R-style magician motif.
+   ========================================================= */
+.guide-hero > .p5r-phantom-visual {
+  top: 50% !important;
+  right: clamp(1.5rem, 5.4vw, 4.8rem) !important;
+  width: clamp(14rem, 30vw, 21rem) !important;
+  opacity: .88;
+  transform: translateY(-48%) rotate(-6deg) !important;
+}
+
+/* Old mask elements are disabled if stale markup is cached during testing. */
+.guide-hero .p5r-phantom-mask,
+.guide-hero .p5r-mask-eye {
+  display: none !important;
+}
+
+.guide-hero .p5r-phantom-burst {
+  inset: 0;
+  opacity: .62;
+  animation: p5r-hat-burst 10s ease-in-out infinite;
+}
+
+.p5r-phantom-hat {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 78%;
+  height: 68%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  animation: p5r-hat-float 4.4s ease-in-out infinite;
+}
+
+.p5r-hat-crown {
+  position: absolute;
+  z-index: 2;
+  left: 24%;
+  top: 5%;
+  width: 52%;
+  height: 65%;
+  background:
+    linear-gradient(162deg, rgba(255,255,255,.12) 0 13%, transparent 14% 46%, rgba(255,255,255,.055) 47% 56%, transparent 57%),
+    linear-gradient(98deg, #050505 0 16%, #202020 49%, #050505 84% 100%);
+  border: clamp(.18rem, .46vw, .34rem) solid #fff;
+  box-shadow:
+    .48rem .55rem 0 rgba(121,0,10,.72),
+    0 0 1rem rgba(255,255,255,.12);
+  clip-path: polygon(12% 0, 88% 5%, 100% 100%, 0 100%);
+}
+
+.p5r-hat-band {
+  position: absolute;
+  z-index: 4;
+  left: 19%;
+  top: 57%;
+  width: 62%;
+  height: 14%;
+  background: linear-gradient(100deg, #a7000d, #f00012 48%, #8e000b);
+  border-block: clamp(.1rem, .28vw, .2rem) solid #080808;
+  box-shadow: 0 .18rem 0 rgba(255,255,255,.45);
+  clip-path: polygon(2% 15%, 100% 0, 95% 100%, 0 83%);
+}
+
+.p5r-hat-brim {
+  position: absolute;
+  z-index: 5;
+  left: 4%;
+  top: 67%;
+  width: 92%;
+  height: 22%;
+  background: linear-gradient(174deg, #222 0 27%, #050505 28% 100%);
+  border: clamp(.18rem, .45vw, .33rem) solid #fff;
+  box-shadow:
+    .55rem .48rem 0 rgba(121,0,10,.78),
+    0 0 .8rem rgba(255,255,255,.14);
+  clip-path: polygon(0 29%, 100% 0, 91% 60%, 13% 100%);
+}
+
+/* Calling card tucked into the hat band. */
+.p5r-hat-card {
+  position: absolute;
+  z-index: 6;
+  right: 14%;
+  top: 34%;
+  display: grid;
+  place-items: center;
+  width: 22%;
+  aspect-ratio: 3 / 4;
+  color: #080808;
+  background: #fff;
+  border: clamp(.13rem, .35vw, .24rem) solid #080808;
+  box-shadow: .22rem .25rem 0 #e60012;
+  font-family: Georgia, serif;
+  font-size: clamp(.8rem, 2.5vw, 1.6rem);
+  font-weight: 900;
+  transform: rotate(13deg);
+  animation: p5r-card-wiggle 4.4s ease-in-out infinite;
+  clip-path: polygon(3% 2%, 100% 0, 94% 100%, 0 95%);
+}
+
+.p5r-hat-card::before,
+.p5r-hat-card::after {
+  content: '◆';
+  position: absolute;
+  color: #e60012;
+  font-size: .42em;
+}
+.p5r-hat-card::before { left: 12%; top: 8%; }
+.p5r-hat-card::after { right: 12%; bottom: 8%; transform: rotate(180deg); }
+
+.p5r-phantom-spark {
+  position: absolute;
+  z-index: 7;
+  width: 12%;
+  aspect-ratio: 1;
+  background: #fff;
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+  filter: drop-shadow(.18rem .18rem 0 #080808);
+  animation: p5r-spark 3.2s ease-in-out infinite;
+}
+.p5r-phantom-spark--one { right: 5%; top: 19%; }
+.p5r-phantom-spark--two { left: 5%; bottom: 18%; animation-delay: -1.4s; transform: scale(.65); }
+
+.guide-hero .p5r-phantom-slash--one {
+  left: 6%;
+  top: 24%;
+  width: 88%;
+  opacity: .68;
+  transform: rotate(-16deg);
+}
+.guide-hero .p5r-phantom-slash--two {
+  left: 12%;
+  bottom: 16%;
+  width: 76%;
+  opacity: .5;
+  transform: rotate(13deg);
+}
+.guide-hero .p5r-phantom-slash--three { display: none !important; }
+
+@keyframes p5r-hat-float {
+  0%, 100% { transform: translate(-50%, -50%) rotate(-5deg) translateY(0); }
+  50% { transform: translate(-50%, -50%) rotate(-2deg) translateY(-4%); }
+}
+
+@keyframes p5r-hat-burst {
+  0%, 100% { transform: rotate(-4deg) scale(.98); opacity: .52; }
+  50% { transform: rotate(4deg) scale(1.035); opacity: .78; }
+}
+
+@keyframes p5r-card-wiggle {
+  0%, 100% { transform: rotate(13deg) translateY(0); }
+  50% { transform: rotate(9deg) translateY(-4%); }
+}
+
+@keyframes p5r-spark {
+  0%, 100% { opacity: .25; transform: rotate(0deg) scale(.65); }
+  50% { opacity: .95; transform: rotate(45deg) scale(1); }
+}
+
+@media (max-width: 700px) {
+  .guide-hero > .p5r-phantom-visual {
+    right: -4.2rem !important;
+    width: clamp(10rem, 48vw, 14rem) !important;
+    opacity: .34;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p5r-phantom-hat,
+  .p5r-hat-card,
+  .p5r-phantom-burst,
+  .p5r-phantom-spark {
+    animation: none !important;
+  }
+}
+
+/* =========================================================
+   Production P5R hero visual: animate the exact site favicon asset.
+   This supersedes the experimental CSS mask and top-hat art.
+   ========================================================= */
+.guide-hero > .p5r-phantom-visual {
+  position: absolute !important;
+  z-index: 1 !important;
+  top: 50% !important;
+  right: clamp(1.5rem, 5vw, 4.5rem) !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: clamp(13rem, 29vw, 20rem) !important;
+  height: auto !important;
+  aspect-ratio: 1 !important;
+  margin: 0 !important;
+  opacity: .9;
+  transform: translateY(-50%) rotate(-5deg) !important;
+  pointer-events: none;
+}
+
+/* Ensure all superseded experimental art is absent. */
+.guide-hero .p5r-phantom-burst,
+.guide-hero .p5r-phantom-mask,
+.guide-hero .p5r-phantom-hat,
+.guide-hero .p5r-phantom-slash,
+.guide-hero .p5r-phantom-spark {
+  display: none !important;
+}
+
+.p5r-favicon-art {
+  position: absolute;
+  z-index: 4;
+  inset: 14%;
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+  filter:
+    drop-shadow(.45rem .48rem 0 rgba(8,8,8,.72))
+    drop-shadow(0 0 .8rem rgba(255,255,255,.18));
+  transform: rotate(4deg) scale(.96);
+  animation: p5r-favicon-float 4.2s ease-in-out infinite;
+}
+
+.p5r-favicon-burst {
+  position: absolute;
+  z-index: 1;
+  inset: 1%;
+  background: repeating-conic-gradient(
+    from -7deg,
+    rgba(8,8,8,.42) 0 4deg,
+    transparent 4deg 12deg
+  );
+  clip-path: polygon(50% 0,61% 16%,82% 3%,79% 27%,100% 31%,81% 47%,98% 65%,73% 68%,72% 96%,53% 77%,36% 100%,31% 75%,4% 84%,21% 61%,0 48%,23% 39%,8% 16%,35% 24%);
+  animation: p5r-favicon-burst 8s ease-in-out infinite;
+}
+
+.p5r-favicon-orbit {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.p5r-favicon-orbit--outer {
+  inset: 8%;
+  border: clamp(.18rem,.48vw,.34rem) solid rgba(255,255,255,.4);
+  box-shadow: 0 0 0 clamp(.55rem,1.2vw,.9rem) rgba(8,8,8,.1);
+  animation: p5r-favicon-orbit 15s linear infinite;
+}
+
+.p5r-favicon-orbit--inner {
+  inset: 22%;
+  border: clamp(.12rem,.34vw,.24rem) dashed rgba(255,255,255,.3);
+  animation: p5r-favicon-orbit 10s linear infinite reverse;
+}
+
+.p5r-favicon-spark {
+  position: absolute;
+  z-index: 5;
+  width: 10%;
+  aspect-ratio: 1;
+  background: #fff;
+  clip-path: polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);
+  filter: drop-shadow(.15rem .15rem 0 #080808);
+  animation: p5r-favicon-spark 3.2s ease-in-out infinite;
+}
+
+.p5r-favicon-spark--one { right: 7%; top: 18%; }
+.p5r-favicon-spark--two { left: 8%; bottom: 18%; animation-delay: -1.4s; }
+
+@keyframes p5r-favicon-float {
+  0%,100% { transform: rotate(4deg) translateY(0) scale(.96); }
+  50% { transform: rotate(1deg) translateY(-4%) scale(1); }
+}
+
+@keyframes p5r-favicon-burst {
+  0%,100% { transform: rotate(-4deg) scale(.97); opacity: .64; }
+  50% { transform: rotate(4deg) scale(1.035); opacity: .9; }
+}
+
+@keyframes p5r-favicon-orbit {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes p5r-favicon-spark {
+  0%,100% { opacity: .2; transform: rotate(0deg) scale(.65); }
+  50% { opacity: .95; transform: rotate(45deg) scale(1); }
+}
+
+@media (max-width: 700px) {
+  .guide-hero > .p5r-phantom-visual {
+    right: -4rem !important;
+    width: clamp(9.5rem, 46vw, 13rem) !important;
+    opacity: .34;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p5r-favicon-art,
+  .p5r-favicon-burst,
+  .p5r-favicon-orbit,
+  .p5r-favicon-spark {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,499 @@
+/* Persona 3 Reload themed navigation transition.
+   Original blue clock/glass treatment with no external artwork. */
+
+:root {
+  --p3-transition-blue: #20b7f5;
+  --p3-transition-deep: #071a31;
+  --p3-transition-white: #f4f8ff;
+}
+
+/* Optional animated clock detail added to existing P3R headers by JS. */
+.p3r-clock-portal {
+  position: absolute;
+  z-index: 0;
+  inset-inline-end: clamp(1rem, 6%, 5rem);
+  inset-block-start: clamp(1rem, 8%, 3.5rem);
+  inline-size: clamp(7.5rem, 21cqi, 14rem);
+  aspect-ratio: 1;
+  border: clamp(.25rem, .7cqi, .48rem) solid rgba(244, 248, 255, .2);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 clamp(.8rem, 2cqi, 1.4rem) rgba(32, 183, 245, .1),
+    0 0 0 clamp(1.6rem, 4cqi, 2.7rem) rgba(32, 183, 245, .065),
+    inset 0 0 2rem rgba(32, 183, 245, .2);
+  opacity: .72;
+  pointer-events: none;
+}
+
+.p3r-clock-portal::before,
+.p3r-clock-portal::after {
+  content: '';
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  inline-size: 42%;
+  block-size: 3px;
+  background: rgba(244,248,255,.75);
+  border-radius: 999px;
+  transform-origin: left center;
+}
+
+.p3r-clock-portal::before {
+  transform: rotate(-57deg);
+  animation: p3r-clock-minute 8s linear infinite;
+}
+
+.p3r-clock-portal::after {
+  inline-size: 29%;
+  transform: rotate(28deg);
+  animation: p3r-clock-hour 18s linear infinite;
+}
+
+.p3r-clock-ticks {
+  position: absolute;
+  inset: 8%;
+  border: 2px dashed rgba(244,248,255,.32);
+  border-radius: 50%;
+  animation: p3r-clock-ring 14s linear infinite;
+}
+
+/* Full viewport transition. */
+.p3r-page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  visibility: hidden;
+  overflow: hidden;
+  background: var(--p3-transition-deep);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s ease, visibility 0s linear .24s;
+}
+
+.p3r-page-transition.is-active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .1s ease;
+}
+
+.p3r-transition-sweep {
+  position: absolute;
+  inset: -15%;
+  background:
+    linear-gradient(112deg,
+      transparent 0 34%,
+      rgba(32,183,245,.18) 35% 41%,
+      rgba(244,248,255,.92) 44% 47%,
+      rgba(32,183,245,.45) 50% 57%,
+      transparent 60% 100%);
+  transform: translateX(-120%) skewX(-12deg);
+}
+
+.p3r-page-transition.is-active .p3r-transition-sweep {
+  animation: p3r-blue-sweep .42s cubic-bezier(.24,.74,.25,1) forwards;
+}
+
+.p3r-transition-clock {
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  inline-size: min(44vw, 18rem);
+  aspect-ratio: 1;
+  border: .45rem solid rgba(244,248,255,.88);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1rem rgba(32,183,245,.22),
+    0 0 4rem rgba(32,183,245,.75),
+    inset 0 0 3rem rgba(32,183,245,.25);
+  opacity: 0;
+  transform: translate(-50%,-50%) scale(.35) rotate(-30deg);
+}
+
+.p3r-transition-clock::before,
+.p3r-transition-clock::after {
+  content: '';
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  inline-size: 40%;
+  block-size: .25rem;
+  background: var(--p3-transition-white);
+  transform-origin: left center;
+}
+.p3r-transition-clock::before { transform: rotate(-62deg); }
+.p3r-transition-clock::after { inline-size: 28%; transform: rotate(26deg); }
+
+.p3r-page-transition.is-active .p3r-transition-clock {
+  animation: p3r-clock-flash .42s ease forwards;
+}
+
+.p3r-transition-shards {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background:
+    linear-gradient(25deg, transparent 0 48%, rgba(244,248,255,.8) 49% 50%, transparent 51%),
+    linear-gradient(148deg, transparent 0 46%, rgba(32,183,245,.8) 47% 48%, transparent 49%),
+    linear-gradient(73deg, transparent 0 52%, rgba(244,248,255,.58) 53% 54%, transparent 55%);
+  background-size: 20rem 14rem, 17rem 19rem, 23rem 16rem;
+}
+
+.p3r-page-transition.is-active .p3r-transition-shards {
+  animation: p3r-shards .42s ease forwards;
+}
+
+@keyframes p3r-blue-sweep {
+  to { transform: translateX(120%) skewX(-12deg); }
+}
+
+@keyframes p3r-clock-flash {
+  0% { opacity: 0; transform: translate(-50%,-50%) scale(.35) rotate(-30deg); }
+  52% { opacity: 1; transform: translate(-50%,-50%) scale(1) rotate(7deg); }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(1.65) rotate(28deg); }
+}
+
+@keyframes p3r-shards {
+  0% { opacity: 0; transform: scale(.88); }
+  38% { opacity: .65; }
+  100% { opacity: 0; transform: scale(1.25); }
+}
+
+@keyframes p3r-clock-minute { to { transform: rotate(303deg); } }
+@keyframes p3r-clock-hour { to { transform: rotate(388deg); } }
+@keyframes p3r-clock-ring { to { transform: rotate(360deg); } }
+
+@media (max-width: 600px) {
+  .p3r-clock-portal {
+    inset-inline-end: .75rem;
+    inset-block-start: 3.2rem;
+    inline-size: clamp(5.8rem, 28vw, 8.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p3r-clock-portal::before,
+  .p3r-clock-portal::after,
+  .p3r-clock-ticks {
+    animation: none !important;
+  }
+
+  .p3r-page-transition {
+    display: none !important;
+  }
+}
+
+/* Integration with the current P3R homepage's actual .hero structure. */
+.hero,
+.guide-hero,
+body > main > header {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero > :not(.p3r-clock-portal),
+.guide-hero > :not(.p3r-clock-portal),
+body > main > header > :not(.p3r-clock-portal) {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .p3r-clock-portal,
+.guide-hero .p3r-clock-portal,
+body > main > header .p3r-clock-portal {
+  z-index: 1;
+  opacity: .88;
+}
+
+/* Keep the clock from competing with the title on narrow containers. */
+@media (max-width: 720px) {
+  .hero .p3r-clock-portal,
+  .guide-hero .p3r-clock-portal,
+  body > main > header .p3r-clock-portal {
+    opacity: .48;
+  }
+}
+
+/* =========================================================
+   P3R luminous green-blue clock treatment
+   Matches the current homepage hero composition: a large,
+   translucent clock positioned behind the Reload title.
+   ========================================================= */
+:root {
+  --p3-clock-cyan: #42d8f5;
+  --p3-clock-green: #83f3c7;
+  --p3-clock-blue: #179ad8;
+}
+
+.hero .p3r-clock-portal,
+.guide-hero .p3r-clock-portal,
+body > main > header .p3r-clock-portal {
+  inset-inline-end: clamp(-1.75rem, 2cqi, 2rem);
+  inset-block-start: clamp(-2.25rem, -1cqi, -.5rem);
+  inline-size: clamp(14rem, 36cqi, 23rem);
+  border: clamp(.18rem, .5cqi, .34rem) solid rgba(131,243,199,.58);
+  box-shadow:
+    0 0 0 clamp(.45rem, 1.15cqi, .8rem) rgba(66,216,245,.13),
+    0 0 0 clamp(1.15rem, 2.7cqi, 1.9rem) rgba(131,243,199,.09),
+    0 0 0 clamp(2rem, 4.8cqi, 3.25rem) rgba(66,216,245,.07),
+    inset 0 0 2.4rem rgba(131,243,199,.16),
+    0 0 3rem rgba(34,188,224,.16);
+  opacity: .78;
+  filter: drop-shadow(0 0 .4rem rgba(131,243,199,.32));
+  transform: rotate(-8deg);
+}
+
+.hero .p3r-clock-portal::before,
+.hero .p3r-clock-portal::after,
+.guide-hero .p3r-clock-portal::before,
+.guide-hero .p3r-clock-portal::after,
+body > main > header .p3r-clock-portal::before,
+body > main > header .p3r-clock-portal::after {
+  block-size: clamp(.16rem, .42cqi, .28rem);
+  background: linear-gradient(90deg, rgba(244,248,255,.92), var(--p3-clock-green));
+  box-shadow: 0 0 .7rem rgba(131,243,199,.72);
+}
+
+.p3r-clock-ticks {
+  inset: 7%;
+  border: clamp(.12rem, .32cqi, .22rem) dashed rgba(131,243,199,.44);
+  box-shadow:
+    0 0 0 clamp(.55rem, 1.3cqi, .9rem) rgba(66,216,245,.055),
+    inset 0 0 1.6rem rgba(66,216,245,.1);
+}
+
+.p3r-clock-ticks::before,
+.p3r-clock-ticks::after {
+  content: '';
+  position: absolute;
+  inset: -17%;
+  border: clamp(.1rem, .25cqi, .18rem) solid rgba(66,216,245,.18);
+  border-radius: 50%;
+}
+
+.p3r-clock-ticks::after {
+  inset: -31%;
+  border-color: rgba(131,243,199,.11);
+}
+
+/* Keep current title and summary legible above the larger clock. */
+.hero-copy {
+  position: relative;
+  z-index: 3;
+  max-width: min(70%, 46rem);
+}
+
+.hero-orbit {
+  opacity: .28;
+}
+
+/* Green-blue clock carries through the page transition. */
+.p3r-transition-clock {
+  border-color: rgba(131,243,199,.95);
+  box-shadow:
+    0 0 0 1rem rgba(66,216,245,.2),
+    0 0 0 2.1rem rgba(131,243,199,.1),
+    0 0 4.5rem rgba(66,216,245,.8),
+    inset 0 0 3rem rgba(131,243,199,.32);
+}
+
+.p3r-transition-clock::before,
+.p3r-transition-clock::after {
+  background: linear-gradient(90deg, #fff, var(--p3-clock-green));
+  box-shadow: 0 0 .8rem rgba(131,243,199,.8);
+}
+
+.p3r-transition-sweep {
+  background:
+    linear-gradient(112deg,
+      transparent 0 31%,
+      rgba(131,243,199,.16) 33% 39%,
+      rgba(244,248,255,.95) 43% 46%,
+      rgba(66,216,245,.52) 49% 56%,
+      transparent 60% 100%);
+}
+
+@media (max-width: 720px) {
+  .hero .p3r-clock-portal,
+  .guide-hero .p3r-clock-portal,
+  body > main > header .p3r-clock-portal {
+    inset-inline-end: -2.5rem;
+    inset-block-start: 1.2rem;
+    inline-size: clamp(10rem, 47vw, 15rem);
+    opacity: .42;
+  }
+
+  .hero-copy {
+    max-width: 88%;
+  }
+}
+
+/* S.E.E.S.-style clock face integrated into the existing P3R hero. */
+.hero .p3r-clock-portal,
+.guide-hero .p3r-clock-portal,
+body > main > header .p3r-clock-portal {
+  inset-inline-end: clamp(-3.5rem, -1cqi, -1rem);
+  inset-block-start: clamp(-3.5rem, -2cqi, -1rem);
+  inline-size: clamp(17rem, 42cqi, 27rem);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 0 1rem rgba(75,228,220,.22));
+  opacity: .84;
+  transform: rotate(-7deg);
+}
+
+.hero .p3r-clock-portal::before,
+.hero .p3r-clock-portal::after,
+.guide-hero .p3r-clock-portal::before,
+.guide-hero .p3r-clock-portal::after,
+body > main > header .p3r-clock-portal::before,
+body > main > header .p3r-clock-portal::after {
+  content: none;
+}
+
+.p3r-clock-face {
+  position: absolute;
+  inset: 11%;
+  border: clamp(.18rem,.48cqi,.34rem) solid rgba(120,245,213,.72);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 clamp(.5rem,1.2cqi,.8rem) rgba(36,184,232,.1),
+    0 0 0 clamp(1.25rem,2.8cqi,1.85rem) rgba(120,245,213,.085),
+    inset 0 0 2.6rem rgba(44,199,226,.18),
+    0 0 2rem rgba(120,245,213,.2);
+}
+
+.p3r-clock-face::before,
+.p3r-clock-face::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.p3r-clock-face::before {
+  inset: 8%;
+  border: 2px dashed rgba(170,255,235,.42);
+}
+
+.p3r-clock-face::after {
+  inset: 22%;
+  border: 1px solid rgba(131,243,199,.24);
+  box-shadow: 0 0 1.5rem rgba(66,216,245,.12);
+}
+
+.p3r-clock-label {
+  position: absolute;
+  z-index: 2;
+  inset-inline: 0;
+  inset-block-start: 28%;
+  color: rgba(131,243,199,.58);
+  font-family: Georgia,"Times New Roman",serif;
+  font-size: clamp(.58rem,1.5cqi,1rem);
+  letter-spacing: .16em;
+  text-align: center;
+}
+
+.p3r-clock-numerals {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.p3r-clock-numerals i {
+  --angle: calc(var(--n) * 30deg);
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  inline-size: 2.6rem;
+  color: rgba(182,255,234,.68);
+  font-family: Georgia,"Times New Roman",serif;
+  font-size: clamp(.55rem,1.55cqi,1rem);
+  font-style: normal;
+  text-align: center;
+  text-shadow: 0 0 .5rem rgba(131,243,199,.7);
+  transform:
+    translate(-50%,-50%)
+    rotate(var(--angle))
+    translateY(calc(clamp(5rem,15cqi,9rem) * -1))
+    rotate(calc(var(--angle) * -1));
+}
+
+.p3r-clock-hand {
+  position: absolute;
+  z-index: 4;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  block-size: clamp(.13rem,.35cqi,.24rem);
+  background: linear-gradient(90deg,#f5ffff 0 72%,rgba(131,243,199,.25));
+  border-radius: 999px;
+  box-shadow: 0 0 .7rem rgba(131,243,199,.85);
+  transform-origin: left center;
+}
+
+.p3r-clock-hand--minute {
+  inline-size: 38%;
+  transform: rotate(-54deg);
+  animation: p3-sees-minute 12s linear infinite;
+}
+
+.p3r-clock-hand--hour {
+  inline-size: 27%;
+  transform: rotate(31deg);
+  animation: p3-sees-hour 30s linear infinite;
+}
+
+.p3r-clock-hand--second {
+  inline-size: 43%;
+  block-size: 1px;
+  background: rgba(131,243,199,.78);
+  transform: rotate(88deg);
+  animation: p3-sees-second 6s steps(60,end) infinite;
+}
+
+.p3r-clock-pin {
+  position: absolute;
+  z-index: 6;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  inline-size: clamp(.45rem,1.2cqi,.75rem);
+  aspect-ratio: 1;
+  background: #efffff;
+  border: 2px solid rgba(131,243,199,.9);
+  border-radius: 50%;
+  box-shadow: 0 0 .8rem rgba(131,243,199,.9);
+  transform: translate(-50%,-50%);
+}
+
+.p3r-clock-rings {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(67,203,239,.14);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 clamp(1rem,2.4cqi,1.8rem) rgba(67,203,239,.035),
+    0 0 0 clamp(1.5rem,3.6cqi,2.5rem) rgba(131,243,199,.03);
+  animation: p3-sees-ring 22s linear infinite;
+}
+
+@keyframes p3-sees-minute { to { transform: rotate(306deg); } }
+@keyframes p3-sees-hour { to { transform: rotate(391deg); } }
+@keyframes p3-sees-second { to { transform: rotate(448deg); } }
+@keyframes p3-sees-ring { to { transform: rotate(360deg); } }
+
+@media (max-width:720px) {
+  .hero .p3r-clock-portal,
+  .guide-hero .p3r-clock-portal,
+  body > main > header .p3r-clock-portal {
+    inset-inline-end: -4.5rem;
+    inset-block-start: 1rem;
+    inline-size: clamp(12rem,52vw,17rem);
+    opacity: .46;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .p3r-clock-hand,
+  .p3r-clock-rings { animation:none!important; }
+}

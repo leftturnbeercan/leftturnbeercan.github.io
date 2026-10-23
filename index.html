@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="icon" href="/assets/site/favicon.ico" sizes="any">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interactive strategy guides for Persona 3 Reload, Persona 4 Revival, and Persona 5 Royal.">
-  <meta name="theme-color" content="#10131b">
-  <title>Persona Guides</title>
-  <style>
+
+<head><link href="/assets/site/favicon.ico" rel="icon" sizes="any"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Interactive strategy guides for Persona 3 Reload, Persona 4 Revival, Persona 5 Royal, and Metaphor: ReFantazio." name="description"/>
+<meta content="#10131b" name="theme-color"/>
+<title>Persona Guides</title>
+<style>
     :root {
       --ink: #10131b;
       --paper: #f6f2e9;
@@ -238,6 +238,62 @@
     .p5 .action { background: var(--black); }
     .p5 a:hover .action { color: var(--black); background: var(--white); }
 
+
+
+    /* Metaphor and shared guide availability states. */
+    .metaphor {
+      margin: 0 1.75%;
+      color: #f3ead0;
+      background:
+        radial-gradient(circle at 84% 34%, transparent 0 58px, rgba(213,170,67,.24) 59px 63px, transparent 64px),
+        repeating-linear-gradient(-22deg, transparent 0 28px, rgba(255,255,255,.04) 29px 31px),
+        linear-gradient(112deg, #10343d 0 68%, #21788a 68% 100%);
+      border-left: 7px solid #d5aa43;
+      clip-path: polygon(0 4%, 98.5% 0, 100% 92%, 2% 100%);
+    }
+    .metaphor::before {
+      top: -84px;
+      right: 5%;
+      width: 250px;
+      height: 250px;
+      border: 18px double rgba(213,170,67,.24);
+      border-radius: 50%;
+      transform: rotate(9deg);
+    }
+    .metaphor::after {
+      right: 17%;
+      bottom: 24px;
+      width: 82px;
+      height: 82px;
+      border: 4px solid rgba(243,234,208,.2);
+      transform: rotate(45deg);
+    }
+    .metaphor .guide-copy small { color: #e3bc5c; }
+    .metaphor .action {
+      color: #f3ead0;
+      background: rgba(213,170,67,.12);
+      border-color: #d5aa43;
+    }
+    .guide-status--planned,
+    .guide-status--maintenance {
+      cursor: default;
+    }
+    .guide-status--planned:hover,
+    .guide-status--maintenance:hover {
+      transform: none;
+    }
+    .action--planned {
+      opacity: .68;
+      border-style: dashed !important;
+    }
+    .guide-status--maintenance { filter: saturate(.45); }
+    .action--maintenance {
+      color: #fff !important;
+      background: #5f2630 !important;
+      border-color: #fff !important;
+      border-style: solid !important;
+    }
+
     footer {
       display: flex;
       justify-content: space-between;
@@ -272,7 +328,7 @@
       }
 
       .action { grid-column: 1; justify-self: start; margin-top: 2px; }
-      .p4 { margin-inline: 0; }
+      .p4, .metaphor { margin-inline: 0; }
       footer { flex-direction: column; }
     }
 
@@ -290,58 +346,45 @@
   </style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div>
-        <span class="title-kicker">Interactive strategy collection</span>
-        <h1>Persona<br>Guides</h1>
-      </div>
-      <p>Choose a game below to open its guide and continue tracking your progress.</p>
-    </header>
-
-    <main>
-      <nav aria-label="Persona game guides">
-        <ul>
-          <li class="guide p3">
-            <a href="/Persona3reload/persona3reload.html">
-              <span class="guide-copy">
-                <small>Guide currently in progress</small>
-                <strong>Persona 3 Reload</strong>
-                <span>Calendar strategy and interactive progress tracking</span>
-              </span>
-              <span class="action">Enter</span>
-            </a>
-          </li>
-
-          <li class="guide p4">
-            <div class="coming-soon">
-              <span class="guide-copy">
-                <small>Planned future guide</small>
-                <strong>Persona 4 Revival</strong>
-                <span>Development will begin at a later stage</span>
-              </span>
-              <span class="action">Planned</span>
-            </div>
-          </li>
-
-          <li class="guide p5">
-            <a href="/Persona5royal/persona5royal.html">
-              <span class="guide-copy">
-                <small>Complete guide</small>
-                <strong>Persona 5 Royal</strong>
-                <span>Full calendar-focused strategy guide</span>
-              </span>
-              <span class="action">Enter</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </main>
-
-    <footer>
-      <span></span>
-      <span></span>
-    </footer>
-  </div>
+<div class="page">
+<header>
+<div>
+<span class="title-kicker">Interactive strategy collection</span>
+<h1>Persona<br/>Guides</h1>
+</div>
+<p>Choose a game below to open its guide and continue tracking your progress.</p>
+</header>
+<main>
+<nav aria-label="Persona game guides">
+<ul>
+<li class="guide p3">
+<a href="/Persona3reload/persona3reload.html">
+<span class="guide-copy">
+<small>Guide currently in progress</small>
+<strong>Persona 3 Reload</strong>
+<span>Calendar strategy and interactive progress tracking</span>
+</span>
+<span class="action">Enter</span>
+</a>
+</li>
+<li class="guide p4 guide-status--planned"><div aria-label="Persona 4 Revival guide is planned" class="coming-soon"><span class="guide-copy"><small>Planned future guide</small><strong>Persona 4 Revival</strong><span>Calendar, Social Links, investigation notes, and activities</span></span><span class="action action--planned">Planned</span></div></li>
+<li class="guide p5">
+<a href="/Persona5royal/persona5royal.html">
+<span class="guide-copy">
+<small>Complete guide</small>
+<strong>Persona 5 Royal</strong>
+<span>Full calendar-focused strategy guide</span>
+</span>
+<span class="action">Enter</span>
+</a>
+</li><li class="guide metaphor guide-status--planned"><div aria-label="Metaphor ReFantazio guide is planned" class="coming-soon"><span class="guide-copy"><small>Planned future guide</small><strong>Metaphor: ReFantazio</strong><span>Journey calendar, Followers, quests, and Archetypes</span></span><span class="action action--planned">Planned</span></div></li>
+</ul>
+</nav>
+</main>
+<footer>
+<span></span>
+<span></span>
+</footer>
+</div>
 </body>
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="icon" href="/assets/site/favicon.ico" sizes="any">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interactive strategy guides for Persona 3 Reload, Persona 4 Revival, and Persona 5 Royal.">
-  <meta name="theme-color" content="#10131b">
+  <link href="/assets/site/favicon.ico" rel="icon" sizes="any" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="Interactive strategy guides for Persona 3 Reload, Persona 4 Revival, Persona 5 Royal, and Metaphor: ReFantazio."
+    name="description" />
+  <meta content="#10131b" name="theme-color" />
   <title>Persona Guides</title>
   <style>
     :root {
@@ -19,9 +22,13 @@
       --black: #08090d;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { background: var(--ink); }
+    html {
+      background: var(--ink);
+    }
 
     body {
       min-height: 100vh;
@@ -29,12 +36,14 @@
       overflow-x: hidden;
       color: var(--ink);
       background:
-        repeating-linear-gradient(-12deg, rgba(255,255,255,.025) 0 2px, transparent 2px 15px),
+        repeating-linear-gradient(-12deg, rgba(255, 255, 255, .025) 0 2px, transparent 2px 15px),
         var(--ink);
       font-family: Arial Black, Arial, Helvetica, sans-serif;
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
 
     .page {
       width: min(1180px, calc(100% - 28px));
@@ -108,7 +117,9 @@
       transition: transform .18s ease;
     }
 
-    .guide:hover { transform: translateX(7px); }
+    .guide:hover {
+      transform: translateX(7px);
+    }
 
     .guide::before,
     .guide::after {
@@ -169,30 +180,38 @@
       transition: transform .18s ease, background .18s ease, color .18s ease;
     }
 
-    a:hover .action { transform: rotate(0deg) scale(1.04); }
+    a:hover .action {
+      transform: rotate(0deg) scale(1.04);
+    }
 
     .p3 {
       color: var(--white);
       background:
-        radial-gradient(circle at 86% 50%, transparent 0 46px, rgba(255,255,255,.32) 47px 49px, transparent 50px 68px, rgba(255,255,255,.19) 69px 71px, transparent 72px),
+        radial-gradient(circle at 86% 50%, transparent 0 46px, rgba(255, 255, 255, .32) 47px 49px, transparent 50px 68px, rgba(255, 255, 255, .19) 69px 71px, transparent 72px),
         linear-gradient(102deg, var(--blue-dark), var(--blue) 68%, #42b9ef);
       clip-path: polygon(1.5% 0, 100% 5%, 97.5% 94%, 0 100%);
     }
 
     .p3::before {
       inset: -40% 42% -45% -7%;
-      border: 2px solid rgba(255,255,255,.14);
+      border: 2px solid rgba(255, 255, 255, .14);
       border-radius: 50%;
     }
 
-    .p3 .action { background: rgba(0,0,0,.18); }
-    .p3 a:hover .action { color: var(--blue-dark); background: var(--white); }
+    .p3 .action {
+      background: rgba(0, 0, 0, .18);
+    }
+
+    .p3 a:hover .action {
+      color: var(--blue-dark);
+      background: var(--white);
+    }
 
     .p4 {
       margin: 0 3.5%;
       color: var(--black);
       background:
-        repeating-linear-gradient(92deg, transparent 0 35px, rgba(0,0,0,.055) 35px 38px),
+        repeating-linear-gradient(92deg, transparent 0 35px, rgba(0, 0, 0, .055) 35px 38px),
         var(--yellow);
       clip-path: polygon(0 8%, 98.5% 0, 100% 91%, 3% 100%);
     }
@@ -202,17 +221,20 @@
       right: 16%;
       width: 150px;
       height: 230px;
-      border: 20px solid rgba(255,255,255,.26);
+      border: 20px solid rgba(255, 255, 255, .26);
       transform: rotate(16deg);
     }
 
-    .p4 .action { color: rgba(8,9,13,.56); border-style: dashed; }
+    .p4 .action {
+      color: rgba(8, 9, 13, .56);
+      border-style: dashed;
+    }
 
     .p5 {
       color: var(--white);
       background:
-        linear-gradient(115deg, transparent 0 68%, rgba(0,0,0,.28) 68% 72%, transparent 72%),
-        repeating-linear-gradient(-16deg, transparent 0 28px, rgba(255,255,255,.055) 28px 31px),
+        linear-gradient(115deg, transparent 0 68%, rgba(0, 0, 0, .28) 68% 72%, transparent 72%),
+        repeating-linear-gradient(-16deg, transparent 0 28px, rgba(255, 255, 255, .055) 28px 31px),
         var(--red);
       clip-path: polygon(2% 4%, 100% 0, 98% 100%, 0 91%);
     }
@@ -222,7 +244,7 @@
       right: -30px;
       width: 270px;
       height: 270px;
-      border: 28px solid rgba(0,0,0,.5);
+      border: 28px solid rgba(0, 0, 0, .5);
       border-radius: 50%;
     }
 
@@ -235,8 +257,83 @@
       transform: rotate(19deg);
     }
 
-    .p5 .action { background: var(--black); }
-    .p5 a:hover .action { color: var(--black); background: var(--white); }
+    .p5 .action {
+      background: var(--black);
+    }
+
+    .p5 a:hover .action {
+      color: var(--black);
+      background: var(--white);
+    }
+
+
+
+    /* Metaphor and shared guide availability states. */
+    .metaphor {
+      margin: 0 1.75%;
+      color: #f3ead0;
+      background:
+        radial-gradient(circle at 84% 34%, transparent 0 58px, rgba(213, 170, 67, .24) 59px 63px, transparent 64px),
+        repeating-linear-gradient(-22deg, transparent 0 28px, rgba(255, 255, 255, .04) 29px 31px),
+        linear-gradient(112deg, #10343d 0 68%, #21788a 68% 100%);
+      border-left: 7px solid #d5aa43;
+      clip-path: polygon(0 4%, 98.5% 0, 100% 92%, 2% 100%);
+    }
+
+    .metaphor::before {
+      top: -84px;
+      right: 5%;
+      width: 250px;
+      height: 250px;
+      border: 18px double rgba(213, 170, 67, .24);
+      border-radius: 50%;
+      transform: rotate(9deg);
+    }
+
+    .metaphor::after {
+      right: 17%;
+      bottom: 24px;
+      width: 82px;
+      height: 82px;
+      border: 4px solid rgba(243, 234, 208, .2);
+      transform: rotate(45deg);
+    }
+
+    .metaphor .guide-copy small {
+      color: #e3bc5c;
+    }
+
+    .metaphor .action {
+      color: #f3ead0;
+      background: rgba(213, 170, 67, .12);
+      border-color: #d5aa43;
+    }
+
+    .guide-status--planned,
+    .guide-status--maintenance {
+      cursor: default;
+    }
+
+    .guide-status--planned:hover,
+    .guide-status--maintenance:hover {
+      transform: none;
+    }
+
+    .action--planned {
+      opacity: .68;
+      border-style: dashed !important;
+    }
+
+    .guide-status--maintenance {
+      filter: saturate(.45);
+    }
+
+    .action--maintenance {
+      color: #fff !important;
+      background: #5f2630 !important;
+      border-color: #fff !important;
+      border-style: solid !important;
+    }
 
     footer {
       display: flex;
@@ -244,7 +341,7 @@
       gap: 20px;
       margin-top: 26px;
       padding: 0 12px;
-      color: rgba(255,255,255,.62);
+      color: rgba(255, 255, 255, .62);
       font-family: Arial, Helvetica, sans-serif;
       font-size: .78rem;
       font-weight: 700;
@@ -256,13 +353,26 @@
     }
 
     @media (max-width: 720px) {
-      .page { width: min(100% - 18px, 1180px); padding-top: 12px; }
-      header { align-items: flex-start; flex-direction: column; padding: 22px 20px 28px; }
-      header p { max-width: none; }
+      .page {
+        width: min(100% - 18px, 1180px);
+        padding-top: 12px;
+      }
+
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px 20px 28px;
+      }
+
+      header p {
+        max-width: none;
+      }
 
       .guide,
       .guide a,
-      .guide .coming-soon { min-height: 210px; }
+      .guide .coming-soon {
+        min-height: 210px;
+      }
 
       .guide a,
       .guide .coming-soon {
@@ -271,34 +381,63 @@
         padding: 24px 22px 30px;
       }
 
-      .action { grid-column: 1; justify-self: start; margin-top: 2px; }
-      .p4 { margin-inline: 0; }
-      footer { flex-direction: column; }
+      .action {
+        grid-column: 1;
+        justify-self: start;
+        margin-top: 2px;
+      }
+
+      .p4,
+      .metaphor {
+        margin-inline: 0;
+      }
+
+      footer {
+        flex-direction: column;
+      }
     }
 
     @media (max-width: 430px) {
-      h1 { font-size: 2.8rem; }
+      h1 {
+        font-size: 2.8rem;
+      }
+
       .guide a,
-      .guide .coming-soon { grid-template-columns: 1fr; gap: 12px; padding-inline: 16px; }
-      .guide-copy strong { font-size: 1.75rem; }
-      .guide-copy span { font-size: .82rem; }
+      .guide .coming-soon {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-inline: 16px;
+      }
+
+      .guide-copy strong {
+        font-size: 1.75rem;
+      }
+
+      .guide-copy span {
+        font-size: .82rem;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { transition: none !important; }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <header>
       <div>
         <span class="title-kicker">Interactive strategy collection</span>
-        <h1>Persona<br>Guides</h1>
+        <h1>Persona<br />Guides</h1>
       </div>
       <p>Choose a game below to open its guide and continue tracking your progress.</p>
     </header>
-
     <main>
       <nav aria-label="Persona game guides">
         <ul>
@@ -307,23 +446,17 @@
               <span class="guide-copy">
                 <small>Guide currently in progress</small>
                 <strong>Persona 3 Reload</strong>
-                <span>Calendar strategy and interactive progress tracking</span>
+                <span>Calendar system and interactive progress tracking, Along with trackable Elizabeth quests</span>
               </span>
               <span class="action">Enter</span>
             </a>
           </li>
-
-          <li class="guide p4">
-            <div class="coming-soon">
-              <span class="guide-copy">
-                <small>Planned future guide</small>
-                <strong>Persona 4 Revival</strong>
-                <span>Development will begin at a later stage</span>
-              </span>
-              <span class="action">Planned</span>
-            </div>
+          <li class="guide p4 guide-status--planned">
+            <div aria-label="Persona 4 Revival guide is planned" class="coming-soon"><span
+                class="guide-copy"><small>Planned future guide</small><strong>Persona 4 Revival</strong><span>Calendar System,
+                  and interactive progress tracking</span></span><span
+                class="action action--planned">Planned</span></div>
           </li>
-
           <li class="guide p5">
             <a href="/Persona5royal/persona5royal.html">
               <span class="guide-copy">
@@ -334,14 +467,20 @@
               <span class="action">Enter</span>
             </a>
           </li>
+          <li class="guide metaphor guide-status--planned">
+            <div aria-label="Metaphor ReFantazio guide is planned" class="coming-soon"><span
+                class="guide-copy"><small>Planned future guide</small><strong>Metaphor: ReFantazio</strong><span>Journey
+                  calendar, Followers, quests, and Archetypes</span></span><span
+                class="action action--planned">Planned</span></div>
+          </li>
         </ul>
       </nav>
     </main>
-
     <footer>
       <span></span>
       <span></span>
     </footer>
   </div>
 </body>
+
 </html>

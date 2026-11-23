@@ -1,208 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="/assets/p3r/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/p3r/favicon.ico" sizes="any" />
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="#071c38" name="theme-color"/>
-<link href="/css/p3r-months.css" rel="stylesheet"/>
-<link href="/css/p3r-sees-clock.css" rel="stylesheet"/>
-<script defer="" src="/js/progress-tracking.js"></script>
-<script defer="" src="/js/p3r-sees-clock.js"></script>
-<title>Calendar: August(Persona 3 Reload)</title>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="#071c38" name="theme-color" />
+        <link href="/css/p3r-months.css" rel="stylesheet" />
+        <link href="/css/p3r-sees-clock.css" rel="stylesheet" />
+        <script defer src="/js/progress-tracking.js"></script>
+        <script defer src="/js/p3r-sees-clock.js"></script>
+        <title>Calendar: August(Persona 3 Reload)</title>
 </head>
+
 <body>
-<main>
-<header>
-<h1><u>August</u></h1>
-<nav>
-<ul class="navbar" id="main_menu_setup">
-<li><a href="/Persona3reload/persona3reload.html">Home</a></li>
-<li><a href="/Persona3reload/calendar-p3r.html">Month</a></li>
-<li><a href="/Persona3reload/quests-p3r.html">Elizabeth Quests</a></li>
-</ul>
-</nav>
-<nav>
-<table class="cal_nav_border" id="cal_nav">
+        <main>
+                <header>
+                        <h1><u>August</u></h1>
+                        <nav>
+                                <ul class="navbar" id="main_menu_setup">
+                                        <li><a href="/Persona3reload/persona3reload.html">Home</a></li>
+                                        <li><a href="/Persona3reload/calendar-p3r.html">Month</a></li>
+                                        <li>
+                                                <a href="/Persona3reload/quests-p3r.html">Elizabeth Quests</a>
+                                        </li>
+                                </ul>
+                        </nav>
+                        <nav>
+                                <table class="cal_nav_border" id="cal_nav">
+                                        <thead>
+                                                <tr>
+                                                        <th class="cal_nav_th_font">Sun</th>
+                                                        <th class="cal_nav_th_font">Mon</th>
+                                                        <th class="cal_nav_th_font">Tue</th>
+                                                        <th class="cal_nav_th_font">Wed</th>
+                                                        <th class="cal_nav_th_font">Thur</th>
+                                                        <th class="cal_nav_th_font">Fri</th>
+                                                        <th class="cal_nav_th_font">Sat</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-1">1</a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-2">2</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-3">3</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-4">4</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-5">5</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-6">6</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-7">7</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-8">8</a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-9">9</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-10">10</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-11">11</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-12">12</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-13">13</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-14">14</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-15">15</a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-16">16</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-17">17</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-18">18</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-19">19</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-20">20</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-21">21</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-22">22</a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-23">23</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-24">24</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-25">25</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-26">26</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-27">27</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-28">28</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-29">29</a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-30">30</a></td>
+                                                        <td class="cal_nav_font"><a href="#p3r-august-31">31</a></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                        <td class="cal_nav_font"></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </nav>
+                        <section aria-label="August guide progress" class="progress-panel">
+                                <div>
+                                        <span class="progress-kicker">August completion</span>
+                                        <strong id="progress-text">0 of 0 tasks (0%)</strong>
+                                </div>
+                                <div aria-label="August completion" aria-valuemax="100" aria-valuemin="0"
+                                        aria-valuenow="0" class="progress-track" role="progressbar">
+                                        <span id="progress-fill"></span>
+                                </div>
+                        </section>
+                </header>
+                <section id="content-days">
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-1">Saturday August 1</h3>
+                                <h3>Required Arcana: Devil</h3>
+
+                                <h4>[Evening]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-1-1" id="p3r-august-1-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-1-1">Social link Devil Rank 7</label>
+                                <p>Location: Paulownia Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-1-2"
+                                                        id="p3r-august-1-2" type="checkbox" />
+                                                <label for="p3r-august-1-2">Choice 2: Sort of...</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-1-3"
+                                                        id="p3r-august-1-3" type="checkbox" />
+                                                <label for="p3r-august-1-3">Choice 1: The organic one.</label>
+                                        </li>
+                                </ul>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-2">Sunday August 2</h3>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-2-1" id="p3r-august-2-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-2-1">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood
+                                        Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-3">Monday August 3</h3>
+                                <h3>Required Arcana: Hanged Man</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-3-1" id="p3r-august-3-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-3-1">Social Link Hanged Man Rank 7</label>
+                                <p>Location: Naganaki Shrine</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-2"
+                                                        id="p3r-august-3-2" type="checkbox" />
+                                                <label for="p3r-august-3-2">Choice any</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-3"
+                                                        id="p3r-august-3-3" type="checkbox" />
+                                                <label for="p3r-august-3-3">Choice any</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-3-4" id="p3r-august-3-4"
+                                        type="checkbox" />
+                                <label for="p3r-august-3-4">Elizabeth Quest 43 (Missable)</label>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-5"
+                                                        id="p3r-august-3-5" type="checkbox" />
+                                                <label for="p3r-august-3-5">Talk to Fuuka in the dorm and obtain
+                                                        Christmas Star. Head back to Elizabeth to turn quest in.</label>
+                                        </li>
+                                </ul>
+                                <input class="progress-checkbox" data-id="p3r-august-3-6" id="p3r-august-3-6"
+                                        type="checkbox" />
+                                <label for="p3r-august-3-6">Head to Paulownia Mall[Club Escapade] and get a Fortune
+                                        Reading(optional)</label>
+                                <input class="progress-checkbox" data-id="p3r-august-3-7" id="p3r-august-3-7"
+                                        type="checkbox" />
+                                <label for="p3r-august-3-7">Head to Tartarus.</label>
+                                <h4>[Dark Hour]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-3-8" id="p3r-august-3-8"
+                                        type="checkbox" />
+                                <label for="p3r-august-3-8">Complete the following while in Tartarus:</label>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-9"
+                                                        id="p3r-august-3-9" type="checkbox" />
+                                                <label for="p3r-august-3-9">Reach Floor 92</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-10"
+                                                        id="p3r-august-3-10" type="checkbox" />
+                                                <label for="p3r-august-3-10">Reach a minimum level of 31</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-11"
+                                                        id="p3r-august-3-11" type="checkbox" />
+                                                <label for="p3r-august-3-11">Open the chest at the deep part of Monad
+                                                        Passage on floor 91F to unlock an achievement. (Beyond the
+                                                        Darkness unlocked)</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-12"
+                                                        id="p3r-august-3-12" type="checkbox" />
+                                                <label for="p3r-august-3-12">Try to have enough materials to be able to
+                                                        have at least 100,000 Yen for the next day.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-13"
+                                                        id="p3r-august-3-13" type="checkbox" />
+                                                <label for="p3r-august-3-13">Use Theurgy skills for Aigis</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-14"
+                                                        id="p3r-august-3-14" type="checkbox" />
+                                                <label for="p3r-august-3-14">Rescue the 2 missing persons.
+                                                        (Optional)</label>
+                                        </li>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-3-15"
+                                                        id="p3r-august-3-15" type="checkbox" />
+                                                <label for="p3r-august-3-15">Create a save point to reload from Tartarus
+                                                        entrance incase
+                                                        there is not enough Yen for tomorrow's material sells</label>
+                                        </li>
+                                </ul>
+                        </section>
+
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-4">Tuesday August 4</h3>
+                                <h3>Required Arcana: Strength, Devil</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-4-1" id="p3r-august-4-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-4-1">Head to Paulownia Mall[Police Station] and sell all your
+                                        materials</label>
+                                <p>*If you do not have at least 100,000 Yen after your sell then reload and grind a
+                                        bit more.*</p>
+                                <input class="progress-checkbox" data-id="p3r-august-4-2" id="p3r-august-4-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-4-2">Collect reward at the police station</label>
+                                <input class="progress-checkbox" data-id="p3r-august-4-3" id="p3r-august-4-3"
+                                        type="checkbox" />
+                                <label for="p3r-august-4-3">Social Link Strength Hangout Event</label>
+                                <p>Location: Accept phone invite from Yuko</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-4-4"
+                                                        id="p3r-august-4-4" type="checkbox" />
+                                                <label for="p3r-august-4-4">Choice 3: You're very responsible.</label>
+                                        </li>
+                                </ul>
+
+                                <h4>[Evening]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-4-5" id="p3r-august-4-5"
+                                        type="checkbox" />
+                                <label for="p3r-august-4-5">Social link Devil Rank 8</label>
+                                <p>Location: Paulownia Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-4-6"
+                                                        id="p3r-august-4-6" type="checkbox" />
+                                                <label for="p3r-august-4-6">Choice 2: Why would he say that?</label>
+                                        </li>
+                                </ul>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-5">Wednesday August 5</h3>
+                                <h3>Required Arcana: Star</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-5-1" id="p3r-august-5-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-5-1">Social Link Star Rank 1 [Automatic]</label>
+                                <p>Location: Iwatodai Station Strip Mall</p>
+
+                                <h4>[Evening]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-5-2" id="p3r-august-5-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-5-2">Head to Paulownia Mall[Game Paradise] and play You're the
+                                        Answer [3,000 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-6">Thursday August 6</h3>
+                                <h4>[Dark Hour]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-6-1" id="p3r-august-6-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-6-1">Grab the following items while in the Underground:</label>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-6-2"
+                                                        id="p3r-august-6-2" type="checkbox" />
+                                                <label for="p3r-august-6-2">Underground 21M: Collect Twilight Fragment
+                                                        at the dead end. (optional)</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-6-3"
+                                                        id="p3r-august-6-3" type="checkbox" />
+                                                <label for="p3r-august-6-3">Underground 33M: Collect Twilight Fragment
+                                                        within the short opening. (optional)</label>
+                                        </li>
+                                </ul>
+
+                        </section>
+                        <section class="daily-content draft-day">
+                                <h3 class="date-font" id="p3r-august-7">Friday August 7</h3>
+                                <h3>Required Arcana: Star</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-7-1" id="p3r-august-7-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-7-1">Social Link Star Rank 2 </label>
+                                <p>Location: Iwatodai Station Strip Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-7-2"
+                                                        id="p3r-august-7-2" type="checkbox" />
+                                                <label for="p3r-august-7-2">Choice 2: Sounds like a lot of
+                                                        pressure.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-7-3"
+                                                        id="p3r-august-7-3" type="checkbox" />
+                                                <label for="p3r-august-7-3">Choice 2: Myself.</label>
+                                        </li>
+                                        <h4>[Evening]</h4></br>
+                                        <input class="progress-checkbox" data-id="p3r-august-7-4" id="p3r-august-7-4"
+                                                type="checkbox" />
+                                        <label for="p3r-august-7-4">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat
+                                                the Seafood Full Course meal [900 Yen]</label>
+                                        <h4>[Dark Hour]</h4>
+                                        <input class="progress-checkbox" data-id="p3r-august-7-5" id="p3r-august-7-5"
+                                                type="checkbox" />
+                                        <label for="p3r-august-7-5">Social Link Death Rank 5 [Automatic]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-8">Saturday August 8</h3>
+                                <h3>Required Arcana: Hanged Man, Devil</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-8-1" id="p3r-august-8-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-8-1">Social Link Hangout Hanged Man</label>
+                                <p>Location: Naganaki Shrine[Precincts]</p>
+                                <h4>[Evening]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-8-2" id="p3r-august-8-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-8-2">Social link Devil Rank 9</label>
+                                <p>Location: Paulownia Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-8-3"
+                                                        id="p3r-august-8-3" type="checkbox" />
+                                                <label for="p3r-august-8-3">Choice 1: Are you going to donate?</label>
+                                        </li>
+                                </ul>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-9">Sunday August 9</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-9-1" id="p3r-august-9-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-9-1">Interact with the TV in your room to buy Isotope Soda set
+                                        from Tanaka's Amazing Commodities Show [3,980 Yen]</label><br /><br />
+                                <input class="progress-checkbox" data-id="p3r-august-9-2" id="p3r-august-9-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-9-2">Hangout with Junpei (Linked Episode 2)</label>
+                                <p>Location: Accept phone invite from Junpei</p>
+                                <h4>[Evening]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-9-3" id="p3r-august-9-3"
+                                        type="checkbox" />
+                                <label for="p3r-august-9-3">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood
+                                        Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-10">Monday August 10</h3>
+                                <h4>[Daytime]</h4></br>
+                                <p>Summer School</p>
+                                <p>*Academicics Rank Up 5*</p>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-11">Tuesday August 11</h3>
+                                <h4>[Daytime]</h4></br>
+                                <p>Summer School: Nothing to worry about</p>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-12">Wednesday August 12</h3>
+                                <h4>[Daytime]</h4></br>
+                                <p>Summer School: Nothing to worry about</p>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-13">Thursday August 13</h3>
+                                <h4>[Daytime]</h4></br>
+                                <p>Summer School: Nothing to worry about</p>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-14">Friday August 14</h3>
+                                <h4>[Daytime]</h4></br>
+                                <p>Summer School: Nothing to worry about</p>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-15">Saturday August 15</h3>
+                                <h3>Required Arcana: Devil</h3>
+                                <h4>[Daytime]</h4></br>
+                                <p>Summer School</p>
+                                <h4>[Evening]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-15-1" id="p3r-august-15-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-15-1">Social link Devil Rank 10</label>
+                                <p>Location: Paulownia Mall</p>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-16">Sunday August 16</h3>
+                                <h4>[Daytime]</h4></br>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-16-1"
+                                                        id="p3r-august-16-1" type="checkbox" />
+                                                <label for="p3r-august-16-1">Select anyone you want to go to the Shrine
+                                                        with.</label>
+                                        </li>
+                                </ul>
+
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-17">Monday August 17</h3>
+                                <h3>Required Arcana: Hanged Man</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-17-1" id="p3r-august-17-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-17-1">Interact with the TV in your room to buy Curse Paper set
+                                        from Tanaka's Amazing Commodities Show [3,980 Yen]</label><br /><br />
+                                <input class="progress-checkbox" data-id="p3r-august-17-2" id="p3r-august-17-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-17-2">Social Link Hanged Man Rank 8</label>
+                                <p>Location: Naganaki Shrine</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-17-3"
+                                                        id="p3r-august-17-3" type="checkbox" />
+                                                <label for="p3r-august-17-3">Choice 1: Hamburgers.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-17-4"
+                                                        id="p3r-august-17-4" type="checkbox" />
+                                                <label for="p3r-august-17-4">Choice 1: You're a good girl.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-17-5"
+                                                        id="p3r-august-17-5" type="checkbox" />
+                                                <label for="p3r-august-17-5">Choice 1: Your dad.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-17-6" id="p3r-august-17-6"
+                                        type="checkbox" />
+                                <label for="p3r-august-17-6">Spend time with Koromaru in the dorms watching
+                                        TV.</label><br />
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-18">Tuesday August 18</h3>
+                                <h3>Required Arcana: Moon</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-18-1" id="p3r-august-18-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-18-1">Social Link Moon Hangout Event</label>
+                                <p>Location: Paulownia Mall</p>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-18-2" id="p3r-august-18-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-18-2">In the dorms head to your room to study.</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-19">Wednesday August 19</h3>
+                                <h3>Required Arcana: Star</h3>
+                                <h4>[Daytime]</h4></br>
+                                <input class="progress-checkbox" data-id="p3r-august-19-1" id="p3r-august-19-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-19-1">Social Link Star Rank 3</label>
+                                <p>Location: Iwatodai Station Strip Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-19-2"
+                                                        id="p3r-august-19-2" type="checkbox" />
+                                                <label for="p3r-august-19-2">Choice 1: For your teammates?</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-19-3"
+                                                        id="p3r-august-19-3" type="checkbox" />
+                                                <label for="p3r-august-19-3">Choice 1: Sounds like fun.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-19-4" id="p3r-august-19-4"
+                                        type="checkbox" />
+                                <label for="p3r-august-19-4">Head to Paulownia Mall[Game Paradise] and play You're the
+                                        Answer [3,000 Yen]</label>
+
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-20">Thursday August 20</h3>
+                                <h3>Required Arcana: Hierophant</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-20-1" id="p3r-august-20-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-20-1">Social Link Hierophant Hangout Event</label>
+                                <p>Location: Iwatodai Strip Mall[Bookworms]</p>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-20-2" id="p3r-august-20-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-20-2">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-21">Friday August 21</h3>
+                                <h3>Required Arcana: Star</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-21-1" id="p3r-august-21-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-21-1">Social Link Star Rank 4</label>
+                                <p>Location: Iwatodai Station Strip Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-21-2"
+                                                        id="p3r-august-21-2" type="checkbox" />
+                                                <label for="p3r-august-21-2">Choice 1: What are you doing?</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-21-3"
+                                                        id="p3r-august-21-3" type="checkbox" />
+                                                <label for="p3r-august-21-3">Choice 1: That would be amazing!</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-21-4"
+                                                        id="p3r-august-21-4" type="checkbox" />
+                                                <label for="p3r-august-21-4">Choice 2: yeah, I bet it would.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-21-5" id="p3r-august-21-5"
+                                        type="checkbox" />
+                                <label for="p3r-august-21-5">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-22">Saturday August 22</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-22-1" id="p3r-august-22-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-22-1">Hangout with Koromaru (Linked Episode 1)</label>
+                                <p>Location: Dorms[Outside dorm area]</p>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-22-2" id="p3r-august-22-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-22-2">Head to Paulownia Mall[Game Paradise] and play You're the
+                                        Answer [3,000 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-23">Sunday August 23</h3>
+                                <h3>Required Arcana: Sun</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-23-1" id="p3r-august-23-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-23-1">Interact with the TV in your room to buy Soul Spinach
+                                        Sprout set
+                                        from Tanaka's Amazing Commodities Show [2,980 Yen]</label><br /><br />
+                                <input class="progress-checkbox" data-id="p3r-august-23-2" id="p3r-august-23-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-23-2">Head to the Shrine and do the following to obtain Social
+                                        Link Sun Rank 1</label>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-23-3"
+                                                        id="p3r-august-23-3" type="checkbox" />
+                                                <label for="p3r-august-23-3">Talk to the Thin Young Man.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-23-4"
+                                                        id="p3r-august-23-4" type="checkbox" />
+                                                <label for="p3r-august-23-4">Head back to the dorm and interact with
+                                                        Koromaru to ask him to move his paw to obtain the Red Fountain
+                                                        Pen.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-23-5"
+                                                        id="p3r-august-23-5" type="checkbox" />
+                                                <label for="p3r-august-23-5">Head back to the Thin Young Man at the
+                                                        Shrine and give him the Red Fountain Pen.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-23-6" id="p3r-august-23-6"
+                                        type="checkbox" />
+                                <label for="p3r-august-23-6">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-24">Monday August 24</h3>
+                                <h3>Required Arcana: Hanged Man</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-24-1" id="p3r-august-24-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-24-1">Social Link Hanged Man Rank 9</label>
+                                <p>Location: Naganaki Shrine</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-24-2"
+                                                        id="p3r-august-24-2" type="checkbox" />
+                                                <label for="p3r-august-24-2">Choice 1: Friends forever.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-24-3" id="p3r-august-24-3"
+                                        type="checkbox" />
+                                <label for="p3r-august-24-3">Spend time with Koromaru in the dorms watching
+                                        TV.</label><br />
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-25">Tuesday August 25</h3>
+                                <h3>Required Arcana: Hierophant</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-25-1" id="p3r-august-25-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-25-1">Social Link Hierophant Rank 6</label>
+                                <p>Location: Iwatodai Strip Mall[Bookworms]</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-25-2"
+                                                        id="p3r-august-25-2" type="checkbox" />
+                                                <label for="p3r-august-25-2">Choice 2: Please don't fight.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-25-3"
+                                                        id="p3r-august-25-3" type="checkbox" />
+                                                <label for="p3r-august-25-3">Choice Any</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-25-4" id="p3r-august-25-4"
+                                        type="checkbox" />
+                                <label for="p3r-august-25-4">Talk to Fuuka in the dorm and read with her.</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-26">Wednesday August 26</h3>
+                                <h3>Required Arcana: Star</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-26-1" id="p3r-august-26-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-26-1">Social Link Star Rank 5</label>
+                                <p>Location: Iwatodai Station Strip Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-26-2"
+                                                        id="p3r-august-26-2" type="checkbox" />
+                                                <label for="p3r-august-26-2">Choice 2: Are you okay?</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-26-3"
+                                                        id="p3r-august-26-3" type="checkbox" />
+                                                <label for="p3r-august-26-3">Choice 2: I'll come back here with
+                                                        you.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-26-4" id="p3r-august-26-4"
+                                        type="checkbox" />
+                                <label for="p3r-august-26-4">Head to Paulownia Mall[Game Paradise] and play You're the
+                                        Answer [3,000 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-27">Thursday August 27</h3>
+                                <h3>Required Arcana: Hierophant</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-27-1" id="p3r-august-27-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-27-1">Elizabeth Quest 58 (Missable)</label>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-3"
+                                                        id="p3r-august-27-3" type="checkbox" />
+                                                <label for="p3r-august-27-3">Head to Elizabeth and accept Quest
+                                                        58.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-4"
+                                                        id="p3r-august-27-4" type="checkbox" />
+                                                <label for="p3r-august-27-4">Head to Port Island Station[Station
+                                                        Outskirtys] and talk
+                                                        to Fierce-Looking Delinquent</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-5"
+                                                        id="p3r-august-27-5" type="checkbox" />
+                                                <label for="p3r-august-27-5">The head back to Port Island Station
+                                                        and talk to Flustered Student.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-6"
+                                                        id="p3r-august-27-6" type="checkbox" />
+                                                <label for="p3r-august-27-6">Head to Iwatodai Strip Mall and talk to
+                                                        Cat-Loving Boy</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-7"
+                                                        id="p3r-august-27-7" type="checkbox" />
+                                                <label for="p3r-august-27-7">Head back to Elizabeth to turn in the
+                                                        quest.</label>
+                                        </li>
+                                </ul>
+                                <input class="progress-checkbox" data-id="p3r-august-27-8" id="p3r-august-27-8"
+                                        type="checkbox" />
+                                <label for="p3r-august-27-8">Social Link Hierophant Rank 7</label>
+                                <p>Location: Iwatodai Station[Bookworms]</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-9"
+                                                        id="p3r-august-27-9" type="checkbox" />
+                                                <label for="p3r-august-27-9">Choice 1: What happened?</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-10"
+                                                        id="p3r-august-27-10" type="checkbox" />
+                                                <label for="p3r-august-27-10">Choice 2: That's great.</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-27-11"
+                                                        id="p3r-august-27-11" type="checkbox" />
+                                                <label for="p3r-august-27-11">Choice 3: What are you talking
+                                                        about?</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-27-12" id="p3r-august-27-12"
+                                        type="checkbox" />
+                                <label for="p3r-august-27-12">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-28">Friday August 28</h3>
+                                <h3>Required Arcana: Star</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-28-1" id="p3r-august-28-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-28-1">Social Link Star Rank 6</label>
+                                <p>Location: Iwatodai Station Strip Mall</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-28-2"
+                                                        id="p3r-august-28-2" type="checkbox" />
+                                                <label for="p3r-august-28-2">Choice Any </label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-28-3"
+                                                        id="p3r-august-28-3" type="checkbox" />
+                                                <label for="p3r-august-28-3">Choice Any </label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-28-4"
+                                                        id="p3r-august-28-4" type="checkbox" />
+                                                <label for="p3r-august-28-4">Choice Any </label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-28-5"
+                                                        id="p3r-august-28-5" type="checkbox" />
+                                                <label for="p3r-august-28-5">Choice 2: Don't worry, it's okay.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-28-6" id="p3r-august-28-6"
+                                        type="checkbox" />
+                                <label for="p3r-august-28-6">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-29">Saturday August 29</h3>
+                                <h3>Required Arcana: Hierophant</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-29-1" id="p3r-august-29-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-29-1">Social Link Hierophant Rank 8</label>
+                                <p>Location: Iwatodai Station[Bookworms]</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-29-2"
+                                                        id="p3r-august-29-2" type="checkbox" />
+                                                <label for="p3r-august-29-2">Choice 2: A fan of yours?</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-29-3"
+                                                        id="p3r-august-29-3" type="checkbox" />
+                                                <label for="p3r-august-29-3">Choice Any </label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-29-4"
+                                                        id="p3r-august-29-4" type="checkbox" />
+                                                <label for="p3r-august-29-4">Choice 1: Sure, let's go.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-29-5" id="p3r-august-29-5"
+                                        type="checkbox" />
+                                <label for="p3r-august-29-5">Head to Paulownia Mall[Game Paradise] and play You're the
+                                        Answer [3,000 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-30">Sunday August 30</h3>
+                                <h3>Required Arcana: Sun</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-30-1" id="p3r-august-30-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-30-1">Interact with the TV in your room to buy Fierce Sutra set
+                                        from Tanaka's Amazing Commodities Show [9,800 Yen]</label><br /><br />
+                                <input class="progress-checkbox" data-id="p3r-august-30-2" id="p3r-august-30-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-30-2">Social Link Sun Rank 2</label>
+                                <p>Location: Naganaki Shrine</p>
+                                <ul>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-30-3"
+                                                        id="p3r-august-30-3" type="checkbox" />
+                                                <label for="p3r-august-30-3">Choice 2: Really?</label>
+                                        </li>
+                                        <li>
+                                                <input class="progress-checkbox" data-id="p3r-august-30-4"
+                                                        id="p3r-august-30-4" type="checkbox" />
+                                                <label for="p3r-august-30-4">Choice 1: You have a point.</label>
+                                        </li>
+                                </ul>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-30-5" id="p3r-august-30-5"
+                                        type="checkbox" />
+                                <label for="p3r-august-30-5">Head to Iwatodai Strip Mall[Wakatsu Kitchen] and eat the
+                                        Seafood Full Course meal [900 Yen]</label>
+                        </section>
+                        <section class="daily-content">
+                                <h3 class="date-font" id="p3r-august-31">Monday August 31</h3>
+                                <h3>Required Arcana: Hanged Man</h3>
+                                <h4>[Daytime]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-31-1" id="p3r-august-31-1"
+                                        type="checkbox" />
+                                <label for="p3r-august-31-1">Social Link Hanged Man Rank 10</label>
+                                <p>Location: Naganaki Shrine</p>
+                                <h4>[Evening]</h4>
+                                <input class="progress-checkbox" data-id="p3r-august-31-2" id="p3r-august-31-2"
+                                        type="checkbox" />
+                                <label for="p3r-august-31-2">Spend time with Koromaru in the dorms watching
+                                        TV.</label><br />
+                        </section>
+<section class="social-summary"><h3>August Social Link Update</h3>
+<div class="table-scroll"><table class="confidant-table">
+
 <thead>
 <tr>
-<th class="cal_nav_th_font">Sun</th>
-<th class="cal_nav_th_font">Mon</th>
-<th class="cal_nav_th_font">Tue</th>
-<th class="cal_nav_th_font">Wed</th>
-<th class="cal_nav_th_font">Thur</th>
-<th class="cal_nav_th_font">Fri</th>
-<th class="cal_nav_th_font">Sat</th>
+<th>Persona Arcana</th>
+<th>Rank</th>
+<th>Current Month Progress</th>
 </tr>
 </thead>
-<tbody><tr><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"><a href="#p3r-august-1">1</a></td></tr><tr><td class="cal_nav_font"><a href="#p3r-august-2">2</a></td><td class="cal_nav_font"><a href="#p3r-august-3">3</a></td><td class="cal_nav_font"><a href="#p3r-august-4">4</a></td><td class="cal_nav_font"><a href="#p3r-august-5">5</a></td><td class="cal_nav_font"><a href="#p3r-august-6">6</a></td><td class="cal_nav_font"><a href="#p3r-august-7">7</a></td><td class="cal_nav_font"><a href="#p3r-august-8">8</a></td></tr><tr><td class="cal_nav_font"><a href="#p3r-august-9">9</a></td><td class="cal_nav_font"><a href="#p3r-august-10">10</a></td><td class="cal_nav_font"><a href="#p3r-august-11">11</a></td><td class="cal_nav_font"><a href="#p3r-august-12">12</a></td><td class="cal_nav_font"><a href="#p3r-august-13">13</a></td><td class="cal_nav_font"><a href="#p3r-august-14">14</a></td><td class="cal_nav_font"><a href="#p3r-august-15">15</a></td></tr><tr><td class="cal_nav_font"><a href="#p3r-august-16">16</a></td><td class="cal_nav_font"><a href="#p3r-august-17">17</a></td><td class="cal_nav_font"><a href="#p3r-august-18">18</a></td><td class="cal_nav_font"><a href="#p3r-august-19">19</a></td><td class="cal_nav_font"><a href="#p3r-august-20">20</a></td><td class="cal_nav_font"><a href="#p3r-august-21">21</a></td><td class="cal_nav_font"><a href="#p3r-august-22">22</a></td></tr><tr><td class="cal_nav_font"><a href="#p3r-august-23">23</a></td><td class="cal_nav_font"><a href="#p3r-august-24">24</a></td><td class="cal_nav_font"><a href="#p3r-august-25">25</a></td><td class="cal_nav_font"><a href="#p3r-august-26">26</a></td><td class="cal_nav_font"><a href="#p3r-august-27">27</a></td><td class="cal_nav_font"><a href="#p3r-august-28">28</a></td><td class="cal_nav_font"><a href="#p3r-august-29">29</a></td></tr><tr><td class="cal_nav_font"><a href="#p3r-august-30">30</a></td><td class="cal_nav_font"><a href="#p3r-august-31">31</a></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td><td class="cal_nav_font"></td></tr></tbody>
-</table>
-</nav>
-<section aria-label="August guide progress" class="progress-panel">
-<div>
-<span class="progress-kicker">August completion</span>
-<strong id="progress-text">0 of 0 tasks (0%)</strong>
-</div>
-<div aria-label="August completion" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-track" role="progressbar">
-<span id="progress-fill"></span>
-</div>
+<tbody>
+<tr>
+<td>Fool</td>
+<td>5</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Magician (Classmate)</td>
+<td>6</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Priestess (Fuuka Yamagishi)</td>
+<td>4</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Emperor (Student Council)</td>
+<td>7</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Hierophant (Old Couple)</td>
+<td>8</td>
+<td>Rank Up + 3</td>
+</tr>
+<tr>
+<td>Chariot (Track Team)</td>
+<td>7</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Justice (Treasurer)</td>
+<td>5</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Hermit (Online Game)</td>
+<td>8</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Fortune (Art Club)</td>
+<td>6</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Strength (Team Manager)</td>
+<td>4</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Hanged Man (Girl at the Shrine)</td>
+<td>10</td>
+<td>Rank Up + 4, Complete</td>
+</tr>
+<tr>
+<td>Death (Mysterious Boy)</td>
+<td>5</td>
+<td>Rank Up + 2</td>
+</tr>
+<tr>
+<td>Temperance (Transfer Student)</td>
+<td>6</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Devil (Businessman)</td>
+<td>10</td>
+<td>Rank Up + 4, Complete</td>
+</tr>
+<tr>
+<td>Star (Rival Athlete)</td>
+<td>6</td>
+<td>New, Rank Up + 6</td>
+</tr>
+<tr>
+<td>Moon (Gourmet King)</td>
+<td>9</td>
+<td>No Changes</td>
+</tr>
+<tr>
+<td>Sun (Dying Young Man)</td>
+<td>2</td>
+<td>New, Rank Up + 2</td>
+</tr>
+</tbody>
+</table></div>
 </section>
-</header>
-<section id="content-days"><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-1">Saturday August 1</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-1-1" data-id="p3r-august-1-1">
-        <label for="p3r-august-1-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-2">Sunday August 2</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-2-1" data-id="p3r-august-2-1">
-        <label for="p3r-august-2-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-3">Monday August 3</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-3-1" data-id="p3r-august-3-1">
-        <label for="p3r-august-3-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-4">Tuesday August 4</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-4-1" data-id="p3r-august-4-1">
-        <label for="p3r-august-4-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-5">Wednesday August 5</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-5-1" data-id="p3r-august-5-1">
-        <label for="p3r-august-5-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-6">Thursday August 6</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-6-1" data-id="p3r-august-6-1">
-        <label for="p3r-august-6-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-7">Friday August 7</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-7-1" data-id="p3r-august-7-1">
-        <label for="p3r-august-7-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-8">Saturday August 8</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-8-1" data-id="p3r-august-8-1">
-        <label for="p3r-august-8-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-9">Sunday August 9</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-9-1" data-id="p3r-august-9-1">
-        <label for="p3r-august-9-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-10">Monday August 10</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-10-1" data-id="p3r-august-10-1">
-        <label for="p3r-august-10-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-11">Tuesday August 11</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-11-1" data-id="p3r-august-11-1">
-        <label for="p3r-august-11-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-12">Wednesday August 12</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-12-1" data-id="p3r-august-12-1">
-        <label for="p3r-august-12-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-13">Thursday August 13</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-13-1" data-id="p3r-august-13-1">
-        <label for="p3r-august-13-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-14">Friday August 14</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-14-1" data-id="p3r-august-14-1">
-        <label for="p3r-august-14-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-15">Saturday August 15</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-15-1" data-id="p3r-august-15-1">
-        <label for="p3r-august-15-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-16">Sunday August 16</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-16-1" data-id="p3r-august-16-1">
-        <label for="p3r-august-16-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-17">Monday August 17</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-17-1" data-id="p3r-august-17-1">
-        <label for="p3r-august-17-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-18">Tuesday August 18</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-18-1" data-id="p3r-august-18-1">
-        <label for="p3r-august-18-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-19">Wednesday August 19</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-19-1" data-id="p3r-august-19-1">
-        <label for="p3r-august-19-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-20">Thursday August 20</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-20-1" data-id="p3r-august-20-1">
-        <label for="p3r-august-20-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-21">Friday August 21</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-21-1" data-id="p3r-august-21-1">
-        <label for="p3r-august-21-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-22">Saturday August 22</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-22-1" data-id="p3r-august-22-1">
-        <label for="p3r-august-22-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-23">Sunday August 23</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-23-1" data-id="p3r-august-23-1">
-        <label for="p3r-august-23-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-24">Monday August 24</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-24-1" data-id="p3r-august-24-1">
-        <label for="p3r-august-24-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-25">Tuesday August 25</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-25-1" data-id="p3r-august-25-1">
-        <label for="p3r-august-25-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-26">Wednesday August 26</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-26-1" data-id="p3r-august-26-1">
-        <label for="p3r-august-26-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-27">Thursday August 27</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-27-1" data-id="p3r-august-27-1">
-        <label for="p3r-august-27-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-28">Friday August 28</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-28-1" data-id="p3r-august-28-1">
-        <label for="p3r-august-28-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-29">Saturday August 29</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-29-1" data-id="p3r-august-29-1">
-        <label for="p3r-august-29-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-30">Sunday August 30</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-30-1" data-id="p3r-august-30-1">
-        <label for="p3r-august-30-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="daily-content draft-day" data-guide-status="draft"><h3 class="date-font" id="p3r-august-31">Monday August 31</h3><p class="draft-notice">Guide data for this day has not been entered yet.</p><!-- GUIDE DATA TEMPLATE
-        Replace the draft notice with real guide markup, for example:
-        <h4>[After School]</h4>
-        <input type="checkbox" class="progress-checkbox" id="p3r-august-31-1" data-id="p3r-august-31-1">
-        <label for="p3r-august-31-1">Activity instructions.</label>
-        Remove draft-day, data-guide-status, and draft-notice after entering real data. --></section><section class="social-summary draft-summary"><h3>August Social Link Update</h3><div class="table-scroll"><table class="confidant-table"><thead><tr><th>Persona Arcana</th><th>Rank</th><th>Current Month Progress</th></tr></thead><tbody><tr><td>Add Arcana</td><td>--</td><td>Populate after guide data is finalized</td></tr></tbody></table></div></section></section></main>
+        </main>
 </body>
+
 </html>
